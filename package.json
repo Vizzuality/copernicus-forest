@@ -15,6 +15,7 @@
     "react-dom": "^16.9.0",
     "react-map-gl": "^5.0.10",
     "react-scripts": "3.1.1",
+    "recharts": "^1.7.1",
     "viewport-mercator-project": "^6.2.0"
   },
   "scripts": {
