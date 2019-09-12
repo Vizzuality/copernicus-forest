@@ -1,36 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import App from './App';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-function About() {
-  return <h2>About</h2>;
-}
+import Header from 'components/header';
+import HomePage from 'pages/home';
+import SpeciesPage from 'pages/species';
+import DistributionPage from 'pages/distribution';
+import BioclimaticPage from 'pages/bioclimatic';
+import CountryPage from 'pages/country';
 
-function Users() {
-  return <h2>Users</h2>;
-}
+import './App.scss';
 
 function AppRouter() {
   return (
     <Router>
-      <div style={{ background: 'white' }}>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about/">About</Link>
-            </li>
-            <li>
-              <Link to="/users/">Users</Link>
-            </li>
-          </ul>
-        </nav>
+      <div className="c-app">
+        <Header />
 
-        <Route path="/" exact component={App} />
-        <Route path="/about/" component={About} />
-        <Route path="/users/" component={Users} />
+        <Route path="/" exact component={HomePage} />
+        <Route path="/:iso/species/:id" exact component={SpeciesPage} />
+        <Route path="/:iso/species/:id/distribution" exact component={DistributionPage} />
+        <Route path="/:iso/bioclimatic/:id" exact component={BioclimaticPage} />
+        <Route path="/:iso" exact component={CountryPage} />
       </div>
     </Router>
   );

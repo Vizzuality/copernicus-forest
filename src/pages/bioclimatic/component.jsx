@@ -1,24 +1,18 @@
 import React, { useState } from 'react';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
-// eslint-disable-next-line import/no-unresolved
 import { PluginMapboxGl } from 'layer-manager';
 
-import Map from './components/map';
-import Dashboard from './components/dashboard';
-import LayerToggle from './components/map/controls/layer-toggle';
-import Header from './components/header';
+import Map from 'components/map';
+import Dashboard from 'components/dashboard';
+import LayerToggle from 'components/map/controls/layer-toggle';
 
-import layers from './layers.json';
+import layers from 'layers.json';
+import './styles.scss';
 
-import './App.scss';
-
-function App() {
+function BioClimaticPage() {
   const [activeLayers, setActiveLayers] = useState(layers.map(l => ({ ...l, active: true })));
-
   return (
-    <div className="c-app">
-      <Header />
-      <div className="c-header">navbar goes here</div>
+    <div className="c-bioclimatic">
       <div className="content">
         <Dashboard />
         <Map
@@ -44,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default BioClimaticPage;
