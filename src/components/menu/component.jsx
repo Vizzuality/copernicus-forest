@@ -6,7 +6,7 @@ import './styles.scss';
 
 import { ReactComponent as CloseIcon } from 'assets/icons/close.svg';
 
-function useOutsideAlerter(ref, closeMenu) {
+function useClickOutside(ref, closeMenu) {
   function handleClickOutside(event) {
     if (closeMenu && ref.current && !ref.current.contains(event.target)) {
       closeMenu();
@@ -25,7 +25,7 @@ function useOutsideAlerter(ref, closeMenu) {
 
 function Menu({ closeMenu }) {
   const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef, closeMenu);
+  useClickOutside(wrapperRef, closeMenu);
 
   const links = [
     {

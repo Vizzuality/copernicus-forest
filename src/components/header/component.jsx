@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './styles.scss';
-import { ReactComponent as MenuIcon } from 'assets/icons/menu.svg';
+// import { ReactComponent as MenuIcon } from 'assets/icons/menu.svg';
+import Icon from 'vizzuality-components/dist/icon';
+import menuIcon from 'assets/icons/menu.svg';
 import Menu from 'components/menu';
 
 function Header() {
@@ -8,7 +10,8 @@ function Header() {
 
   return (
     <div className="c-header">
-      <MenuIcon className="icon menu-icon" onClick={() => showMenu(!menuOpen)} />
+      <Icon name="icon-search" onClick={() => showMenu(!menuOpen)} icon={menuIcon} />
+      {/* <MenuIcon /> */}
       <span>GLOBAL FOREST CLIMATE SERVICES</span>
       {menuOpen && <Menu closeMenu={() => showMenu(false)} />}
     </div>
