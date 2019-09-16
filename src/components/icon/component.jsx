@@ -4,11 +4,9 @@ import cx from 'classnames';
 
 import './styles.scss';
 
-function Icon({ className = null, name, onClick }) {
-  const componentClass = cx('c-icon', { [className]: !!className });
-
+function Icon({ className = null, name }) {
   return (
-    <svg className={componentClass} onClick={onClick}>
+    <svg className={cx('c-icon', { [className]: !!className })}>
       <use xlinkHref={`#${name}`} />
     </svg>
   );
@@ -16,8 +14,7 @@ function Icon({ className = null, name, onClick }) {
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  onClick: PropTypes.func
+  className: PropTypes.string
 };
 
 export default Icon;

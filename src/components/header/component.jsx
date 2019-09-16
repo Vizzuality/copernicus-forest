@@ -8,7 +8,10 @@ function Header() {
 
   return (
     <div className="c-header">
-      <Icon name="icon-menu" onClick={() => showMenu(!menuOpen)} />
+      <button onClick={() => showMenu(!menuOpen)}>
+        <Icon name="icon-menu" />
+        Menu
+      </button>
       <span>GLOBAL FOREST CLIMATE SERVICES</span>
       {menuOpen && <Menu closeMenu={() => showMenu(false)} />}
     </div>
