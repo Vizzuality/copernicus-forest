@@ -1,8 +1,11 @@
+@import '~styles/settings';
+
 .c-app {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: $color-white;
 
   .content {
     height: 100%;
