@@ -425,3 +425,25 @@
 	}
 	align-content: $value;
 }
+
+@mixin theme-background-color($theme: $color-white) {
+  @if ($theme == $color-white) {
+    background-color: $color-white;
+    &.theme-dark {
+      background-color: black;
+    }
+  }
+  @if ($theme == $color-green) {
+    background-color: $color-green;
+    &.theme-dark {
+      background-color: blue;
+    }
+  }
+}
+
+@mixin theme-fonts {
+  &.-dark {
+    color: white;
+  }
+  color: black;
+}

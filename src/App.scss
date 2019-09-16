@@ -1,11 +1,13 @@
 @import '~styles/settings';
+@import '~styles/mixins';
 
 .c-app {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: $color-white;
+  @include theme-background-color;
+  @include theme-fonts;
 
   .content {
     height: 100%;
