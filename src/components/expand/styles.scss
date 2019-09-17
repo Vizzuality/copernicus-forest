@@ -52,8 +52,8 @@ $button-height: 70px;
   .toggle {
     right: calc(50% - #{$button-width / 2});
     bottom: 1rem;
-
     background: $color-gray-2;
+    color: $color-white;
     height: $button-height;
     width: $button-width;
     position: fixed;
