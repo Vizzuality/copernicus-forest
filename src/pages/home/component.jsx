@@ -48,6 +48,7 @@ function HomePage() {
 
   return (
     <div className="c-home">
+      <Expand content={<ChooseCountry />} />
       <div className={`section ${transition}`} key={section.title}>
         <h1>{section.title}</h1>
         <p>{section.body}</p>
@@ -59,7 +60,6 @@ function HomePage() {
           </button>
         ))}
       </div>
-      <Expand content={<ChooseCountry />} />
     </div>
   );
 }
