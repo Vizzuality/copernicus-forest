@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './styles.scss';
 
+import Expand from 'components/expand';
+
 function HomePage() {
   const sections = [
     {
@@ -45,6 +47,7 @@ function HomePage() {
           </button>
         ))}
       </div>
+      <Expand />
     </div>
   );
 }
