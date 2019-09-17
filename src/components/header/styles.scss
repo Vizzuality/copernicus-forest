@@ -13,10 +13,25 @@
   background: linear-gradient(180deg, $color-white 0%, transparent 100%);
   z-index: $z-index-4;
 
-  .icon {
-    width: 20px;
-    max-height: 40px;
-    fill: $color-gray-1;
+  .menu-button {
+    height: 40px;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+
+    .menu-icon {
+      margin-right: 16px;
+      position: relative;
+      bottom: 2px;
+    }
+  }
+
+  span {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -7,5 +7,40 @@
   width: 400px;
   top: 0;
   left: 0;
-  background: #343;
+  background: $color-gray-1;
+  color: $color-white;
+  font-size: 20px;
+  padding-top: 80px;
+
+  transform: translateX(-400px);
+  transition: transform 0.1s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .close-icon {
+      fill: $color-white;
+      margin-right: 16px;
+    }
+  }
+
+  .menu-link {
+    padding: 16px;
+    border-top: 1px solid $color-white;
+
+    &:last-child {
+      border-bottom: 1px solid $color-white;
+    }
+  }
 }

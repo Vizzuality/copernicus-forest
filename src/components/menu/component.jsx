@@ -22,7 +22,7 @@ function useClickOutside(ref, closeMenu) {
   });
 }
 
-function Menu({ closeMenu }) {
+function Menu({ closeMenu, active }) {
   const wrapperRef = useRef(null);
   useClickOutside(wrapperRef, closeMenu);
 
@@ -42,9 +42,9 @@ function Menu({ closeMenu }) {
   ];
 
   return (
-    <div className="c-menu" ref={wrapperRef}>
-      <button onClick={closeMenu}>
-        <Icon name="icon-close" />
+    <div className={`c-menu ${active ? 'open' : ''}`} ref={wrapperRef}>
+      <button onClick={closeMenu} className="close-button">
+        <Icon name="icon-close" className="close-icon" />
         Close
       </button>
       {links.map(l => (
@@ -59,6 +59,7 @@ function Menu({ closeMenu }) {
 }
 
 Menu.propTypes = {
+  active: PropTypes.bool,
   closeMenu: PropTypes.func
 };
 

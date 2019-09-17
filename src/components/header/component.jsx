@@ -8,12 +8,12 @@ function Header() {
 
   return (
     <div className="c-header">
-      <button onClick={() => showMenu(!menuOpen)}>
-        <Icon name="icon-menu" />
+      <button className="menu-button" onClick={() => showMenu(!menuOpen)}>
+        <Icon name="icon-menu" className="menu-icon" />
         Menu
       </button>
       <span>GLOBAL FOREST CLIMATE SERVICES</span>
-      {menuOpen && <Menu closeMenu={() => showMenu(false)} />}
+      <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
     </div>
   );
 }
