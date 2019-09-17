@@ -3,6 +3,18 @@ import './styles.scss';
 
 import Expand from 'components/expand';
 
+function ChooseCountry() {
+  return (
+    <div className="c-choose-country">
+      <button>Canada</button>
+      <button>Indonesia</button>
+      <button>Sweden</button>
+      <button>Peru</button>
+      <button>Tanzania</button>
+    </div>
+  );
+}
+
 function HomePage() {
   const sections = [
     {
@@ -47,7 +59,7 @@ function HomePage() {
           </button>
         ))}
       </div>
-      <Expand />
+      <Expand content={<ChooseCountry />} />
     </div>
   );
 }

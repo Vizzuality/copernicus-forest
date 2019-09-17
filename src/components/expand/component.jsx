@@ -1,29 +1,23 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
-/*
-document.getElementById('toggle').addEventListener('click', () => {
-  document.getElementById('blender').classList.toggle('expand');
-  document.getElementById('toggle').classList.toggle('s-module--hasZIndex--1QkpC');
-});
-*/
-
-function Expand() {
+function Expand({ content }) {
   const [isExpanded, expand] = useState(false);
 
   return (
     <div className="c-expand">
-      <div className="bg" />
-      <button
-        id="toggle"
-        className={`toggle hasZIndex ${isExpanded ? 'hasZIndex' : ''}`}
-        onClick={() => expand(!isExpanded)}
-      >
-        a
+      <button className="button toggle" onClick={() => expand(!isExpanded)}>
+        Choose country
       </button>
-      <div className={`blender ${isExpanded ? 'expand' : ''}`} id="blender" />
+      <div className={`blender ${isExpanded ? 'expand' : ''}`} />
+      <div className={`expand-content ${isExpanded ? 'visible' : ''}`}>{content}</div>
     </div>
   );
 }
+
+Expand.propTypes = {
+  content: PropTypes.object
+};
 
 export default Expand;
