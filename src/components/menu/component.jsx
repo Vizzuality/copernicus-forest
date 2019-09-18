@@ -1,12 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import Icon from 'components/icon';
 
 import './styles.scss';
 
-import { ReactComponent as CloseIcon } from 'assets/icons/close.svg';
-
-function useOutsideAlerter(ref, closeMenu) {
+function useClickOutside(ref, closeMenu) {
   function handleClickOutside(event) {
     if (closeMenu && ref.current && !ref.current.contains(event.target)) {
       closeMenu();
@@ -25,7 +24,7 @@ function useOutsideAlerter(ref, closeMenu) {
 
 function Menu({ closeMenu }) {
   const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef, closeMenu);
+  useClickOutside(wrapperRef, closeMenu);
 
   const links = [
     {
@@ -45,7 +44,7 @@ function Menu({ closeMenu }) {
   return (
     <div className="c-menu" ref={wrapperRef}>
       <button onClick={closeMenu}>
-        <CloseIcon className="icon close-icon" />
+        <Icon name="icon-close" />
         Close
       </button>
       {links.map(l => (
