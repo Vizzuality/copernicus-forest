@@ -55,9 +55,12 @@ function HomePage() {
       </div>
       <div className="sidebar">
         {sections.map((s, i) => (
-          <button className="dot" key={s.title} onClick={() => changeSection(i)}>
-            •
-          </button>
+          <button
+            className="dot"
+            key={s.title}
+            onClick={() => changeSection(i)}
+            aria-label={sections[i].title}
+          />
         ))}
       </div>
     </div>

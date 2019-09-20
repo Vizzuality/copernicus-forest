@@ -23,7 +23,7 @@ $button-height: 70px;
     margin: auto;
     border-radius: 50%;
     background: white;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.25s cubic-bezier(.445, .05, .55, .95); // $ease-in-out-sine
     // mix-blend-mode: difference;
     z-index: $z-index-blender;
   }

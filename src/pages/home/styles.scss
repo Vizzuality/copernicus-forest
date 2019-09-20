@@ -1,13 +1,14 @@
 @import '~styles/settings';
 
 .c-home {
+  height: 100%;
   .section {
     font-family: $font-family-2;
     color: $color-gray-1;
     padding: 0 0 160px 160px;
 
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -42,7 +43,7 @@
     top: 0;
     right: 0;
     width: 55px;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
