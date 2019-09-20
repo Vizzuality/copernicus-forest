@@ -50,8 +50,9 @@ function HomePage() {
     <div className="c-home">
       <Expand content={<ChooseCountry />} />
       <div className={`section ${transition}`} key={section.title}>
-        <h1>{section.title}</h1>
-        <p>{section.body}</p>
+        {/* TODO: text and header components */}
+        <h1 className="section-title">{section.title}</h1>
+        <p className="section-body">{section.body}</p>
       </div>
       <div className="sidebar">
         {sections.map((s, i) => (

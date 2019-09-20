@@ -12,6 +12,7 @@ function Header() {
         <Icon name="icon-menu" className="menu-icon" />
         Menu
       </button>
+      {/* logo placeholder */}
       <span>GLOBAL FOREST CLIMATE SERVICES</span>
       <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
     </div>
