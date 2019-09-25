@@ -1,62 +1,30 @@
 @import '~styles/settings';
 
 .c-home {
+  background-image: url('/background.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+
   height: 100%;
   .section {
     font-family: $font-family-2;
     color: $color-gray-1;
-    padding: 0 0 160px 160px;
-
-    width: 100vw;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    transition: opacity 0.2s ease-in-out;
-
-    &.fade-out {
-      opacity: 0;
-    }
-
-    &.fade-in {
-      opacity: 1;
-    }
+    align-items: center;
+    padding-bottom: 100px;
 
     .section-title {
-      font-weight: 800;
       font-size: 64px;
       line-height: 84px;
-      max-width: 600px;
       margin-bottom: 44px;
     }
 
     .section-body {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 26px;
       max-width: 700px;
-    }
-  }
-
-  .sidebar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 55px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .dot {
-      height: 16px;
-      width: 16px;
-      margin: 40px 0;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: pointer;
     }
   }
 }
@@ -69,6 +37,20 @@
   justify-content: center;
 
   button {
-    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    img {
+      transition: all 0.1s cubic-bezier(.445, .05, .55, .95); // $ease-in-out-sine
+      transform-origin: left;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.4);
+      }
+    }
   }
 }

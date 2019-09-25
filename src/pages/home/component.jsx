@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './styles.scss';
 
 import Expand from 'components/expand';
@@ -6,63 +6,66 @@ import Expand from 'components/expand';
 function ChooseCountry() {
   return (
     <div className="c-choose-country">
-      <button>Canada</button>
-      <button>Indonesia</button>
-      <button>Sweden</button>
-      <button>Peru</button>
-      <button>Tanzania</button>
+      <div className="wrapper">
+        <div className="row">
+          <div className="col-sm-4 col-sm-offset-2">
+            <button>
+              <img src="/shapes/tanzania.svg" alt="tanzania" />
+              Canada
+            </button>
+          </div>
+          <div className="col-sm-4">
+            <button>
+              <img src="/shapes/tanzania.svg" alt="tanzania" />
+              Indonesia
+            </button>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-3 col-sm-offset-1">
+            <button>
+              <img src="/shapes/tanzania.svg" alt="tanzania" />
+              Sweden
+            </button>
+          </div>
+          <div className="col-sm-3 col-sm-offset-1">
+            <button>
+              <img src="/shapes/tanzania.svg" alt="tanzania" />
+              Peru
+            </button>
+          </div>
+          <div className="col-sm-3 col-sm-offset-1">
+            <button>
+              <img src="/shapes/tanzania.svg" alt="tanzania" />
+              Tanzania
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 function HomePage() {
-  const sections = [
-    {
-      title: 'See species distribution.',
-      body:
-        'Our i whales Dry place replenish darkness had fifth very subdue in midst behold face two. That winged evening fourth.'
-    },
-    {
-      title: 'See bioclimatic variables.',
-      body:
-        'Our i whales Dry place replenish darkness had fifth very subdue in midst behold face two. That winged evening fourth.'
-    }
-  ];
-  const [sectionIndex, setSection] = useState(0);
-  const [transition, setTransition] = useState('fade-in');
-  const section = sections[sectionIndex];
-
-  const changeSection = next => {
-    setTransition('fade-out');
-    setTimeout(() => setSection(next), 200);
-    setTimeout(() => setTransition('fade-in'), 300);
-  };
-
-  useEffect(() => {
-    const nextSection = sectionIndex === 0 ? 1 : 0;
-    const timer = setTimeout(() => {
-      changeSection(nextSection);
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, [sectionIndex]);
-
   return (
     <div className="c-home">
       <Expand content={<ChooseCountry />} />
-      <div className={`section ${transition}`} key={section.title}>
-        {/* TODO: text and header components */}
-        <h1 className="section-title">{section.title}</h1>
-        <p className="section-body">{section.body}</p>
-      </div>
-      <div className="sidebar">
-        {sections.map((s, i) => (
-          <button
-            className="dot"
-            key={s.title}
-            onClick={() => changeSection(i)}
-            aria-label={sections[i].title}
-          />
-        ))}
+      <div className="section">
+        <div className="wrapper">
+          <div className="row">
+            <div className="col-md-9 col-xs-12">
+              {/* TODO: text and header components */}
+              <h1 className="section-title">
+                Explore species distribution and bioclimatic variables
+              </h1>
+              <p className="section-body">
+                Species distribution models combine information on species occurrence with
+                environmental characteristics to estimate the suitable distributional area under
+                current and future conditions using bioclimatic variables derived from Copernicus.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

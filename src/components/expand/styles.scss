@@ -22,7 +22,7 @@ $button-height: 70px;
     width: $button-height;
     margin: auto;
     border-radius: 50%;
-    background: white;
+    background: $color-background;
     transition: transform 0.25s cubic-bezier(.445, .05, .55, .95); // $ease-in-out-sine
     // mix-blend-mode: difference;
     z-index: $z-index-blender;
@@ -50,16 +50,18 @@ $button-height: 70px;
   }
 
   .toggle {
-    right: calc(50% - #{$button-width / 2});
-    bottom: 1rem;
-    background: $color-gray-2;
-    color: $color-white;
     height: $button-height;
     width: $button-width;
     position: fixed;
+    bottom: 1rem;
+    right: calc(50% - #{$button-width / 2});
     z-index: $z-index-4;
     cursor: pointer;
     transition: all 0.5s ease;
+    background: $color-orange;
+    color: $color-gray-1;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
   }
 }
-
