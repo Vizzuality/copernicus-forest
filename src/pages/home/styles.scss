@@ -6,7 +6,6 @@
   background-attachment: fixed;
   background-position: right center;
 
-  height: 100%;
   .section {
     font-family: $font-family-2;
     color: $color-gray-1;
@@ -36,7 +35,7 @@
   align-items: center;
   justify-content: center;
 
-  button {
+  .country {
     display: flex;
     flex-direction: column;
     width: 100%;

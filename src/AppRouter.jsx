@@ -8,7 +8,6 @@ const HomePage = lazy(() => import('pages/home'));
 const SpeciesPage = lazy(() => import('pages/species'));
 const DistributionPage = lazy(() => import('pages/distribution'));
 const BioclimaticPage = lazy(() => import('pages/bioclimatic'));
-const CountryPage = lazy(() => import('pages/country'));
 const Placeholder = () => <div className="c-header" />;
 
 function AppRouter() {
@@ -23,7 +22,6 @@ function AppRouter() {
             <Route path="/:iso/species/:id" component={SpeciesPage} />
             <Route path="/:iso/species/:id/distribution" component={DistributionPage} />
             <Route path="/:iso/bioclimatic/:id" component={BioclimaticPage} />
-            <Route path="/:iso" component={CountryPage} />
           </Switch>
         </Suspense>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 
 import Expand from 'components/expand';
@@ -9,36 +10,46 @@ function ChooseCountry() {
       <div className="wrapper">
         <div className="row">
           <div className="col-sm-4 col-sm-offset-2">
-            <button>
-              <img src="/shapes/tanzania.svg" alt="tanzania" />
-              Canada
-            </button>
+            <Link to="/CAN/species/1234">
+              <div className="country">
+                <img src="/shapes/tanzania.svg" alt="tanzania" />
+                Canada
+              </div>
+            </Link>
           </div>
           <div className="col-sm-4">
-            <button>
-              <img src="/shapes/tanzania.svg" alt="tanzania" />
-              Indonesia
-            </button>
+            <Link to="/IDN/species/1234">
+              <div className="country">
+                <img src="/shapes/tanzania.svg" alt="tanzania" />
+                Indonesia
+              </div>
+            </Link>
           </div>
         </div>
         <div className="row">
           <div className="col-sm-3 col-sm-offset-1">
-            <button>
-              <img src="/shapes/tanzania.svg" alt="tanzania" />
-              Sweden
-            </button>
+            <Link to="/SWE/species/1234">
+              <div className="country">
+                <img src="/shapes/tanzania.svg" alt="tanzania" />
+                Sweden
+              </div>
+            </Link>
           </div>
           <div className="col-sm-3 col-sm-offset-1">
-            <button>
-              <img src="/shapes/tanzania.svg" alt="tanzania" />
-              Peru
-            </button>
+            <Link to="/PER/species/1234">
+              <div className="country">
+                <img src="/shapes/tanzania.svg" alt="tanzania" />
+                Peru
+              </div>
+            </Link>
           </div>
           <div className="col-sm-3 col-sm-offset-1">
-            <button>
-              <img src="/shapes/tanzania.svg" alt="tanzania" />
-              Tanzania
-            </button>
+            <Link to="/TZA/species/1234">
+              <div className="country">
+                <img src="/shapes/tanzania.svg" alt="tanzania" />
+                Tanzania
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -48,7 +59,7 @@ function ChooseCountry() {
 
 function HomePage() {
   return (
-    <div className="c-home">
+    <div className="c-home l-page">
       <Expand content={<ChooseCountry />} />
       <div className="section">
         <div className="wrapper">
