@@ -15,7 +15,7 @@
   transform: translateX(-400px);
   transition: transform 0.1s ease-in-out;
 
-  &.open {
+  &.-open {
     transform: translateX(0);
   }
 

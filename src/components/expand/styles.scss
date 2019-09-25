@@ -43,7 +43,7 @@ $button-height: 70px;
     transition: opacity 1s ease-in-out;
     z-index: $z-index-expand-content;
 
-    &.visible {
+    &.-visible {
       visibility: visible;
       opacity: 1;
     }

@@ -42,7 +42,7 @@ function Menu({ closeMenu, active }) {
   ];
 
   return (
-    <div className={`c-menu ${active ? 'open' : ''}`} ref={wrapperRef}>
+    <div className={`c-menu ${active ? '-open' : ''}`} ref={wrapperRef}>
       <button onClick={closeMenu} className="close-button">
         <Icon name="icon-close" className="close-icon" />
         Close

@@ -11,7 +11,7 @@ function Expand({ content }) {
         Choose country
       </button>
       <div className={`blender ${isExpanded ? 'expand' : ''}`} />
-      <div className={`expand-content ${isExpanded ? 'visible' : ''}`}>{content}</div>
+      <div className={`expand-content ${isExpanded ? '-visible' : ''}`}>{content}</div>
     </div>
   );
 }
