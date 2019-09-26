@@ -1,11 +1,6 @@
 @import '~styles/settings';
 
 .c-home {
-  background-image: url('/background.svg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right center;
-
   .section {
     font-family: $font-family-2;
     color: $color-gray-1;
@@ -24,6 +19,20 @@
       font-size: 18px;
       line-height: 26px;
       max-width: 700px;
+    }
+  }
+
+  .background {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+
+    img {
+      position: relative;
+      left: 250px;
+      align-self: center;
     }
   }
 }

@@ -8,6 +8,13 @@ function HomePage() {
   return (
     <div className="c-home l-page">
       <Expand content={<ChooseCountry />} />
+      <div className="background">
+        <img
+          src="/background/bg.png"
+          srcSet="/background/bg.png 1x, /background/bg@2x.png 2x"
+          alt="background"
+        />
+      </div>
       <div className="section">
         <div className="wrapper">
           <div className="row">
