@@ -7,7 +7,7 @@ import ChooseCountry from './components/countries';
 function HomePage() {
   return (
     <div className="c-home l-page">
-      <Expand content={<ChooseCountry />} />
+      <Expand content={<ChooseCountry />} label="Choose country" />
       <div className="background">
         <img
           src="/background/bg.png"

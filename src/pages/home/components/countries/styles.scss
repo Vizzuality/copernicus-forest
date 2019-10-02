@@ -5,21 +5,38 @@
   align-items: center;
   justify-content: center;
 
-  .country {
+  .row>div{
+    display: flex;
+    align-items: center;
+  }
+
+  .shape {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
 
-    img {
-      transition: all 0.1s cubic-bezier(.445, .05, .55, .95); // $ease-in-out-sine
-      transform-origin: left;
+  a {
+    position: relative;
+
+    &:hover .shape__no-hover {
+      opacity: 0;
+    }
+  
+    &:hover .shape__hover {
+      opacity: 1;
     }
 
-    &:hover {
-      img {
-        transform: scale(1.4);
-      }
+    .shape__hover {
+      position: absolute;
+      top: -20%;
+      left: 0;
+      opacity: 0;
+    }
+
+    .shape__no-hover {
+      opacity: 1;
     }
   }
 }
