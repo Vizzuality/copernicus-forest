@@ -22,6 +22,7 @@
 
     &:hover .shape__no-hover {
       opacity: 0;
+      pointer-events: all;
     }
   
     &:hover .shape__hover {
@@ -33,6 +34,7 @@
       top: -20%;
       left: 0;
       opacity: 0;
+      pointer-events: none;
     }
 
     .shape__no-hover {
