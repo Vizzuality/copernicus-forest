@@ -14,7 +14,7 @@ $button-height: 70px;
   overflow-y: hidden;
 
   .blender {
-    position: absolute;
+    position: fixed;
     left: calc(50% - #{$button-height / 2});
     bottom: 1rem;
 
