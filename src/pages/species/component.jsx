@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { useQuery } from 'urql';
 import './styles.scss';
 
@@ -68,7 +69,13 @@ function SpeciesPage({ match }) {
           </p>
           <br />
           <p>List of species:</p>
-          {species && species.map(s => <p key={s.id}>{s.name}</p>)}
+          {species &&
+            species.map(s => (
+              <Link key={s.id} to={`/${activeCountry.iso}/species/${s.id}`}>
+                <p>{s.name}</p>
+              </Link>
+            ))}
+          <br />
           <br />
           <p>{wikiInfo}</p>
         </div>
