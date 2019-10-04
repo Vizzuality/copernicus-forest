@@ -1,0 +1,16 @@
+@import '~styles/settings';
+
+.c-species-list {
+  width: 330px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 18px;
+
+    &.__active{
+      font-size: 30px;
+    }
+  }
+}

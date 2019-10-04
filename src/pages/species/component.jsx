@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { useQuery } from 'urql';
 import './styles.scss';
+import SpeciesList from './components/species-list/component';
 
 function SpeciesPage({ match }) {
   const { iso, id } = (match && match.params) || {};
@@ -17,7 +17,7 @@ function SpeciesPage({ match }) {
     {
       countrySpecieDistributions(where:{
         country: {
-          iso: "SWE"
+          iso: "${iso}"
         }
       }) {
         country {
@@ -53,31 +53,33 @@ function SpeciesPage({ match }) {
       fetch(`${wikiURL}${activeSpecie && activeSpecie.wikipediaSlug}`)
         .then(r => r.json())
         .then(r => {
-          setInfo(r.extract);
+          setInfo(r);
         });
     }
   }, [activeSpecie, setInfo]);
 
   return (
-    <div className="c-species">
+    <div className="c-species l-page">
       {fetching && <p>Loading...</p>}
       {error && <p>Error retrieving the data</p>}
       {!fetching && !error && (
         <div className="content">
-          <p>
-            Species in {activeCountry ? activeCountry.name : iso} with id {id}
-          </p>
-          <br />
-          <p>List of species:</p>
-          {species &&
-            species.map(s => (
-              <Link key={s.id} to={`/${activeCountry.iso}/species/${s.id}`}>
-                <p>{s.name}</p>
-              </Link>
-            ))}
-          <br />
-          <br />
-          <p>{wikiInfo}</p>
+          <div className="species-sidebar">
+            <img
+              src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
+              alt={activeSpecie && activeSpecie.name}
+            />
+            <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
+          </div>
+          <div className="species-detail">
+            <p>
+              Species in {activeCountry ? activeCountry.name : iso} with id {id}
+            </p>
+            <br />
+            <br />
+            <br />
+            <p>{wikiInfo && wikiInfo.extract}</p>
+          </div>
         </div>
       )}
     </div>

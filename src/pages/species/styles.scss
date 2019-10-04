@@ -1,5 +1,21 @@
 @import '~styles/settings';
 
 .c-species {
+  .content {
+    height: 100%;
+    display: flex;
 
+    .species-sidebar {
+      img {
+        width: 100%;
+        // height: 220px;
+        // object-fit: cover;
+        // object-position: top;
+      }
+    }
+
+    .species-detail {
+      width: calc(100% - 330px);
+    }
+  }
 }
