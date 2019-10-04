@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useQuery } from 'urql';
+import Dropdown from 'components/dropdown';
 import './styles.scss';
 import SpeciesList from './components/species-list/component';
 
@@ -71,6 +72,10 @@ function SpeciesPage({ match }) {
             />
             <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
           </div>
+          <Dropdown
+            title={iso}
+            list={[{ label: 'Sweden', value: 'SWE' }, { label: 'Canada', value: 'CAN' }]}
+          />
           <div className="species-detail">
             <h1>{activeSpecie && activeSpecie.name}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
