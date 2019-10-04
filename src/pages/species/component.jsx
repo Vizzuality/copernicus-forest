@@ -73,7 +73,7 @@ function SpeciesPage({ match }) {
             <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
           </div>
           <Dropdown
-            title={iso}
+            title={activeCountry && activeCountry.name}
             list={[{ label: 'Sweden', value: 'SWE' }, { label: 'Canada', value: 'CAN' }]}
           />
           <div className="species-detail">
