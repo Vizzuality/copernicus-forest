@@ -72,12 +72,7 @@ function SpeciesPage({ match }) {
             <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
           </div>
           <div className="species-detail">
-            <p>
-              Species in {activeCountry ? activeCountry.name : iso} with id {id}
-            </p>
-            <br />
-            <br />
-            <br />
+            <h1>{activeSpecie && activeSpecie.name}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
           </div>
         </div>

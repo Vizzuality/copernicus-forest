@@ -2,15 +2,30 @@
 
 .c-species-list {
   width: 330px;
-  height: 100%;
   display: flex;
   flex-direction: column;
 
-  p {
+  .specie {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding-left: 24px;
     font-size: 18px;
+    font-style: italic;
+    border-top: 1px solid #5D5D5D;
+    color: $color-white;
 
     &.__active{
       font-size: 30px;
+      height: 70px;
+    }
+
+    &:hover {
+      background-color: #313131;
+    }
+
+    &:last-child{
+      border-bottom: 1px solid #5D5D5D;
     }
   }
 }
