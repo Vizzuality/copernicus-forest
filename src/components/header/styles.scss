@@ -8,14 +8,37 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
   background: $color-background;
   background: linear-gradient(180deg, $color-background 0%, transparent 100%);
   z-index: $z-index-4;
 
-  // logo placeholder
-  span {
-    width: 100%;
-    text-align: center;
+  &.__border {
+    border-bottom: 1px solid $color-gray-1;
+  }
+
+  .header-links {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .logo,
+    .header-tab {
+      padding: 24px;
+      height: 100%;
+    }
+
+    .header-tab {
+      font-size: 20px;
+      font-weight: bold;
+      border-left: 1px solid $color-gray-1;
+
+      &.__active {
+        background: darken($color-background, 10%);
+      }
+
+      &:last-child {
+        border-right: 1px solid $color-gray-1;
+      }
+    }
   }
 }

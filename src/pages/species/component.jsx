@@ -9,6 +9,7 @@ function SpeciesPage({ match }) {
   const { iso, id } = (match && match.params) || {};
   const wikiURL = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
   const [wikiInfo, setInfo] = useState('');
+  const [countries, setCountries] = useState([]);
   const [activeCountry, setCountry] = useState(null);
   const [species, setSpecies] = useState([]);
   const [activeSpecie, setSpecie] = useState(null);
@@ -30,6 +31,10 @@ function SpeciesPage({ match }) {
           wikipediaSlug,
           id
         }
+      },
+      countries {
+        iso,
+        name
       }
     }
     `
@@ -40,10 +45,12 @@ function SpeciesPage({ match }) {
   useEffect(() => {
     if (data) {
       const distrib = data.countrySpecieDistributions;
+      const countryList = data.countries;
       setCountry(distrib && distrib[0] && distrib[0].country);
       setSpecies(distrib.map(d => d.specie));
+      setCountries(countryList);
     }
-  }, [data, setCountry, setSpecies]);
+  }, [data, setCountry, setSpecies, setCountries]);
 
   useEffect(() => {
     if (species && species.length) setSpecie(species.find(sp => sp.id === id) || species[0]); // TODO: modify with right IDs
@@ -74,7 +81,7 @@ function SpeciesPage({ match }) {
           </div>
           <Dropdown
             title={activeCountry && activeCountry.name}
-            list={[{ label: 'Sweden', value: 'SWE' }, { label: 'Canada', value: 'CAN' }]}
+            list={countries && countries.map(c => ({ label: c.name, value: c.iso }))}
           />
           <div className="species-detail">
             <h1>{activeSpecie && activeSpecie.name}</h1>
