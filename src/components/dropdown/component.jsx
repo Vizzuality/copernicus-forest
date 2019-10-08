@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-// import cx from 'classnames';
+import cx from 'classnames';
 import './styles.scss';
 
 function useClickOutside(ref, closeDropdown) {
@@ -21,14 +21,14 @@ function useClickOutside(ref, closeDropdown) {
   });
 }
 
-function SpeciesList({ title, list }) {
+function Dropdown({ title, options, className }) {
   const [opened, open] = useState(false);
   const wrapperRef = useRef(null);
   const closeDropdown = () => open(false);
   useClickOutside(wrapperRef, closeDropdown);
 
   return (
-    <div className="c-dropdown" ref={wrapperRef}>
+    <div className={cx('c-dropdown', className)} ref={wrapperRef}>
       <button className="dd-header" onClick={() => open(!opened)}>
         <div className="dd-header-title">{title}</div>
         {/* ARROW ICON
@@ -39,9 +39,9 @@ function SpeciesList({ title, list }) {
       </button>
       {opened && (
         <ul className="dd-list">
-          {list.map(country => (
-            <li className="dd-list-item" key={country.value}>
-              <Link to={`/${country.value}/species/1`}>{country.label}</Link>
+          {options.map(opt => (
+            <li className="dd-list-item" key={opt.value}>
+              {opt.link ? <Link to={opt.link}>{opt.label}</Link> : <p>{opt.label}</p>}
             </li>
           ))}
         </ul>
@@ -50,9 +50,10 @@ function SpeciesList({ title, list }) {
   );
 }
 
-SpeciesList.propTypes = {
+Dropdown.propTypes = {
   title: PropTypes.string,
-  list: PropTypes.array
+  options: PropTypes.array,
+  className: PropTypes.string
 };
 
-export default SpeciesList;
+export default Dropdown;

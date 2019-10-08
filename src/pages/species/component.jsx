@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { useQuery } from 'urql';
+import findIndex from 'lodash/findIndex';
 import Dropdown from 'components/dropdown';
 import './styles.scss';
 import SpeciesList from './components/species-list/component';
@@ -66,6 +68,18 @@ function SpeciesPage({ match }) {
     }
   }, [activeSpecie, setInfo]);
 
+  const getPrevSpecie = () => {
+    const index = findIndex(species, { id });
+    if (id === '1' || index === 0) return '#';
+    return species[index - 1] ? species[index - 1].id : '#';
+  };
+  const getNextSpecie = () => {
+    const index = findIndex(species, { id });
+    if (index === species.length - 1) return '#';
+    if (id === '1') return species[1].id;
+    return species[index + 1] ? species[index + 1].id : '#';
+  };
+
   return (
     <div className="c-species l-page">
       {fetching && <p>Loading...</p>}
@@ -79,11 +93,29 @@ function SpeciesPage({ match }) {
             />
             <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
           </div>
-          <Dropdown
-            title={activeCountry && activeCountry.name}
-            list={countries && countries.map(c => ({ label: c.name, value: c.iso }))}
-          />
           <div className="species-detail">
+            <Dropdown
+              className="species-dropdown"
+              title={activeCountry && activeCountry.name}
+              options={
+                countries &&
+                countries.map(c => ({ label: c.name, value: c.iso, link: `/${c.iso}/species/1` }))
+              }
+            />
+            {species && (
+              <div className="species-navbar">
+                {/* provisional arrows */}
+                <Link to={getPrevSpecie()} className="nav-button">
+                  &lt;
+                </Link>
+                <Link to={getNextSpecie()} className="nav-button">
+                  &gt;
+                </Link>
+                <Link to={`/${iso}/species/${id}/distribution`} className="nav-link">
+                  See distribution
+                </Link>
+              </div>
+            )}
             <h1>{activeSpecie && activeSpecie.name}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
           </div>

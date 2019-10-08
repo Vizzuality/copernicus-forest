@@ -23,6 +23,38 @@
       padding: 70px 90px;
       overflow-y: scroll;
 
+      .species-dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 45px;
+      }
+
+      .species-navbar {
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 285px; // 330 (sidebar) - 45px (buttons)
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 45px;
+        }
+
+        .nav-button {
+          width: 45px;
+          color: white;
+          background-color: $color-gray-1;
+        }
+
+        .nav-link {
+          padding: 0 18px;
+          background: $color-orange;
+        }
+      }
+
       h1 {
         font-family: $font-family-2;
         font-size: 64px;
