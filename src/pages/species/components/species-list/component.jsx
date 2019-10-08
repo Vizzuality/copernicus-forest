@@ -14,7 +14,7 @@ function SpeciesList({ species, country, activeSpecie }) {
             to={`/${country.iso}/species/${specie.id}`}
             className={cx('specie', { __active: activeSpecie && activeSpecie.id === specie.id })}
           >
-            <p>{specie.name}</p>
+            <p>{specie.scientificName}</p>
           </Link>
         ))}
     </div>

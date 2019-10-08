@@ -30,6 +30,7 @@ function SpeciesPage({ match }) {
         },
         specie {
           name,
+          scientificName,
           wikipediaSlug,
           id
         }
@@ -116,7 +117,8 @@ function SpeciesPage({ match }) {
                 </Link>
               </div>
             )}
-            <h1>{activeSpecie && activeSpecie.name}</h1>
+            <h3>{activeSpecie && activeSpecie.name}</h3>
+            <h1>{activeSpecie && activeSpecie.scientificName}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
           </div>
         </div>
