@@ -90,7 +90,11 @@ function SpeciesPage({ match }) {
           <div className="species-sidebar">
             <img
               src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
-              alt={activeSpecie && activeSpecie.name}
+              alt={
+                activeSpecie &&
+                `Image not available:
+                ${activeSpecie.name}`
+              }
             />
             <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
           </div>
@@ -112,7 +116,7 @@ function SpeciesPage({ match }) {
                 <Link to={getNextSpecie()} className="nav-button">
                   &gt;
                 </Link>
-                <Link to={`/${iso}/species/${id}/distribution`} className="nav-link">
+                <Link to={`/${iso}/distribution/${id}`} className="nav-link">
                   See distribution
                 </Link>
               </div>

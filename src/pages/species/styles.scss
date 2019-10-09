@@ -11,10 +11,17 @@
       background-color: $color-gray-1;
 
       img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        white-space: pre-line;
         width: 100%;
+        min-height: 220px;
         // height: 220px;
         // object-fit: cover;
         // object-position: top;
+        color: $color-white;
       }
     }
 
