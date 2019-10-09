@@ -24,6 +24,9 @@ $color-green: #033B31;
 $color-mustard: #FFA018;
 $color-violet: #7044FF;
 
+// used in charts
+:export { colorMustard: $color-mustard; colorViolet: $color-violet }
+
 // Typography
 $font-size-extra-small: 9px;
 $font-size-small: 12px;

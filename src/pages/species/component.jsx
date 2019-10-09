@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import { useQuery } from 'urql';
 import findIndex from 'lodash/findIndex';
 import Dropdown from 'components/dropdown';
+import Dashboard from 'components/dashboard';
 import './styles.scss';
 import SpeciesList from './components/species-list/component';
+import mockData from './data.json';
 
 function SpeciesPage({ match }) {
   const { iso, id } = (match && match.params) || {};
@@ -124,6 +126,12 @@ function SpeciesPage({ match }) {
             <h3>{activeSpecie && activeSpecie.name}</h3>
             <h1>{activeSpecie && activeSpecie.scientificName}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
+
+            <p className="species-chart-title">
+              See in the table below a summary of the proportion of suitable area for this species
+              in the selected country.
+            </p>
+            <Dashboard data={mockData} />
           </div>
         </div>
       )}
