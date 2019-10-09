@@ -41,7 +41,7 @@ function Header() {
         )}
       </nav>
       <button className="menu-button" onClick={() => showMenu(!menuOpen)}>
-        <Icon name="icon-menu" className="menu-icon" />
+        <Icon name="icon-about" className="menu-icon" />
         About
       </button>
       <Menu closeMenu={() => showMenu(false)} active={menuOpen} />

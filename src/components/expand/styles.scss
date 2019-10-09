@@ -50,6 +50,9 @@ $button-height: 70px;
   }
 
   .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: $button-height;
     width: $button-width;
     position: fixed;
@@ -63,5 +66,9 @@ $button-height: 70px;
     font-size: 20px;
     font-weight: bold;
     line-height: 24px;
+
+    .toggle-icon {
+      margin-right: 24px;
+    }
   }
 }

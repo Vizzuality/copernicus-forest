@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
+import Icon from 'components/icon';
 import './styles.scss';
 
 function useClickOutside(ref, closeDropdown) {
@@ -36,6 +37,7 @@ function Dropdown({ title, options, className }) {
           ? <FontAwesome name="angle-up" size="2x"/>
         : <FontAwesome name="angle-down" size="2x"/>
         */}
+        <Icon name="icon-dropdown" className={cx('dropdown-icon', { __open: opened })} />
       </button>
       {opened && (
         <ul className="dd-list">
