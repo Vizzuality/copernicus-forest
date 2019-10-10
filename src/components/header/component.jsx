@@ -15,8 +15,8 @@ function Header() {
   const { country, type } = (match && match.params) || {};
 
   const urls = {
-    species: type === 'species' ? '#' : `/${country}/species/1`,
-    bioclimatic: type === 'bioclimatic' ? '#' : `/${country}/bioclimatic/1`
+    species: type === 'species' ? '#' : `/${country}/species/`,
+    bioclimatic: type === 'bioclimatic' ? '#' : `/${country}/bioclimatic/`
   };
 
   return (

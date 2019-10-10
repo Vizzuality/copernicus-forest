@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useQuery } from 'urql';
-import findIndex from 'lodash/findIndex';
 import Dropdown from 'components/dropdown';
 import Dashboard from 'components/dashboard';
 import styles from './styles.scss';
@@ -12,11 +11,7 @@ import mockData from './data.json';
 function SpeciesPage({ match }) {
   const { iso, id } = (match && match.params) || {};
   const wikiURL = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
-  const [wikiInfo, setInfo] = useState('');
-  const [countries, setCountries] = useState([]);
-  const [activeCountry, setCountry] = useState(null);
-  const [species, setSpecies] = useState([]);
-  const [activeSpecie, setSpecie] = useState(null);
+  const [wikiInfo, setInfo] = useState(null);
 
   const [result] = useQuery({
     query: `
@@ -26,10 +21,6 @@ function SpeciesPage({ match }) {
           iso: "${iso}"
         }
       }) {
-        country {
-          iso,
-          name
-        },
         specie {
           name,
           scientificName,
@@ -47,19 +38,9 @@ function SpeciesPage({ match }) {
 
   const { fetching, data, error } = result;
 
-  useEffect(() => {
-    if (data) {
-      const distrib = data.countrySpecieDistributions;
-      const countryList = data.countries;
-      setCountry(distrib && distrib[0] && distrib[0].country);
-      setSpecies(distrib.map(d => d.specie));
-      setCountries(countryList);
-    }
-  }, [data, setCountry, setSpecies, setCountries]);
-
-  useEffect(() => {
-    if (species && species.length) setSpecie(species.find(sp => sp.id === id) || species[0]); // TODO: modify with right IDs
-  }, [id, species, setSpecie]);
+  const species = data ? data.countrySpecieDistributions.map(d => d.specie) : [];
+  const activeSpecie = species.length ? species.find(sp => sp.id === id) || species[0] : null;
+  const activeCountry = data ? data.countries.find(c => c.iso === iso) : null;
 
   useEffect(() => {
     if (activeSpecie) {
@@ -69,32 +50,43 @@ function SpeciesPage({ match }) {
           setInfo(r);
         });
     }
+    setInfo(null);
   }, [activeSpecie, setInfo]);
 
   const getPrevSpecie = () => {
-    const index = findIndex(species, { id });
-    if (id === '1' || index === 0) return '#';
+    const index = species.findIndex(item => item.id === activeSpecie.id);
+    if (index === 0) return '#';
     return species[index - 1] ? species[index - 1].id : '#';
   };
   const getNextSpecie = () => {
-    const index = findIndex(species, { id });
+    const index = species.findIndex(item => item.id === activeSpecie.id);
     if (index === species.length - 1) return '#';
-    if (id === '1') return species[1].id;
+    if (index === 0) return species[1].id;
     return species[index + 1] ? species[index + 1].id : '#';
   };
 
   const config = {
     lines: [
       {
-        key: 'Business as usual',
+        key: 'Optimistic',
         color: styles && styles.colorViolet
       },
       {
-        key: 'Pesimistic',
+        key: 'Business as usual',
         color: styles && styles.colorMustard
       }
     ],
-    range: [0, 100],
+    yAxis: {
+      domain: [0, 100],
+      unit: '%',
+      ticks: [0, 50, 100]
+    },
+    xAxis: {
+      padding: { left: 30, right: 30 }
+    },
+    grid: {
+      vertical: false
+    },
     showLegend: true
   };
 
@@ -120,8 +112,12 @@ function SpeciesPage({ match }) {
               className="species-dropdown"
               title={activeCountry && activeCountry.name}
               options={
-                countries &&
-                countries.map(c => ({ label: c.name, value: c.iso, link: `/${c.iso}/species/1` }))
+                data.countries &&
+                data.countries.map(c => ({
+                  label: c.name,
+                  value: c.iso,
+                  link: `/${c.iso}/species/`
+                }))
               }
             />
             {species && (
@@ -141,7 +137,6 @@ function SpeciesPage({ match }) {
             <h3>{activeSpecie && activeSpecie.name}</h3>
             <h1>{activeSpecie && activeSpecie.scientificName}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
-
             {wikiInfo && (
               <div className="species-chart">
                 <p className="species-chart-title">

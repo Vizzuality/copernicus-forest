@@ -33,11 +33,11 @@ function Menu({ closeMenu, active }) {
     },
     {
       name: 'Species distribution',
-      path: '/SWE/species/1'
+      path: '/SWE/species/'
     },
     {
       name: 'Bioclimatic variables',
-      path: '/SWE/bioclimatic/1'
+      path: '/SWE/bioclimatic/'
     }
   ];
 

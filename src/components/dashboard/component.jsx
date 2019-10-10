@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -15,14 +16,14 @@ import cx from 'classnames';
 import './styles.scss';
 
 function Dashboard({ className, data, config }) {
-  const { lines, areas, range, showLegend } = config;
+  const { lines, areas, yAxis, xAxis, grid, showLegend } = config;
   return (
     <div className={cx('c-dashboard', className)}>
       <ResponsiveContainer width="100%" height={200}>
         <LineChart data={data} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis type="number" domain={range} />
+          <CartesianGrid strokeDasharray="3 3" {...grid} />
+          <XAxis dataKey="name" {...xAxis} />
+          <YAxis type="number" {...yAxis} />
           <Tooltip />
           {showLegend && <Legend align="right" layout="vertical" verticalAlign="middle" />}
           {lines &&
@@ -32,7 +33,7 @@ function Dashboard({ className, data, config }) {
                 key={line.key}
                 dataKey={line.key}
                 stroke={line.color}
-                activeDot={{ r: 8 }}
+                activeDot={{ r: 4 }}
               />
             ))}
           {areas &&
