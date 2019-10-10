@@ -5,7 +5,7 @@ import { useQuery } from 'urql';
 import findIndex from 'lodash/findIndex';
 import Dropdown from 'components/dropdown';
 import Dashboard from 'components/dashboard';
-import './styles.scss';
+import styles from './styles.scss';
 import SpeciesList from './components/species-list/component';
 import mockData from './data.json';
 
@@ -83,6 +83,21 @@ function SpeciesPage({ match }) {
     return species[index + 1] ? species[index + 1].id : '#';
   };
 
+  const config = {
+    lines: [
+      {
+        key: 'Business as usual',
+        color: styles && styles.colorViolet
+      },
+      {
+        key: 'Pesimistic',
+        color: styles && styles.colorMustard
+      }
+    ],
+    range: [0, 100],
+    showLegend: true
+  };
+
   return (
     <div className="c-species l-page">
       {fetching && <p>Loading...</p>}
@@ -127,11 +142,15 @@ function SpeciesPage({ match }) {
             <h1>{activeSpecie && activeSpecie.scientificName}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
 
-            <p className="species-chart-title">
-              See in the table below a summary of the proportion of suitable area for this species
-              in the selected country.
-            </p>
-            <Dashboard data={mockData} />
+            {wikiInfo && (
+              <div className="species-chart">
+                <p className="species-chart-title">
+                  See in the table below a summary of the proportion of suitable area for this
+                  species in the selected country.
+                </p>
+                <Dashboard data={mockData} config={config} />
+              </div>
+            )}
           </div>
         </div>
       )}

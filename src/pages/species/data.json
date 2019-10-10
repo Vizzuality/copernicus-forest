@@ -1,21 +1,21 @@
 [{
   "name": "CURRENT",
-  "pv": 25,
-  "uv": 25
+  "Business as usual": 25,
+  "Pesimistic": 25
 }, {
   "name": "2020",
-  "pv": 30,
-  "uv": 25
+  "Business as usual": 30,
+  "Pesimistic": 25
 }, {
   "name": "2030",
-  "pv": 30,
-  "uv": 27
+  "Business as usual": 30,
+  "Pesimistic": 27
 }, {
   "name": "2040",
-  "pv": 28,
-  "uv": 37
+  "Business as usual": 28,
+  "Pesimistic": 37
 }, {
   "name": "2050",
-  "pv": 30,
-  "uv": 25
+  "Business as usual": 30,
+  "Pesimistic": 25
 }]
