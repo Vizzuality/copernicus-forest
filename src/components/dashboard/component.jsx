@@ -24,7 +24,7 @@ function Dashboard({ className, data, config }) {
           <XAxis dataKey="name" />
           <YAxis type="number" domain={range} />
           <Tooltip />
-          {showLegend && <Legend />}
+          {showLegend && <Legend align="right" layout="vertical" verticalAlign="middle" />}
           {lines &&
             lines.map(line => (
               <Line
