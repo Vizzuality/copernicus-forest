@@ -14,6 +14,7 @@
 
   &.__border {
     border-bottom: 1px solid $color-gray-1;
+    z-index: initial;
   }
 
   .header-links {

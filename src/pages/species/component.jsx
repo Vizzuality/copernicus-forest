@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useQuery } from 'urql';
 import Dropdown from 'components/dropdown';
 import Chart from 'components/chart';
+import Modal from 'components/modal';
 import styles from './styles.scss';
 import SpeciesList from './components/species-list/component';
 import mockData from './data.json';
@@ -153,6 +154,11 @@ function SpeciesPage({ match }) {
                 </a></p> */}
               </div>
             )}
+            <Modal
+              title="Species distribution data"
+              text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
+                the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
+            />
           </div>
         </div>
       )}
