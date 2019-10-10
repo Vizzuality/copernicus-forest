@@ -15,7 +15,7 @@ import {
 import cx from 'classnames';
 import './styles.scss';
 
-function Dashboard({ className, data, config }) {
+function Chart({ className, data, config }) {
   const { lines, areas, yAxis, xAxis, grid, showLegend } = config;
   return (
     <div className={cx('c-dashboard', className)}>
@@ -53,10 +53,10 @@ function Dashboard({ className, data, config }) {
   );
 }
 
-Dashboard.propTypes = {
+Chart.propTypes = {
   data: PropTypes.array.isRequired,
   config: PropTypes.object.isRequired,
   className: PropTypes.string
 };
 
-export default Dashboard;
+export default Chart;

@@ -3,7 +3,7 @@ import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
 
 import Map from 'components/map';
-import Dashboard from 'components/dashboard';
+import Chart from 'components/chart';
 import LayerToggle from 'components/map/controls/layer-toggle';
 
 import layers from 'layers.json';
@@ -57,10 +57,21 @@ function BioClimaticPage() {
     }
   ];
 
+  const config = {
+    lines: [
+      {
+        key: 'uv'
+      },
+      {
+        key: 'pv'
+      }
+    ]
+  };
+
   return (
     <div className="c-bioclimatic">
       <div className="content">
-        <Dashboard data={data} className="bioclimatic-chart" />
+        <Chart data={data} config={config} className="bioclimatic-chart" />
         <Map
           mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"

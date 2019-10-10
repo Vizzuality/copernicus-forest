@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useQuery } from 'urql';
 import Dropdown from 'components/dropdown';
-import Dashboard from 'components/dashboard';
+import Chart from 'components/chart';
 import styles from './styles.scss';
 import SpeciesList from './components/species-list/component';
 import mockData from './data.json';
@@ -143,7 +143,14 @@ function SpeciesPage({ match }) {
                   See in the table below a summary of the proportion of suitable area for this
                   species in the selected country.
                 </p>
-                <Dashboard data={mockData} config={config} />
+                <Chart data={mockData} config={config} />
+                {/* <p className="species-source">Source: <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`https://en.wikipedia.org/wiki/${activeSpecie.wikipediaSlug}`}
+                >
+                  wikipedia.com
+                </a></p> */}
               </div>
             )}
           </div>

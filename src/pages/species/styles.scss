@@ -62,6 +62,17 @@
         }
       }
 
+      // .species-source,
+      .species-chart-title {
+          color: $color-gray-2;
+          font-size: 16px;
+          margin-top: 20px;
+
+          a {
+            text-decoration: underline;
+          }
+      }
+
       h1 {
         font-family: $font-family-2;
         font-size: 64px;
@@ -78,7 +89,7 @@
         font-family: $font-family-2;
         font-size: 18px;
         line-height: 30px;
-        padding-bottom: 70px;
+        margin-bottom: 30px;
       }
     }
   }
