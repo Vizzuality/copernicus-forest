@@ -1,5 +1,8 @@
 @import '~styles/settings';
 
+$button-size: 45px;
+$sidebar-size: 330px;
+
 .c-species {
   .content {
     position: relative;
@@ -26,7 +29,7 @@
     }
 
     .species-detail {
-      width: calc(100% - 330px);
+      width: calc(100% - #{$sidebar-size});
       padding: 70px 90px;
       overflow-y: scroll;
 
@@ -34,24 +37,24 @@
         position: absolute;
         top: 0;
         right: 0;
-        height: 45px;
+        height: $button-size;
       }
 
       .species-navbar {
         position: absolute;
         display: flex;
         top: 0;
-        left: 285px; // 330 (sidebar) - 45px (buttons)
+        left: calc(#{$sidebar-size} - #{$button-size});
 
         a {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 45px;
+          height: $button-size;
         }
 
         .nav-button {
-          width: 45px;
+          width: $button-size;
           color: white;
           background-color: $color-gray-1;
         }

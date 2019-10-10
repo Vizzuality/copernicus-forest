@@ -43,7 +43,13 @@ function Dropdown({ title, options, className }) {
         <ul className="dd-list">
           {options.map(opt => (
             <li className="dd-list-item" key={opt.value}>
-              {opt.link ? <Link to={opt.link}>{opt.label}</Link> : <p>{opt.label}</p>}
+              {opt.link ? (
+                <Link to={opt.link} className="dd-item">
+                  {opt.label}
+                </Link>
+              ) : (
+                <p className="dd-item">{opt.label}</p>
+              )}
             </li>
           ))}
         </ul>
