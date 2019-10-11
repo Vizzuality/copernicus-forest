@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
 
+import Modal from 'components/modal';
 import Map from 'components/map';
 import Chart from 'components/chart';
 import LayerToggle from 'components/map/controls/layer-toggle';
@@ -90,6 +91,12 @@ function BioClimaticPage() {
           )}
         </Map>
         <LayerToggle layers={activeLayers} setLayers={setActiveLayers} />
+        <Modal
+          title="Bioclimatic variables data"
+          text={`Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
+                and extreme climatic conditions, including a combination of both environmental factors for current and future scenarios.`}
+          storageKey="bioclimatic"
+        />
       </div>
     </div>
   );

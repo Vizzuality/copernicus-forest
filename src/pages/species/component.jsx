@@ -158,6 +158,7 @@ function SpeciesPage({ match }) {
               title="Species distribution data"
               text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
                 the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
+              storageKey="species"
             />
           </div>
         </div>

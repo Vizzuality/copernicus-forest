@@ -20,16 +20,16 @@ const customStyles = {
 // http://reactcommunity.org/react-modal/accessibility/
 Modal.setAppElement('#root');
 
-function ModalComponent({ title, text }) {
-  const [isOpen, setOpen] = useState(false);
+function ModalComponent(props) {
+  const { title, text, storageKey } = props;
+  const openedBefore = !!sessionStorage.getItem(storageKey);
+  const [isOpen, setOpen] = useState(!openedBefore);
 
   return (
     <div>
-      {/* Trigger modal manually: */}
-      <button onClick={() => setOpen(true)}>Open Modal</button>
       <Modal
         isOpen={isOpen}
-        // onAfterOpen={} // save in localStorage
+        onAfterOpen={() => sessionStorage.setItem(storageKey, true)}
         onRequestClose={() => setOpen(false)}
         style={customStyles}
         contentLabel="Modal"
@@ -51,7 +51,8 @@ function ModalComponent({ title, text }) {
 
 ModalComponent.propTypes = {
   title: PropTypes.string,
-  text: PropTypes.string
+  text: PropTypes.string,
+  storageKey: PropTypes.string
 };
 
 export default ModalComponent;
