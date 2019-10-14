@@ -17,17 +17,15 @@ function SpeciesPage({ match }) {
   const [result] = useQuery({
     query: `
     {
-      countrySpecieDistributions(where:{
-        country: {
-          iso: "${iso}"
+      species(where: {
+        countrySpecieDistributions_every: {
+          country: { iso: "${iso}" }
         }
       }) {
-        specie {
-          name,
-          scientificName,
-          wikipediaSlug,
-          id
-        }
+        id,
+        name,
+        scientificName,
+        wikipediaSlug
       },
       countries {
         iso,
@@ -39,7 +37,7 @@ function SpeciesPage({ match }) {
 
   const { fetching, data, error } = result;
 
-  const species = data ? data.countrySpecieDistributions.map(d => d.specie) : [];
+  const species = data ? data.species : [];
   const activeSpecie = species.length ? species.find(sp => sp.id === id) || species[0] : null;
   const activeCountry = data ? data.countries.find(c => c.iso === iso) : null;
 
