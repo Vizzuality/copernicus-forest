@@ -1,0 +1,43 @@
+@import '~styles/settings';
+
+.c-modal {
+  padding: 70px 80px;
+  width: 620px;
+  background-color: $color-background;
+  font-family: $font-family-2;
+  color: $color-gray-1;
+  
+  .modal-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .modal-text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .modal-button-wrapper {
+    width: 100%;
+    text-align: center;
+
+    .modal-button {
+      font-family: "Anonymous Pro";
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 25px;
+      padding: 10px 55px;
+      background-color: #FF6F44;
+    }
+  }
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.75);
+}

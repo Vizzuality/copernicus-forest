@@ -23,7 +23,7 @@ $button-height: 70px;
     margin: auto;
     border-radius: 50%;
     background: $color-background;
-    transition: transform 0.25s cubic-bezier(.445, .05, .55, .95); // $ease-in-out-sine
+    transition: transform 0.25s $ease-in-out-sine;
     // mix-blend-mode: difference;
     z-index: $z-index-blender;
   }
@@ -50,6 +50,9 @@ $button-height: 70px;
   }
 
   .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: $button-height;
     width: $button-width;
     position: fixed;
@@ -63,5 +66,9 @@ $button-height: 70px;
     font-size: 20px;
     font-weight: bold;
     line-height: 24px;
+
+    .toggle-icon {
+      margin-right: 24px;
+    }
   }
 }

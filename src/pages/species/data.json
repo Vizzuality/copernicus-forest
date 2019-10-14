@@ -1,0 +1,37 @@
+[{
+  "name": "CURRENT",
+  "Optimistic": 25,
+  "Business as usual": 25
+}, {
+  "name": "2020",
+  "Optimistic": 30,
+  "Business as usual": 25
+}, {
+  "name": "2030",
+  "Optimistic": 30,
+  "Business as usual": 27
+}, {
+  "name": "2040",
+  "Optimistic": 42,
+  "Business as usual": 35
+}, {
+  "name": "2050",
+  "Optimistic": 40,
+  "Business as usual": 39
+}, {
+  "name": "2060",
+  "Optimistic": 45,
+  "Business as usual": 35
+}, {
+  "name": "2070",
+  "Optimistic": 50,
+  "Business as usual": 32
+}, {
+  "name": "2080",
+  "Optimistic": 52,
+  "Business as usual": 35
+}, {
+  "name": "2090",
+  "Optimistic": 55,
+  "Business as usual": 45
+}]

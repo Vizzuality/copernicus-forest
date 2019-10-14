@@ -1,3 +1,5 @@
+@import '~styles/settings';
+
 .c-choose-country {
   width: 100%;
   height: 100%;
@@ -5,21 +7,48 @@
   align-items: center;
   justify-content: center;
 
-  .country {
+  .row>div{
+    display: flex;
+    align-items: center;
+  }
+
+  .shape {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
 
-    img {
-      transition: all 0.1s cubic-bezier(.445, .05, .55, .95); // $ease-in-out-sine
+  a {
+    position: relative;
+
+    &:hover .shape__no-hover {
+      opacity: 0;
+      pointer-events: all;
+      transform: scale3d(0.8, 0.8, 1);
+    }
+
+    &:hover .shape__hover {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+
+    .shape__hover {
+      position: absolute;
+      top: -20%;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.35s $ease-in-out-sine;
+      transform: scale3d(0.8, 0.8, 1);
       transform-origin: left;
     }
 
-    &:hover {
-      img {
-        transform: scale(1.4);
-      }
+    .shape__no-hover {
+      opacity: 1;
+      transition: all 0.35s $ease-in-out-sine;
+      transform: scale3d(1, 1, 1);
+      transform-origin: left;
     }
   }
 }
