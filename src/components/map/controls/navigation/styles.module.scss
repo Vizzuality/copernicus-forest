@@ -38,3 +38,48 @@
     }
   }
 }
+
+.layerModal {
+  height: 240px;
+  width: 270px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px  16px 0 24px;
+
+    .title {
+      color: $color-gray-1;
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.spacer {
+  height: 1px;
+  background-color: #999999;
+  margin: 12px 0;
+}
+
+:global {
+  .layerTooltip {
+    color: $color-gray-1;
+    background-color: white !important;
+    border: 1px solid black;
+    border-radius: 0;
+    margin-left: 0 !important;
+    padding: 0;
+    opacity: 1 !important;
+  
+    &:before, &:after {
+      display: none;
+    }
+  }
+}

@@ -1,18 +1,50 @@
 import React from 'react';
 import { NavigationControl } from 'react-map-gl';
-import { ReactComponent as LayersIcon } from 'assets/icons/layers.svg';
+import ReactTooltip from 'react-tooltip';
+import PropTypes from 'prop-types';
 
-import './styles.scss';
+import Icon from 'components/icon';
+import ToggleLayerModal from 'components/map/controls/toggle-layer-modal';
 
-const NavigationBar = () => {
+import styles from './styles.module.scss';
+
+const NavigationBarComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerActive }) => {
   return (
-    <div className="navigationBar">
-      <NavigationControl showCompass={false} className="zoomButtons" />
-      <button className="navigationButton">
-        <LayersIcon />
+    <div className={styles.navigationBar}>
+      <NavigationControl showCompass={false} className={styles.zoomButtons} />
+      <button
+        data-for="layerTootlip"
+        className={styles.navigationButton}
+        data-tip="hello world"
+        style={{ filter: toggleLayerActive ? 'invert(1)' : 'unset' }}
+      >
+        <Icon name="icon-stack" />
       </button>
+      <ReactTooltip
+        id="layerTootlip"
+        ref={tooltipRef}
+        clickable
+        className="layerTooltip"
+        effect="solid"
+        globalEventOff="click"
+        event="click"
+        place="right"
+        afterShow={() => setToggleLayerActive(true)}
+        afterHide={() => setToggleLayerActive(false)}
+        overridePosition={({ top, left }) => {
+          return { top: top + 98, left };
+        }}
+      >
+        <ToggleLayerModal tooltipRef={tooltipRef} />
+      </ReactTooltip>
     </div>
   );
 };
 
-export default NavigationBar;
+NavigationBarComponent.propTypes = {
+  tooltipRef: PropTypes.object,
+  toggleLayerActive: PropTypes.bool,
+  setToggleLayerActive: PropTypes.func
+};
+
+export default NavigationBarComponent;
