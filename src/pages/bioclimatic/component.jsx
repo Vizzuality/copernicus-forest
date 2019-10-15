@@ -5,6 +5,7 @@ import { PluginMapboxGl } from 'layer-manager';
 import Modal from 'components/modal';
 import Map from 'components/map';
 import Chart from 'components/chart';
+import Filters from 'components/filters';
 import LayerToggle from 'components/map/controls/layer-toggle';
 
 import layers from 'layers.json';
@@ -71,6 +72,7 @@ function BioClimaticPage() {
 
   return (
     <div className="c-bioclimatic">
+      <Filters />
       <div className="content">
         <Chart data={data} config={config} className="bioclimatic-chart" />
         <Map

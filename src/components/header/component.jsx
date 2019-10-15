@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useRouteMatch } from 'react-router-dom';
 import cx from 'classnames';
+import CountriesDropdown from 'components/countries-dropdown';
 
 import './styles.scss';
 import Menu from 'components/menu';
@@ -23,27 +24,38 @@ function Header() {
     <div className={cx('c-header', { __border: !isHome })}>
       <nav className="header-links">
         {/* logo placeholder */}
-        <Link to="/" className="logo">
-          <span>LOGO</span>
-        </Link>
-        {!isHome && (
-          <Link to={urls.species} className={cx('header-tab', { __active: type === 'species' })}>
-            Species distribution
+        <div className="left-aligned">
+          <Link to="/" className="logo">
+            <span>LOGO</span>
           </Link>
-        )}
-        {!isHome && (
-          <Link
-            to={urls.bioclimatic}
-            className={cx('header-tab', { __active: type === 'bioclimatic' })}
+          {!isHome && <CountriesDropdown />}
+        </div>
+        <div className="right-aligned">
+          {!isHome && (
+            <>
+              <Link
+                to={urls.species}
+                className={cx('header-tab', { __active: type === 'species' })}
+              >
+                <span className="tab-title">Species distribution</span>
+              </Link>
+              <Link
+                to={urls.bioclimatic}
+                className={cx('header-tab', { __active: type === 'bioclimatic' })}
+              >
+                <span className="tab-title">Bioclimatic variables</span>
+              </Link>
+            </>
+          )}
+          <button
+            className={cx('menu-button', { 'menu-button-with-border': !isHome })}
+            onClick={() => showMenu(!menuOpen)}
           >
-            Bioclimatic variables
-          </Link>
-        )}
+            <Icon name="icon-about" className="menu-icon" />
+            About
+          </button>
+        </div>
       </nav>
-      <button className="menu-button" onClick={() => showMenu(!menuOpen)}>
-        <Icon name="icon-about" className="menu-icon" />
-        About
-      </button>
       <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
     </div>
   );
