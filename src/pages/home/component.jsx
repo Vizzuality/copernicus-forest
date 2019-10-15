@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 
 import Expand from 'components/expand';
-import ChooseCountry from 'components/countries';
+import ChooseCountry from './components/countries';
 
 function HomePage() {
   return (
