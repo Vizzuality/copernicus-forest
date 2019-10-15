@@ -38,7 +38,7 @@ function Chart({ className, data, config }) {
             isAnimationActive
             animationBegin={2000}
           />
-          {showLegend && <Legend align="right" layout="vertical" verticalAlign="middle" />}
+          {showLegend && <Legend align="right" layout="vertical" verticalAlign="top" />}
           {lines &&
             lines.map(line => (
               <Line
