@@ -34,11 +34,7 @@ const CountriesDropdown = () => {
               to={`/${country.iso}/species/`}
               onClick={toggleCountryDropdown}
             >
-              <img
-                className={cx(styles.shape, styles['shape__no-hover'])}
-                src={country.svg}
-                alt={country.name}
-              />
+              <img className={styles['shape__no-hover']} src={country.svg} alt={country.name} />
               <img
                 className={cx(styles.shape, styles.shape__hover)}
                 src={country.svgActive}

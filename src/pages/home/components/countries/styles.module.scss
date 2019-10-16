@@ -63,6 +63,7 @@
     transition: all 0.25s $ease-in-out-sine;
     transform: scale3d(0.8, 0.8, 1);
     transform-origin: center;
+    height: 330px;
   }
 
   .shape__no-hover {
@@ -70,5 +71,6 @@
     transition: all 0.25s $ease-in-out-sine;
     transform: scale3d(1, 1, 1);
     transform-origin: center;
+    height: 270px;
   }
 }
