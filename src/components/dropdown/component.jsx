@@ -22,7 +22,7 @@ function useClickOutside(ref, closeDropdown) {
   });
 }
 
-function Dropdown({ title, options, className }) {
+function Dropdown({ title, options, className, optionsTheme }) {
   const [opened, open] = useState(false);
   const wrapperRef = useRef(null);
   const closeDropdown = () => open(false);
@@ -40,7 +40,7 @@ function Dropdown({ title, options, className }) {
         <Icon name="icon-dropdown" className={cx('dropdown-icon', { __open: opened })} />
       </button>
       {opened && (
-        <ul className="dd-list">
+        <ul className={cx('dd-list', optionsTheme)}>
           {options.map(opt => (
             <li className="dd-list-item" key={opt.value}>
               {opt.link ? (
@@ -61,7 +61,8 @@ function Dropdown({ title, options, className }) {
 Dropdown.propTypes = {
   title: PropTypes.string,
   options: PropTypes.array,
-  className: PropTypes.string
+  className: PropTypes.string,
+  optionsTheme: PropTypes.string
 };
 
 export default Dropdown;

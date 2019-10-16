@@ -1,0 +1,8 @@
+@import '~styles/settings';
+
+.container {
+  height: $c-header-height;
+  border-bottom: 1px solid $color-gray-1;
+  padding: $c-header-padding;
+  position: relative;
+}
