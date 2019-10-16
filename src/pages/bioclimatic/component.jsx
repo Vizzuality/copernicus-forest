@@ -5,6 +5,7 @@ import { PluginMapboxGl } from 'layer-manager';
 import Modal from 'components/modal';
 import Map from 'components/map';
 import Chart from 'components/chart';
+import Accordion from 'components/accordion';
 import LayerToggle from 'components/map/controls/layer-toggle';
 
 import layers from 'layers.json';
@@ -70,9 +71,16 @@ function BioClimaticPage() {
   };
 
   return (
-    <div className="c-bioclimatic">
+    <div className="c-bioclimatic l-page">
       <div className="content">
-        <Chart data={data} config={config} className="bioclimatic-chart" />
+        <div className="bioclimatic-chart">
+          <Accordion
+            items={[1, 2, 3, 4, 5].map(n => ({
+              title: `Chart ${n}`,
+              content: <Chart data={data} config={config} />
+            }))}
+          />
+        </div>
         <Map
           mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
