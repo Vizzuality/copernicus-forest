@@ -1,6 +1,4 @@
 import React, { useState, useRef } from 'react';
-// import PropTypes from 'prop-types';
-
 import Component from './component';
 
 const NavigationBar = () => {
@@ -12,7 +10,6 @@ const NavigationBar = () => {
       tooltipRef={tooltipRef}
       toggleLayerActive={toggleLayerActive}
       setToggleLayerActive={setToggleLayerActive}
-      // {...props}
     />
   );
 };

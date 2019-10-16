@@ -7,7 +7,6 @@ import isEmpty from 'lodash/isEmpty';
 
 import ReactMapGL, { FlyToInterpolator, TRANSITION_EVENTS } from 'react-map-gl';
 import WebMercatorViewport from 'viewport-mercator-project';
-// import Icon from 'components/icon';
 import { easeCubic } from 'd3-ease';
 import NavigationBar from './controls/navigation';
 

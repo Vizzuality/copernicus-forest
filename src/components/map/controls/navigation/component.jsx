@@ -15,7 +15,7 @@ const NavigationBarComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerA
       <button
         data-for="layerTootlip"
         className={styles.navigationButton}
-        data-tip="hello world"
+        data-tip=""
         style={{ filter: toggleLayerActive ? 'invert(1)' : 'unset' }}
       >
         <Icon name="icon-stack" />
