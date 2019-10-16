@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 function ChooseCountry() {
   return (
     <div className={styles.countriesModal}>
-      <div className={styles.wrapper}>
+      <div className="wrapper">
         <div className={styles.row}>
           {COUNTRIES.map(country => (
             <div key={country.name} style={{ gridArea: country.name }}>

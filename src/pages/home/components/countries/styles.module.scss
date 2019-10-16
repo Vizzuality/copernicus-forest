@@ -1,9 +1,5 @@
 @import '~styles/settings';
 
-.wrapper {
-  width: $flexboxgrid-max-width;
-}
-
 .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -39,22 +35,12 @@
 .imageLink {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
-  height: 100%;
   justify-content: center;
   position: relative;
-
-  &:hover .shape__no-hover {
-    opacity: 0;
-    pointer-events: all;
-    transform: scale3d(0.8, 0.8, 1);
-  }
-
-  &:hover .shape__hover {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
+  width: min-content;
+  height: min-content;
+  margin: auto;
 
   .shape__hover {
     position: absolute;
@@ -72,5 +58,16 @@
     transform: scale3d(1, 1, 1);
     transform-origin: center;
     height: 270px;
+
+    &:hover {
+      opacity: 0;
+      pointer-events: all;
+      transform: scale3d(0.8, 0.8, 1);
+    }
+
+    &:hover + img {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
   }
-}
+ }
