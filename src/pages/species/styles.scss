@@ -12,6 +12,7 @@ $sidebar-size: 330px;
     .species-sidebar {
       height: 100%;
       background-color: $color-gray-1;
+      overflow-y: scroll;
 
       img {
         display: flex;
