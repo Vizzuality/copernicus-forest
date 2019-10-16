@@ -62,4 +62,5 @@ input:checked + .slider:before {
   font-size: $font-size-medium;
   line-height: 30px;
   margin-left: 40px;
+  user-select: none;
 }

@@ -8,7 +8,7 @@ import isEmpty from 'lodash/isEmpty';
 import ReactMapGL, { FlyToInterpolator, TRANSITION_EVENTS } from 'react-map-gl';
 import WebMercatorViewport from 'viewport-mercator-project';
 import { easeCubic } from 'd3-ease';
-import NavigationBar from './controls/navigation';
+import ZoomButtons from './controls/zoom';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './styles.scss';
@@ -238,7 +238,7 @@ class Map extends Component {
           transitionEasing={easeCubic}
         >
           {loaded && !!this.map && typeof children === 'function' && children(this.map)}
-          <NavigationBar />
+          <ZoomButtons />
         </ReactMapGL>
       </div>
     );

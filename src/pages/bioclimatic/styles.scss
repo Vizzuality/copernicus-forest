@@ -8,6 +8,10 @@
   .content {
     height: 100%;
     display: flex;
+
+    & > * {
+      flex: 1;
+    }
   }
 
   .bioclimatic-chart {
@@ -16,5 +20,9 @@
     height: 100%;
     background-color: $color-background;
     padding: 20px 50px;
+  }
+
+  .map-wrapper {
+    position: relative;
   }
 }

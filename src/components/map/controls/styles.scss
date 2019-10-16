@@ -1,0 +1,13 @@
+@import '~styles/settings';
+
+$navigation-button-size: 45px;
+
+.navigationButton {
+  background-color: white !important;
+  height: $navigation-button-size !important;
+  width: $navigation-button-size !important;
+
+  &:hover {
+    background-color: white !important;
+  }
+}

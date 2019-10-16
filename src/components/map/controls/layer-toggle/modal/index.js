@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Component from './component';
 
-const ToggleLayerModal = ({ tooltipRef }) => {
+const LayersToggleModal = ({ tooltipRef }) => {
   const [checked, setChecked] = useState(false);
 
   const handleCloseModal = () => {
@@ -18,8 +18,8 @@ const ToggleLayerModal = ({ tooltipRef }) => {
   );
 };
 
-ToggleLayerModal.propTypes = {
+LayersToggleModal.propTypes = {
   tooltipRef: PropTypes.object
 };
 
-export default ToggleLayerModal;
+export default LayersToggleModal;

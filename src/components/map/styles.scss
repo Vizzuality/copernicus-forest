@@ -1,8 +1,39 @@
 @import '~styles/settings';
+$navigation-button-size: 45px;
 
 .c-map {
   position: relative;
   width: 100%;
   height: 100%;
   z-index: $z-index-1;
+}
+
+.navigationButton {
+  background-color: white;
+  height: $navigation-button-size;
+  width: $navigation-button-size;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.c-zoomButtons {
+  border-radius: 0;
+  box-shadow: none !important;
+  
+  & > button {
+    @extend .navigationButton;
+    border-bottom: 1px solid #222222;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:first-child {
+      background-image: url('../../assets/icons/zoomin.svg');
+    }
+
+    &:last-child {
+      background-image: url('../../assets/icons/zoomout.svg');    
+    }
+  }
 }

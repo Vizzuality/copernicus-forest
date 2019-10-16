@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.scss';
 
-const ToggleLayerModalComponent = ({ handleCloseModal, checked, setChecked }) => {
+const LayersToggleModalComponent = ({ handleCloseModal, checked, setChecked }) => {
   return (
     <div className={styles.toggleLayerModal}>
       <div className={styles.header}>
@@ -45,10 +45,10 @@ const ToggleLayerModalComponent = ({ handleCloseModal, checked, setChecked }) =>
   );
 };
 
-ToggleLayerModalComponent.propTypes = {
+LayersToggleModalComponent.propTypes = {
   checked: PropTypes.bool,
   setChecked: PropTypes.func,
   handleCloseModal: PropTypes.func
 };
 
-export default ToggleLayerModalComponent;
+export default LayersToggleModalComponent;
