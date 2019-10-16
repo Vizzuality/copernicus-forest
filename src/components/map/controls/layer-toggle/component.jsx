@@ -9,10 +9,10 @@ import styles from './styles.module.scss';
 
 const LayerToggleComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerActive }) => {
   return (
-    <div className={styles.navigationBar}>
+    <div className={styles.layerToggle}>
       <button
         data-for="layerTootlip"
-        className={styles.navigationButton}
+        className={styles.mapNavigationButton}
         data-tip=""
         style={{ filter: toggleLayerActive ? 'invert(1)' : 'unset' }}
       >

@@ -2,12 +2,12 @@
 
 $navigation-button-size: 45px;
 
-.navigationButton {
-  background-color: white !important;
+.mapNavigationButton {
+  background-color: $color-white !important;
   height: $navigation-button-size !important;
   width: $navigation-button-size !important;
 
   &:hover {
-    background-color: white !important;
+    background-color: $color-white !important;
   }
 }
