@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import './styles.scss';
 
 function Accordion({ items }) {
+  const [activeItem, setItem] = useState(null);
   return (
     <div className="c-accordion">
       <ul>
         {items.map(item => (
           <li key={item.title}>
-            <details>
-              <summary className="accordion-title">{item.title}</summary>
-              <div className="accordion-content">{item.content}</div>
-            </details>
+            <button
+              onClick={() => (activeItem === item ? setItem(null) : setItem(item))}
+              className="accordion-title"
+            >
+              {item.title}
+            </button>
+            {activeItem === item && <div className="accordion-content">{item.content}</div>}
           </li>
         ))}
       </ul>
