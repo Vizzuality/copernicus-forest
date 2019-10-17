@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 import Component from './component';
 
-const LayerToggle = () => {
+const LayerToggle = ({ theme }) => {
   const [toggleLayerActive, setToggleLayerActive] = useState(false);
   const tooltipRef = useRef(null);
 
@@ -10,8 +11,13 @@ const LayerToggle = () => {
       tooltipRef={tooltipRef}
       toggleLayerActive={toggleLayerActive}
       setToggleLayerActive={setToggleLayerActive}
+      theme={theme}
     />
   );
+};
+
+LayerToggle.propTypes = {
+  theme: PropTypes.object
 };
 
 export default LayerToggle;

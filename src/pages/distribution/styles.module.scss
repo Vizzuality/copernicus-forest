@@ -1,0 +1,31 @@
+@import '~styles/settings';
+
+.distribution {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  & > div:first-child {
+    border-right: 1px solid $color-black;
+  }
+}
+
+.zoomButtons {
+  border-left: 1px solid $color-black;
+  left: -22px;
+}
+
+.layerToggle {
+  border-left: 1px solid $color-black;
+  left: calc(50% - 22px);
+  top: calc(50% + 32px);
+}
+
+:global {
+  .mapCustomClass {
+    .overlays {
+      overflow: unset !important;
+    }
+    
+  }
+}
