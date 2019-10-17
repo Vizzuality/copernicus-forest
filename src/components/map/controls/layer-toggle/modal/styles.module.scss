@@ -1,7 +1,8 @@
 @import '~styles/settings';
+@import '../../styles.scss';
 
 .toggleLayerModal {
-  height: 240px;
+  height: $layer-toggle-modal-height;
   width: 270px;
 }
 

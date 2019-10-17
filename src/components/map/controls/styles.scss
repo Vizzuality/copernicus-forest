@@ -1,6 +1,10 @@
 @import '~styles/settings';
 
-$navigation-button-size: 45px;
+$navigation-button-size-value: 45;
+$layer-toggle-modal-height-value: 240;
+
+$navigation-button-size: #{$navigation-button-size-value}px;
+$layer-toggle-modal-height: #{$layer-toggle-modal-height-value}px;
 
 .mapNavigationButton {
   background-color: $color-white !important;
@@ -10,4 +14,9 @@ $navigation-button-size: 45px;
   &:hover {
     background-color: $color-white !important;
   }
+}
+
+:export {
+  navigationButtonSize: $navigation-button-size-value;
+  layerToggleModalHeight: $layer-toggle-modal-height-value;
 }

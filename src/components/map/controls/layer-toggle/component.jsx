@@ -8,6 +8,8 @@ import LayersToggleModal from './modal';
 import styles from './styles.module.scss';
 
 const LayerToggleComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerActive }) => {
+  const { layerToggleModalHeight, navigationButtonSize } = styles;
+
   return (
     <div className={styles.layerToggle}>
       <button
@@ -29,7 +31,7 @@ const LayerToggleComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerAct
         place="right"
         afterShow={() => setToggleLayerActive(true)}
         afterHide={() => setToggleLayerActive(false)}
-        offset={{ right: 1, bottom: 98 }} // bottom: 240px/2 - 45px/2 = 98px <=> (modal height / 2) - (toggle button height / 2), right: 1 <=> avoid overlapping modal with button border
+        offset={{ right: 1, bottom: layerToggleModalHeight / 2 - navigationButtonSize / 2 }} // bottom: 240px/2 - 45px/2 = 98px <=> (modal height / 2) - (toggle button height / 2), right: 1 <=> avoid overlapping modal with button border
       >
         <LayersToggleModal tooltipRef={tooltipRef} />
       </ReactTooltip>
