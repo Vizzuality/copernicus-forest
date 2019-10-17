@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
@@ -20,79 +21,18 @@ const DEFAULT_VIEWPORT = {
 };
 
 class Map extends Component {
-  events = {};
-
-  static propTypes = {
-    /** A function that returns the map instance */
-    children: PropTypes.func,
-
-    /** Custom css class for styling */
-    customClass: PropTypes.string,
-
-    /** An object that defines the viewport
-     * @see https://uber.github.io/react-map-gl/#/Documentation/api-reference/interactive-map?section=initialization
-     */
-    viewport: PropTypes.shape({}),
-
-    /** An object that defines the bounds */
-    bounds: PropTypes.shape({
-      bbox: PropTypes.array,
-      options: PropTypes.shape({})
-    }),
-
-    /** A boolean that allows panning */
-    dragPan: PropTypes.bool,
-
-    /** A boolean that allows rotating */
-    dragRotate: PropTypes.bool,
-
-    /** A boolean that allows zooming */
-    scrollZoom: PropTypes.bool,
-
-    /** A boolean that allows zooming */
-    touchZoom: PropTypes.bool,
-
-    /** A boolean that allows touch rotating */
-    touchRotate: PropTypes.bool,
-
-    /** A boolean that allows double click zooming */
-    doubleClickZoom: PropTypes.bool,
-
-    /** A function that exposes when the map is loaded. It returns and object with the `this.map` and `this.mapContainer` reference. */
-    onLoad: PropTypes.func,
-
-    /** A function that exposes the viewport */
-    onViewportChange: PropTypes.func,
-
-    /** A function that exposes the viewport */
-    getCursor: PropTypes.func
-  };
-
-  static defaultProps = {
-    children: null,
-    customClass: null,
-    viewport: DEFAULT_VIEWPORT,
-    bounds: {},
-    dragPan: true,
-    dragRotate: true,
-
-    onViewportChange: () => {},
-    onLoad: () => {},
-    getCursor: ({ isHovering, isDragging }) => {
-      if (isHovering) return 'pointer';
-      if (isDragging) return 'grabbing';
-      return 'grab';
-    }
-  };
-
-  state = {
-    viewport: {
-      ...DEFAULT_VIEWPORT,
-      ...this.props.viewport // eslint-disable-line
-    },
-    flying: false,
-    loaded: false
-  };
+  constructor(props) {
+    super(props);
+    // events = {};
+    this.state = {
+      viewport: {
+        ...DEFAULT_VIEWPORT,
+        ...this.props.viewport // eslint-disable-line
+      },
+      flying: false,
+      loaded: false
+    };
+  }
 
   componentDidUpdate(prevProps) {
     const { viewport: prevViewport, bounds: prevBounds } = prevProps;
@@ -128,7 +68,7 @@ class Map extends Component {
     });
   };
 
-  onViewportChange = (v, i) => {
+  onViewportChange = v => {
     const { onViewportChange } = this.props;
     const { loaded } = this.state;
 
@@ -244,5 +184,68 @@ class Map extends Component {
     );
   }
 }
+
+Map.propTypes = {
+  /** A function that returns the map instance */
+  children: PropTypes.func,
+
+  /** Custom css class for styling */
+  customClass: PropTypes.string,
+
+  /** An object that defines the viewport
+   * @see https://uber.github.io/react-map-gl/#/Documentation/api-reference/interactive-map?section=initialization
+   */
+  viewport: PropTypes.shape({}),
+
+  /** An object that defines the bounds */
+  bounds: PropTypes.shape({
+    bbox: PropTypes.array,
+    options: PropTypes.shape({})
+  }),
+
+  /** A boolean that allows panning */
+  dragPan: PropTypes.bool,
+
+  /** A boolean that allows rotating */
+  dragRotate: PropTypes.bool,
+
+  /** A boolean that allows zooming */
+  scrollZoom: PropTypes.bool,
+
+  /** A boolean that allows zooming */
+  touchZoom: PropTypes.bool,
+
+  /** A boolean that allows touch rotating */
+  touchRotate: PropTypes.bool,
+
+  /** A boolean that allows double click zooming */
+  doubleClickZoom: PropTypes.bool,
+
+  /** A function that exposes when the map is loaded. It returns and object with the `this.map` and `this.mapContainer` reference. */
+  onLoad: PropTypes.func,
+
+  /** A function that exposes the viewport */
+  onViewportChange: PropTypes.func,
+
+  /** A function that exposes the viewport */
+  getCursor: PropTypes.func
+};
+
+Map.defaultProps = {
+  children: null,
+  customClass: null,
+  viewport: DEFAULT_VIEWPORT,
+  bounds: {},
+  dragPan: true,
+  dragRotate: true,
+
+  onViewportChange: () => {},
+  onLoad: () => {},
+  getCursor: ({ isHovering, isDragging }) => {
+    if (isHovering) return 'pointer';
+    if (isDragging) return 'grabbing';
+    return 'grab';
+  }
+};
 
 export default Map;
