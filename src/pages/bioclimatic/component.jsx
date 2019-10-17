@@ -6,6 +6,7 @@ import Modal from 'components/modal';
 import Map from 'components/map';
 import Chart from 'components/chart';
 import Accordion from 'components/accordion';
+import Filters from 'components/filters';
 import LayerToggle from 'components/map/controls/layer-toggle';
 
 import layers from 'layers.json';
@@ -72,6 +73,7 @@ function BioClimaticPage() {
 
   return (
     <div className="c-bioclimatic l-page">
+      <Filters />
       <div className="content">
         <div className="bioclimatic-chart">
           <Accordion

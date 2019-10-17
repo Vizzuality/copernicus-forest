@@ -8,6 +8,7 @@ function SpeciesList({ species, country, activeSpecie }) {
   return (
     <div className="c-species-list">
       {species &&
+        country &&
         species.map(specie => (
           <Link
             key={specie.id}
