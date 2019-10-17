@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useQuery } from 'urql';
+import { useSpeciesPerCountry } from 'graphql/queries';
 import Dropdown from 'components/dropdown';
 import Chart from 'components/chart';
 import Modal from 'components/modal';
@@ -14,28 +14,7 @@ function SpeciesPage({ match }) {
   const wikiURL = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
   const [wikiInfo, setInfo] = useState(null);
 
-  const [result] = useQuery({
-    query: `
-    {
-      species(where: {
-        countrySpecieDistributions_every: {
-          country: { iso: "${iso}" }
-        }
-      }) {
-        id,
-        name,
-        scientificName,
-        wikipediaSlug
-      },
-      countries {
-        iso,
-        name
-      }
-    }
-    `
-  });
-
-  const { fetching, data, error } = result;
+  const { fetching, data, error } = useSpeciesPerCountry(iso);
 
   const species = data ? data.species : [];
   const activeSpecie = species.length ? species.find(sp => sp.id === id) || species[0] : null;

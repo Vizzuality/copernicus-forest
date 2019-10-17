@@ -9,6 +9,7 @@ function SpeciesList({ species, country, activeSpecie }) {
       <div className="specie __active">{activeSpecie.scientificName}</div>
       <ul>
         {species &&
+          country &&
           species.map(specie => (
             <li>
               <Link key={specie.id} to={`/${country.iso}/species/${specie.id}`} className="specie">
