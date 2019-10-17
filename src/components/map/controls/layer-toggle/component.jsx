@@ -29,9 +29,7 @@ const LayerToggleComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerAct
         place="right"
         afterShow={() => setToggleLayerActive(true)}
         afterHide={() => setToggleLayerActive(false)}
-        overridePosition={({ top, left }) => {
-          return { top: top + 98, left };
-        }}
+        offset={{ right: 1, bottom: 98 }} // bottom: 240px/2 - 45px/2 = 98px <=> (modal height / 2) - (toggle button height / 2), right: 1 <=> avoid overlapping modal with button border
       >
         <LayersToggleModal tooltipRef={tooltipRef} />
       </ReactTooltip>
