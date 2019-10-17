@@ -75,30 +75,32 @@ function BioClimaticPage() {
       <Filters />
       <div className="content">
         <Chart data={data} config={config} className="bioclimatic-chart" />
-        <Map
-          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-          mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
-          viewport={{ zoom: 4, latitude: 40, longitude: -5 }}
-        >
-          {map => (
-            <LayerManager map={map} plugin={PluginMapboxGl}>
-              {activeLayers
-                .filter(l => l.active)
-                .map(layer => (
-                  // TODO: fix all eslint-disables
-                  // eslint-disable-next-line react/jsx-props-no-spreading
-                  <Layer key={layer.id} {...layer} />
-                ))}
-            </LayerManager>
-          )}
-        </Map>
-        <LayerToggle layers={activeLayers} setLayers={setActiveLayers} />
-        <Modal
-          title="Bioclimatic variables data"
-          text={`Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
-                and extreme climatic conditions, including a combination of both environmental factors for current and future scenarios.`}
-          storageKey="bioclimatic"
-        />
+        <div className="map-wrapper">
+          <Map
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+            mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
+            viewport={{ zoom: 4, latitude: 40, longitude: -5 }}
+          >
+            {map => (
+              <LayerManager map={map} plugin={PluginMapboxGl}>
+                {activeLayers
+                  .filter(l => l.active)
+                  .map(layer => (
+                    // TODO: fix all eslint-disables
+                    // eslint-disable-next-line react/jsx-props-no-spreading
+                    <Layer key={layer.id} {...layer} />
+                  ))}
+              </LayerManager>
+            )}
+          </Map>
+          <LayerToggle layers={activeLayers} setLayers={setActiveLayers} />
+          <Modal
+            title="Bioclimatic variables data"
+            text={`Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
+                  and extreme climatic conditions, including a combination of both environmental factors for current and future scenarios.`}
+            storageKey="bioclimatic"
+          />
+        </div>
       </div>
     </div>
   );

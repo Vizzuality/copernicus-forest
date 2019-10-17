@@ -83,7 +83,9 @@ function SpeciesPage({ match }) {
                 ${activeSpecie.name}`
               }
             />
-            <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
+            {activeSpecie && (
+              <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
+            )}
           </div>
           <div className="species-detail">
             <Dropdown
