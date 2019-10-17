@@ -9,7 +9,7 @@ function Accordion({ items }) {
     <div className="c-accordion">
       <ul>
         {items.map(item => (
-          <li key={item.title}>
+          <li key={item.title} className="accordion-item">
             <button
               onClick={() => (activeItem === item ? setItem(null) : setItem(item))}
               className="accordion-title"
