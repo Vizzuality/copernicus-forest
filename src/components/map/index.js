@@ -20,7 +20,7 @@ const DEFAULT_VIEWPORT = {
   lng: 0
 };
 
-class Map extends Component {
+class MapComponent extends Component {
   constructor(props) {
     super(props);
     // events = {};
