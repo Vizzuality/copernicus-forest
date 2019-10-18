@@ -1,1 +1,13 @@
-[{"scientificName":"Picea glauca","wikipediaSlug":"Picea_glauca","gbifId":5284745,"country":"SWE"},{"scientificName":"Picea pungens","wikipediaSlug":"Picea_pungens","gbifId":5284871,"country":"SWE"},{"scientificName":"Picea abies","wikipediaSlug":"Picea_abies","gbifId":5284884,"country":"SWE"},{"scientificName":"Picea omorika","wikipediaSlug":"Picea_omorika","gbifId":5284950,"country":"SWE"},{"scientificName":"Pinus cembra","wikipediaSlug":"Pinus_cembra","gbifId":5285134,"country":"SWE"},{"scientificName":"Picea sitchensis","wikipediaSlug":"Picea_sitchensis","gbifId":5284827,"country":"SWE"},{"scientificName":"Picea abies","wikipediaSlug":"Picea_abies","gbifId":5284884,"country":"SWE"},{"scientificName":"Pinus contorta","wikipediaSlug":"Pinus_contorta","gbifId":5285750,"country":"SWE"},{"scientificName":"Pinus mugo","wikipediaSlug":"Pinus_mugo","gbifId":5285385,"country":"SWE"},{"scientificName":"Pinus nigra","wikipediaSlug":"Pinus_nigra","gbifId":5284809,"country":"SWE"},{"scientificName":"Pinus cembra","wikipediaSlug":"Pinus_cembra","gbifId":5285134,"country":"SWE"},{"scientificName":"Pinus strobus","wikipediaSlug":"Pinus_strobus","gbifId":5284982,"country":"SWE"},{"scientificName":"Pinus sylvestris","wikipediaSlug":"Pinus_sylvestris","gbifId":5285637,"country":"SWE"}]
+[
+  {"scientificName":"Picea glauca","wikipediaSlug":"Picea_glauca","gbifId":5284745,"country":"CAN"},
+  {"scientificName":"Picea rubens","wikipediaSlug":"Picea_rubens","gbifId":5284717,"country":"CAN"},
+  {"scientificName":"Pseudotsuga menziesii","wikipediaSlug":"Douglas_fir","gbifId":2685796,"country":"CAN"},
+  {"scientificName":"Pinus banksiana","wikipediaSlug":"Jack_pine","gbifId":5285533,"country":"CAN"},
+  {"scientificName":"Abies lasiocarpa","wikipediaSlug":"Abies_lasiocarpa","gbifId":2685313,"country":"CAN"},
+  {"scientificName":"Thuja plicata","wikipediaSlug":"Thuja_plicata","gbifId":2684171,"country":"CAN"},
+  {"scientificName":"Pinus resinosa","wikipediaSlug":"Pinus_resinosa","gbifId":5285067,"country":"CAN"},
+  {"scientificName":"Populus tremuloides","wikipediaSlug":"Populus_tremuloides","gbifId":3040215,"country":"CAN"},
+  {"scientificName":"Pinus strobus","wikipediaSlug":"Pinus_strobus","gbifId":5284982,"country":"CAN"},
+  {"scientificName":"Populus grandidentata","wikipediaSlug":"Populus_grandidentata","gbifId":3040210,"country":"CAN"},
+  {"scientificName":"Tsuga heterophylla","wikipediaSlug":"Tsuga_heterophylla","gbifId":2687210,"country":"CAN"}
+]
