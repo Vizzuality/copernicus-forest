@@ -180,37 +180,38 @@ class Map extends Component {
           transitionEasing={easeCubic}
         >
           {loaded && !!this.map && typeof children === 'function' && children(this.map)}
-          {showZoom && <ZoomButtons { ...zoomButtonsProps} />}
+          {showZoom && <ZoomButtons {...zoomButtonsProps} />}
         </ReactMapGL>
       </div>
     );
   }
 }
 
-
 MapComponent.propTypes = {
-    /** An object that defines the viewport
+  /** An object that defines the viewport
    * @see https://uber.github.io/react-map-gl/#/Documentation/api-reference/interactive-map?section=initialization
    */
   viewport: PropTypes.shape({}),
 
-  children: PropTypes.func, /** A function that returns the map instance */
-  customClass: PropTypes.string,  /** Custom css class for styling */
-  bounds: PropTypes.shape({  /** An object that defines the bounds */
+  children: PropTypes.func /** A function that returns the map instance */,
+  customClass: PropTypes.string /** Custom css class for styling */,
+  bounds: PropTypes.shape({
+    /** An object that defines the bounds */
     bbox: PropTypes.array,
     options: PropTypes.shape({})
   }),
-  dragPan: PropTypes.bool,  /** A boolean that allows panning */
-  dragRotate: PropTypes.bool, /** A boolean that allows rotating */
-  scrollZoom: PropTypes.bool, /** A boolean that allows zooming */
-  touchZoom: PropTypes.bool,  /** A boolean that allows zooming */
-  touchRotate: PropTypes.bool,  /** A boolean that allows touch rotating */
-  doubleClickZoom: PropTypes.bool,  /** A boolean that allows double click zooming */
-  onLoad: PropTypes.func, /** A function that exposes when the map is loaded. It returns and object with the `this.map` and `this.mapContainer` reference. */
-  onViewportChange: PropTypes.func, /** A function that exposes the viewport */
-  getCursor: PropTypes.func,  /** A function that exposes the viewport */
-  showZoom: PropTypes.bool,  /** A boolean that shows zoom buttons */
-  zoomButtonsProps:  PropTypes.object /** An object that contains props for ZoomButtons widget */
+  dragPan: PropTypes.bool /** A boolean that allows panning */,
+  dragRotate: PropTypes.bool /** A boolean that allows rotating */,
+  scrollZoom: PropTypes.bool /** A boolean that allows zooming */,
+  touchZoom: PropTypes.bool /** A boolean that allows zooming */,
+  touchRotate: PropTypes.bool /** A boolean that allows touch rotating */,
+  doubleClickZoom: PropTypes.bool /** A boolean that allows double click zooming */,
+  onLoad:
+    PropTypes.func /** A function that exposes when the map is loaded. It returns and object with the `this.map` and `this.mapContainer` reference. */,
+  onViewportChange: PropTypes.func /** A function that exposes the viewport */,
+  getCursor: PropTypes.func /** A function that exposes the viewport */,
+  showZoom: PropTypes.bool /** A boolean that shows zoom buttons */,
+  zoomButtonsProps: PropTypes.object /** An object that contains props for ZoomButtons widget */
 };
 
 MapComponent.defaultProps = {

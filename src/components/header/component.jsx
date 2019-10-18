@@ -1,27 +1,21 @@
-import React, { useState } from 'react';
-import { Link, useLocation, useRouteMatch } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import cx from 'classnames';
 import CountriesDropdown from 'components/countries-dropdown';
+import PropTypes from 'prop-types';
 
-import './styles.scss';
 import Menu from 'components/menu';
 import Icon from 'components/icon';
+import TabsBar from 'components/tabs';
 
-function Header() {
-  const [menuOpen, showMenu] = useState(false);
-  const { pathname } = useLocation();
-  const match = useRouteMatch('/:country/:type');
+import './styles.scss';
 
-  const isHome = pathname === '/';
-  const { country, type } = (match && match.params) || {};
-
-  const urls = {
-    species: type === 'species' ? '#' : `/${country}/species/`,
-    bioclimatic: type === 'bioclimatic' ? '#' : `/${country}/bioclimatic/`
-  };
+const HeaderComponent = props => {
+  const { isHome, urls, type, menuOpen, showMenu, isSpeciesDistribution, speciesTabsData } = props;
 
   return (
-    <div className={cx('c-header', { __border: !isHome })}>
+    <div>
+      <div className={cx('c-header', { __border: !isHome })}>
       <nav className="header-links">
         {/* logo placeholder */}
         <div className="left-aligned">
@@ -57,8 +51,20 @@ function Header() {
         </div>
       </nav>
       <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
+      </div>
+      {isSpeciesDistribution && <TabsBar data={speciesTabsData}/>}
     </div>
   );
 }
 
-export default Header;
+HeaderComponent.propTypes = {
+  isHome: PropTypes.object,
+  urls: PropTypes.object,
+  type: PropTypes.string,
+  menuOpen: PropTypes.bool,
+  showMenu: PropTypes.func,
+  isSpeciesDistribution: PropTypes.bool,
+  speciesTabsData: PropTypes.object
+};
+
+export default HeaderComponent;

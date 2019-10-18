@@ -1,4 +1,5 @@
 @import '~styles/settings';
+@import '~components/map/controls/styles.scss';
 
 .distribution {
   display: flex;
@@ -18,7 +19,7 @@
 .layerToggle {
   border-left: 1px solid $color-black;
   left: calc(50% - 22px);
-  top: calc(50% + 32px);
+  top: calc(50% + 2 * #{$navigation-button-size});
 }
 
 :global {

@@ -1,0 +1,26 @@
+@import '~styles/settings';
+
+.tabsBar {
+  border-bottom: 1px solid $color-black;
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $color-black;
+  min-width: 330px;
+}
+
+.buttonActive {
+  background-color: $color-white;
+}
+
+.buttonText {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: bold;
+}
