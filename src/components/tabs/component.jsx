@@ -8,17 +8,17 @@ import styles from './styles.module.scss';
 const TabsComponent = ({ data }) => {
   return (
     <div className={styles.tabsBar}>
-      {data && data.map(({ name, path, active}) => {
-        return (
-          <Link to={path} className={cx(styles.button, { [styles.buttonActive]: active })}>
-            <span className={styles.buttonText}>{name}</span>
-          </Link>
-        );
-      }
-    )}
+      {data &&
+        data.map(({ name, path, active }) => {
+          return (
+            <Link to={path} className={cx(styles.button, { [styles.buttonActive]: active })}>
+              <span className={styles.buttonText}>{name}</span>
+            </Link>
+          );
+        })}
     </div>
   );
-}
+};
 
 TabsComponent.propTypes = {
   data: PropTypes.object

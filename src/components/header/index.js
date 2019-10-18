@@ -9,7 +9,8 @@ const Header = () => {
   const match = useRouteMatch('/:country/:type');
 
   const isHome = pathname === '/';
-  const isSpeciesDistribution = pathname.includes('/species/') || pathname.includes('/distribution/');
+  const isSpeciesDistribution =
+    pathname.includes('/species/') || pathname.includes('/distribution/');
 
   const { country, type } = (match && match.params) || {};
 
@@ -20,8 +21,12 @@ const Header = () => {
   };
 
   const speciesTabsData = [
-    { name: 'Map distribution', path: urls.species, active: pathname.includes('/species/') },
-    { name: 'Choose species', path: urls.distribution, active: pathname.includes('/distribution/') }
+    { name: 'Choose species', path: urls.species, active: pathname.includes('/species/') },
+    {
+      name: 'Map distribution',
+      path: urls.distribution,
+      active: pathname.includes('/distribution/')
+    }
   ];
 
   return (
@@ -35,6 +40,6 @@ const Header = () => {
       showMenu={showMenu}
     />
   );
-}
+};
 
 export default Header;
