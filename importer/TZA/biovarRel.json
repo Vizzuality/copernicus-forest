@@ -1,0 +1,6785 @@
+[
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar01",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar02",
+    "propTotalArea": 9.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar03",
+    "propTotalArea": 66.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar04",
+    "propTotalArea": 129.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar05",
+    "propTotalArea": 30.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar06",
+    "propTotalArea": 15.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar08",
+    "propTotalArea": 23.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar09",
+    "propTotalArea": 21.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar10",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar11",
+    "propTotalArea": 21.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar12",
+    "propTotalArea": 1049.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar13",
+    "propTotalArea": 208.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar14",
+    "propTotalArea": 6.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar15",
+    "propTotalArea": 85.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar16",
+    "propTotalArea": 543
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar17",
+    "propTotalArea": 29.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar18",
+    "propTotalArea": 270.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar19",
+    "propTotalArea": 149.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 65.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 30.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 21.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1128.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 229.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 588.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 31.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 288.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 166.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 23.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 65.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 132.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 30.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 16.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 22.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 21.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1097
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 223
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 6.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 571.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 30.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 285.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 160.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 65
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1149.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 233.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 599
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 34
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 297.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 163.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 31.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 16.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 22.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1109.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 223.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 85.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 574.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 32.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 288.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 154.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1216.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 248.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 634.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 320.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 163.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 132.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 31.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 17
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 23
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 22.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1138.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 228.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 85.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 592.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 32.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 297.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 156.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1250
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 250.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 85.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 647.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 333.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 168.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 24.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 32
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 26.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 23.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1184.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 240.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 617.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 34.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 311.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 153.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1235
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 249.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 642.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 35.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 324.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 170.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 25.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 32.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 18
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 24
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 26.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1242.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 257.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 87.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 648.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 36.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 333.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 160.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1244
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 255.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 87
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 649.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 327.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 169.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 25.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 18.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 26.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 27.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 24.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1240.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 253
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 648.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 36.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 339.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 161.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 23
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1262.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 256.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 656.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 336
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 176.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 26.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 63.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 135.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 19.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 26.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 28
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1294.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 265.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 680.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 37.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 349.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 165.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 32.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 23.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1255.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 256
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 656.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 35.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 330.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 177
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 26.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 63.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 136
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 19.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 27.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 25.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 28.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1406.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 288.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 87.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 737.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 41.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 384.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 178.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar01",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar02",
+    "propTotalArea": 9.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar03",
+    "propTotalArea": 66.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar04",
+    "propTotalArea": 129.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar05",
+    "propTotalArea": 30.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar06",
+    "propTotalArea": 15.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar08",
+    "propTotalArea": 23.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar09",
+    "propTotalArea": 21.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar10",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar11",
+    "propTotalArea": 21.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar12",
+    "propTotalArea": 1049.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar13",
+    "propTotalArea": 208.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar14",
+    "propTotalArea": 6.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar15",
+    "propTotalArea": 85.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar16",
+    "propTotalArea": 543
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar17",
+    "propTotalArea": 29.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar18",
+    "propTotalArea": 270.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar19",
+    "propTotalArea": 149.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 65.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 30.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 21.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1128.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 229.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 588.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 31.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 288.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 166.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 23.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 65.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 132.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 30.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 16.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 22.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 21.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1097
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 223
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 6.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 571.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 30.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 285.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 160.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 65
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1149.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 233.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 599
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 34
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 297.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 163.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 31.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 16.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 22.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1109.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 223.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 85.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 574.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 32.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 288.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 154.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1216.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 248.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 634.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 320.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 163.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 132.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 31.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 17
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 23
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 22.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1138.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 228.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 85.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 592.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 32.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 297.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 156.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1250
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 250.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 85.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 647.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 333.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 168.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 24.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 32
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 26.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 23.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1184.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 240.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 617.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 34.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 311.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 153.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1235
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 249.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 642.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 35.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 324.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 170.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 25.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 32.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 18
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 24
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 26.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1242.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 257.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 87.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 648.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 36.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 333.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 160.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1244
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 255.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 87
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 649.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 327.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 169.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 25.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 18.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 26.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 27.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 24.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1240.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 253
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 648.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 36.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 339.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 161.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 23
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1262.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 256.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 656.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 336
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 176.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 26.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 63.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 135.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 19.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 26.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 28
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1294.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 265.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 680.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 37.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 349.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 165.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 32.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 23.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1255.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 256
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 656.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 35.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 330.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 177
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 26.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 63.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 136
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 19.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 27.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 25.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 28.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1406.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 288.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 87.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 737.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 41.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 384.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 178.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar01",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar02",
+    "propTotalArea": 9.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar03",
+    "propTotalArea": 66.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar04",
+    "propTotalArea": 129.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar05",
+    "propTotalArea": 30.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar06",
+    "propTotalArea": 15.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar08",
+    "propTotalArea": 23.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar09",
+    "propTotalArea": 21.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar10",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar11",
+    "propTotalArea": 21.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar12",
+    "propTotalArea": 1049.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar13",
+    "propTotalArea": 208.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar14",
+    "propTotalArea": 6.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar15",
+    "propTotalArea": 85.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar16",
+    "propTotalArea": 543
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar17",
+    "propTotalArea": 29.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar18",
+    "propTotalArea": 270.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar19",
+    "propTotalArea": 149.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 65.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 30.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 21.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1128.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 229.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 588.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 31.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 288.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 166.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 23.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 65.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 132.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 30.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 16.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 22.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 21.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1097
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 223
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 6.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 571.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 30.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 285.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 160.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 65
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1149.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 233.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 599
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 34
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 297.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 163.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 31.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 16.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 22.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1109.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 223.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 85.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 574.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 32.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 288.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 154.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 23.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1216.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 248.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 634.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 320.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 163.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 24.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 132.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 31.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 17
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 24.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 23
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 25.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 22.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1138.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 228.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 85.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 592.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 32.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 297.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 156.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 16.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 25.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1250
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 250.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 85.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 647.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 333.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 168.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 24.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 32
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 26.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 23.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1184.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 240.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 7.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 617.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 34.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 311.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 153.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 24.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1235
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 249.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 642.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 35.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 324.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 170.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 25.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 32.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 18
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 25.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 24
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 26.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1242.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 257.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 87.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 648.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 36.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 333.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 160.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 22.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1244
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 255.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 7.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 87
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 649.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 327.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 169.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 25.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 64
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 133.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 18.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 26.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 24.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 27.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 24.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1240.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 253
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 648.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 36.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 339.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 161.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 132.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 31.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 23
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1262.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 256.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 656.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 36.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 336
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 176.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 26.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 63.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 135.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 19.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 26.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 28
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 24.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1294.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 265.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 8.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 86.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 680.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 37.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 349.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 165.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "propTotalArea": 24.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "propTotalArea": 9.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "propTotalArea": 64.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "propTotalArea": 133.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "propTotalArea": 32.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "propTotalArea": 17.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "propTotalArea": 14.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "propTotalArea": 25.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "propTotalArea": 23.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "propTotalArea": 26.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "propTotalArea": 23.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "propTotalArea": 1255.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "propTotalArea": 256
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "propTotalArea": 8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "propTotalArea": 86.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "propTotalArea": 656.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "propTotalArea": 35.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "propTotalArea": 330.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "propTotalArea": 177
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "propTotalArea": 26.8
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "propTotalArea": 9.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "propTotalArea": 63.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "propTotalArea": 136
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "propTotalArea": 33.9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "propTotalArea": 19.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "propTotalArea": 14.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "propTotalArea": 27.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "propTotalArea": 25.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "propTotalArea": 28.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "propTotalArea": 25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "propTotalArea": 1406.7
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "propTotalArea": 288.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "propTotalArea": 9
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "propTotalArea": 87.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "propTotalArea": 737.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "propTotalArea": 41.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "propTotalArea": 384.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "propTotalArea": 178.2
+  }
+]

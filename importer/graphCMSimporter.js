@@ -1,7 +1,7 @@
 const fetch = require('isomorphic-fetch');
 // List of species for a country
-const speciesData = require('./data.json');
-const countrySpeciesData = require('./csvjson.json');
+const speciesData = require('./CAN/data.json');
+const countrySpeciesData = require('./CAN/csvjson.json');
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -17,7 +17,7 @@ const createCountrySpecieRel = `mutation createCountrySpecieDistribution(
   $specie: SpecieWhereUniqueInput,
   $scenario: ScenarioWhereUniqueInput,
   $year: Int,
-  $value: Float
+  $summary: Float
 ){
   createCountrySpecieDistribution(data: {
     specie: {
@@ -30,7 +30,7 @@ const createCountrySpecieRel = `mutation createCountrySpecieDistribution(
       connect: $scenario
     }
     year: $year,
-    summary: $value
+    summary: $summary
   }
   ) {
     id
@@ -39,7 +39,7 @@ const createCountrySpecieRel = `mutation createCountrySpecieDistribution(
 
 const createSpecie = `mutation createSpecie(
   $name:String,
-  $scientificName: String,
+  $scientificName: String!,
   $wikipediaSlug: String
 ){
   createSpecie(data: {
