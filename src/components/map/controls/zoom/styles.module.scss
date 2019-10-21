@@ -1,0 +1,32 @@
+@import '~styles/settings';
+@import '../styles.scss';
+
+.zoom {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  position: absolute;
+  top: calc(50% - 2 * #{$navigation-button-size});
+  border: 1px solid $color-gray-1;
+  border-left: 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.09);
+
+  & > button {
+    @extend .mapNavigationButton;
+    border-bottom: 1px solid $color-gray-1 !important;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:focus {
+      box-shadow: unset !important;
+      border-radius: 0 !important;
+    }
+
+    &:first-child {
+      background-image: url('../../../../assets/icons/zoomin.svg');
+    }
+
+    &:last-child {
+      background-image: url('../../../../assets/icons/zoomout.svg');    
+    }
+  }
+}

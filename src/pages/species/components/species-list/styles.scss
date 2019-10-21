@@ -4,28 +4,35 @@
   width: 330px;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+
+  ul {
+    flex: 1;
+    overflow: auto;
+  }
 
   .specie {
     display: flex;
     align-items: center;
-    height: 45px;
-    padding-left: 24px;
+    padding: 12px 24px;
     font-size: 18px;
     font-style: italic;
-    border-top: 1px solid #5D5D5D;
+    border-top: 1px solid $color-gray-3;
     color: $color-white;
 
     &.__active{
       font-size: 30px;
-      height: 70px;
+      padding: 18px 24px;
+      background-color: $color-gray-2;
     }
 
     &:hover {
-      background-color: #313131;
+      background-color: $color-gray-2;
     }
 
     &:last-child{
-      border-bottom: 1px solid #5D5D5D;
+      border-bottom: 1px solid $color-gray-3;
     }
   }
 }
