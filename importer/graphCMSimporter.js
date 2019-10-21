@@ -1,7 +1,7 @@
 const fetch = require('isomorphic-fetch');
 // List of species for a country
-const speciesData = require('./data.test.json');
-const countrySpeciesData = require('./csvjson.test.json');
+const speciesData = require('./data.json');
+const countrySpeciesData = require('./csvjson.json');
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
