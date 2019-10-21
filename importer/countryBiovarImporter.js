@@ -1,7 +1,7 @@
 const fetch = require('isomorphic-fetch');
 const pMap = require('p-map');
 // List of species for a country
-const countryBiovarData = require('./TZA/biovarRel.json');
+const countryBiovarData = require('./CAN/biovarRel.json');
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -53,8 +53,8 @@ async function postQuery(query, variables) {
   try {
     const body = await resp.json();
     if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
-    const bodyData = await body.data;
-    console.log('Uploaded', bodyData);
+    // const bodyData = await body.data;
+    // console.log('Uploaded', bodyData);
   } catch (error) {
     console.log(resp.status, resp.statusText);
     console.log(`${JSON.stringify(variables)}\n`);
@@ -74,7 +74,7 @@ countryBiovarData.forEach(relation => countryBiovarsSet.add(relation));
 const mapper = async relation => {
   const countryBiovarQueryData = {
     year: relation.timeInterval,
-    summary: relation.propTotalArea,
+    summary: relation.weightedMean,
     biovar: {
       key: relation.biovar
     },
@@ -86,7 +86,6 @@ const mapper = async relation => {
     }
   };
 
-  console.log(relation, countryBiovarQueryData);
   postQuery(createCountryBiovarRel, countryBiovarQueryData);
 };
 
