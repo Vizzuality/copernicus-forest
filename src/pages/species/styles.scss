@@ -22,10 +22,10 @@ $sidebar-size: 330px;
         text-align: center;
         white-space: pre-line;
         width: 100%;
-        min-height: 220px;
-        // height: 220px;
-        // object-fit: cover;
-        // object-position: top;
+        height: $sidebar-size;
+        width: $sidebar-size;
+        object-fit: cover;
+        object-position: center;
         color: $color-white;
       }
     }
