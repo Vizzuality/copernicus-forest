@@ -6,12 +6,11 @@ import PropTypes from 'prop-types';
 
 import Menu from 'components/menu';
 import Icon from 'components/icon';
-import TabsBar from 'components/tabs';
 
 import './styles.scss';
 
 const HeaderComponent = props => {
-  const { isHome, urls, type, menuOpen, showMenu, isSpeciesDistribution, speciesTabsData } = props;
+  const { isHome, urls, type, menuOpen, showMenu, isSpeciesDistribution } = props;
 
   return (
     <div>
@@ -29,7 +28,9 @@ const HeaderComponent = props => {
               <>
                 <Link
                   to={urls.species}
-                  className={cx('header-tab', { __active: type === 'species' })}
+                  className={cx('header-tab', {
+                    __active: isSpeciesDistribution
+                  })}
                 >
                   <span className="tab-title">Species distribution</span>
                 </Link>
@@ -52,7 +53,6 @@ const HeaderComponent = props => {
         </nav>
         <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
       </div>
-      {isSpeciesDistribution && <TabsBar data={speciesTabsData} />}
     </div>
   );
 };
@@ -63,8 +63,7 @@ HeaderComponent.propTypes = {
   type: PropTypes.string,
   menuOpen: PropTypes.bool,
   showMenu: PropTypes.func,
-  isSpeciesDistribution: PropTypes.bool,
-  speciesTabsData: PropTypes.object
+  isSpeciesDistribution: PropTypes.bool
 };
 
 export default HeaderComponent;

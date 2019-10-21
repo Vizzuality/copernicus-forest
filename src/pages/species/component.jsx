@@ -6,7 +6,6 @@ import Dropdown from 'components/dropdown';
 import Chart from 'components/chart';
 import Modal from 'components/modal';
 import styles from './styles.scss';
-import SpeciesList from './components/species-list/component';
 import mockData from './data.json';
 
 function SpeciesPage({ match }) {
@@ -74,19 +73,6 @@ function SpeciesPage({ match }) {
       {error && <p>Error retrieving the data</p>}
       {!fetching && !error && (
         <div className="content">
-          <div className="species-sidebar">
-            <img
-              src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
-              alt={
-                activeSpecie &&
-                `Image not available:
-                ${activeSpecie.name}`
-              }
-            />
-            {activeSpecie && (
-              <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecie} />
-            )}
-          </div>
           <div className="species-detail">
             <Dropdown
               className="species-dropdown"
@@ -108,9 +94,6 @@ function SpeciesPage({ match }) {
                 </Link>
                 <Link to={getNextSpecie()} className="nav-button">
                   &gt;
-                </Link>
-                <Link to={`/${iso}/distribution/${id}`} className="nav-link">
-                  See distribution
                 </Link>
               </div>
             )}

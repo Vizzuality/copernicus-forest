@@ -9,29 +9,8 @@ $sidebar-size: 330px;
     height: 100%;
     display: flex;
 
-    .species-sidebar {
-      height: 100%;
-      background-color: $color-gray-1;
-      display: flex;
-      flex-direction: column;
-
-      img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        white-space: pre-line;
-        width: 100%;
-        min-height: 220px;
-        // height: 220px;
-        // object-fit: cover;
-        // object-position: top;
-        color: $color-white;
-      }
-    }
-
     .species-detail {
-      width: calc(100% - #{$sidebar-size});
+      // width: calc(100% - #{$sidebar-size});
       padding: 70px 90px;
       overflow-y: scroll;
 
@@ -46,7 +25,7 @@ $sidebar-size: 330px;
         position: absolute;
         display: flex;
         top: 0;
-        left: calc(#{$sidebar-size} - #{$button-size});
+        right: 0;
 
         a {
           display: flex;
@@ -56,9 +35,12 @@ $sidebar-size: 330px;
         }
 
         .nav-button {
+          font-weight: bold;
+          font-size: 24px;
           width: $button-size;
           color: white;
-          background-color: $color-gray-1;
+          background-color: $color-orange;
+          padding-bottom: 4px;
         }
 
         .nav-link {

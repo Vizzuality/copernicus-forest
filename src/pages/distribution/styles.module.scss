@@ -3,7 +3,8 @@
 
 .distribution {
   display: flex;
-  height: 100%;
+  flex: 1;
+  position: relative;
   width: 100%;
 
   & > div:first-child {
@@ -17,9 +18,9 @@
 }
 
 .layerToggle {
+  position: absolute;
   border-left: 1px solid $color-black;
-  left: calc(50% - 22px);
-  top: calc(50% + 2 * #{$navigation-button-size});
+  left: calc(50% - #{$navigation-button-size} / 2 + 1px);
 }
 
 :global {

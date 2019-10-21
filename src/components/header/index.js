@@ -7,12 +7,10 @@ const Header = () => {
   const [menuOpen, showMenu] = useState(false);
   const { pathname } = useLocation();
   const match = useRouteMatch('/:country/:type');
+  const { country, type } = (match && match.params) || {};
 
   const isHome = pathname === '/';
-  const isSpeciesDistribution =
-    pathname.includes('/species/') || pathname.includes('/distribution/');
-
-  const { country, type } = (match && match.params) || {};
+  const isSpeciesDistribution = ['species', 'distribution'].includes(type);
 
   const urls = {
     species: type === 'species' ? '#' : `/${country}/species/`,
@@ -20,22 +18,12 @@ const Header = () => {
     bioclimatic: type === 'bioclimatic' ? '#' : `/${country}/bioclimatic/`
   };
 
-  const speciesTabsData = [
-    { name: 'Choose species', path: urls.species, active: pathname.includes('/species/') },
-    {
-      name: 'Map distribution',
-      path: urls.distribution,
-      active: pathname.includes('/distribution/')
-    }
-  ];
-
   return (
     <Component
       type={type}
       isHome={isHome}
       isSpeciesDistribution={isSpeciesDistribution}
       urls={urls}
-      speciesTabsData={speciesTabsData}
       menuOpen={menuOpen}
       showMenu={showMenu}
     />
