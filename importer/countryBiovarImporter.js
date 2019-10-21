@@ -1,6 +1,9 @@
+const fs = require('fs');
 const fetch = require('isomorphic-fetch');
 // List of species for a country
 const countryBiovarData = require('./TZA/biovarRel.json');
+
+const log = fs.createWriteStream('errors.txt', { flags: 'a' });
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -49,11 +52,17 @@ async function postQuery(query, variables) {
   });
 
   // Parse the response to verify success
-  const body = await resp.json();
-  if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
-  const bodyData = await body.data;
+  try {
+    const body = await resp.json();
+    if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
+    const bodyData = await body.data;
 
-  console.log('Uploaded', bodyData);
+    console.log('Uploaded', bodyData);
+  } catch (error) {
+    console.warn(error.name, error.message);
+    console.log(resp.status, resp.statusText);
+    log.write(error.name, error.message, resp.status, `${resp.statusText  }\n`);
+  }
 }
 
 const promises = [];
@@ -88,9 +97,11 @@ promises.push(
       console.log(relation, countryBiovarQueryData);
       postQuery(createCountryBiovarRel, countryBiovarQueryData);
     } catch (error) {
-      console.log(error);
+      // console.warn(error);
+      log.write(`${error  }\n`);
     }
   })
 );
 
+log.end();
 Promise.all(promises).then(() => console.log('Done'));
