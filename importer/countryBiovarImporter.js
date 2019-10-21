@@ -1,9 +1,7 @@
-const fs = require('fs');
 const fetch = require('isomorphic-fetch');
+const pMap = require('p-map');
 // List of species for a country
 const countryBiovarData = require('./TZA/biovarRel.json');
-
-const log = fs.createWriteStream('errors.txt', { flags: 'a' });
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -56,16 +54,12 @@ async function postQuery(query, variables) {
     const body = await resp.json();
     if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
     const bodyData = await body.data;
-
     console.log('Uploaded', bodyData);
   } catch (error) {
-    console.warn(error.name, error.message);
     console.log(resp.status, resp.statusText);
-    log.write(error.name, error.message, resp.status, `${resp.statusText  }\n`);
+    console.log(`${JSON.stringify(variables)}\n`);
   }
 }
-
-const promises = [];
 
 /*
  * First: biovar importing.
@@ -77,31 +71,24 @@ const promises = [];
 const countryBiovarsSet = new Set();
 countryBiovarData.forEach(relation => countryBiovarsSet.add(relation));
 
-promises.push(
-  [...countryBiovarsSet].map(async relation => {
-    try {
-      const countryBiovarQueryData = {
-        year: relation.timeInterval,
-        summary: relation.propTotalArea,
-        biovar: {
-          key: relation.biovar
-        },
-        country: {
-          iso: relation.iso
-        },
-        scenario: {
-          key: relation.scenario
-        }
-      };
-
-      console.log(relation, countryBiovarQueryData);
-      postQuery(createCountryBiovarRel, countryBiovarQueryData);
-    } catch (error) {
-      // console.warn(error);
-      log.write(`${error  }\n`);
+const mapper = async relation => {
+  const countryBiovarQueryData = {
+    year: relation.timeInterval,
+    summary: relation.propTotalArea,
+    biovar: {
+      key: relation.biovar
+    },
+    country: {
+      iso: relation.iso
+    },
+    scenario: {
+      key: relation.scenario
     }
-  })
-);
+  };
 
-log.end();
-Promise.all(promises).then(() => console.log('Done'));
+  console.log(relation, countryBiovarQueryData);
+  postQuery(createCountryBiovarRel, countryBiovarQueryData);
+};
+
+const promises = pMap(countryBiovarData, mapper, { concurrency: 1, stopOnError: false });
+promises.catch(error => console.error(error));
