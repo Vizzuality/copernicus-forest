@@ -22,14 +22,30 @@ function useClickOutside(ref, closeDropdown) {
   });
 }
 
-function Dropdown({ title, options, className, optionsTheme }) {
+function Dropdown({
+  title,
+  options,
+  className,
+  optionsTheme,
+  handleClick,
+  enabledOptions = options
+}) {
   const [opened, open] = useState(false);
   const wrapperRef = useRef(null);
   const closeDropdown = () => open(false);
   useClickOutside(wrapperRef, closeDropdown);
 
+  const onClickHandler = option => {
+    handleClick(option);
+    closeDropdown();
+  };
+
+  const isOptionClickable = option => {
+    return enabledOptions && !!enabledOptions.find(o => o.value === option.value);
+  };
+
   return (
-    <div className={cx('c-dropdown', className)} ref={wrapperRef}>
+    <div className={cx('c-dropdown', className, { 'dropdown-white': opened })} ref={wrapperRef}>
       <button className="dd-header" onClick={() => open(!opened)}>
         <div className="dd-header-title">{title}</div>
         {/* ARROW ICON
@@ -44,11 +60,20 @@ function Dropdown({ title, options, className, optionsTheme }) {
           {options.map(opt => (
             <li className="dd-list-item" key={opt.value}>
               {opt.link ? (
-                <Link to={opt.link} className="dd-item">
+                <Link to={opt.link} className={cx('dd-item', { 'dropdown-white': opened })}>
                   {opt.label}
                 </Link>
               ) : (
-                <p className="dd-item">{opt.label}</p>
+                <button
+                  disabled={!isOptionClickable(opt)}
+                  onClick={() => isOptionClickable(opt) && onClickHandler(opt)}
+                  className={cx('dd-item', {
+                    'dropdown-white': opened,
+                    disabled: !isOptionClickable(opt)
+                  })}
+                >
+                  {opt.label}
+                </button>
               )}
             </li>
           ))}
@@ -62,7 +87,9 @@ Dropdown.propTypes = {
   title: PropTypes.string,
   options: PropTypes.array,
   className: PropTypes.string,
-  optionsTheme: PropTypes.string
+  optionsTheme: PropTypes.string,
+  handleClick: PropTypes.func,
+  enabledOptions: PropTypes.array
 };
 
 export default Dropdown;
