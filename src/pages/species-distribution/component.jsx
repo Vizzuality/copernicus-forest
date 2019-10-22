@@ -22,21 +22,19 @@ const SpeciesDistributionComponent = props => {
 
   return (
     <div className={styles.container}>
-      {
-        <div className={styles.speciesSidebar}>
-          <img
-            src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
-            alt={
-              activeSpecies &&
-              `Image not available:
-              ${activeSpecies.name}`
-            }
-          />
-          {activeSpecies && (
-            <SpeciesList species={species} country={activeCountry} activeSpecies={activeSpecies} />
-          )}
-        </div>
-      }
+      <div className={styles.speciesSidebar}>
+        <img
+          src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
+          alt={
+            activeSpecies &&
+            `Image not available:
+            ${activeSpecies.name}`
+          }
+        />
+        {activeSpecies && (
+          <SpeciesList species={species} country={activeCountry} activeSpecies={activeSpecies} />
+        )}
+      </div>
       <div className={cx(styles.content, { [styles.contentStretched]: !speciesListVisible })}>
         <div className={styles.navBar}>
           <button
