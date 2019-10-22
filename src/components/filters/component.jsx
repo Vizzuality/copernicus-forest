@@ -21,7 +21,7 @@ const FiltersComponent = ({
       <div className={styles.leftAlign}>
         <Dropdown
           className={styles.dropdown}
-          title={fromY}
+          title={`From ${fromY}`}
           handleClick={option => setYearFrom(option.value)}
           options={orderedYears}
           enabledOptions={enabledFromYears || orderedYears}
@@ -29,7 +29,7 @@ const FiltersComponent = ({
         />
         <Dropdown
           className={styles.dropdown}
-          title={toYear}
+          title={`to ${toYear}`}
           handleClick={option => setYearTo(option.value)}
           options={orderedYears}
           enabledOptions={enabledToYears || orderedYears}
