@@ -12,6 +12,20 @@ const token = process.env.graphCMSImportToken;
 if (!token || !endpoint) throw Error('Please enter credentials');
 
 // Our mutation to write data to our database
+const createSpecie = `mutation createSpecie(
+  $name:String,
+  $scientificName: String!,
+  $wikipediaSlug: String
+){
+  createSpecie(data: {
+    name: $name,
+    scientificName: $scientificName,
+    wikipediaSlug: $wikipediaSlug
+  }) {
+    id
+  }
+}`;
+
 const createCountrySpecieRel = `mutation createCountrySpecieDistribution(
   $country: CountryWhereUniqueInput,
   $specie: SpecieWhereUniqueInput,
@@ -33,20 +47,6 @@ const createCountrySpecieRel = `mutation createCountrySpecieDistribution(
     summary: $summary
   }
   ) {
-    id
-  }
-}`;
-
-const createSpecie = `mutation createSpecie(
-  $name:String,
-  $scientificName: String!,
-  $wikipediaSlug: String
-){
-  createSpecie(data: {
-    name: $name,
-    scientificName: $scientificName,
-    wikipediaSlug: $wikipediaSlug
-  }) {
     id
   }
 }`;
