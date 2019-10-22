@@ -68,7 +68,7 @@ const Container = () => {
     if (parsedScenarios && parsedScenarios.length && !scenario) {
       setScenario(parsedScenarios[0].value);
     }
-  }, [parsedScenarios, scenario, setScenario]);
+  }, [parsedScenarios, scenario]);
 
   useEffect(() => {
     if (yearsData) {
@@ -83,7 +83,7 @@ const Container = () => {
         setQueryParamsYears(earliest, latest);
       }
     }
-  }, [fromY, setQueryParamsYears, toYear, years]);
+  }, [years]);
 
   // callbacks
   const setYearFrom = year => {

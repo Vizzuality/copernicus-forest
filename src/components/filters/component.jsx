@@ -19,29 +19,29 @@ const FiltersComponent = ({
   return (
     <div className={styles.container}>
       <div className={styles.leftAlign}>
-        <Dropdown
+        {fromY && <Dropdown
           className={styles.dropdown}
           title={`From ${fromY}`}
           handleClick={option => setYearFrom(option.value)}
           options={orderedYears}
           enabledOptions={enabledFromYears || orderedYears}
           noBorderLeft
-        />
-        <Dropdown
+        />}
+        {toYear && <Dropdown
           className={styles.dropdown}
           title={`to ${toYear}`}
           handleClick={option => setYearTo(option.value)}
           options={orderedYears}
           enabledOptions={enabledToYears || orderedYears}
-        />
-        <Dropdown
+        />}
+        {scenario && <Dropdown
           className={styles.dropdown}
           title={
             scenario && parsedScenarios && parsedScenarios.find(s => s.value === scenario).label
           }
           options={parsedScenarios}
           handleClick={option => setScenario(option.value)}
-        />
+        />}
       </div>
       <div className={styles.rightAlign}>
         <button onClick={() => {}} className={styles.button}>
