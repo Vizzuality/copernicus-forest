@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Dropdown from 'components/dropdown';
 import Icon from 'components/icon';
-import cx from 'classnames';
 import styles from './styles.module.scss';
 
 const FiltersComponent = ({
@@ -21,11 +20,12 @@ const FiltersComponent = ({
     <div className={styles.container}>
       <div className={styles.leftAlign}>
         <Dropdown
-          className={cx(styles.dropdown, styles.borderLeft)}
+          className={styles.dropdown}
           title={fromY}
           handleClick={option => setYearFrom(option.value)}
           options={orderedYears}
           enabledOptions={enabledFromYears || orderedYears}
+          noBorderLeft
         />
         <Dropdown
           className={styles.dropdown}

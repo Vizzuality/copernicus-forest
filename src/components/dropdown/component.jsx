@@ -28,6 +28,7 @@ function Dropdown({
   className,
   optionsTheme,
   handleClick,
+  noBorderLeft = false,
   enabledOptions = options
 }) {
   const [opened, open] = useState(false);
@@ -69,7 +70,8 @@ function Dropdown({
                   onClick={() => isOptionClickable(opt) && onClickHandler(opt)}
                   className={cx('dd-item', {
                     'dropdown-white': opened,
-                    disabled: !isOptionClickable(opt)
+                    disabled: !isOptionClickable(opt),
+                    noBorderLeft
                   })}
                 >
                   {opt.label}
@@ -89,7 +91,8 @@ Dropdown.propTypes = {
   className: PropTypes.string,
   optionsTheme: PropTypes.string,
   handleClick: PropTypes.func,
-  enabledOptions: PropTypes.array
+  enabledOptions: PropTypes.array,
+  noBorderLeft: PropTypes.bool
 };
 
 export default Dropdown;
