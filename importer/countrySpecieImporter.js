@@ -1,7 +1,7 @@
 const fetch = require('isomorphic-fetch');
 // List of species for a country
-const speciesData = require('./CAN/data.json');
-const countrySpeciesData = require('./CAN/csvjson.json');
+const speciesData = require('./TZA/species.json');
+const countrySpeciesData = require('./TZA/speciesRel.json');
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -52,22 +52,25 @@ const createCountrySpecieRel = `mutation createCountrySpecieDistribution(
 }`;
 
 async function postQuery(query, variables) {
-  // The Fetch statement to send the data for each
-  const resp = await fetch(endpoint, {
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`
-    },
-    method: 'POST',
-    body: JSON.stringify({ query, variables })
-  });
+  try {
+    // The Fetch statement to send the data for each
+    const resp = await fetch(endpoint, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      },
+      method: 'POST',
+      body: JSON.stringify({ query, variables })
+    });
 
-  // Parse the response to verify success
-  const body = await resp.json();
-  if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
-  const bodyData = await body.data;
-
-  console.log('Uploaded', bodyData);
+    // Parse the response to verify success
+    const body = await resp.json();
+    if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
+    // const bodyData = await body.data;
+    // console.log('Uploaded', bodyData);
+  } catch (error) {
+    console.log(`${JSON.stringify(variables)},`);
+  }
 }
 
 const promises = [];
@@ -89,20 +92,21 @@ promises.push(
       const gbifURL = `http://api.gbif.org/v1/species?name=${specie.scientificName}`;
       const gbifRawData = await fetch(gbifURL);
       const gbifJSONData = await gbifRawData.json();
-      const gbifData =
-        gbifJSONData.results && gbifJSONData.results.length > 0 && gbifJSONData.results[0];
+      const gbifResults = gbifJSONData.results;
+      const gbifData = gbifResults.find(r => r.key === specie.gbifId) || gbifResults[0];
       const name = gbifData.vernacularName || gbifData.canonicalName || specie.scientificName;
 
       const speciesQueryData = {
         name,
+        // id: gbifid,
         scientificName: specie.scientificName,
         wikipediaSlug: specie.wikipediaSlug
       };
 
-      console.log(speciesQueryData);
+      // console.log(speciesQueryData);
       postQuery(createSpecie, speciesQueryData);
     } catch (error) {
-      console.log(error);
+      console.log('err  ¯\\_(ツ)_/¯', error.message);
     }
   })
 );
@@ -131,10 +135,10 @@ promises.push(
         }
       };
 
-      console.log(relation, countrySpeciesQueryData);
+      // console.log(relation, countrySpeciesQueryData);
       postQuery(createCountrySpecieRel, countrySpeciesQueryData);
     } catch (error) {
-      console.log(error);
+      console.log('err  ¯\\_(ツ)_/¯', error.message);
     }
   })
 );

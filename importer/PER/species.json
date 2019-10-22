@@ -1,0 +1,27 @@
+[
+  {
+    "scientificName": "Dalbergia",
+    "wikipediaSlug": "Dalbergia",
+    "gbifId": 2968358
+  },
+  {
+    "scientificName": "Eucalyptus",
+    "wikipediaSlug": "Eucalyptus",
+    "gbifId": 7493935
+  },
+  {
+    "scientificName": "Alnus acuminata",
+    "wikipediaSlug": "Alnus_acuminata",
+    "gbifId": 2876131
+  },
+  {
+    "scientificName": "Guazuma ulmifolia",
+    "wikipediaSlug": "Guazuma_ulmifolia",
+    "gbifId": 3152195
+  },
+  {
+    "scientificName": "Simarouba amara",
+    "wikipediaSlug": "Simarouba_amara",
+    "gbifId": 7720664
+  }
+]

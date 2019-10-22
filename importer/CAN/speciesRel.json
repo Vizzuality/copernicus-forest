@@ -4,4283 +4,679 @@
     "timeInterval": 1995,
     "scenario": "current",
     "species": "Picea glauca",
-    "propTotalArea": 25.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Picea rubens",
-    "propTotalArea": 6.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus banksiana",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Thuja plicata",
-    "propTotalArea": 6.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus resinosa",
-    "propTotalArea": 11.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Populus tremuloides",
-    "propTotalArea": 22.9
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 1995,
     "scenario": "current",
     "species": "Pinus strobus",
-    "propTotalArea": 9.2
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 1995,
     "scenario": "current",
-    "species": "Populus grandidentata",
-    "propTotalArea": 7.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 3.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus strobus",
-    "propTotalArea": 9.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 29.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 9.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 27.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 11.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 11.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 29.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 16.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 27.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 12.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 12.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 30.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 28.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 11.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 30.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 10.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 17.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 29.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 12.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 30.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 10.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 18.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 30.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 12.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 30.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 13.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 22.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 31.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 6.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 31.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 12
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 19.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 31.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 13.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 6.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 32.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 14.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 24.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 35
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 16.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 30.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 13.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 6.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 16.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 22.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 32.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 30.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 17.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 16.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 28.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 35.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 8.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 32.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 14
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 6.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 24.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 33.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 15.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 26.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 19.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 8.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 14.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 29.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 34.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 34.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 18.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 25.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 36.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 26
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 21.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 9.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 13.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 33.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 36.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 15.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 10.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 32.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 27
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 35.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 17.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 27.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 23.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 11.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 12.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 36.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 38.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 11.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Picea glauca",
-    "propTotalArea": 25.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Picea rubens",
-    "propTotalArea": 6.1
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 1995,
     "scenario": "current",
     "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus banksiana",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.4
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 1995,
     "scenario": "current",
     "species": "Thuja plicata",
-    "propTotalArea": 6.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus resinosa",
-    "propTotalArea": 11.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Populus tremuloides",
-    "propTotalArea": 22.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus strobus",
-    "propTotalArea": 9.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Populus grandidentata",
-    "propTotalArea": 7.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 3.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus strobus",
-    "propTotalArea": 9.2
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 29.3
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 9.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 15.4
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 27.4
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 11.7
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 11.7
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 29.4
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 16.9
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 27.4
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 12.6
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2020,
     "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 12.6
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 30.3
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 17
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 28.9
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.2
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 11.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.2
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 30.9
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 10.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 17.7
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 29.4
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.7
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 12.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.7
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 30.8
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 10.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 18.6
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 30.1
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.4
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 12.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.4
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 30.8
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 13.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 22.2
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 31.8
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.4
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2040,
     "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 6.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.4
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 31.1
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 12
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 19.9
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 31.3
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.8
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 13.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 6.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.8
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 32.4
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 14.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 24.2
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 35
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 16.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 30.6
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 13.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 6.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 16.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 22.3
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 32.4
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 30.5
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 17.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 16.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 28.1
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 35.7
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2060,
     "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 8.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 32.3
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 14
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 6.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 24.4
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 33.9
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.8
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 15.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.8
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 26.8
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 19.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 8.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 14.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 29.8
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 34.9
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2070,
     "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 34.1
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 18.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 25.2
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 36.1
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.6
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.6
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 26
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 21.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 9.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 13.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 33.3
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 36.7
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2080,
     "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 15.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 10.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp45",
     "species": "Picea glauca",
-    "propTotalArea": 32.2
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 27
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp45",
     "species": "Populus tremuloides",
-    "propTotalArea": 35.3
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.3
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 17.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.3
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp85",
     "species": "Picea glauca",
-    "propTotalArea": 27.5
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 23.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 11.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 12.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 36.4
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.3
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp85",
     "species": "Populus tremuloides",
-    "propTotalArea": 38.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 11.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Picea glauca",
-    "propTotalArea": 25.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Picea rubens",
-    "propTotalArea": 6.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus banksiana",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Thuja plicata",
-    "propTotalArea": 6.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus resinosa",
-    "propTotalArea": 11.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Populus tremuloides",
-    "propTotalArea": 22.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus strobus",
-    "propTotalArea": 9.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Populus grandidentata",
-    "propTotalArea": 7.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 3.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 1995,
-    "scenario": "current",
-    "species": "Pinus strobus",
-    "propTotalArea": 9.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 29.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 9.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 27.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 11.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 11.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 29.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 4.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 16.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 27.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 12.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 12.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 30.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 28.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 11.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 30.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 10.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 17.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 29.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 12.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2030,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 13.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 30.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 10.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 8.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 18.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 30.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 12.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 5.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 30.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 13.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 22.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 31.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 6.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2040,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 31.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 12
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 5.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 19.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 31.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 13.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 6.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 14.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 32.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 14.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 24.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 35
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 16.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2050,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 30.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 13.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 6.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 16.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 22.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 32.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 30.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 17.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 16.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 28.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 35.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 8.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2060,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 32.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 14
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 6.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 24.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 33.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 15.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 16.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 26.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 19.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 8.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 14.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 29.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 34.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 9.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2070,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 34.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 14.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 18.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 25.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 36.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 17
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 26
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 21.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 9.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 13.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 11.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Thuja plicata",
-    "propTotalArea": 10.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 33.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 36.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 15.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 10.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2080,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Picea glauca",
-    "propTotalArea": 32.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Picea rubens",
-    "propTotalArea": 15.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pseudotsuga menziesii",
-    "propTotalArea": 7.2
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus banksiana",
-    "propTotalArea": 17.8
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 10.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Thuja plicata",
-    "propTotalArea": 9.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus resinosa",
-    "propTotalArea": 27
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Populus tremuloides",
-    "propTotalArea": 35.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Populus grandidentata",
-    "propTotalArea": 17.1
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 7.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp45",
-    "species": "Pinus strobus",
-    "propTotalArea": 17.3
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Picea glauca",
-    "propTotalArea": 27.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Picea rubens",
-    "propTotalArea": 23.6
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp85",
     "species": "Pseudotsuga menziesii",
-    "propTotalArea": 10.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus banksiana",
-    "propTotalArea": 11.6
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Abies lasiocarpa",
-    "propTotalArea": 12.4
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
   },
   {
     "iso": "CAN",
     "timeInterval": 2090,
     "scenario": "rcp85",
     "species": "Thuja plicata",
-    "propTotalArea": 10.7
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus resinosa",
-    "propTotalArea": 36.4
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Populus tremuloides",
-    "propTotalArea": 38.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Populus grandidentata",
-    "propTotalArea": 14.9
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Tsuga heterophylla",
-    "propTotalArea": 11.5
-  },
-  {
-    "iso": "CAN",
-    "timeInterval": 2090,
-    "scenario": "rcp85",
-    "species": "Pinus strobus",
-    "propTotalArea": 15
+    "gbifId": 2684171,
+    "propTotalArea": 0.2
   }
 ]

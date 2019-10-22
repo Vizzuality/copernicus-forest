@@ -1,0 +1,682 @@
+[
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.2
+  }
+]
