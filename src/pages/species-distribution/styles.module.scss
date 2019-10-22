@@ -1,14 +1,27 @@
 @import '~styles/settings';
 
+$species-list-width: 330px;
+
 .container {
   display: flex;
   height: 100%;
+  position: relative;
 }
 
 .content {
+  background-color: $color-background;
   display: flex;
   flex-direction: column;
   border-left: 1px solid $color-black;
+  position: absolute;
+  width: calc(100% - #{$species-list-width});
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  transition: width 0.4s;
+}
+
+.contentStretched {
   width: 100%;
 }
 
@@ -17,7 +30,7 @@
   background-color: $color-gray-1;
   display: flex;
   flex-direction: column;
-  width: 330px;
+  width: $species-list-width;
 
   img {
     display: flex;
@@ -25,11 +38,29 @@
     align-items: center;
     text-align: center;
     white-space: pre-line;
-    width: 100%;
     height: 440px;
-    // height: 220px;
     // object-fit: cover;
     // object-position: top;
     color: $color-white;
   }
+}
+
+.navBar {
+  display: flex;
+  border-bottom: 1px solid $color-black;
+
+}
+
+.toggleBarButton {
+  background-color: $color-gray-1;
+  flex-shrink: 0;
+  width: 70px;
+
+  svg {
+    transform: rotate(-90deg);
+  }
+}
+
+.expandBarButton svg {
+  transform: rotate(90deg);
 }

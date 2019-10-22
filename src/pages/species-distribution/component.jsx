@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SpeciesList from 'components/species-list';
 import TabsBar from 'components/tabs';
+import cx from 'classnames';
+import { ReactComponent as ArrowIcon } from 'assets/icons/arrow.svg';
 
 import styles from './styles.module.scss';
 
@@ -13,26 +15,40 @@ const SpeciesDistributionComponent = props => {
     species,
     activeCountry,
     speciesTabsData,
-    ContentComponent
+    ContentComponent,
+    speciesListVisible,
+    toggleSpeciesList
   } = props;
 
   return (
     <div className={styles.container}>
-      <div className={styles.speciesSidebar}>
-        <img
-          src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
-          alt={
-            activeSpecies &&
-            `Image not available:
-            ${activeSpecies.name}`
-          }
-        />
-        {activeSpecies && (
-          <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecies} />
-        )}
-      </div>
-      <div className={styles.content}>
-        <TabsBar data={speciesTabsData} />
+      {
+        <div className={styles.speciesSidebar}>
+          <img
+            src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
+            alt={
+              activeSpecies &&
+              `Image not available:
+              ${activeSpecies.name}`
+            }
+          />
+          {activeSpecies && (
+            <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecies} />
+          )}
+        </div>
+      }
+      <div className={cx(styles.content, { [styles.contentStretched]: !speciesListVisible })}>
+        <div className={styles.navBar}>
+          <button
+            onClick={toggleSpeciesList}
+            className={cx(styles.toggleBarButton, {
+              [styles.expandBarButton]: !speciesListVisible
+            })}
+          >
+            <ArrowIcon />
+          </button>
+          <TabsBar data={speciesTabsData} />
+        </div>
         <ContentComponent match={match} />
       </div>
     </div>
@@ -46,7 +62,9 @@ SpeciesDistributionComponent.propTypes = {
   species: PropTypes.array,
   activeCountry: PropTypes.object,
   speciesTabsData: PropTypes.array,
-  ContentComponent: PropTypes.func
+  ContentComponent: PropTypes.func,
+  speciesListVisible: PropTypes.bool,
+  toggleSpeciesList: PropTypes.func
 };
 
 export default SpeciesDistributionComponent;

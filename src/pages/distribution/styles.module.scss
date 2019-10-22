@@ -3,7 +3,7 @@
 
 .distribution {
   display: flex;
-  flex: 1;
+  height: 100%;
   position: relative;
   width: 100%;
 
@@ -12,15 +12,35 @@
   }
 }
 
-.zoomButtons {
-  border-left: 1px solid $color-black;
-  left: -22px;
+.navigationBar {
+  border: 1px solid $color-black;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: calc(50% - #{$navigation-button-size} / 2 - 2px);
+  top: calc(50% - 2 * #{$navigation-button-size});
+}
+
+%zoomButton {
+  @extend .mapNavigationButton;
+  border-bottom: 1px solid $color-gray-1 !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.zoomInButton {
+  @extend %zoomButton;
+  background-image: url('../../assets/icons/zoomin.svg');
+}
+
+.zoomOutButton {
+  @extend %zoomButton;
+  background-image: url('../../assets/icons/zoomout.svg');    
 }
 
 .layerToggle {
-  position: absolute;
-  border-left: 1px solid $color-black;
-  left: calc(50% - #{$navigation-button-size} / 2 + 1px);
+  border: none;
+  position: unset;
 }
 
 :global {

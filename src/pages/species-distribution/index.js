@@ -15,6 +15,7 @@ const SpeciesDistribution = () => {
 
   const wikiURL = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
   const [wikiInfo, setInfo] = useState(null);
+  const [speciesListVisible, setSpeciesListVisible] = useState(true);
 
   const species = data ? data.species : [];
   const activeSpecies = species.length ? species.find(sp => sp.id === id) || species[0] : null;
@@ -54,6 +55,10 @@ const SpeciesDistribution = () => {
     setInfo(null);
   }, [activeSpecies, setInfo]);
 
+  const toggleSpeciesList = () => {
+    setSpeciesListVisible(!speciesListVisible);
+  };
+
   return (
     <Component
       match={match}
@@ -63,6 +68,8 @@ const SpeciesDistribution = () => {
       activeCountry={activeCountry}
       speciesTabsData={speciesTabsData}
       ContentComponent={activePage.component}
+      speciesListVisible={speciesListVisible}
+      toggleSpeciesList={toggleSpeciesList}
     />
   );
 };
