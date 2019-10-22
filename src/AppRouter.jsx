@@ -26,7 +26,7 @@ function AppRouter() {
             <Switch>
               <Route path="/" exact component={HomePage} />
               <Route path="/:iso/species/:id?" component={SpeciesDistributionComponent} />
-              <Route path="/:iso/distribution/:id" component={SpeciesDistributionComponent} />
+              <Route path="/:iso/distribution/:id?" component={SpeciesDistributionComponent} />
               <Route path="/:iso/bioclimatic/:id?" component={BioclimaticPage} />
             </Switch>
           </Suspense>

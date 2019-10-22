@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-function SpeciesList({ species, country, activeSpecie }) {
+function SpeciesList({ species, country, activeSpecies }) {
   return (
     <div className="c-species-list">
-      <div className="specie __active">{activeSpecie.scientificName}</div>
+      <div className="specie __active">{activeSpecies.scientificName}</div>
       <ul>
         {species &&
           country &&
@@ -25,7 +25,7 @@ function SpeciesList({ species, country, activeSpecie }) {
 SpeciesList.propTypes = {
   species: PropTypes.array,
   country: PropTypes.object,
-  activeSpecie: PropTypes.object
+  activeSpecies: PropTypes.object
 };
 
 export default SpeciesList;

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useSpeciesPerCountry } from 'graphql/queries';
-import Dropdown from 'components/dropdown';
 import Chart from 'components/chart';
 import Modal from 'components/modal';
 import styles from './styles.scss';
@@ -16,27 +15,26 @@ function SpeciesPage({ match }) {
   const { fetching, data, error } = useSpeciesPerCountry(iso);
 
   const species = data ? data.species : [];
-  const activeSpecie = species.length ? species.find(sp => sp.id === id) || species[0] : null;
-  const activeCountry = data ? data.countries.find(c => c.iso === iso) : null;
+  const activeSpecies = species.length ? species.find(sp => sp.id === id) || species[0] : null;
 
   useEffect(() => {
-    if (activeSpecie) {
-      fetch(`${wikiURL}${activeSpecie && activeSpecie.wikipediaSlug}`)
+    if (activeSpecies) {
+      fetch(`${wikiURL}${activeSpecies && activeSpecies.wikipediaSlug}`)
         .then(r => r.json())
         .then(r => {
           setInfo(r);
         });
     }
     setInfo(null);
-  }, [activeSpecie, setInfo]);
+  }, [activeSpecies, setInfo]);
 
   const getPrevSpecie = () => {
-    const index = species.findIndex(item => item.id === activeSpecie.id);
+    const index = species.findIndex(item => item.id === activeSpecies.id);
     if (index === 0) return '#';
     return species[index - 1] ? species[index - 1].id : '#';
   };
   const getNextSpecie = () => {
-    const index = species.findIndex(item => item.id === activeSpecie.id);
+    const index = species.findIndex(item => item.id === activeSpecies.id);
     if (index === species.length - 1) return '#';
     if (index === 0) return species[1].id;
     return species[index + 1] ? species[index + 1].id : '#';
@@ -74,18 +72,6 @@ function SpeciesPage({ match }) {
       {!fetching && !error && (
         <div className="content">
           <div className="species-detail">
-            <Dropdown
-              className="species-dropdown"
-              title={activeCountry && activeCountry.name}
-              options={
-                data.countries &&
-                data.countries.map(c => ({
-                  label: c.name,
-                  value: c.iso,
-                  link: `/${c.iso}/species/`
-                }))
-              }
-            />
             {species && (
               <div className="species-navbar">
                 {/* provisional arrows */}
@@ -97,8 +83,8 @@ function SpeciesPage({ match }) {
                 </Link>
               </div>
             )}
-            <h3>{activeSpecie && activeSpecie.name}</h3>
-            <h1>{activeSpecie && activeSpecie.scientificName}</h1>
+            <h3>{activeSpecies && activeSpecies.name}</h3>
+            <h1>{activeSpecies && activeSpecies.scientificName}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
             {wikiInfo && (
               <div className="species-chart">
@@ -110,7 +96,7 @@ function SpeciesPage({ match }) {
                 {/* <p className="species-source">Source: <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://en.wikipedia.org/wiki/${activeSpecie.wikipediaSlug}`}
+                  href={`https://en.wikipedia.org/wiki/${activeSpecies.wikipediaSlug}`}
                 >
                   wikipedia.com
                 </a></p> */}

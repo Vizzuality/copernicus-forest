@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useRouteMatch, useLocation } from 'react-router-dom';
+import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useSpeciesPerCountry } from 'graphql/queries';
 import Distribution from 'pages/distribution';
 import Species from 'pages/species';
@@ -7,9 +7,10 @@ import Species from 'pages/species';
 import Component from './component';
 
 const SpeciesDistribution = () => {
-  const match = useRouteMatch('/:iso/:type/:id');
+  const match = useRouteMatch('/:iso/:type/:id?');
   const { iso, type, id } = (match && match.params) || {};
 
+  const history = useHistory();
   const { pathname } = useLocation();
   const { data } = useSpeciesPerCountry(iso);
 
@@ -18,9 +19,15 @@ const SpeciesDistribution = () => {
   const [speciesListVisible, setSpeciesListVisible] = useState(true);
 
   const species = data ? data.species : [];
+
+  useEffect(() => {
+    if (species && species.length && !id) {
+      history.push(`${pathname}${species[0].id}`);
+    }
+  }, [history, id, pathname, species]);
+
   const activeSpecies = species.length ? species.find(sp => sp.id === id) || species[0] : null;
   const activeCountry = data ? data.countries.find(c => c.iso === iso) : null;
-
   const urls = {
     species: type === 'species' ? '#' : `/${iso}/species/${id}`,
     distribution: type === 'distribution' ? '#' : `/${iso}/distribution/${id}`,
@@ -29,7 +36,7 @@ const SpeciesDistribution = () => {
 
   const speciesTabsData = [
     {
-      name: 'Choose species',
+      name: 'Species summary',
       path: urls.species,
       active: pathname.includes('/species/'),
       component: Species

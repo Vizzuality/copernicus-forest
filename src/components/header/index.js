@@ -8,13 +8,12 @@ const Header = () => {
   const { pathname } = useLocation();
   const match = useRouteMatch('/:country/:type');
   const { country, type } = (match && match.params) || {};
-
   const isHome = pathname === '/';
   const isSpeciesDistribution = ['species', 'distribution'].includes(type);
 
   const urls = {
     species: type === 'species' ? '#' : `/${country}/species/`,
-    distribution: type === 'distribution' ? '#' : `/${country}/distribution/undefined`,
+    distribution: type === 'distribution' ? '#' : `/${country}/distribution/`,
     bioclimatic: type === 'bioclimatic' ? '#' : `/${country}/bioclimatic/`
   };
 

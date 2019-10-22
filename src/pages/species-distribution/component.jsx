@@ -33,7 +33,7 @@ const SpeciesDistributionComponent = props => {
             }
           />
           {activeSpecies && (
-            <SpeciesList species={species} country={activeCountry} activeSpecie={activeSpecies} />
+            <SpeciesList species={species} country={activeCountry} activeSpecies={activeSpecies} />
           )}
         </div>
       }
