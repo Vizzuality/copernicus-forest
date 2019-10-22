@@ -2,6 +2,7 @@ const fetch = require('isomorphic-fetch');
 const pMap = require('p-map');
 // List of species for a country
 const countryBiovarData = require('./CAN/biovarRel.json');
+const errors = require('./errors.json');
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -39,25 +40,22 @@ mutation createCountryBiovarDistribution(
 `;
 
 async function postQuery(query, variables) {
-  // The Fetch statement to send the data for each
-  const resp = await fetch(endpoint, {
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`
-    },
-    method: 'POST',
-    body: JSON.stringify({ query, variables })
-  });
-
-  // Parse the response to verify success
   try {
+    // The Fetch statement to send the data for each
+    const resp = await fetch(endpoint, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      },
+      method: 'POST',
+      body: JSON.stringify({ query, variables })
+    });
+
+    // Parse the response to verify success
     const body = await resp.json();
     if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
-    // const bodyData = await body.data;
-    // console.log('Uploaded', bodyData);
   } catch (error) {
-    console.log(resp.status, resp.statusText);
-    console.log(`${JSON.stringify(variables)}\n`);
+    console.log(`${JSON.stringify(variables)},`);
   }
 }
 
@@ -67,9 +65,6 @@ async function postQuery(query, variables) {
  *
  * Second: create list of coutry-biovars relations
  */
-
-const countryBiovarsSet = new Set();
-countryBiovarData.forEach(relation => countryBiovarsSet.add(relation));
 
 const mapper = async relation => {
   const countryBiovarQueryData = {
@@ -85,9 +80,20 @@ const mapper = async relation => {
       key: relation.scenario
     }
   };
-
   postQuery(createCountryBiovarRel, countryBiovarQueryData);
 };
 
-const promises = pMap(countryBiovarData, mapper, { concurrency: 1, stopOnError: false });
+const errorMapper = async row => {
+  // Retrying POST with problematic rows (prev 503 responses).
+  postQuery(createCountryBiovarRel, row);
+};
+
+let promises;
+if (!errors.length) {
+  promises = pMap(countryBiovarData, mapper, { concurrency: 1, stopOnError: false });
+} else {
+  console.log(`Trying to fix ${errors.length} errors`);
+  promises = pMap(errors, errorMapper, { concurrency: 1, stopOnError: false });
+}
+
 promises.catch(error => console.error(error));
