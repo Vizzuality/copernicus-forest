@@ -39,27 +39,36 @@ const Container = () => {
     }));
   const orderedYears = parsedYears && orderBy(parsedYears, 'value');
 
+  const getYearsRange = y => {
+    const earliestYear = minBy(y, 'year');
+    const latestYear = maxBy(y, 'year');
+    return {
+      earliest: earliestYear && earliestYear.year,
+      latest: latestYear && latestYear.year
+    };
+  };
+
   // url query params setters
-  const setScenario = sc => {
-    setQueryParams({ scenario: sc }, location, history);
-    const { earliest, latest } = getYearsRange(years);
-    if (earliest && latest && !fromY && !toYear) {
-      setQueryParamsYears(earliest, latest);
-    }
-  }
   const setFromYear = year =>
     setQueryParams({ ...currentQueryParams, fromY: year }, location, history);
   const setToYear = year =>
     setQueryParams({ ...currentQueryParams, toYear: year }, location, history);
   const setQueryParamsYears = (fromYear, toY) =>
     setQueryParams({ ...currentQueryParams, fromY: fromYear, toYear: toY }, location, history);
+  const setScenario = sc => {
+    setQueryParams({ scenario: sc }, location, history);
+    const { earliest, latest } = getYearsRange(years);
+    if (earliest && latest && !fromY && !toYear) {
+      setQueryParamsYears(earliest, latest);
+    }
+  };
 
   // side effects
   useEffect(() => {
     if (parsedScenarios && parsedScenarios.length && !scenario) {
       setScenario(parsedScenarios[0].value);
     }
-  }, [parsedScenarios, scenario]);
+  }, [parsedScenarios, scenario, setScenario]);
 
   useEffect(() => {
     if (yearsData) {
@@ -74,7 +83,7 @@ const Container = () => {
         setQueryParamsYears(earliest, latest);
       }
     }
-  }, [years]);
+  }, [fromY, setQueryParamsYears, toYear, years]);
 
   // callbacks
   const setYearFrom = year => {
@@ -87,15 +96,6 @@ const Container = () => {
     setToYear(year);
     const enabledFrom = orderedYears.filter(o => o.value <= year);
     setEnabledFromYears(enabledFrom);
-  };
-
-  const getYearsRange = (years) => { 
-    const earliestYear = minBy(years, 'year');
-    const latestYear = maxBy(years, 'year');
-    return {
-      earliest: earliestYear && earliestYear.year,
-      latest: latestYear && latestYear.year
-    }
   };
 
   return (
