@@ -40,8 +40,13 @@ const Container = () => {
   const orderedYears = parsedYears && orderBy(parsedYears, 'value');
 
   // url query params setters
-  const setScenario = sc =>
-    setQueryParams({ ...currentQueryParams, scenario: sc }, location, history);
+  const setScenario = sc => {
+    setQueryParams({ scenario: sc }, location, history);
+    const { earliest, latest } = getYearsRange(years);
+    if (earliest && latest && !fromY && !toYear) {
+      setQueryParamsYears(earliest, latest);
+    }
+  }
   const setFromYear = year =>
     setQueryParams({ ...currentQueryParams, fromY: year }, location, history);
   const setToYear = year =>
@@ -64,10 +69,9 @@ const Container = () => {
 
   useEffect(() => {
     if (years) {
-      const earliestYear = minBy(years, 'year');
-      const latestYear = maxBy(years, 'year');
-      if (earliestYear && latestYear) {
-        setQueryParamsYears(earliestYear.year, latestYear.year);
+      const { earliest, latest } = getYearsRange(years);
+      if (earliest && latest && !fromY && !toYear) {
+        setQueryParamsYears(earliest, latest);
       }
     }
   }, [years]);
@@ -83,6 +87,15 @@ const Container = () => {
     setToYear(year);
     const enabledFrom = orderedYears.filter(o => o.value <= year);
     setEnabledFromYears(enabledFrom);
+  };
+
+  const getYearsRange = (years) => { 
+    const earliestYear = minBy(years, 'year');
+    const latestYear = maxBy(years, 'year');
+    return {
+      earliest: earliestYear && earliestYear.year,
+      latest: latestYear && latestYear.year
+    }
   };
 
   return (
