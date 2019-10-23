@@ -4,67 +4,23 @@ $button-size: 45px;
 $sidebar-size: 330px;
 
 .c-species {
+  position: relative;
+
   .content {
-    position: relative;
     height: 100%;
     display: flex;
-
-    .species-sidebar {
-      height: 100%;
-      background-color: $color-gray-1;
-      display: flex;
-      flex-direction: column;
-
-      img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        white-space: pre-line;
-        width: 100%;
-        min-height: 220px;
-        // height: 220px;
-        // object-fit: cover;
-        // object-position: top;
-        color: $color-white;
-      }
-    }
+    overflow-y: auto;
+    overflow-x: hidden;
 
     .species-detail {
-      width: calc(100% - #{$sidebar-size});
       padding: 70px 90px;
-      overflow-y: scroll;
+      width: 100%;
 
       .species-dropdown {
         position: absolute;
         top: 0;
         right: 0;
         height: $button-size;
-      }
-
-      .species-navbar {
-        position: absolute;
-        display: flex;
-        top: 0;
-        left: calc(#{$sidebar-size} - #{$button-size});
-
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: $button-size;
-        }
-
-        .nav-button {
-          width: $button-size;
-          color: white;
-          background-color: $color-gray-1;
-        }
-
-        .nav-link {
-          padding: 0 18px;
-          background: $color-orange;
-        }
       }
 
       // .species-source,
@@ -95,6 +51,34 @@ $sidebar-size: 330px;
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 30px;
+      }
+    }
+
+    .species-navbar {
+      position: absolute;
+      display: flex;
+      top: 0;
+      right: 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $button-size;
+      }
+
+      .nav-button {
+        font-weight: bold;
+        font-size: 24px;
+        width: $button-size;
+        color: white;
+        background-color: $color-orange;
+        padding-bottom: 4px;
+      }
+
+      .nav-link {
+        padding: 0 18px;
+        background: $color-orange;
       }
     }
   }
