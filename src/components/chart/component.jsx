@@ -24,6 +24,12 @@ function CustomDot(props) {
   );
 }
 
+CustomDot.propTypes = {
+  cx: PropTypes.number,
+  cy: PropTypes.number,
+  stroke: PropTypes.string
+};
+
 function Chart({ className, data, config }) {
   const { lines, areas, yAxis, xAxis, grid, showLegend } = config;
   return (

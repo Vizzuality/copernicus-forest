@@ -2,29 +2,30 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
+import Icon from 'components/icon';
 import './styles.scss';
 
 function Accordion({ items }) {
   const [activeItem, setItem] = useState(null);
-  const isActive = item => item === activeItem;
 
   return (
     <div className="c-accordion">
       <ul>
-        {items.map(item => (
-          <li
-            key={item.key || item.title}
-            className={cx('accordion-item', { __open: isActive(item) })}
-          >
-            <button
-              onClick={() => (isActive(item) ? setItem(null) : setItem(item))}
-              className="accordion-title"
-            >
-              {item.title}
-            </button>
-            {isActive(item) && <div className="accordion-content">{item.content}</div>}
-          </li>
-        ))}
+        {items.map(item => {
+          const isActive = item === activeItem;
+          return (
+            <li key={item.key || item.title} className={cx('accordion-item', { __open: isActive })}>
+              <button
+                onClick={() => (isActive ? setItem(null) : setItem(item))}
+                className="accordion-title"
+              >
+                {item.title}
+                <Icon name="icon-expand" className={cx('expand-icon', { __open: isActive })} />
+              </button>
+              {isActive && <div className="accordion-content">{item.content}</div>}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

@@ -1,5 +1,21 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-expand" viewBox="0 0 32 20">
+<title>expand</title>
+<path d="M16 19l16-14.5-3.222-3.5-12.778 11.574-12.778-11.574-3.222 3.5 14.388 13.038z"></path>
+</symbol>
+<symbol id="icon-plus" viewBox="0 0 20 20">
+<title>plus</title>
+<path d="M19.375 7.5h-6.875v-6.875c0-0.345-0.28-0.625-0.625-0.625h-3.75c-0.345 0-0.625 0.28-0.625 0.625v6.875h-6.875c-0.345 0-0.625 0.28-0.625 0.625v3.75c0 0.345 0.28 0.625 0.625 0.625h6.875v6.875c0 0.345 0.28 0.625 0.625 0.625h3.75c0.345 0 0.625-0.28 0.625-0.625v-6.875h6.875c0.345 0 0.625-0.28 0.625-0.625v-3.75c0-0.345-0.28-0.625-0.625-0.625z"></path>
+</symbol>
+<symbol id="icon-stack" viewBox="0 0 20 20">
+<title>stack</title>
+<path d="M20 6.25l-10-5-10 5 10 5 10-5zM10 2.91l6.681 3.34-6.681 3.34-6.681-3.34 6.681-3.34zM17.997 8.998l2.003 1.002-10 5-10-5 2.003-1.002 7.997 3.998zM17.997 12.748l2.003 1.002-10 5-10-5 2.003-1.002 7.997 3.998z"></path>
+</symbol>
+<symbol id="icon-minus" viewBox="0 0 20 20">
+<title>minus</title>
+<path d="M0 8.125v3.75c0 0.345 0.28 0.625 0.625 0.625h18.75c0.345 0 0.625-0.28 0.625-0.625v-3.75c0-0.345-0.28-0.625-0.625-0.625h-18.75c-0.345 0-0.625 0.28-0.625 0.625z"></path>
+</symbol>
 <symbol id="icon-about" viewBox="0 0 5 20">
 <title>about</title>
 <path d="M5 2.5c0 1.381-1.119 2.5-2.5 2.5s-2.5-1.119-2.5-2.5c0-1.381 1.119-2.5 2.5-2.5s2.5 1.119 2.5 2.5z"></path>
@@ -23,18 +39,6 @@
 <title>menu</title>
 <path d="M0 15v5h20v-5z"></path>
 <path d="M0 0v5h20v-5z"></path>
-</symbol>
-<symbol id="icon-stack" viewBox="0 0 32 32">
-<title>stack</title>
-<path d="M32 10l-16-8-16 8 16 8 16-8zM16 4.655l10.689 5.345-10.689 5.345-10.689-5.345 10.689-5.345zM28.795 14.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398zM28.795 20.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398z"></path>
-</symbol>
-<symbol id="icon-plus" viewBox="0 0 32 32">
-<title>plus</title>
-<path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
-</symbol>
-<symbol id="icon-minus" viewBox="0 0 32 32">
-<title>minus</title>
-<path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
 </symbol>
 </defs>
 </svg>
