@@ -24,7 +24,7 @@ const Container = () => {
     const scenarioYears = allScenarios.find(s => s.key === sc).countryBiovarDistributions;
     const uniqueYears = scenarioYears && getUniqueYears(scenarioYears);
     return uniqueYears;
-  });
+  }, []);
   const parseYears = uniqueYears => {
     const parsed = uniqueYears.map(o => ({
       label: o.year,
@@ -34,14 +34,14 @@ const Container = () => {
     return ordered;
   };
 
-  const getYearsRange = y => {
+  const getYearsRange = useCallback(y => {
     const earliestYear = minBy(y, 'year');
     const latestYear = maxBy(y, 'year');
     return {
       earliest: earliestYear && earliestYear.year,
       latest: latestYear && latestYear.year
     };
-  };
+  }, []);
 
   // state
   const [enabledStartYears, setEnabledStartYears] = useState(null);
