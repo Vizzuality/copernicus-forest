@@ -9,7 +9,7 @@ const FiltersComponent = ({
   setStartYear,
   setEndYear,
   setScenario,
-  orderedYears,
+  parsedYears,
   enabledStartYears,
   endYear,
   enabledEndYears,
@@ -23,16 +23,16 @@ const FiltersComponent = ({
           className={styles.dropdown}
           title={`From ${startYear}`}
           handleClick={option => setStartYear(option.value)}
-          options={orderedYears}
-          enabledOptions={enabledStartYears || orderedYears}
+          options={parsedYears}
+          enabledOptions={enabledStartYears || parsedYears}
           noBorderLeft
         />}
         {endYear && <Dropdown
           className={styles.dropdown}
           title={`to ${endYear}`}
           handleClick={option => setEndYear(option.value)}
-          options={orderedYears}
-          enabledOptions={enabledEndYears || orderedYears}
+          options={parsedYears}
+          enabledOptions={enabledEndYears || parsedYears}
         />}
         {scenario && <Dropdown
           className={styles.dropdown}

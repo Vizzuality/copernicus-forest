@@ -18,13 +18,32 @@ const Container = () => {
   // graphql
   const { data } = useScenariosPerCountry(country);
   
+  // util functions
   const getUniqueYears = (allYears) => uniqBy(allYears, 'year');
   const getYearsForScenario = (sc) => {
     const scenarioYears = scenarios.find(s => s.key === sc).countryBiovarDistributions;
     const uniqueYears = scenarioYears && getUniqueYears(scenarioYears);
     return uniqueYears;
   }
+  const parseYears = (uniqueYears) => {
+    const parsed = uniqueYears.map(o => ({
+      label: o.year,
+      value: o.year
+    }));
+    const ordered = parsed && orderBy(parsed, 'value');
+    return ordered;
+  }
 
+  const getYearsRange = y => {
+    const earliestYear = minBy(y, 'year');
+    const latestYear = maxBy(y, 'year');
+    return {
+      earliest: earliestYear && earliestYear.year,
+      latest: latestYear && latestYear.year
+    };
+  };
+
+  // state
   const [enabledStartYears, setEnabledStartYears] = useState(null);
   const [enabledEndYears, setEnabledEndYears] = useState(null);
 
@@ -37,22 +56,7 @@ const Container = () => {
       value: sc.key
     }));
   const years = scenarios && scenario && getYearsForScenario(scenario);
-  const parsedYears =
-    years &&
-    years.map(o => ({
-      label: o.year,
-      value: o.year
-    }));
-  const orderedYears = parsedYears && orderBy(parsedYears, 'value');
-
-  const getYearsRange = y => {
-    const earliestYear = minBy(y, 'year');
-    const latestYear = maxBy(y, 'year');
-    return {
-      earliest: earliestYear && earliestYear.year,
-      latest: latestYear && latestYear.year
-    };
-  };
+  const parsedYears = years && parseYears(years)
 
   // url query params setters
   const setStartYearQuery = year =>
@@ -65,6 +69,8 @@ const Container = () => {
     const scenarioYears = getYearsForScenario(sc);
     const { earliest, latest } = getYearsRange(scenarioYears);
     setQueryParams({ scenario: sc, startYear: earliest, endYear: latest }, location, history);
+    setEnabledStartYears(null);
+    setEnabledEndYears(null);
   };
 
   // side effects
@@ -78,13 +84,13 @@ const Container = () => {
   // callbacks
   const setStartYear = year => {
     setStartYearQuery(year);
-    const enabledTo = orderedYears.filter(o => o.value >= year);
+    const enabledTo = parsedYears.filter(o => o.value >= year);
     setEnabledEndYears(enabledTo);
   };
 
   const setEndYear = year => {
     setEndYearQuery(year);
-    const enabledFrom = orderedYears.filter(o => o.value <= year);
+    const enabledFrom = parsedYears.filter(o => o.value <= year);
     setEnabledStartYears(enabledFrom);
   };
 
@@ -94,7 +100,7 @@ const Container = () => {
       setStartYear={setStartYear}
       setEndYear={setEndYear}
       setScenario={setScenario}
-      orderedYears={orderedYears}
+      parsedYears={parsedYears}
       enabledStartYears={enabledStartYears}
       endYear={endYear}
       enabledEndYears={enabledEndYears}
