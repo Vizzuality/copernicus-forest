@@ -57,10 +57,10 @@ $species-list-width: 330px;
   width: 70px;
 
   svg {
-    transform: rotate(-90deg);
+    fill: $color-white;
   }
 }
 
 .expandBarButton svg {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
+import Icon from 'components/icon';
 
 import styles from './styles.module.scss';
 
@@ -25,8 +26,12 @@ const DistributionPageComponent = ({ viewport, setViewport, zoomIn, zoomOut }) =
         customClass="mapCustomClass"
       />
       <div className={styles.navigationBar}>
-        <button className={styles.zoomInButton} onClick={() => zoomIn()} />
-        <button className={styles.zoomOutButton} onClick={() => zoomOut()} />
+        <button className={styles.zoomButton} onClick={() => zoomIn()}>
+          <Icon name="icon-zoomin" className="menu-icon" />
+        </button>
+        <button className={styles.zoomButton} onClick={() => zoomOut()}>
+          <Icon name="icon-zoomout" className="menu-icon" />
+        </button>
         <LayerToggle theme={styles.layerToggle} />
       </div>
     </div>

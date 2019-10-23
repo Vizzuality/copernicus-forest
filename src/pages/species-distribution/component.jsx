@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SpeciesList from 'components/species-list';
 import TabsBar from 'components/tabs';
 import cx from 'classnames';
-import { ReactComponent as ArrowIcon } from 'assets/icons/arrow.svg';
+import Icon from 'components/icon';
 
 import styles from './styles.module.scss';
 
@@ -43,7 +43,8 @@ const SpeciesDistributionComponent = props => {
               [styles.expandBarButton]: !speciesListVisible
             })}
           >
-            <ArrowIcon />
+            <Icon name="icon-arrow-left" />
+            {/* <Icon name={speciesListVisible ? "icon-arrow-left" : "icon-collapsed"} /> */}
           </button>
           <TabsBar data={speciesTabsData} />
         </div>

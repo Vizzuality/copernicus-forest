@@ -17,24 +17,6 @@ function SpeciesList({ species, country, activeSpecies }) {
               </Link>
             </li>
           ))}
-        {species &&
-          country &&
-          species.map(s => (
-            <li key={s.id}>
-              <Link to={`/${country.iso}/species/${s.id}`} className={styles.listItem}>
-                <p>{s.scientificName}</p>
-              </Link>
-            </li>
-          ))}
-        {species &&
-          country &&
-          species.map(s => (
-            <li key={s.id}>
-              <Link to={`/${country.iso}/species/${s.id}`} className={styles.listItem}>
-                <p>{s.scientificName}</p>
-              </Link>
-            </li>
-          ))}
       </ul>
     </div>
   );
