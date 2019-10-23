@@ -5,34 +5,34 @@ import Icon from 'components/icon';
 import styles from './styles.module.scss';
 
 const FiltersComponent = ({
-  fromY,
-  setYearFrom,
-  setYearTo,
+  startYear,
+  setStartYear,
+  setEndYear,
   setScenario,
   orderedYears,
-  enabledFromYears,
-  toYear,
-  enabledToYears,
+  enabledStartYears,
+  endYear,
+  enabledEndYears,
   scenario,
   parsedScenarios
 }) => {
   return (
     <div className={styles.container}>
       <div className={styles.leftAlign}>
-        {fromY && <Dropdown
+        {startYear && <Dropdown
           className={styles.dropdown}
-          title={`From ${fromY}`}
-          handleClick={option => setYearFrom(option.value)}
+          title={`From ${startYear}`}
+          handleClick={option => setStartYear(option.value)}
           options={orderedYears}
-          enabledOptions={enabledFromYears || orderedYears}
+          enabledOptions={enabledStartYears || orderedYears}
           noBorderLeft
         />}
-        {toYear && <Dropdown
+        {endYear && <Dropdown
           className={styles.dropdown}
-          title={`to ${toYear}`}
-          handleClick={option => setYearTo(option.value)}
+          title={`to ${endYear}`}
+          handleClick={option => setEndYear(option.value)}
           options={orderedYears}
-          enabledOptions={enabledToYears || orderedYears}
+          enabledOptions={enabledEndYears || orderedYears}
         />}
         {scenario && <Dropdown
           className={styles.dropdown}
@@ -53,14 +53,14 @@ const FiltersComponent = ({
 };
 
 FiltersComponent.propTypes = {
-  fromY: PropTypes.string,
-  setYearFrom: PropTypes.func,
-  setYearTo: PropTypes.func,
+  startYear: PropTypes.string,
+  setStartYear: PropTypes.func,
+  setEndYear: PropTypes.func,
   setScenario: PropTypes.func,
   orderedYears: PropTypes.array,
-  enabledFromYears: PropTypes.array,
-  toYear: PropTypes.string,
-  enabledToYears: PropTypes.array,
+  enabledStartYears: PropTypes.array,
+  endYear: PropTypes.string,
+  enabledEndYears: PropTypes.array,
   scenario: PropTypes.string,
   parsedScenarios: PropTypes.array
 };

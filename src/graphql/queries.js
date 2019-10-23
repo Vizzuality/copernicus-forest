@@ -52,7 +52,10 @@ export const useScenariosPerCountry = iso => {
       },
     }) {
       key,
-      name
+      name,
+      countryBiovarDistributions {
+        year
+  		}
     }
   }`);
 };
