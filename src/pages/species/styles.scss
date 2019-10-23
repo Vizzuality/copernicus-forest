@@ -4,47 +4,23 @@ $button-size: 45px;
 $sidebar-size: 330px;
 
 .c-species {
+  position: relative;
+
   .content {
-    position: relative;
     height: 100%;
     display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     .species-detail {
       padding: 70px 90px;
+      width: 100%;
 
       .species-dropdown {
         position: absolute;
         top: 0;
         right: 0;
         height: $button-size;
-      }
-
-      .species-navbar {
-        position: absolute;
-        display: flex;
-        top: 0;
-        right: 0;
-
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: $button-size;
-        }
-
-        .nav-button {
-          font-weight: bold;
-          font-size: 24px;
-          width: $button-size;
-          color: white;
-          background-color: $color-orange;
-          padding-bottom: 4px;
-        }
-
-        .nav-link {
-          padding: 0 18px;
-          background: $color-orange;
-        }
       }
 
       // .species-source,
@@ -75,6 +51,34 @@ $sidebar-size: 330px;
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 30px;
+      }
+    }
+
+    .species-navbar {
+      position: absolute;
+      display: flex;
+      top: 0;
+      right: 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $button-size;
+      }
+
+      .nav-button {
+        font-weight: bold;
+        font-size: 24px;
+        width: $button-size;
+        color: white;
+        background-color: $color-orange;
+        padding-bottom: 4px;
+      }
+
+      .nav-link {
+        padding: 0 18px;
+        background: $color-orange;
       }
     }
   }

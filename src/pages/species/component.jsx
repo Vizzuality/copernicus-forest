@@ -71,18 +71,18 @@ function SpeciesPage({ match }) {
       {error && <p>Error retrieving the data</p>}
       {!fetching && !error && (
         <div className="content">
+          {species && (
+            <div className="species-navbar">
+              {/* provisional arrows */}
+              <Link to={getPrevSpecie()} className="nav-button">
+                &lt;
+              </Link>
+              <Link to={getNextSpecie()} className="nav-button">
+                &gt;
+              </Link>
+            </div>
+          )}
           <div className="species-detail">
-            {species && (
-              <div className="species-navbar">
-                {/* provisional arrows */}
-                <Link to={getPrevSpecie()} className="nav-button">
-                  &lt;
-                </Link>
-                <Link to={getNextSpecie()} className="nav-button">
-                  &gt;
-                </Link>
-              </div>
-            )}
             <h3>{activeSpecies && activeSpecies.name}</h3>
             <h1>{activeSpecies && activeSpecies.scientificName}</h1>
             <p>{wikiInfo && wikiInfo.extract}</p>
