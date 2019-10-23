@@ -20,11 +20,11 @@ const Container = () => {
 
   // util functions
   const getUniqueYears = allYears => uniqBy(allYears, 'year');
-  const getYearsForScenario = (sc, allScenarios) => {
+  const getYearsForScenario = useCallback((sc, allScenarios) => {
     const scenarioYears = allScenarios.find(s => s.key === sc).countryBiovarDistributions;
     const uniqueYears = scenarioYears && getUniqueYears(scenarioYears);
     return uniqueYears;
-  };
+  });
   const parseYears = uniqueYears => {
     const parsed = uniqueYears.map(o => ({
       label: o.year,
@@ -63,13 +63,16 @@ const Container = () => {
     setQueryParams({ ...currentQueryParams, startYear: year }, location, history);
   const setEndYearQuery = year =>
     setQueryParams({ ...currentQueryParams, endYear: year }, location, history);
-  const setScenario = useCallback(sc => {
-    const scenarioYears = getYearsForScenario(sc, scenarios);
-    const { earliest, latest } = getYearsRange(scenarioYears);
-    setQueryParams({ scenario: sc, startYear: earliest, endYear: latest }, location, history);
-    setEnabledStartYears(null);
-    setEnabledEndYears(null);
-  });
+  const setScenario = useCallback(
+    sc => {
+      const scenarioYears = getYearsForScenario(sc, scenarios);
+      const { earliest, latest } = getYearsRange(scenarioYears);
+      setQueryParams({ scenario: sc, startYear: earliest, endYear: latest }, location, history);
+      setEnabledStartYears(null);
+      setEnabledEndYears(null);
+    },
+    [getYearsForScenario, history, location, getYearsRange, scenarios]
+  );
 
   // side effects
   // set default scenario once scenarios are fetched
