@@ -2,18 +2,31 @@
 
 .c-accordion {
   .accordion-item {
-    background: #E8E8E8;
     border-bottom: 1px solid black;
+    font-family: $font-family-2;
+    color: $color-gray-1;
 
     .accordion-title {
       width: 100%;
       height: 100%;
       padding: 16px 26px;
       text-align: left;
+
+      &:hover {
+        background-color: rgba($color-gray-1, 0.1);
+      }
     }
 
     .accordion-content {
-      padding: 6px 18px;
+      padding: 6px 18px 30px;
+    }
+
+    &.__open {
+      .accordion-title {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 40px 50px;
+      }
     }
   }
 }

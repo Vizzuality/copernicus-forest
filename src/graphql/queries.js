@@ -34,3 +34,12 @@ export const useCountries = () => {
     }
   }`);
 };
+
+export const useBiovars = () => {
+  return useBuildBaseQuery(`{
+    biovars{
+      name,
+      key
+    }
+  }`);
+};

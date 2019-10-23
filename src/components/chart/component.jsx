@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  LineChart,
+  ComposedChart,
   Line,
   Area,
   XAxis,
@@ -29,7 +29,7 @@ function Chart({ className, data, config }) {
   return (
     <div className={cx('c-dashboard', className)}>
       <ResponsiveContainer width="100%" height={200}>
-        <LineChart data={data} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
+        <ComposedChart data={data} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
           <CartesianGrid strokeDasharray="3 3" {...grid} />
           <XAxis dataKey="name" {...xAxis} />
           <YAxis type="number" {...yAxis} />
@@ -57,11 +57,10 @@ function Chart({ className, data, config }) {
                 key={area.key}
                 dataKey={area.key}
                 stroke={area.color}
-                fillOpacity={1}
                 fill={area.color}
               />
             ))}
-        </LineChart>
+        </ComposedChart>
       </ResponsiveContainer>
     </div>
   );

@@ -8,81 +8,64 @@ import Chart from 'components/chart';
 import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import LayerToggle from 'components/map/controls/layer-toggle';
+import { useBiovars } from 'graphql/queries';
 
 import layers from 'layers.json';
-import './styles.scss';
+import styles from './styles.scss';
 
 function BioClimaticPage() {
   const [activeLayers, setActiveLayers] = useState(layers.map(l => ({ ...l, active: true })));
 
-  const data = [
-    {
-      name: 'Page A',
-      uv: 4000,
-      pv: 2400,
-      amt: 2400
-    },
-    {
-      name: 'Page B',
-      uv: 3000,
-      pv: 1398,
-      amt: 2210
-    },
-    {
-      name: 'Page C',
-      uv: 2000,
-      pv: 9800,
-      amt: 2290
-    },
-    {
-      name: 'Page D',
-      uv: 2780,
-      pv: 3908,
-      amt: 2000
-    },
-    {
-      name: 'Page E',
-      uv: 1890,
-      pv: 4800,
-      amt: 2181
-    },
-    {
-      name: 'Page F',
-      uv: 2390,
-      pv: 3800,
-      amt: 2500
-    },
-    {
-      name: 'Page G',
-      uv: 3490,
-      pv: 4300,
-      amt: 2100
-    }
+  const { fetching, data, error } = useBiovars();
+
+  const mockData = [
+    { name: '2020', value: 3 },
+    { name: '2030', value: 3.5 },
+    { name: '2040', value: 6 },
+    { name: '2050', value: 6.2 },
+    { name: '2060', value: 11 },
+    { name: '2070', value: 9 },
+    { name: '2080', value: 13 },
+    { name: '2090', value: 18 }
   ];
 
   const config = {
-    lines: [
+    areas: [
       {
-        key: 'uv'
-      },
-      {
-        key: 'pv'
+        key: 'value',
+        color: styles.colorPink
       }
-    ]
+    ],
+    yAxis: {
+      domain: [0, 20],
+      unit: '°C',
+      ticks: [0, 5, 10, 15, 20]
+    },
+    xAxis: {
+      // padding: { left: 30, right: 30 }
+    },
+    grid: {
+      vertical: false
+    }
   };
 
   return (
     <div className="c-bioclimatic l-page">
       <Filters />
       <div className="content">
-        <div className="bioclimatic-chart">
-          <Accordion
-            items={[1, 2, 3, 4, 5].map(n => ({
-              title: `Chart ${n}`,
-              content: <Chart data={data} config={config} />
-            }))}
-          />
-        </div>
+        {fetching && <p>Loading...</p>}
+        {error && <p>Error retrieving the data</p>}
+        {!fetching && !error && (
+          <div className="bioclimatic-chart">
+            <Accordion
+              items={data.biovars.map((bv, i) => ({
+                title: `BIO ${i + 1} = ${bv.name}`,
+                key: bv.key,
+                content: <Chart data={mockData} config={config} />
+              }))}
+            />
+          </div>
+        )}
         <div className="map-wrapper">
           <Map
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
