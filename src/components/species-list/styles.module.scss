@@ -1,0 +1,39 @@
+@import '~styles/settings';
+@import '~styles/base';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.list {
+  flex: 1;
+  overflow: auto;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-style: italic;
+  border-top: 1px solid $color-gray-3;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-gray-2;
+  }
+
+  &:last-child{
+    border-bottom: 1px solid $color-gray-3;
+  }
+}
+
+.speciesActive {
+  @extend .listItem;
+  font-size: 30px;
+  padding: 18px 24px;
+  background-color: $color-gray-2;
+}

@@ -10,9 +10,7 @@ $sidebar-size: 330px;
     display: flex;
 
     .species-detail {
-      // width: calc(100% - #{$sidebar-size});
       padding: 70px 90px;
-      overflow-y: scroll;
 
       .species-dropdown {
         position: absolute;

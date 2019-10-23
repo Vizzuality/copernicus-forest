@@ -4,7 +4,7 @@ $species-list-width: 330px;
 
 .container {
   display: flex;
-  height: 100%;
+  height: calc(100% - 70px);
   position: relative;
 }
 

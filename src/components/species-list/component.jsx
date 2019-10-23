@@ -1,19 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function SpeciesList({ species, country, activeSpecies }) {
   return (
-    <div className="c-species-list">
-      <div className="specie __active">{activeSpecies.scientificName}</div>
-      <ul>
+    <div className={styles.container}>
+      <div className={styles.speciesActive}>{activeSpecies.scientificName}</div>
+      <ul className={styles.list}>
         {species &&
           country &&
-          species.map(specie => (
-            <li key={specie.id}>
-              <Link to={`/${country.iso}/species/${specie.id}`} className="specie">
-                <p>{specie.scientificName}</p>
+          species.map(s => (
+            <li key={s.id}>
+              <Link to={`/${country.iso}/species/${s.id}`} className={styles.listItem}>
+                <p>{s.scientificName}</p>
+              </Link>
+            </li>
+          ))}
+        {species &&
+          country &&
+          species.map(s => (
+            <li key={s.id}>
+              <Link to={`/${country.iso}/species/${s.id}`} className={styles.listItem}>
+                <p>{s.scientificName}</p>
+              </Link>
+            </li>
+          ))}
+        {species &&
+          country &&
+          species.map(s => (
+            <li key={s.id}>
+              <Link to={`/${country.iso}/species/${s.id}`} className={styles.listItem}>
+                <p>{s.scientificName}</p>
               </Link>
             </li>
           ))}
