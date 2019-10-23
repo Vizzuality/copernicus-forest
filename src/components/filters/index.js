@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
-import { useYearsPerScenario, useScenariosPerCountry } from 'graphql/queries';
+import { useScenariosPerCountry } from 'graphql/queries';
 import { uniqBy, minBy, maxBy, orderBy } from 'lodash';
 import Component from './component';
 
@@ -17,22 +17,22 @@ const Container = () => {
 
   // graphql
   const { data } = useScenariosPerCountry(country);
-  
+
   // util functions
-  const getUniqueYears = (allYears) => uniqBy(allYears, 'year');
-  const getYearsForScenario = (sc) => {
-    const scenarioYears = scenarios.find(s => s.key === sc).countryBiovarDistributions;
+  const getUniqueYears = allYears => uniqBy(allYears, 'year');
+  const getYearsForScenario = (sc, allScenarios) => {
+    const scenarioYears = allScenarios.find(s => s.key === sc).countryBiovarDistributions;
     const uniqueYears = scenarioYears && getUniqueYears(scenarioYears);
     return uniqueYears;
-  }
-  const parseYears = (uniqueYears) => {
+  };
+  const parseYears = uniqueYears => {
     const parsed = uniqueYears.map(o => ({
       label: o.year,
       value: o.year
     }));
     const ordered = parsed && orderBy(parsed, 'value');
     return ordered;
-  }
+  };
 
   const getYearsRange = y => {
     const earliestYear = minBy(y, 'year');
@@ -55,23 +55,21 @@ const Container = () => {
       label: sc.name,
       value: sc.key
     }));
-  const years = scenarios && scenario && getYearsForScenario(scenario);
-  const parsedYears = years && parseYears(years)
+  const years = scenarios && scenario && getYearsForScenario(scenario, scenarios);
+  const parsedYears = years && parseYears(years);
 
   // url query params setters
   const setStartYearQuery = year =>
     setQueryParams({ ...currentQueryParams, startYear: year }, location, history);
   const setEndYearQuery = year =>
     setQueryParams({ ...currentQueryParams, endYear: year }, location, history);
-  const setQueryParamsYears = (startY, endY) =>
-    setQueryParams({ ...currentQueryParams, startYear: startY, endYear: endY }, location, history);
-  const setScenario = sc => {
-    const scenarioYears = getYearsForScenario(sc);
+  const setScenario = useCallback(sc => {
+    const scenarioYears = getYearsForScenario(sc, scenarios);
     const { earliest, latest } = getYearsRange(scenarioYears);
     setQueryParams({ scenario: sc, startYear: earliest, endYear: latest }, location, history);
     setEnabledStartYears(null);
     setEnabledEndYears(null);
-  };
+  });
 
   // side effects
   // set default scenario once scenarios are fetched
@@ -79,7 +77,7 @@ const Container = () => {
     if (parsedScenarios && parsedScenarios.length && !scenario) {
       setScenario(parsedScenarios[0].value);
     }
-  }, [parsedScenarios, scenario]);
+  }, [parsedScenarios, scenario, setScenario]);
 
   // callbacks
   const setStartYear = year => {
