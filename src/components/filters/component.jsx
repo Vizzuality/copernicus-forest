@@ -19,29 +19,35 @@ const FiltersComponent = ({
   return (
     <div className={styles.container}>
       <div className={styles.leftAlign}>
-        {startYear && <Dropdown
-          className={styles.dropdown}
-          title={`From ${startYear}`}
-          handleClick={option => setStartYear(option.value)}
-          options={parsedYears}
-          enabledOptions={enabledStartYears || parsedYears}
-          noBorderLeft
-        />}
-        {endYear && <Dropdown
-          className={styles.dropdown}
-          title={`to ${endYear}`}
-          handleClick={option => setEndYear(option.value)}
-          options={parsedYears}
-          enabledOptions={enabledEndYears || parsedYears}
-        />}
-        {scenario && <Dropdown
-          className={styles.dropdown}
-          title={
-            scenario && parsedScenarios && parsedScenarios.find(s => s.value === scenario).label
-          }
-          options={parsedScenarios}
-          handleClick={option => setScenario(option.value)}
-        />}
+        {startYear && (
+          <Dropdown
+            className={styles.dropdown}
+            title={`From ${startYear}`}
+            handleClick={option => setStartYear(option.value)}
+            options={parsedYears}
+            enabledOptions={enabledStartYears || parsedYears}
+            noBorderLeft
+          />
+        )}
+        {endYear && (
+          <Dropdown
+            className={styles.dropdown}
+            title={`to ${endYear}`}
+            handleClick={option => setEndYear(option.value)}
+            options={parsedYears}
+            enabledOptions={enabledEndYears || parsedYears}
+          />
+        )}
+        {scenario && (
+          <Dropdown
+            className={styles.dropdown}
+            title={
+              scenario && parsedScenarios && parsedScenarios.find(s => s.value === scenario).label
+            }
+            options={parsedScenarios}
+            handleClick={option => setScenario(option.value)}
+          />
+        )}
       </div>
       <div className={styles.rightAlign}>
         <button onClick={() => {}} className={styles.button}>
@@ -57,7 +63,7 @@ FiltersComponent.propTypes = {
   setStartYear: PropTypes.func,
   setEndYear: PropTypes.func,
   setScenario: PropTypes.func,
-  orderedYears: PropTypes.array,
+  parsedYears: PropTypes.array,
   enabledStartYears: PropTypes.array,
   endYear: PropTypes.string,
   enabledEndYears: PropTypes.array,
