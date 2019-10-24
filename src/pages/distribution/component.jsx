@@ -7,6 +7,7 @@ import Icon from 'components/icon';
 import { vectorLayerCarto } from 'layers';
 import { useRouteMatch } from 'react-router-dom';
 import RampLegend from 'components/ramp-legend';
+import Timeline from 'components/map/controls/timeline';
 
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
@@ -19,7 +20,9 @@ const DistributionPageComponent = ({
   zoomIn,
   zoomOut,
   speciesListVisible,
-  activeSpecies
+  activeSpecies,
+  futureDistribution,
+  setFutureDistribution
 }) => {
   const match = useRouteMatch('/:iso');
   const { iso } = (match && match.params) || '';
@@ -73,6 +76,11 @@ const DistributionPageComponent = ({
           </LayerManager>
         )}
       </Map>
+      <Timeline
+        className={styles.timeline}
+        activeTab={futureDistribution}
+        setActiveTab={setFutureDistribution}
+      />
       <div className={styles.navigationBar}>
         <button className={styles.zoomButton} onClick={() => zoomIn()}>
           <Icon name="icon-zoomin" className="menu-icon" />
@@ -104,7 +112,9 @@ DistributionPageComponent.propTypes = {
   zoomIn: PropTypes.func,
   zoomOut: PropTypes.func,
   activeSpecies: PropTypes.object,
-  speciesListVisible: PropTypes.bool
+  speciesListVisible: PropTypes.bool,
+  futureDistribution: PropTypes.string,
+  setFutureDistribution: PropTypes.func
 };
 
 export default DistributionPageComponent;

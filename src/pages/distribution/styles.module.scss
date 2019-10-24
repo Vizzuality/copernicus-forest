@@ -31,6 +31,10 @@
   position: unset;
 }
 
+.timeline {
+  left: calc(50%);
+}
+
 :global {
   .mapCustomClass {
     .overlays {

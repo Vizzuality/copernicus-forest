@@ -3,6 +3,7 @@ import Component from './component';
 
 const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
+  const [futureDistribution, setFutureDistribution] = useState(null);
 
   const zoomIn = () => {
     const { zoom } = viewport;
@@ -22,8 +23,11 @@ const DistributionPage = props => {
       setViewport={setViewport}
       zoomIn={zoomIn}
       zoomOut={zoomOut}
+      futureDistribution={futureDistribution}
+      setFutureDistribution={setFutureDistribution}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
+
     />
   );
 };
