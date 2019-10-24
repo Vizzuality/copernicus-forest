@@ -58,27 +58,28 @@ function Dropdown({
       </button>
       {opened && (
         <ul className={cx('dd-list', optionsTheme)}>
-          {options.map(opt => (
-            <li className="dd-list-item" key={opt.value}>
-              {opt.link ? (
-                <Link to={opt.link} className={cx('dd-item', { 'dropdown-white': opened })}>
-                  {opt.label}
-                </Link>
-              ) : (
-                <button
-                  disabled={!isOptionClickable(opt)}
-                  onClick={() => isOptionClickable(opt) && onClickHandler(opt)}
-                  className={cx('dd-item', {
-                    'dropdown-white': opened,
-                    disabled: !isOptionClickable(opt),
-                    noBorderLeft
-                  })}
-                >
-                  {opt.label}
-                </button>
-              )}
-            </li>
-          ))}
+          {options &&
+            options.map(opt => (
+              <li className="dd-list-item" key={opt.value}>
+                {opt.link ? (
+                  <Link to={opt.link} className={cx('dd-item', { 'dropdown-white': opened })}>
+                    {opt.label}
+                  </Link>
+                ) : (
+                  <button
+                    disabled={!isOptionClickable(opt)}
+                    onClick={() => isOptionClickable(opt) && onClickHandler(opt)}
+                    className={cx('dd-item', {
+                      'dropdown-white': opened,
+                      disabled: !isOptionClickable(opt),
+                      noBorderLeft
+                    })}
+                  >
+                    {opt.label}
+                  </button>
+                )}
+              </li>
+            ))}
         </ul>
       )}
     </div>
