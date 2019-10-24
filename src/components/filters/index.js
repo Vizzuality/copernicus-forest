@@ -1,8 +1,8 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
 import { useScenariosPerCountry } from 'graphql/queries';
-import { uniqBy, minBy, maxBy, orderBy } from 'lodash';
+import { getYearsForScenario, getYearsRange, getEarliestAndLatestYears, parseYears } from './utils';
 import Component from './component';
 
 const Container = () => {
@@ -18,43 +18,6 @@ const Container = () => {
   // graphql
   const { data } = useScenariosPerCountry(country);
 
-  // util functions
-  const getUniqueYears = allYears => uniqBy(allYears, 'year');
-  const getYearsForScenario = useCallback((sc, allScenarios) => {
-    const scenarioYears = allScenarios.find(s => s.key === sc).countryBiovarDistributions;
-    const uniqueYears = scenarioYears && getUniqueYears(scenarioYears);
-    return uniqueYears;
-  }, []);
-  const getYearsRange = useCallback(y => {
-    const earliestYear = minBy(y, 'year');
-    const latestYear = maxBy(y, 'year');
-    return {
-      earliest: earliestYear && earliestYear.year,
-      latest: latestYear && latestYear.year
-    };
-  }, []);
-  const getEarliestAndLatestYears = useCallback(
-    (sc, scos) => {
-      const scenarioYears = getYearsForScenario(sc, scos);
-      const { earliest, latest } = getYearsRange(scenarioYears);
-
-      return {
-        earliest,
-        latest
-      };
-    },
-    [getYearsForScenario, getYearsRange]
-  );
-
-  const parseYears = uniqueYears => {
-    const parsed = uniqueYears.map(o => ({
-      label: o.year,
-      value: o.year
-    }));
-    const ordered = parsed && orderBy(parsed, 'value');
-    return ordered;
-  };
-
   // parsing
   const scenarios = data && data.scenarios;
   const parsedScenarios =
@@ -64,6 +27,7 @@ const Container = () => {
       value: sc.key
     }));
 
+  // computed properties
   const chosenScenario = useMemo(
     () => (parsedScenarios && parsedScenarios.length ? scenario || parsedScenarios[0].value : ''),
     [parsedScenarios, scenario]
@@ -71,7 +35,7 @@ const Container = () => {
 
   const years = useMemo(
     () => scenarios && chosenScenario && getYearsForScenario(chosenScenario, scenarios),
-    [scenarios, chosenScenario, getYearsForScenario]
+    [scenarios, chosenScenario]
   );
   const parsedYears = useMemo(() => years && parseYears(years), [years]);
 
@@ -80,14 +44,14 @@ const Container = () => {
       scenarios && scenarios.length && chosenScenario
         ? startYear || getEarliestAndLatestYears(chosenScenario, scenarios).earliest
         : '',
-    [scenarios, chosenScenario, startYear, getEarliestAndLatestYears]
+    [scenarios, chosenScenario, startYear]
   );
   const chosenEndYear = useMemo(
     () =>
       scenarios && scenarios.length && chosenScenario
         ? endYear || getEarliestAndLatestYears(chosenScenario, scenarios).latest
         : '',
-    [scenarios, chosenScenario, endYear, getEarliestAndLatestYears]
+    [scenarios, chosenScenario, endYear]
   );
 
   const enabledStartYears = useMemo(
