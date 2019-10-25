@@ -14,22 +14,28 @@
       text-align: left;
       display: flex;
       align-items: center;
+      justify-content: space-between;
 
       &:hover {
         background-color: rgba($color-gray-1, 0.1);
       }
-    }
 
-    .expand-icon {
-      // width: 12px;
-      // height: 12px;
-      position: absolute;
-      right: 26px;
+      .accordion-minichart{
+        width: 70px;
+        height: 25px;
+      }
+      .expand-icon {
+        // width: 12px;
+        // height: 12px;
+        position: absolute;
+        right: 26px;
 
-      &.__open {
-        transform: rotate(180deg);
+        &.__open {
+          transform: rotate(180deg);
+        }
       }
     }
+
 
     .accordion-content {
       padding: 6px 18px 30px;

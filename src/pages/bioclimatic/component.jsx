@@ -5,7 +5,6 @@ import sortBy from 'lodash/sortBy';
 
 import Modal from 'components/modal';
 import Map from 'components/map';
-import Chart from 'components/chart';
 import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import LayerToggle from 'components/map/controls/layer-toggle';
@@ -62,7 +61,8 @@ function BioClimaticPage() {
               items={sortBy(data.biovars, 'key').map((bv, i) => ({
                 title: `BIO ${i + 1} = ${bv.name}`,
                 key: bv.key,
-                content: <Chart data={mockData} config={config} />
+                data: mockData,
+                config
               }))}
             />
           </div>
