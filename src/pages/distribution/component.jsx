@@ -11,14 +11,14 @@ const DistributionPageComponent = ({ viewport, setViewport, zoomIn, zoomOut }) =
   return (
     <div className={styles.distribution}>
       <Map
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapboxApiAccessToken={process.env.react_app_mapbox_token}
         mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
         viewport={viewport}
         showZoom={false}
         setViewport={setViewport}
       />
       <Map
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapboxApiAccessToken={process.env.react_app_mapbox_token}
         mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
         viewport={viewport}
         showZoom={false}

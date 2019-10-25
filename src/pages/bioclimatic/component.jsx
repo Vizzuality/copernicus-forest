@@ -69,7 +69,7 @@ function BioClimaticPage() {
         )}
         <div className="map-wrapper">
           <Map
-            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+            mapboxApiAccessToken={process.env.react_app_mapbox_token}
             mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
             viewport={{ zoom: 4, latitude: 40, longitude: -5 }}
           >
