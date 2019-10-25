@@ -6,7 +6,7 @@ import Icon from 'components/icon';
 import './styles.scss';
 
 function Accordion({ items }) {
-  const [activeItem, setItem] = useState(null);
+  const [activeItem, setItem] = useState(items.length && items[0]);
 
   return (
     <div className="c-accordion">

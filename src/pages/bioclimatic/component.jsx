@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
+import sortBy from 'lodash/sortBy';
 
 import Modal from 'components/modal';
 import Map from 'components/map';
@@ -58,7 +59,7 @@ function BioClimaticPage() {
         {!fetching && !error && (
           <div className="bioclimatic-chart">
             <Accordion
-              items={data.biovars.map((bv, i) => ({
+              items={sortBy(data.biovars, 'key').map((bv, i) => ({
                 title: `BIO ${i + 1} = ${bv.name}`,
                 key: bv.key,
                 content: <Chart data={mockData} config={config} />
