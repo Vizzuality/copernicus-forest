@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 import PropTypes from 'prop-types';
-
+import cx from 'classnames';
 import Icon from 'components/icon';
 import LayersToggleModal from './modal';
 
 import styles from './styles.module.scss';
 
-const LayerToggleComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerActive }) => {
+const LayerToggleComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerActive, theme }) => {
   const { layerToggleModalHeight, navigationButtonSize } = styles;
 
   return (
-    <div className={styles.layerToggle}>
+    <div className={cx(styles.layerToggle, theme)}>
       <button
         data-for="layerTootlip"
         className={styles.mapNavigationButton}
@@ -42,7 +42,8 @@ const LayerToggleComponent = ({ tooltipRef, toggleLayerActive, setToggleLayerAct
 LayerToggleComponent.propTypes = {
   tooltipRef: PropTypes.object,
   toggleLayerActive: PropTypes.bool,
-  setToggleLayerActive: PropTypes.func
+  setToggleLayerActive: PropTypes.func,
+  theme: PropTypes.object
 };
 
 export default LayerToggleComponent;

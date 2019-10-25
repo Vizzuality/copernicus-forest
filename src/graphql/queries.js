@@ -1,9 +1,7 @@
 import { useQuery } from 'urql';
 
 const useBuildBaseQuery = query => {
-  const result = useQuery({
-    query: `${query}`
-  });
+  const result = useQuery({ query });
   return result && result[0];
 };
 
@@ -40,6 +38,45 @@ export const useBiovars = () => {
     biovars{
       name,
       key
+    }
+  }`);
+};
+
+export const useYearsPerScenario = (iso, scenarioKey) => {
+  return useBuildBaseQuery(`{
+    countryBiovarDistributions(where: {
+     country: { iso: "${iso}" },
+     scenario: { key: "${scenarioKey}" } 
+   }) {
+     year
+   }
+ }`);
+};
+
+export const useScenariosPerCountry = iso => {
+  return useBuildBaseQuery(`{
+    scenarios(where: {
+      countryBiovarDistributions_some: {
+        country: { iso: "${iso}" }
+      },
+    }) {
+      key,
+      name,
+      countryBiovarDistributions {
+        year
+  		}
+    }
+  }`);
+};
+
+export const useCountryBiovarDistributionsPerYearsRangeAndCountry = (fromYear, toYear, iso) => {
+  return useBuildBaseQuery(`{
+    countryBiovarDistributions(where: {
+      year_lte: ${toYear},
+      year_gte: ${fromYear},
+      country: { iso: ${iso} }
+    }) {
+      summary,
     }
   }`);
 };

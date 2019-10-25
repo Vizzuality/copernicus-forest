@@ -1,0 +1,41 @@
+@import '~styles/settings';
+@import '~components/map/controls/styles.scss';
+
+.distribution {
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  & > div:first-child {
+    border-right: 1px solid $color-black;
+  }
+}
+
+.navigationBar {
+  border: 1px solid $color-black;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: calc(50% - #{$navigation-button-size} / 2 - 2px);
+  top: calc(50% - 2 * #{$navigation-button-size});
+}
+
+.zoomButton {
+  @extend .mapNavigationButton;
+  border-bottom: 1px solid $color-gray-1 !important;
+}
+
+.layerToggle {
+  border: none;
+  position: unset;
+}
+
+:global {
+  .mapCustomClass {
+    .overlays {
+      overflow: unset !important;
+    }
+    
+  }
+}

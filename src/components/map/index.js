@@ -20,7 +20,7 @@ const DEFAULT_VIEWPORT = {
   lng: 0
 };
 
-class Map extends Component {
+class MapComponent extends Component {
   constructor(props) {
     super(props);
     // events = {};
@@ -69,12 +69,13 @@ class Map extends Component {
   };
 
   onViewportChange = v => {
-    const { onViewportChange } = this.props;
+    const { onViewportChange, setViewport } = this.props;
     const { loaded } = this.state;
 
     if (loaded) {
       this.setState({ viewport: v });
       onViewportChange(v);
+      setViewport && setViewport(v);
     }
   };
 
@@ -137,6 +138,8 @@ class Map extends Component {
       touchZoom,
       touchRotate,
       doubleClickZoom,
+      showZoom,
+      zoomButtonsProps,
       ...mapboxProps
     } = this.props;
     const { viewport, loaded, flying } = this.state;
@@ -178,66 +181,48 @@ class Map extends Component {
           transitionEasing={easeCubic}
         >
           {loaded && !!this.map && typeof children === 'function' && children(this.map)}
-          <ZoomButtons />
+          {showZoom && <ZoomButtons {...zoomButtonsProps} />}
         </ReactMapGL>
       </div>
     );
   }
 }
 
-Map.propTypes = {
-  /** A function that returns the map instance */
-  children: PropTypes.func,
-
-  /** Custom css class for styling */
-  customClass: PropTypes.string,
-
+MapComponent.propTypes = {
   /** An object that defines the viewport
    * @see https://uber.github.io/react-map-gl/#/Documentation/api-reference/interactive-map?section=initialization
    */
   viewport: PropTypes.shape({}),
 
-  /** An object that defines the bounds */
+  children: PropTypes.func /** A function that returns the map instance */,
+  customClass: PropTypes.string /** Custom css class for styling */,
   bounds: PropTypes.shape({
+    /** An object that defines the bounds */
     bbox: PropTypes.array,
     options: PropTypes.shape({})
   }),
-
-  /** A boolean that allows panning */
-  dragPan: PropTypes.bool,
-
-  /** A boolean that allows rotating */
-  dragRotate: PropTypes.bool,
-
-  /** A boolean that allows zooming */
-  scrollZoom: PropTypes.bool,
-
-  /** A boolean that allows zooming */
-  touchZoom: PropTypes.bool,
-
-  /** A boolean that allows touch rotating */
-  touchRotate: PropTypes.bool,
-
-  /** A boolean that allows double click zooming */
-  doubleClickZoom: PropTypes.bool,
-
-  /** A function that exposes when the map is loaded. It returns and object with the `this.map` and `this.mapContainer` reference. */
-  onLoad: PropTypes.func,
-
-  /** A function that exposes the viewport */
-  onViewportChange: PropTypes.func,
-
-  /** A function that exposes the viewport */
-  getCursor: PropTypes.func
+  dragPan: PropTypes.bool /** A boolean that allows panning */,
+  dragRotate: PropTypes.bool /** A boolean that allows rotating */,
+  scrollZoom: PropTypes.bool /** A boolean that allows zooming */,
+  touchZoom: PropTypes.bool /** A boolean that allows zooming */,
+  touchRotate: PropTypes.bool /** A boolean that allows touch rotating */,
+  doubleClickZoom: PropTypes.bool /** A boolean that allows double click zooming */,
+  onLoad:
+    PropTypes.func /** A function that exposes when the map is loaded. It returns and object with the `this.map` and `this.mapContainer` reference. */,
+  onViewportChange: PropTypes.func /** A function that exposes the viewport */,
+  getCursor: PropTypes.func /** A function that exposes the viewport */,
+  showZoom: PropTypes.bool /** A boolean that shows zoom buttons */,
+  zoomButtonsProps: PropTypes.object /** An object that contains props for ZoomButtons widget */
 };
 
-Map.defaultProps = {
+MapComponent.defaultProps = {
   children: null,
   customClass: null,
   viewport: DEFAULT_VIEWPORT,
   bounds: {},
   dragPan: true,
   dragRotate: true,
+  showZoom: true,
 
   onViewportChange: () => {},
   onLoad: () => {},
@@ -248,4 +233,4 @@ Map.defaultProps = {
   }
 };
 
-export default Map;
+export default MapComponent;

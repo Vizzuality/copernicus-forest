@@ -3,6 +3,21 @@
 .container {
   height: $c-header-height;
   border-bottom: 1px solid $color-gray-1;
-  padding: $c-header-padding;
+  padding-right: $c-header-padding;
   position: relative;
+  background-color: $color-desert-storm;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown {
+  height: 100%;
+  border-right: 1px solid;
+}
+
+.leftAlign {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
