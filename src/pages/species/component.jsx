@@ -63,7 +63,8 @@ function SpeciesPage({ match }) {
       vertical: false,
       strokeDasharray: '3 3'
     },
-    showLegend: true
+    showLegend: true,
+    height: 200
   };
 
   return (

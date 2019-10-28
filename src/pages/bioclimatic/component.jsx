@@ -45,15 +45,17 @@ function BioClimaticPage() {
     yAxis: {
       domain: [0, 20],
       unit: '°C',
-      ticks: [0, 5, 10, 15, 20]
+      ticks: [0, 5, 10, 15, 20],
+      customTick: true,
+      axisLine: false
     },
     xAxis: {
-      // padding: { left: 30, right: 30 }
-      // padding: { left: 0, right: 0 }
+      padding: { left: -30, right: -30 }
     },
     grid: {
       vertical: false
-    }
+    },
+    height: 300
   };
 
   return (

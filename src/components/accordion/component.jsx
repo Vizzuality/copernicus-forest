@@ -43,7 +43,7 @@ function Accordion({ items }) {
               </button>
               {isActive && (
                 <div className="accordion-content">
-                  <Chart data={item.data} config={item.config} />
+                  <Chart className="accordion-chart" data={item.data} config={item.config} />
                 </div>
               )}
             </li>

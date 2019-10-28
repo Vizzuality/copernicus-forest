@@ -32,8 +32,11 @@ CustomDot.propTypes = {
 
 const CustomTooltip = props => {
   const { payload, label, metadata } = props;
-  const { dataset, unit } = metadata || // example metadata, delete
-  { dataset: 'Annual Mean Temperature', model: 'RCP 8.5', unit: '°C' };
+  const { dataset, unit } = metadata || { // example metadata, delete
+    dataset: 'Annual Mean Temperature',
+    model: 'RCP 8.5',
+    unit: '°C'
+  };
   // console.log(props);
   return (
     <div className="custom-tooltip">
@@ -41,17 +44,14 @@ const CustomTooltip = props => {
       {payload
         // removing duplicates, e.g. line and area in biovars page
         .filter((key, index, self) => self.findIndex(_key => _key.name === key.name) === index)
-        .map(
-          p =>
-            console.log(p) || (
-              <p className="desc" key={p.name}>
-                <svg height="6" width="6">
-                  <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
-                </svg>
-                <span className="value">{`${p.name}: ${p.value}${p.unit || unit}`}</span>
-              </p>
-            )
-        )}
+        .map(p => (
+          <p className="desc" key={p.name}>
+            <svg height="6" width="6">
+              <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
+            </svg>
+            <span className="value">{`${p.name}: ${p.value}${p.unit || unit}`}</span>
+          </p>
+        ))}
     </div>
   );
 };
@@ -62,15 +62,40 @@ CustomTooltip.propTypes = {
   metadata: PropTypes.object
 };
 
+function CustomTick(props) {
+  const { payload, index, y, ticks, unit } = props;
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <text {...props} y={y + 4}>
+      {payload.value}
+      {((ticks && ticks.length && index === ticks.length - 1) || // last tick or
+        props.index >= 4) && // def bigger than 4 (accordion) -> add unit
+        unit}
+    </text>
+  );
+}
+
+CustomTick.propTypes = {
+  payload: PropTypes.object,
+  index: PropTypes.number,
+  y: PropTypes.number,
+  ticks: PropTypes.array,
+  unit: PropTypes.string
+};
+
 function Chart({ className, data, config, metadata }) {
-  const { lines, areas, yAxis, xAxis, grid, showLegend } = config;
+  const { lines, areas, yAxis, xAxis, grid, showLegend, height } = config;
   return (
     <div className={cx('c-chart', className)}>
-      <ResponsiveContainer width="100%" height={200}>
+      <ResponsiveContainer width="100%" height={height || 200}>
         <ComposedChart data={data} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
           <CartesianGrid {...grid} />
           <XAxis dataKey="name" {...xAxis} />
-          <YAxis type="number" {...yAxis} />
+          <YAxis
+            type="number"
+            tick={yAxis.customTick && <CustomTick ticks={yAxis.ticks} unit={yAxis.unit} />}
+            {...yAxis}
+          />
           <Tooltip
             // TODO: make it actually work
             isAnimationActive
@@ -108,7 +133,8 @@ function Chart({ className, data, config, metadata }) {
 Chart.propTypes = {
   data: PropTypes.array.isRequired,
   config: PropTypes.object.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  metadata: PropTypes.object
 };
 
 export default Chart;
