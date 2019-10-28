@@ -5,19 +5,21 @@ import cx from 'classnames';
 import Icon from 'components/icon';
 import MiniChart from 'components/minichart';
 import Chart from 'components/chart';
-import './styles.scss';
+import styles from './styles.scss';
 
 function Accordion({ items }) {
   const [activeItem, setItem] = useState(items.length && items[0]);
+  const [hoveredItem, setHover] = useState(null);
 
   return (
     <div className="c-accordion">
       <ul>
         {items.map(item => {
           const isActive = item === activeItem;
+          const isHover = item === hoveredItem;
           const area = {
             ...item.config.areas[0],
-            color: '#000',
+            color: isHover ? styles.colorPink : styles.colorBlack,
             fillOpacity: 1,
             isAnimationActive: false
           };
@@ -25,6 +27,8 @@ function Accordion({ items }) {
             <li key={item.key || item.title} className={cx('accordion-item', { __open: isActive })}>
               <button
                 onClick={() => (isActive ? setItem(null) : setItem(item))}
+                onMouseEnter={() => setHover(item)}
+                onMouseLeave={() => setHover(null)}
                 className="accordion-title"
               >
                 <p>{item.title}</p>

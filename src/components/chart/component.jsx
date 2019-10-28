@@ -30,21 +30,64 @@ CustomDot.propTypes = {
   stroke: PropTypes.string
 };
 
-function Chart({ className, data, config }) {
+const CustomTooltip = props => {
+  const { payload, label, metadata } = props;
+  const { dataset, unit } = metadata || // example metadata, delete
+  { dataset: 'Annual Mean Temperature', model: 'RCP 8.5', unit: '°C' };
+  // console.log(props);
+  return (
+    <div className="custom-tooltip">
+      <p className="label">{`${dataset} in ${label}`}</p>
+      {payload
+        // removing duplicates, e.g. line and area in biovars page
+        .filter((key, index, self) => self.findIndex(_key => _key.name === key.name) === index)
+        .map(
+          p =>
+            console.log(p) || (
+              <p className="desc" key={p.name}>
+                <svg height="6" width="6">
+                  <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
+                </svg>
+                <span className="value">{`${p.name}: ${p.value}${p.unit || unit}`}</span>
+              </p>
+            )
+        )}
+    </div>
+  );
+};
+
+CustomTooltip.propTypes = {
+  payload: PropTypes.array,
+  label: PropTypes.string,
+  metadata: PropTypes.object
+};
+
+function Chart({ className, data, config, metadata }) {
   const { lines, areas, yAxis, xAxis, grid, showLegend } = config;
   return (
-    <div className={cx('c-dashboard', className)}>
+    <div className={cx('c-chart', className)}>
       <ResponsiveContainer width="100%" height={200}>
         <ComposedChart data={data} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
-          <CartesianGrid strokeDasharray="3 3" {...grid} />
+          <CartesianGrid {...grid} />
           <XAxis dataKey="name" {...xAxis} />
           <YAxis type="number" {...yAxis} />
           <Tooltip
             // TODO: make it actually work
             isAnimationActive
             animationBegin={2000}
+            content={<CustomTooltip metadata={metadata} />}
           />
           {showLegend && <Legend align="right" layout="vertical" verticalAlign="top" />}
+          {areas &&
+            areas.map(area => (
+              <Area
+                type="monotone"
+                key={area.key}
+                dataKey={area.key}
+                stroke={area.color}
+                fill={area.color}
+              />
+            ))}
           {lines &&
             lines.map(line => (
               <Line
@@ -54,16 +97,6 @@ function Chart({ className, data, config }) {
                 stroke={line.color}
                 strokeWidth={3}
                 dot={CustomDot}
-              />
-            ))}
-          {areas &&
-            areas.map(area => (
-              <Area
-                type="monotone"
-                key={area.key}
-                dataKey={area.key}
-                stroke={area.color}
-                fill={area.color}
               />
             ))}
         </ComposedChart>

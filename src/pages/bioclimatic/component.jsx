@@ -19,20 +19,26 @@ function BioClimaticPage() {
   const { fetching, data, error } = useBiovars();
 
   const mockData = [
-    { name: '2020', value: 3 },
-    { name: '2030', value: 3.5 },
-    { name: '2040', value: 6 },
-    { name: '2050', value: 6.2 },
-    { name: '2060', value: 11 },
-    { name: '2070', value: 9 },
-    { name: '2080', value: 13 },
-    { name: '2090', value: 18 }
+    { name: '2020', 'Business as usual': 3 },
+    { name: '2030', 'Business as usual': 3.5 },
+    { name: '2040', 'Business as usual': 6 },
+    { name: '2050', 'Business as usual': 6.2 },
+    { name: '2060', 'Business as usual': 11 },
+    { name: '2070', 'Business as usual': 9 },
+    { name: '2080', 'Business as usual': 13 },
+    { name: '2090', 'Business as usual': 18 }
   ];
 
   const config = {
+    lines: [
+      {
+        key: 'Business as usual',
+        color: styles.colorPink
+      }
+    ],
     areas: [
       {
-        key: 'value',
+        key: 'Business as usual',
         color: styles.colorPink
       }
     ],
@@ -43,6 +49,7 @@ function BioClimaticPage() {
     },
     xAxis: {
       // padding: { left: 30, right: 30 }
+      // padding: { left: 0, right: 0 }
     },
     grid: {
       vertical: false

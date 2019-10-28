@@ -60,7 +60,8 @@ function SpeciesPage({ match }) {
       padding: { left: 30, right: 30 }
     },
     grid: {
-      vertical: false
+      vertical: false,
+      strokeDasharray: '3 3'
     },
     showLegend: true
   };
@@ -85,7 +86,7 @@ function SpeciesPage({ match }) {
           <div className="species-detail">
             <h3>{activeSpecies && activeSpecies.name}</h3>
             <h1>{activeSpecies && activeSpecies.scientificName}</h1>
-            <p>{wikiInfo && wikiInfo.extract}</p>
+            <p className="description">{wikiInfo && wikiInfo.extract}</p>
             {wikiInfo && (
               <div className="species-chart">
                 <p className="species-chart-title">
