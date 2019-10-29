@@ -1,0 +1,682 @@
+[
+  {
+    "iso": "PER",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Dalbergia",
+    "gbifId": 2968358,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Eucalyptus",
+    "gbifId": 7493935,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Alnus acuminata",
+    "gbifId": 2876131,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Guazuma ulmifolia",
+    "gbifId": 3152195,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "PER",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Simarouba amara",
+    "gbifId": 7720664,
+    "propTotalArea": 0.1
+  }
+]

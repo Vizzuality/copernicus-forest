@@ -1,0 +1,13 @@
+[
+  {"scientificName":"Picea glauca","wikipediaSlug":"Picea_glauca","gbifId":5284745,"country":"CAN"},
+  {"scientificName":"Picea rubens","wikipediaSlug":"Picea_rubens","gbifId":5284717,"country":"CAN"},
+  {"scientificName":"Pseudotsuga menziesii","wikipediaSlug":"Douglas_fir","gbifId":2685796,"country":"CAN"},
+  {"scientificName":"Pinus banksiana","wikipediaSlug":"Jack_pine","gbifId":5285533,"country":"CAN"},
+  {"scientificName":"Abies lasiocarpa","wikipediaSlug":"Abies_lasiocarpa","gbifId":2685313,"country":"CAN"},
+  {"scientificName":"Thuja plicata","wikipediaSlug":"Thuja_plicata","gbifId":2684171,"country":"CAN"},
+  {"scientificName":"Pinus resinosa","wikipediaSlug":"Pinus_resinosa","gbifId":5285067,"country":"CAN"},
+  {"scientificName":"Populus tremuloides","wikipediaSlug":"Populus_tremuloides","gbifId":3040215,"country":"CAN"},
+  {"scientificName":"Pinus strobus","wikipediaSlug":"Pinus_strobus","gbifId":5284982,"country":"CAN"},
+  {"scientificName":"Populus grandidentata","wikipediaSlug":"Populus_grandidentata","gbifId":3040210,"country":"CAN"},
+  {"scientificName":"Tsuga heterophylla","wikipediaSlug":"Tsuga_heterophylla","gbifId":2687210,"country":"CAN"}
+]

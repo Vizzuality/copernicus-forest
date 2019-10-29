@@ -1,0 +1,78 @@
+[
+  {
+    "commonName": "Annual Mean Temperature",
+    "codeName": "biovar01"
+  },
+  {
+    "commonName": "Mean Diurnal Range (Mean of monthly (max temp - min temp))",
+    "codeName": "biovar02"
+  },
+  {
+    "commonName": "Isothermality (BIO2/BIO7) (* 100)",
+    "codeName": "biovar03"
+  },
+  {
+    "commonName": "Temperature Seasonality (standard deviation *100)",
+    "codeName": "biovar04"
+  },
+  {
+    "commonName": "Max Temperature of Warmest Month",
+    "codeName": "biovar05"
+  },
+  {
+    "commonName": "Min Temperature of Coldest Month",
+    "codeName": "biovar06"
+  },
+  {
+    "commonName": "Temperature Annual Range (BIO5-BIO6)",
+    "codeName": "biovar07"
+  },
+  {
+    "commonName": "Mean Temperature of Wettest Quarter",
+    "codeName": "biovar08"
+  },
+  {
+    "commonName": "Mean Temperature of Driest Quarter",
+    "codeName": "biovar09"
+  },
+  {
+    "commonName": "Mean Temperature of Warmest Quarter",
+    "codeName": "biovar10"
+  },
+  {
+    "commonName": "Mean Temperature of Coldest Quarter",
+    "codeName": "biovar11"
+  },
+  {
+    "commonName": "Annual Precipitation",
+    "codeName": "biovar12"
+  },
+  {
+    "commonName": "Precipitation of Wettest Month",
+    "codeName": "biovar13"
+  },
+  {
+    "commonName": "Precipitation of Driest Month",
+    "codeName": "biovar14"
+  },
+  {
+    "commonName": "Precipitation Seasonality (Coefficient of Variation)",
+    "codeName": "biovar15"
+  },
+  {
+    "commonName": "Precipitation of Wettest Quarter",
+    "codeName": "biovar16"
+  },
+  {
+    "commonName": "Precipitation of Driest Quarter",
+    "codeName": "biovar17"
+  },
+  {
+    "commonName": "Precipitation of Warmest Quarter",
+    "codeName": "biovar18"
+  },
+  {
+    "commonName": "Precipitation of Coldest Quarter",
+    "codeName": "biovar19"
+  }
+]
