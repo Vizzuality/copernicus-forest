@@ -21,16 +21,15 @@ const TimelineComponent = ({ activeTab = 'rcp85', setActiveTab, className }) => 
     ]
   };
 
-
   const timelineParams = {
     canPlay: true,
-    dateFormat: "YYYY",
-    interval: "years",
-    minDate: "2020-01-01",
-    maxDate: "2090-12-31",
-    startDate: "2020-01-01",
-    endDate: "2090-12-31",
-    trimEndDate: "2016-09-14",
+    dateFormat: 'YYYY',
+    interval: 'years',
+    minDate: '2020-01-01',
+    maxDate: '2090-12-31',
+    startDate: '2020-01-01',
+    endDate: '2090-12-31',
+    trimEndDate: '2016-09-14',
     speed: 250,
     step: 1,
     marks: [],
@@ -58,7 +57,6 @@ const TimelineComponent = ({ activeTab = 'rcp85', setActiveTab, className }) => 
     className: 'xd',
     playButton: <div>dups</div>
   };
-  
 
   return (
     <div className={cx(styles.container, className)}>
@@ -95,19 +93,19 @@ TimelineComponent.propTypes = {
 
 export default TimelineComponent;
 
-          // {...this.props}
-          // activeLayer={{
-          //   ...activeLayer,
-          //   timelineParams: {
-          //     ...activeLayer.timelineParams,
-          //     marks: this.props.marks,
-          //     handleStyle: {
-          //       backgroundColor: 'white',
-          //       borderRadius: '2px',
-          //       boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.29)',
-          //       border: '0px',
-          //       zIndex: 2
-          //     }
-          //   }
-          // }}
-        // />
+// {...this.props}
+// activeLayer={{
+//   ...activeLayer,
+//   timelineParams: {
+//     ...activeLayer.timelineParams,
+//     marks: this.props.marks,
+//     handleStyle: {
+//       backgroundColor: 'white',
+//       borderRadius: '2px',
+//       boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.29)',
+//       border: '0px',
+//       zIndex: 2
+//     }
+//   }
+// }}
+// />
