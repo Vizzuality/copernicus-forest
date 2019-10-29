@@ -6,8 +6,7 @@ import './App.scss';
 
 const Header = lazy(() => import('components/header'));
 const HomePage = lazy(() => import('pages/home'));
-const SpeciesPage = lazy(() => import('pages/species'));
-const DistributionPage = lazy(() => import('pages/distribution'));
+const SpeciesDistributionComponent = lazy(() => import('pages/species-distribution'));
 const BioclimaticPage = lazy(() => import('pages/bioclimatic'));
 const Placeholder = () => <div className="c-header" />;
 
@@ -25,8 +24,8 @@ function AppRouter() {
             <Header />
             <Switch>
               <Route path="/" exact component={HomePage} />
-              <Route path="/:iso/species/:id?" component={SpeciesPage} />
-              <Route path="/:iso/distribution/:id" component={DistributionPage} />
+              <Route path="/:iso/species/:id?" component={SpeciesDistributionComponent} />
+              <Route path="/:iso/distribution/:id?" component={SpeciesDistributionComponent} />
               <Route path="/:iso/bioclimatic/:id?" component={BioclimaticPage} />
             </Switch>
           </Suspense>
