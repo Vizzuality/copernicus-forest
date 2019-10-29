@@ -30,7 +30,7 @@ const TimelineComponent = ({ activeTab = 'rcp85', setActiveTab, className }) => 
     startDate: '2020-01-01',
     endDate: '2090-12-31',
     trimEndDate: '2016-09-14',
-    speed: 250,
+    speed: 20,
     step: 1,
     marks: [],
     handleStyle: {
@@ -39,12 +39,13 @@ const TimelineComponent = ({ activeTab = 'rcp85', setActiveTab, className }) => 
       // boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.29)',
       border: '2px solid white',
       height: '12px',
-      transform: 'translateY(2px)',
+      transform: 'translate(2px, 2px)',
       width: '6px',
       zIndex: 2
     },
     trackStyle: {
       backgroundColor: '#DF5127',
+      borderRadius: '0',
       height: '6px'
     },
     railStyle: {
@@ -77,8 +78,8 @@ const TimelineComponent = ({ activeTab = 'rcp85', setActiveTab, className }) => 
       <LegendItemTimeStep
         playButton={<div>dups</div>}
         activeLayer={{ id: 'id', timelineParams }}
-        handleOnChange={date => console.log('handleOnChange')}
-        handleChange={date => console.log('handleChange')}
+        handleOnChange={() => console.log('handleOnChange')}
+        handleChange={() => console.log('handleChange')}
         // handleOnAfterChange={date => console.log('handleOnAfterChange')}
       />
     </div>

@@ -52,17 +52,18 @@
     height: 45px;
     width: 100%;
 
-    & > *:first-child {
+    & > * {
       display: flex;
       align-items: center;
+      justify-content: center;
+    }
+
+    & > *:first-child {
       width: 45px;
     }
 
     & > *:last-child {
       flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       border-left: 1px solid $color-gray-3;
 
       & > *:first-child {
