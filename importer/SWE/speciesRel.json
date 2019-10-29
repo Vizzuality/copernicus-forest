@@ -1,0 +1,682 @@
+[
+  {
+    "iso": "SWE",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.7
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.7
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.7
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.7
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.7
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Picea sitchensis",
+    "gbifId": 5284827,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Picea abies",
+    "gbifId": 5284884,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Pinus mugo",
+    "gbifId": 5285385,
+    "propTotalArea": 0.6
+  },
+  {
+    "iso": "SWE",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Pinus sylvestris",
+    "gbifId": 5285637,
+    "propTotalArea": 0.3
+  }
+]

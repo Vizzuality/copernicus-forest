@@ -1,0 +1,27 @@
+[
+  {
+    "scientificName": "Acacia",
+    "wikipediaSlug": "Acacia",
+    "gbifId": 2978223
+  },
+  {
+    "scientificName": "Albizia",
+    "wikipediaSlug": "Albizia",
+    "gbifId": 2972897
+  },
+  {
+    "scientificName": "Brachystegia",
+    "wikipediaSlug": "Brachystegia",
+    "gbifId": 2952646
+  },
+  {
+    "scientificName": "Combretum",
+    "wikipediaSlug": "Combretum",
+    "gbifId": 2986357
+  },
+  {
+    "scientificName": "Leucaena",
+    "wikipediaSlug": "Leucaena",
+    "gbifId": 2970337
+  }
+]

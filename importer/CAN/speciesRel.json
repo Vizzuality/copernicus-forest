@@ -1,0 +1,682 @@
+[
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Picea glauca",
+    "gbifId": 5284745,
+    "propTotalArea": 0.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Pinus strobus",
+    "gbifId": 5284982,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Populus tremuloides",
+    "gbifId": 3040215,
+    "propTotalArea": 0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Pseudotsuga menziesii",
+    "gbifId": 2685796,
+    "propTotalArea": 0.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Thuja plicata",
+    "gbifId": 2684171,
+    "propTotalArea": 0.2
+  }
+]

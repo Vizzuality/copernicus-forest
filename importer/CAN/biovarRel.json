@@ -1,0 +1,2263 @@
+[
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar01",
+    "weightedMean": -3.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar02",
+    "weightedMean": 8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar03",
+    "weightedMean": 18.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar04",
+    "weightedMean": 1241.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar05",
+    "weightedMean": 18.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar06",
+    "weightedMean": -25
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar07",
+    "weightedMean": 43.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar08",
+    "weightedMean": 9.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar09",
+    "weightedMean": -16.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar10",
+    "weightedMean": 12.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar11",
+    "weightedMean": -19.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar12",
+    "weightedMean": 635.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar13",
+    "weightedMean": 92
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar14",
+    "weightedMean": 24.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar15",
+    "weightedMean": 45.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar16",
+    "weightedMean": 249
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar17",
+    "weightedMean": 86.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar18",
+    "weightedMean": 219.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "biovar": "biovar19",
+    "weightedMean": 105.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": -2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1228.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 20.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -23.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 10.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -15.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 13.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -17.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 704.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 111.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 25.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 48.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 282.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 91.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 240.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 112.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": -1.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 18.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1233.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 20.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -23.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 43.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 11.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -15.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 13.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -17.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 709.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 112.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 26.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 48.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 288
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 93.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 249.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 117
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": -1.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1228.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 20.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -22.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 11.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -14.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 14.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -17.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 700.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 108.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 26
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 47.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 280.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 92.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 238.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 113.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": -1.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 18.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1228.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 21.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -22.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 43.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 11.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -14.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 14.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -16.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 711.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 108.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 26.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 47.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 283.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 95.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 243.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 116
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": -0.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1230.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 21.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -22.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 12
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -14.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 14.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -16.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 699.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 108.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 26.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 47.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 279.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 93.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 241.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 113.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": 0
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 18.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1222.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 22.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -21.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 43.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 13
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -13.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 15.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -15.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 758.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 118.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 27.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 48.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 304.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 99.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 265.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 122.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": -0.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1222
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 22
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -21.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 12.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -13.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 15.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -15.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 728
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 113.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 26.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 48.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 291.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 96.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 249.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 117.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": 1.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 18.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1210.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 23.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -19.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 43.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 13.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -11.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 16.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -14.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 776.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 119.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 28.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 46.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 307.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 104
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 262.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 130.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": 0.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1220.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 22.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -20.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 13.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -12.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 15.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -15.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 764.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 122.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 28
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 49.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 310.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 100.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 265.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 123.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": 2.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 17.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1206.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 24.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -18.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 43.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 15.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -10.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 17.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -12.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 814.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 130.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 30.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 48.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 327.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 107.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 280.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 133.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": 0.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1214.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 22.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -20.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 13.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -12.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 16.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -14.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 766.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 120.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 28.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 48.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 307.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 101.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 264.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 125.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": 3.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 17.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1203.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 26.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -17.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 43.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 16.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -9.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 19
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -11.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 883.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 139.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 32.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 48.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 355.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 114.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 306.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 140.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": 1.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1209.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 23.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -20
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 13.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -11.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 16.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -14.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 769.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 118.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 28.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 47.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 305.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 101.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 257.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 127.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": 5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 17.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1190.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 27.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -15.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 42.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 17.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -7.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 20.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -9.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 932.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 143.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 35
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 47.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 370.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 124.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 322.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 150.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar01",
+    "weightedMean": 1.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar02",
+    "weightedMean": 7.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar03",
+    "weightedMean": 18.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar04",
+    "weightedMean": 1212.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar05",
+    "weightedMean": 23.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar06",
+    "weightedMean": -19.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar07",
+    "weightedMean": 43.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar08",
+    "weightedMean": 14.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar09",
+    "weightedMean": -11.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar10",
+    "weightedMean": 16.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar11",
+    "weightedMean": -13.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar12",
+    "weightedMean": 788
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar13",
+    "weightedMean": 122.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar14",
+    "weightedMean": 29
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar15",
+    "weightedMean": 47.7
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar16",
+    "weightedMean": 315.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar17",
+    "weightedMean": 105.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar18",
+    "weightedMean": 268.8
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "biovar": "biovar19",
+    "weightedMean": 131.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar01",
+    "weightedMean": 6.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar02",
+    "weightedMean": 7.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar03",
+    "weightedMean": 17.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar04",
+    "weightedMean": 1179.9
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar05",
+    "weightedMean": 28.3
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar06",
+    "weightedMean": -14.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar07",
+    "weightedMean": 42.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar08",
+    "weightedMean": 18.6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar09",
+    "weightedMean": -6
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar10",
+    "weightedMean": 21.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar11",
+    "weightedMean": -8.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar12",
+    "weightedMean": 978.5
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar13",
+    "weightedMean": 152.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar14",
+    "weightedMean": 36.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar15",
+    "weightedMean": 47
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar16",
+    "weightedMean": 388.1
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar17",
+    "weightedMean": 131.2
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar18",
+    "weightedMean": 328.4
+  },
+  {
+    "iso": "CAN",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "biovar": "biovar19",
+    "weightedMean": 160.5
+  }
+]
