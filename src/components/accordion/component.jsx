@@ -15,7 +15,7 @@ function Accordion({ items }) {
     <div className="c-accordion">
       <ul>
         {items.map(item => {
-          const isActive = item === activeItem;
+          const isActive = activeItem && item.key === activeItem.key;
           const isHover = item === hoveredItem;
           const area = {
             ...item.config.areas[0],
@@ -43,7 +43,12 @@ function Accordion({ items }) {
               </button>
               {isActive && (
                 <div className="accordion-content">
-                  <Chart className="accordion-chart" data={item.data} config={item.config} />
+                  <Chart
+                    className="accordion-chart"
+                    data={item.data}
+                    config={item.config}
+                    metadata={item.metadata}
+                  />
                 </div>
               )}
             </li>

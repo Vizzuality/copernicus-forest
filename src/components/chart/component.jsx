@@ -32,26 +32,27 @@ CustomDot.propTypes = {
 
 const CustomTooltip = props => {
   const { payload, label, metadata } = props;
-  const { dataset, unit } = metadata || { // example metadata, delete
-    dataset: 'Annual Mean Temperature',
-    model: 'RCP 8.5',
+  const { dataset, unit, model } = metadata || {
+    // example metadata, delete
+    dataset: 'Annual Mean Temperature', // biovar
+    model: 'rcp85', // scenario
     unit: '°C'
   };
-  // console.log(props);
   return (
     <div className="custom-tooltip">
       <p className="label">{`${dataset} in ${label}`}</p>
-      {payload
-        // removing duplicates, e.g. line and area in biovars page
-        .filter((key, index, self) => self.findIndex(_key => _key.name === key.name) === index)
-        .map(p => (
-          <p className="desc" key={p.name}>
-            <svg height="6" width="6">
-              <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
-            </svg>
-            <span className="value">{`${p.name}: ${p.value}${p.unit || unit}`}</span>
-          </p>
-        ))}
+      {payload &&
+        payload
+          // removing duplicates, e.g. line and area in biovars page
+          .filter((key, index, self) => self.findIndex(_key => _key.name === key.name) === index)
+          .map(p => (
+            <p className="desc" key={p.name}>
+              <svg height="6" width="6">
+                <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
+              </svg>
+              <span className="value">{`${model || p.name}: ${p.value}${p.unit || unit}`}</span>
+            </p>
+          ))}
     </div>
   );
 };
