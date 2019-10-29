@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
 import { useScenariosPerCountry } from 'graphql/queries';
+import { Query } from 'urql';
 import { getYearsForScenario, getYearsRange, getEarliestAndLatestYears, parseYears } from './utils';
 import Component from './component';
 
@@ -92,7 +93,7 @@ const Container = () => {
     setScenario,
     parsedYears,
     enabledStartYears,
-    endYear: chosenEndYear,
+    endYear: String(chosenEndYear),
     enabledEndYears,
     scenario: chosenScenario,
     parsedScenarios
@@ -127,7 +128,36 @@ const Container = () => {
     height: 300
   };
 
-  return <Component filters={filters} config={chartConfig} />;
+  if (chosenStartYear && chosenEndYear && country && chosenScenario) {
+    console.log('got data');
+    return (
+      <Query
+        query={`{
+      # biovars{
+      #   name,
+      #   key
+      # },
+      countryBiovarDistributions(where: {
+        year_lte: ${chosenEndYear},
+        year_gte: ${chosenStartYear},
+        country: { iso: "${country}" },
+        scenario: { key: "${scenario}" }
+      }) {
+        value: summary,
+        name: year,
+        biovar { key }
+      }
+    }`}
+      >
+        {({ fetching, data: queryData, error }) =>
+          console.log(error, fetching) || fetching ? null : (
+            <Component data={queryData} filters={filters} config={chartConfig} />
+          )}
+      </Query>
+    );
+  }
+  console.log('no data');
+  return null;
 };
 
 export default Container;

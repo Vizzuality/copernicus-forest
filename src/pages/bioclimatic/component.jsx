@@ -19,7 +19,7 @@ function BioClimaticPage(props) {
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario).label;
 
   const [activeLayers, setActiveLayers] = useState(layers.map(l => ({ ...l, active: true })));
-  const { fetching, data: biovars, error } = useBiovars();
+  const { fetching, data, error } = useBiovars();
 
   // TODO: change to graphQL query based on scenario, biovar (item), and country
   const mockData = [
@@ -33,8 +33,10 @@ function BioClimaticPage(props) {
     { name: '2090', [scenario]: 18 }
   ];
 
-  const filterData = data =>
-    data.filter(d => Number(d.name) >= Number(startYear) && Number(d.name) <= Number(endYear));
+  const filterData = dataPoints =>
+    dataPoints.filter(
+      d => Number(d.name) >= Number(startYear) && Number(d.name) <= Number(endYear)
+    );
 
   return (
     <div className="c-bioclimatic l-page">
@@ -46,7 +48,7 @@ function BioClimaticPage(props) {
         {!fetching && !error && (
           <div className="bioclimatic-chart">
             <Accordion
-              items={sortBy(biovars.biovars, 'key').map((bv, i) => ({
+              items={sortBy(data.biovars, 'key').map((bv, i) => ({
                 title: `BIO ${i + 1} = ${bv.name}`,
                 key: bv.key,
                 data: filterData(mockData),

@@ -69,14 +69,22 @@ export const useScenariosPerCountry = iso => {
   }`);
 };
 
-export const useCountryBiovarDistributionsPerYearsRangeAndCountry = (fromYear, toYear, iso) => {
+export const useCountryBiovarDistributionsPerYearsRangeAndCountry = (
+  fromYear,
+  toYear,
+  iso,
+  scenario
+) => {
   return useBuildBaseQuery(`{
     countryBiovarDistributions(where: {
       year_lte: ${toYear},
       year_gte: ${fromYear},
-      country: { iso: ${iso} }
+      country: { iso: ${iso} },
+      scenario: { key: ${scenario} }
     }) {
       summary,
+      year,
+      biovar { key }
     }
   }`);
 };
