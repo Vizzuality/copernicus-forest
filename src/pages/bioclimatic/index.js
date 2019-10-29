@@ -2,12 +2,7 @@ import React, { useMemo } from 'react';
 import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
 import { useScenariosPerCountry } from 'graphql/queries';
-import {
-  getYearsForScenario,
-  getYearsRange,
-  getEarliestAndLatestYears,
-  parseYears
-} from 'components/filters/utils';
+import { getYearsForScenario, getYearsRange, getEarliestAndLatestYears, parseYears } from './utils';
 import Component from './component';
 
 import styles from './styles.scss';
@@ -106,13 +101,13 @@ const Container = () => {
   const chartConfig = {
     lines: [
       {
-        key: scenario,
+        key: chosenScenario,
         color: styles.colorPink
       }
     ],
     areas: [
       {
-        key: scenario,
+        key: chosenScenario,
         color: styles.colorPink
       }
     ],
