@@ -99,7 +99,7 @@ const Container = () => {
     parsedScenarios
   };
 
-  const chartConfig = {
+  const getChartConfig = unit => ({
     lines: [
       {
         key: 'value',
@@ -113,9 +113,9 @@ const Container = () => {
       }
     ],
     yAxis: {
-      domain: [0, 20],
-      unit: '°C',
-      ticks: [0, 5, 10, 15, 20],
+      // domain: [0, 20],
+      unit,
+      // ticks: [0, 5, 10, 15, 20],
       customTick: true,
       axisLine: false
     },
@@ -126,7 +126,7 @@ const Container = () => {
       vertical: false
     },
     height: 300
-  };
+  });
 
   if (chosenStartYear && chosenEndYear && country && chosenScenario) {
     return (
@@ -134,7 +134,8 @@ const Container = () => {
         query={`{
       biovars{
         name,
-        key
+        key,
+        unit
       },
       countryBiovarDistributions(where: {
         year_lte: ${chosenEndYear},
@@ -149,7 +150,9 @@ const Container = () => {
     }`}
       >
         {({ fetching, data: queryData }) =>
-          fetching ? null : <Component data={queryData} filters={filters} config={chartConfig} />}
+          fetching ? null : (
+            <Component data={queryData} filters={filters} getConfig={getChartConfig} />
+          )}
       </Query>
     );
   }

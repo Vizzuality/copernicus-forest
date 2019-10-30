@@ -14,7 +14,7 @@ import LayerToggle from 'components/map/controls/layer-toggle';
 import layers from 'layers.json';
 
 function BioClimaticPage(props) {
-  const { config, filters, data } = props;
+  const { getConfig, filters, data } = props;
   const { scenario, parsedScenarios } = filters;
 
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario).label;
@@ -32,11 +32,11 @@ function BioClimaticPage(props) {
               title: `BIO ${i + 1} = ${bv.name}`,
               key: bv.key,
               data: biovarsData[bv.key],
-              config,
+              config: getConfig(bv.unit),
               metadata: {
                 dataset: bv.name.replace(/ *\([^)]*\) */g, ''),
                 model: parsedScenario,
-                unit: '°C' // TODO: change
+                unit: bv.unit
               }
             }))}
           />
@@ -73,7 +73,7 @@ function BioClimaticPage(props) {
 
 BioClimaticPage.propTypes = {
   data: PropTypes.object,
-  config: PropTypes.object,
+  getConfig: PropTypes.func,
   filters: PropTypes.object
 };
 
