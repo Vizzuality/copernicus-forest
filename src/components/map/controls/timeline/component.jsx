@@ -17,13 +17,12 @@ const TimelineComponent = ({
   timelineParams,
   handleOnChange
 }) => {
-  
   return (
     <div className={cx(styles.container, className)}>
       {data && (
         <div className={styles.header}>
           <span className={styles.title}>{title}</span>
-          {Object.keys(data).map((key) => (
+          {Object.keys(data).map(key => (
             <button
               id={key}
               className={cx(styles.tab, { [styles.activeTab]: key === activeTab })}
@@ -40,10 +39,7 @@ const TimelineComponent = ({
           handleOnChange={handleOnChange}
           handleChange={() => {}}
         />
-        <button
-          className={styles.speedButton}
-          onClick={toggleTimelineSpeed}
-        >
+        <button className={styles.speedButton} onClick={toggleTimelineSpeed}>
           {selectedSpeed.name}
         </button>
       </div>
@@ -55,9 +51,8 @@ TimelineComponent.propTypes = {
   activeTab: PropTypes.bool,
   setActiveTab: PropTypes.func,
   className: PropTypes.object,
-  handleOnChange: PropTypes.func,
+  handleOnChange: PropTypes.func
 };
-
 
 export default TimelineComponent;
 

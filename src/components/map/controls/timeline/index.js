@@ -31,8 +31,8 @@ const Timeline = ({ data, activeTab, setActiveTab, className, title, handleOnCha
 
   const toggleTimelineSpeed = () => {
     const nextIndex = timelineSpeedMap.length === speedIndex + 1 ? 0 : speedIndex + 1;
-    setSpeedIndex(nextIndex)
-  }
+    setSpeedIndex(nextIndex);
+  };
 
   const timelineParams = {
     canPlay: true,
@@ -44,7 +44,7 @@ const Timeline = ({ data, activeTab, setActiveTab, className, title, handleOnCha
     endDate: `${activeScenario && activeScenario.endYear}-12-31`,
     trimEndDate: `${activeScenario && activeScenario.startYear}-01-01`,
     speed: timelineSpeedMap[speedIndex].value,
-    step: activeScenario && activeScenario.step || 10,
+    step: (activeScenario && activeScenario.step) || 10,
     marks: [],
     handleStyle: {
       backgroundColor: '#5C5C5C',
@@ -71,8 +71,6 @@ const Timeline = ({ data, activeTab, setActiveTab, className, title, handleOnCha
     trackColors: {},
     customClass: styles.legendItemTimeStep
   };
-
-
 
   return (
     <Component

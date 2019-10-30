@@ -16,8 +16,8 @@ const DistributionPage = props => {
 
   useEffect(() => {
     scenarios && setActiveScenario(futureScenarios[0].key);
-    console.log('futureDistribution: ',activeScenario)
-  }, []);
+    console.log('futureDistribution: ', activeScenario);
+  }, [activeScenario, futureScenarios, scenarios]);
 
   const zoomIn = () => {
     const { zoom } = viewport;
@@ -31,32 +31,32 @@ const DistributionPage = props => {
     setViewport(vp => ({ ...vp, zoom: newZoom }));
   };
 
-
-  const getStartYear = (scenario) => {
+  const getStartYear = scenario => {
     const scenarioYears = scenario.countryBiovarDistributions;
     return scenarioYears && minBy(scenarioYears, ({ year }) => year).year;
-  }
+  };
 
-  const getEndYear = (scenario) => {
+  const getEndYear = scenario => {
     const scenarioYears = scenario.countryBiovarDistributions;
     return scenarioYears && maxBy(scenarioYears, ({ year }) => year).year;
-  }
+  };
 
   // parsing
   const timelineData =
     futureScenarios &&
     futureScenarios.reduce((acc, sc) => {
-        return { ...acc,
-          [sc.key]: {
-            name: sc.name,
-            startYear: getStartYear(sc),
-            endYear: getEndYear(sc),
-            step: 10
-          }
+      return {
+        ...acc,
+        [sc.key]: {
+          name: sc.name,
+          startYear: getStartYear(sc),
+          endYear: getEndYear(sc),
+          step: 10
         }
+      };
     }, {});
 
-  console.log('parsedScenarios data: ',timelineData)
+  console.log('parsedScenarios data: ', timelineData);
 
   return (
     <Component
