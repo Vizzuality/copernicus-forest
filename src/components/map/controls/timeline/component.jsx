@@ -6,82 +6,47 @@ import { LegendItemTimeStep } from 'vizzuality-components';
 
 import styles from './styles.module.scss';
 
-const TimelineComponent = ({ activeTab = 'rcp85', setActiveTab, className }) => {
-  const data = {
-    title: 'Future distribution',
-    tabs: [
-      {
-        slug: 'rcp45',
-        name: 'RCP 4.5'
-      },
-      {
-        slug: 'rcp85',
-        name: 'RCP 8.5'
-      }
-    ]
-  };
-
-  const timelineParams = {
-    canPlay: true,
-    dateFormat: 'YYYY',
-    interval: 'years',
-    minDate: '2020-01-01',
-    maxDate: '2090-12-31',
-    startDate: '2020-01-01',
-    endDate: '2090-12-31',
-    trimEndDate: '2016-09-14',
-    speed: 20,
-    step: 1,
-    marks: [],
-    handleStyle: {
-      backgroundColor: '#5C5C5C',
-      borderRadius: '0',
-      // boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.29)',
-      border: '2px solid white',
-      height: '12px',
-      transform: 'translate(2px, 2px)',
-      width: '6px',
-      zIndex: 2
-    },
-    trackStyle: {
-      backgroundColor: '#DF5127',
-      borderRadius: '0',
-      height: '6px'
-    },
-    railStyle: {
-      backgroundColor: '#5C5C5C',
-      borderRadius: '0',
-      height: '6px'
-    },
-    range: false,
-    trackColors: {},
-    className: 'xd',
-    playButton: <div>dups</div>
-  };
-
+const TimelineComponent = ({
+  activeTab,
+  setActiveTab,
+  className,
+  toggleTimelineSpeed,
+  title,
+  data,
+  selectedSpeed,
+  timelineParams,
+  handleOnChange
+}) => {
+  
   return (
     <div className={cx(styles.container, className)}>
       {data && (
         <div className={styles.header}>
-          <span className={styles.title}>{data.title}</span>
-          {data.tabs.map(({ id, name, slug }) => (
+          <span className={styles.title}>{title}</span>
+          {Object.keys(data).map((key) => (
             <button
-              id={id}
-              className={cx(styles.tab, { [styles.activeTab]: slug === activeTab })}
-              onClick={() => setActiveTab(slug)}
+              id={key}
+              className={cx(styles.tab, { [styles.activeTab]: key === activeTab })}
+              onClick={() => setActiveTab(key)}
             >
-              {name}
+              {data[key].name}
             </button>
           ))}
         </div>
       )}
-      <LegendItemTimeStep
-        playButton={<div>dups</div>}
-        activeLayer={{ id: 'id', timelineParams }}
-        handleOnChange={() => console.log('handleOnChange')}
-        handleChange={() => console.log('handleChange')}
-        // handleOnAfterChange={date => console.log('handleOnAfterChange')}
-      />
+      <div className={styles.timeline}>
+        <LegendItemTimeStep
+          activeLayer={{ id: 'id', timelineParams }}
+          handleOnChange={handleOnChange}
+          handleChange={() => {}}
+        />
+        <button
+          className={styles.speedButton}
+          onClick={toggleTimelineSpeed}
+        >
+          {selectedSpeed.name}
+        </button>
+      </div>
     </div>
   );
 };
@@ -89,8 +54,10 @@ const TimelineComponent = ({ activeTab = 'rcp85', setActiveTab, className }) => 
 TimelineComponent.propTypes = {
   activeTab: PropTypes.bool,
   setActiveTab: PropTypes.func,
-  className: PropTypes.object
+  className: PropTypes.object,
+  handleOnChange: PropTypes.func,
 };
+
 
 export default TimelineComponent;
 

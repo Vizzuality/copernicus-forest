@@ -21,8 +21,9 @@ const DistributionPageComponent = ({
   zoomOut,
   speciesListVisible,
   activeSpecies,
-  futureDistribution,
-  setFutureDistribution
+  activeScenario,
+  setActiveScenario,
+  timelineData
 }) => {
   const match = useRouteMatch('/:iso');
   const { iso } = (match && match.params) || '';
@@ -78,8 +79,10 @@ const DistributionPageComponent = ({
       </Map>
       <Timeline
         className={styles.timeline}
-        activeTab={futureDistribution}
-        setActiveTab={setFutureDistribution}
+        activeTab={activeScenario}
+        setActiveTab={setActiveScenario}
+        title="Future distribution"
+        data={timelineData}
       />
       <div className={styles.navigationBar}>
         <button className={styles.zoomButton} onClick={() => zoomIn()}>
@@ -113,8 +116,9 @@ DistributionPageComponent.propTypes = {
   zoomOut: PropTypes.func,
   activeSpecies: PropTypes.object,
   speciesListVisible: PropTypes.bool,
-  futureDistribution: PropTypes.string,
-  setFutureDistribution: PropTypes.func
+  activeScenario: PropTypes.string,
+  setActiveScenario: PropTypes.func,
+  timelineData: PropTypes.object
 };
 
 export default DistributionPageComponent;
