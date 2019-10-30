@@ -102,13 +102,13 @@ const Container = () => {
   const chartConfig = {
     lines: [
       {
-        key: chosenScenario,
+        key: 'value',
         color: styles.colorPink
       }
     ],
     areas: [
       {
-        key: chosenScenario,
+        key: 'value',
         color: styles.colorPink
       }
     ],
@@ -129,14 +129,13 @@ const Container = () => {
   };
 
   if (chosenStartYear && chosenEndYear && country && chosenScenario) {
-    console.log('got data');
     return (
       <Query
         query={`{
-      # biovars{
-      #   name,
-      #   key
-      # },
+      biovars{
+        name,
+        key
+      },
       countryBiovarDistributions(where: {
         year_lte: ${chosenEndYear},
         year_gte: ${chosenStartYear},
@@ -149,14 +148,11 @@ const Container = () => {
       }
     }`}
       >
-        {({ fetching, data: queryData, error }) =>
-          console.log(error, fetching) || fetching ? null : (
-            <Component data={queryData} filters={filters} config={chartConfig} />
-          )}
+        {({ fetching, data: queryData }) =>
+          fetching ? null : <Component data={queryData} filters={filters} config={chartConfig} />}
       </Query>
     );
   }
-  console.log('no data');
   return null;
 };
 
