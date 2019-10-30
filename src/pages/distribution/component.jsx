@@ -1,13 +1,21 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
 import Icon from 'components/icon';
+import { vectorLayerCarto } from 'layers';
+
+import { LayerManager, Layer } from 'layer-manager/dist/components';
+import { PluginMapboxGl } from 'layer-manager';
 
 import styles from './styles.module.scss';
 
 const DistributionPageComponent = ({ viewport, setViewport, zoomIn, zoomOut }) => {
+  const cartoLayer = vectorLayerCarto('SWE'); // hardcoded iso for tests
+  const layers = [cartoLayer];
+  const [activeLayers] = useState(layers.map(l => ({ ...l, active: true })));
+
   return (
     <div className={styles.distribution}>
       <Map
@@ -16,7 +24,19 @@ const DistributionPageComponent = ({ viewport, setViewport, zoomIn, zoomOut }) =
         viewport={viewport}
         showZoom={false}
         setViewport={setViewport}
-      />
+      >
+        {map => (
+          <LayerManager map={map} plugin={PluginMapboxGl}>
+            {activeLayers
+              .filter(l => l.active)
+              .map(layer => (
+                // TODO: fix all eslint-disables
+                // eslint-disable-next-line react/jsx-props-no-spreading
+                <Layer key={layer.id} {...layer} />
+              ))}
+          </LayerManager>
+        )}
+      </Map>
       <Map
         mapboxApiAccessToken={process.env.react_app_mapbox_token}
         mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
@@ -24,7 +44,19 @@ const DistributionPageComponent = ({ viewport, setViewport, zoomIn, zoomOut }) =
         showZoom={false}
         setViewport={setViewport}
         customClass="mapCustomClass"
-      />
+      >
+        {map => (
+          <LayerManager map={map} plugin={PluginMapboxGl}>
+            {activeLayers
+              .filter(l => l.active)
+              .map(layer => (
+                // TODO: fix all eslint-disables
+                // eslint-disable-next-line react/jsx-props-no-spreading
+                <Layer key={layer.id} {...layer} />
+              ))}
+          </LayerManager>
+        )}
+      </Map>
       <div className={styles.navigationBar}>
         <button className={styles.zoomButton} onClick={() => zoomIn()}>
           <Icon name="icon-zoomin" className="menu-icon" />
