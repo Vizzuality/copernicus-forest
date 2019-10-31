@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
@@ -24,7 +24,7 @@ const DistributionPageComponent = ({
   const match = useRouteMatch('/:iso');
   const { iso } = (match && match.params) || '';
 
-  const opacity = 1;
+  const [opacity, setOpacity] = useState(1);
   const cartoLayer = vectorLayerCarto(iso, opacity);
   // put active layers in the url
   // along with its opacities
@@ -92,6 +92,7 @@ const DistributionPageComponent = ({
         middleName="Uncertain"
         highEndName="Agreed presence"
         activeSpecies={speciesListVisible ? '' : activeSpecies}
+        handleOpacity={o => setOpacity(o)}
       />
     </div>
   );
@@ -102,7 +103,7 @@ DistributionPageComponent.propTypes = {
   setViewport: PropTypes.func,
   zoomIn: PropTypes.func,
   zoomOut: PropTypes.func,
-  activeSpecies: PropTypes.string,
+  activeSpecies: PropTypes.object,
   speciesListVisible: PropTypes.bool
 };
 

@@ -15,6 +15,7 @@ const RampLegend = ({
   transparentRamp,
   colorRamp = [],
   activeSpecies
+  // handleOpacity
 }) => {
   const [legendOpen, toggleLegend] = useState(true);
 
@@ -50,10 +51,10 @@ const RampLegend = ({
           </div>
           <div className={styles.icons}>
             <button className={styles.button}>
-              <Icon name="icon-close" />
+              <Icon name="icon-info" />
             </button>
             <button className={styles.button}>
-              <Icon name="icon-close" />
+              <Icon name="icon-opacity" />
             </button>
             <button className={styles.button} onClick={() => toggleLegend(false)}>
               <Icon className={styles.collapseIcon} name="icon-arrow-left" />
@@ -90,7 +91,7 @@ RampLegend.propTypes = {
       return new Error('Please provide a ramp of colours array in HEX!');
     }
   },
-  activeSpecies: PropTypes.string
+  activeSpecies: PropTypes.oneOfType(PropTypes.object, PropTypes.string)
 };
 
 export default RampLegend;
