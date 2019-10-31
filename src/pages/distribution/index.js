@@ -1,23 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
+import { useLocation, useHistory } from 'react-router-dom';
+
 import { useScenariosPerCountry } from 'graphql/queries';
+import { useQueryParams, setQueryParams } from 'url.js';
+
 import { minBy, maxBy } from 'lodash';
 
 import Component from './component';
 
 const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
-  const [activeScenario, setActiveScenario] = useState(null);
+  // const [activeScenario, setActiveScenario] = useState(null);
   const { match } = props;
   const { iso } = (match && match.params) || {};
 
+  const location = useLocation();
+  const history = useHistory();
+  const currentQueryParams = useQueryParams();
+
+  const { scenario } = currentQueryParams;
   const { data } = useScenariosPerCountry(iso);
+
   const scenarios = data && data.scenarios;
   const futureScenarios = scenarios && scenarios.filter(({ key }) => key !== 'current');
 
-  useEffect(() => {
-    scenarios && setActiveScenario(futureScenarios[0].key);
-    console.log('futureDistribution: ', activeScenario);
-  }, [activeScenario, futureScenarios, scenarios]);
+  const activeScenario = useMemo(
+    () => (futureScenarios && futureScenarios.length ? scenario || futureScenarios[0].key : ''),
+    [futureScenarios, scenario]
+  );
+
+  const setActiveScenario = sc => {
+    setQueryParams({ ...currentQueryParams, scenario: sc }, location, history);
+  };
 
   const zoomIn = () => {
     const { zoom } = viewport;
@@ -31,13 +45,13 @@ const DistributionPage = props => {
     setViewport(vp => ({ ...vp, zoom: newZoom }));
   };
 
-  const getStartYear = scenario => {
-    const scenarioYears = scenario.countryBiovarDistributions;
+  const getStartYear = sc => {
+    const scenarioYears = sc.countryBiovarDistributions;
     return scenarioYears && minBy(scenarioYears, ({ year }) => year).year;
   };
 
-  const getEndYear = scenario => {
-    const scenarioYears = scenario.countryBiovarDistributions;
+  const getEndYear = sc => {
+    const scenarioYears = sc.countryBiovarDistributions;
     return scenarioYears && maxBy(scenarioYears, ({ year }) => year).year;
   };
 
