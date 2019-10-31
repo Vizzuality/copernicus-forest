@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Component from './component';
 
-const DistributionPage = () => {
+const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
 
   const zoomIn = () => {
@@ -17,7 +17,14 @@ const DistributionPage = () => {
   };
 
   return (
-    <Component viewport={viewport} setViewport={setViewport} zoomIn={zoomIn} zoomOut={zoomOut} />
+    <Component
+      viewport={viewport}
+      setViewport={setViewport}
+      zoomIn={zoomIn}
+      zoomOut={zoomOut}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+    />
   );
 };
 

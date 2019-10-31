@@ -1,0 +1,154 @@
+@import '~styles/settings';
+@import '~styles/mixins';
+
+$value-top-offset: 25px;
+$value-side-offset: 4px;
+
+%font {
+  font-size: $font-size-14;
+}
+
+.legendContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $color-white;
+  width: 100%;
+  height: 70px;
+  padding: 0 $c-header-padding;
+}
+
+.closedLegend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  background-color: $color-white;
+  height: 70px;
+  padding: $c-header-padding;
+  border-left: 1px solid $color-black;
+  border-top: 1px solid $color-black;
+}
+
+.layerTitle {
+  color: $color-black;
+  margin-right: $c-header-padding;
+}
+
+.ramp {
+  width: 550px;
+  height: 10px;
+  border-top: 1px solid $color-gray-1;
+  border-bottom: 1px solid $color-gray-1;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: $color-black;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: $color-black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.transparent {
+  background-image: url('../../assets/backgrounds/alpha.png');
+}
+
+.colors {
+  height: 100%;
+  width: 100%;
+}
+
+.lowEndValue {
+  @extend %font;
+  position: absolute;
+  top: calc(-1 * #{$value-top-offset});
+  left: calc(-1 * #{$value-side-offset});
+}
+
+.lowEndName {
+  @extend %font;
+  position: absolute;
+  bottom: calc(-1 * #{$value-top-offset});
+  left: calc(-1 * #{$value-side-offset});
+}
+
+.highEndValue {
+  @extend %font;
+  position: absolute;
+  right: calc(-1 * #{$value-side-offset});
+  top: calc(-1 * #{$value-top-offset});
+}
+
+.highEndName {
+  @extend %font;
+  position: absolute;
+  right: calc(-1 * #{$value-side-offset});
+  bottom: calc(-1 * #{$value-top-offset});
+}
+
+.middleValue {
+  @extend %font;
+  position: absolute;
+  top: calc(-1 * #{$value-top-offset});
+  left: 47%;
+
+  &::before {
+    content: "";
+    width: 1px;
+    height: 7px;
+    background-color: $color-black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+  }
+}
+
+.middleName {
+  @extend %font;
+  position: absolute;
+  bottom: calc(-1 * #{$value-top-offset});
+  left: 43%;
+}
+
+.icons {
+  display: flex;
+  height: 100%;
+  margin-left: $c-header-padding;
+}
+
+.button {
+  padding: 0 $c-header-padding;
+  border-left: 1px solid $color-black;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.collapseIcon {
+  transform: rotate(-90deg);
+}
+
+.expandIcon {
+  transform: rotate(90deg);
+}
+
+.italic {
+  font-style: italic;
+}
