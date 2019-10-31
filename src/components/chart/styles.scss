@@ -1,9 +1,31 @@
 @import '~styles/settings';
 
-.c-dashboard {
+.c-chart {
   .recharts-legend-wrapper {
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 50px;
+  }
+
+  .custom-tooltip {
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid $color-gray-1;
+    background-color: $color-white;
+
+    .desc,
+    .label {
+      font-family: $font-family;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .label {
+      margin-bottom: 8px;
+    }
+
+    .desc .value{
+      margin-left: 4px;
+    }
   }
 }

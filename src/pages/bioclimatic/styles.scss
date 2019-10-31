@@ -1,13 +1,11 @@
 @import '~styles/settings';
 
 .c-bioclimatic {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
   
   .content {
-    height: 100%;
+    height: calc(100% - 70px);
     display: flex;
 
     & > * {
@@ -19,8 +17,9 @@
     width: 100%;
     max-width: 50vw;
     height: 100%;
-    background-color: $color-background;
-    padding: 20px 50px;
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: $color-white;
   }
 
   .map-wrapper {

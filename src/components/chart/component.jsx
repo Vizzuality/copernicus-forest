@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  LineChart,
+  ComposedChart,
   Line,
   Area,
   XAxis,
@@ -24,21 +24,103 @@ function CustomDot(props) {
   );
 }
 
-function Chart({ className, data, config }) {
-  const { lines, areas, yAxis, xAxis, grid, showLegend } = config;
+CustomDot.propTypes = {
+  cx: PropTypes.number,
+  cy: PropTypes.number,
+  stroke: PropTypes.string
+};
+
+const CustomTooltip = props => {
+  const { payload, label, metadata } = props;
+  const { dataset, unit, model } = metadata || {
+    // example metadata, delete
+    dataset: 'Annual Mean Temperature', // biovar
+    model: 'rcp85', // scenario
+    unit: '°C'
+  };
   return (
-    <div className={cx('c-dashboard', className)}>
-      <ResponsiveContainer width="100%" height={200}>
-        <LineChart data={data} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
-          <CartesianGrid strokeDasharray="3 3" {...grid} />
+    <div className="custom-tooltip">
+      <p className="label">{`${dataset} in ${label}`}</p>
+      {payload &&
+        payload
+          // removing duplicates, e.g. line and area in biovars page
+          .filter((key, index, self) => self.findIndex(_key => _key.name === key.name) === index)
+          .map(p => (
+            <p className="desc" key={p.name}>
+              <svg height="6" width="6">
+                <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
+              </svg>
+              <span className="value">{`${model || p.name}: ${p.value}${p.unit || unit}`}</span>
+            </p>
+          ))}
+    </div>
+  );
+};
+
+CustomTooltip.propTypes = {
+  payload: PropTypes.array,
+  label: PropTypes.string,
+  metadata: PropTypes.object
+};
+
+function CustomTick(props) {
+  const { payload, index, y, ticks, unit } = props;
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <text {...props} y={y + 4} fill="#222222" dx={-16}>
+      {payload.value}
+      {((ticks && ticks.length && index === ticks.length - 1) || // last tick or
+        props.index >= 4) && // def bigger than 4 (accordion) -> add unit
+        unit}
+    </text>
+  );
+}
+
+CustomTick.propTypes = {
+  payload: PropTypes.object,
+  index: PropTypes.number,
+  y: PropTypes.number,
+  ticks: PropTypes.array,
+  unit: PropTypes.string
+};
+
+function Chart({ className, data, config, metadata }) {
+  const { lines, areas, yAxis, xAxis, grid, showLegend, height, composedChart } = config;
+  return (
+    <div className={cx('c-chart', className)}>
+      <ResponsiveContainer width="100%" height={height || 200}>
+        <ComposedChart
+          data={data}
+          margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+          {...composedChart}
+        >
+          <CartesianGrid {...grid} />
           <XAxis dataKey="name" {...xAxis} />
-          <YAxis type="number" {...yAxis} />
+          <YAxis
+            type="number"
+            tick={yAxis.customTick && <CustomTick ticks={yAxis.ticks} unit={yAxis.unit} />}
+            {...yAxis}
+          >
+            {' '}
+            {yAxis.content}{' '}
+          </YAxis>
           <Tooltip
             // TODO: make it actually work
             isAnimationActive
             animationBegin={2000}
+            content={<CustomTooltip metadata={metadata} />}
           />
           {showLegend && <Legend align="right" layout="vertical" verticalAlign="top" />}
+          {areas &&
+            areas.map(area => (
+              <Area
+                type="monotone"
+                key={area.key}
+                dataKey={area.key}
+                stroke={area.color}
+                fill={area.color}
+              />
+            ))}
           {lines &&
             lines.map(line => (
               <Line
@@ -50,18 +132,7 @@ function Chart({ className, data, config }) {
                 dot={CustomDot}
               />
             ))}
-          {areas &&
-            areas.map(area => (
-              <Area
-                type="monotone"
-                key={area.key}
-                dataKey={area.key}
-                stroke={area.color}
-                fillOpacity={1}
-                fill={area.color}
-              />
-            ))}
-        </LineChart>
+        </ComposedChart>
       </ResponsiveContainer>
     </div>
   );
@@ -70,7 +141,8 @@ function Chart({ className, data, config }) {
 Chart.propTypes = {
   data: PropTypes.array.isRequired,
   config: PropTypes.object.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  metadata: PropTypes.object
 };
 
 export default Chart;
