@@ -23,7 +23,7 @@ const Container = () => {
   const { data } = useScenariosPerCountry(country);
 
   // parsing
-  const scenarios = data && data.scenarios;
+  const scenarios = data && data.scenarios && data.scenarios.filter(s => s.key !== 'current');
   const parsedScenarios =
     scenarios &&
     scenarios.map(sc => ({
@@ -145,7 +145,7 @@ const Container = () => {
         year_lte: ${chosenEndYear},
         year_gte: ${chosenStartYear},
         country: { iso: "${country}" },
-        scenario: { key: "${scenario}" }
+        scenario: { key: "${chosenScenario}" }
       }) {
         value: summary,
         name: year,
