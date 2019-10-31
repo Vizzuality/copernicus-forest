@@ -15,34 +15,39 @@ const TimelineComponent = ({
   data,
   selectedSpeed,
   timelineParams,
-  handleOnChange
+  handleOnChange,
+  hideHeader,
+  hideTimeline
 }) => {
   return (
     <div className={cx(styles.container, className)}>
-      {data && (
+      {!hideHeader && data && (
         <div className={styles.header}>
           <span className={styles.title}>{title}</span>
-          {Object.keys(data).map(key => (
-            <button
-              id={key}
-              className={cx(styles.tab, { [styles.activeTab]: key === activeTab })}
-              onClick={() => setActiveTab(key)}
-            >
-              {data[key].name}
-            </button>
-          ))}
+          {Object.keys(data).length > 1 &&
+            Object.keys(data).map(key => (
+              <button
+                id={key}
+                className={cx(styles.tab, { [styles.activeTab]: key === activeTab })}
+                onClick={() => setActiveTab(key)}
+              >
+                {data[key].name}
+              </button>
+            ))}
         </div>
       )}
-      <div className={styles.timeline}>
-        <LegendItemTimeStep
-          activeLayer={{ id: 'id', timelineParams }}
-          handleOnChange={handleOnChange}
-          handleChange={() => {}}
-        />
-        <button className={styles.speedButton} onClick={toggleTimelineSpeed}>
-          {selectedSpeed.name}
-        </button>
-      </div>
+      {!hideTimeline && (
+        <div className={styles.timeline}>
+          <LegendItemTimeStep
+            activeLayer={{ id: 'id', timelineParams }}
+            handleOnChange={handleOnChange}
+            handleChange={() => {}}
+          />
+          <button className={styles.speedButton} onClick={toggleTimelineSpeed}>
+            {selectedSpeed.name}
+          </button>
+        </div>
+      )}
     </div>
   );
 };

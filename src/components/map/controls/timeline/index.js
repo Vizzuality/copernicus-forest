@@ -5,27 +5,22 @@ import Component from './component';
 
 import styles from './styles.module.scss';
 
-const Timeline = ({ data, activeTab, setActiveTab, className, title, handleOnChange }) => {
+const Timeline = ({
+  data,
+  activeTab,
+  setActiveTab,
+  className,
+  title,
+  handleOnChange,
+  hideHeader,
+  hideTimeline
+}) => {
   const [speedIndex, setSpeedIndex] = useState(0);
   const timelineSpeedMap = [
     { name: 'x 1', value: 1000 },
     { name: 'x 2', value: 500 },
     { name: 'x 4', value: 250 }
   ];
-
-  // const data = {
-  //   title: 'Future distribution',
-  //   tabs: [
-  //     {
-  //       slug: 'rcp45',
-  //       name: 'RCP 4.5'
-  //     },
-  //     {
-  //       slug: 'rcp85',
-  //       name: 'RCP 8.5'
-  //     }
-  //   ]
-  // };
 
   const activeScenario = data && activeTab && data[activeTab];
 
@@ -85,6 +80,8 @@ const Timeline = ({ data, activeTab, setActiveTab, className, title, handleOnCha
       className={className}
       selectedSpeed={timelineSpeedMap[speedIndex] || timelineSpeedMap[0]}
       handleOnChange={handleOnChange}
+      hideHeader={hideHeader}
+      hideTimeline={hideTimeline}
     />
   );
 };
@@ -93,11 +90,15 @@ Timeline.propTypes = {
   activeTab: PropTypes.bool,
   setActiveTab: PropTypes.func,
   className: PropTypes.object,
-  handleOnChange: PropTypes.func
+  handleOnChange: PropTypes.func,
+  hideHeader: PropTypes.bool,
+  hideTimeline: PropTypes.bool
 };
 
 Timeline.defaultProps = {
-  handleOnChange: () => {}
+  handleOnChange: () => {},
+  hideHeader: false,
+  hideTimeline: false
 };
 
 export default Timeline;

@@ -10,7 +10,7 @@ import Component from './component';
 
 const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
-  // const [activeScenario, setActiveScenario] = useState(null);
+  
   const { match } = props;
   const { iso } = (match && match.params) || {};
 
@@ -18,19 +18,21 @@ const DistributionPage = props => {
   const history = useHistory();
   const currentQueryParams = useQueryParams();
 
-  const { scenario } = currentQueryParams;
+  const { futureScenario } = currentQueryParams;
   const { data } = useScenariosPerCountry(iso);
 
   const scenarios = data && data.scenarios;
   const futureScenarios = scenarios && scenarios.filter(({ key }) => key !== 'current');
+  const currentScenarios = scenarios && scenarios.filter(({ key }) => key === 'current');
 
-  const activeScenario = useMemo(
-    () => (futureScenarios && futureScenarios.length ? scenario || futureScenarios[0].key : ''),
-    [futureScenarios, scenario]
+  const activeFutureScenario = useMemo(
+    () =>
+      futureScenarios && futureScenarios.length ? futureScenario || futureScenarios[0].key : '',
+    [futureScenarios, futureScenario]
   );
 
-  const setActiveScenario = sc => {
-    setQueryParams({ ...currentQueryParams, scenario: sc }, location, history);
+  const setFutureScenario = sc => {
+    setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);
   };
 
   const zoomIn = () => {
@@ -55,8 +57,7 @@ const DistributionPage = props => {
     return scenarioYears && maxBy(scenarioYears, ({ year }) => year).year;
   };
 
-  // parsing
-  const timelineData =
+  const futureScenariosData =
     futureScenarios &&
     futureScenarios.reduce((acc, sc) => {
       return {
@@ -70,7 +71,19 @@ const DistributionPage = props => {
       };
     }, {});
 
-  console.log('parsedScenarios data: ', timelineData);
+  const currentScenariosData =
+    currentScenarios &&
+    currentScenarios.reduce((acc, sc) => {
+      return {
+        ...acc,
+        [sc.key]: {
+          name: sc.name,
+          startYear: getStartYear(sc),
+          endYear: getEndYear(sc),
+          step: 10
+        }
+      };
+    }, {});
 
   return (
     <Component
@@ -78,11 +91,12 @@ const DistributionPage = props => {
       setViewport={setViewport}
       zoomIn={zoomIn}
       zoomOut={zoomOut}
-      activeScenario={activeScenario}
-      setActiveScenario={setActiveScenario}
-      timelineData={timelineData}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
+      activeFutureScenario={activeFutureScenario}
+      setFutureScenario={setFutureScenario}
+      futureScenariosData={futureScenariosData}
+      currentScenariosData={currentScenariosData}
     />
   );
 };
