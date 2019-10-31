@@ -5,11 +5,6 @@ import React from 'react';
 const Icons = () => (
   <svg aria-hidden="true" style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}>
     <defs>
-      <symbol id="icon-pause" viewBox="0 0 15 20">
-        <title>pause</title>
-        <path d="M0 0h4.615v20h-4.615z"></path>
-        <path d="M10.385 0h4.615v20h-4.615z"></path>
-      </symbol>
       <symbol id="icon-info" viewBox="0 0 20 20">
         <title>info</title>
         <path d="M10 0c5.512 0 10 4.489 10 10s-4.489 10-10 10c-5.512 0-10-4.489-10-10s4.489-10 10-10zM10 2.393c-4.189 0-7.607 3.418-7.607 7.607s3.417 7.607 7.607 7.607c4.189 0 7.607-3.418 7.607-7.607s-3.417-7.607-7.607-7.607z"></path>

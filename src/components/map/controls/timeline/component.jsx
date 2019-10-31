@@ -60,24 +60,14 @@ TimelineComponent.propTypes = {
   activeTab: PropTypes.bool,
   setActiveTab: PropTypes.func,
   className: PropTypes.object,
-  handleOnChange: PropTypes.func
+  handleOnChange: PropTypes.func,
+  title: PropTypes.string,
+  data: PropTypes.object,
+  hideHeader: PropTypes.bool,
+  hideTimeline: PropTypes.bool,
+  timelineParams: PropTypes.object,
+  selectedSpeed: PropTypes.object,
+  toggleTimelineSpeed: PropTypes.func
 };
 
 export default TimelineComponent;
-
-// {...this.props}
-// activeLayer={{
-//   ...activeLayer,
-//   timelineParams: {
-//     ...activeLayer.timelineParams,
-//     marks: this.props.marks,
-//     handleStyle: {
-//       backgroundColor: 'white',
-//       borderRadius: '2px',
-//       boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.29)',
-//       border: '0px',
-//       zIndex: 2
-//     }
-//   }
-// }}
-// />
