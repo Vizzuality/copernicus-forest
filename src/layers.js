@@ -1,6 +1,23 @@
-export const vectorLayerCarto = iso => {
+export const COLOR_RAMP = [
+  '#FFFFFF',
+  '#F0ECFF',
+  '#E2D9FF',
+  '#D4C6FF',
+  '#C5B4FF',
+  '#B7A1FF',
+  '#A98EFF',
+  '#9A7CFF',
+  '#8C69FF',
+  '#7E56FF',
+  '#7044FF'
+];
+
+const transparent = 'rgba(255, 255, 255, 0)';
+
+export const vectorLayerCarto = (iso, opacity = 1) => {
   return {
     id: '0911abc4-546565-d861-4d7a-84d6-0fa07b51d7d8',
+    name: 'Committee average',
     sqlParams: {
       where: {
         iso3: iso
@@ -12,12 +29,12 @@ export const vectorLayerCarto = iso => {
         layers: [
           {
             options: {
-              sql: `WITH a AS (SELECT cartodb_id, the_geom_webmercator, uuid, iso3 FROM all_geometry {{where}}) SELECT a.the_geom_webmercator, a.cartodb_id, b.uuid, b.timeinterval, b.species, b.scenario, b.probabilityemca FROM ${iso.toLowerCase()}_zonal_spp_uuid as b INNER JOIN a ON b.uuid = a.uuid`
+              sql: `WITH a AS (SELECT cartodb_id, the_geom_webmercator, uuid, iso3 FROM all_geometry {{where}}) SELECT a.the_geom_webmercator, a.cartodb_id, b.uuid, b.timeinterval, b.species, b.scenario, b.probabilityemca FROM ${iso.toLowerCase()}_zonal_spp_uuid as b INNER JOIN a ON b.uuid = a.uuid LIMIT 4328`
             },
             type: 'cartodb'
           }
         ],
-        maxzoom: 19,
+        maxzoom: 3,
         minzoom: 2,
         vectorLayers: [
           {
@@ -27,47 +44,47 @@ export const vectorLayerCarto = iso => {
                 ['linear'],
                 ['get', 'probabilityemca'],
                 0,
-                '#7FBF7B',
+                transparent,
                 0.05,
-                '#8DC689',
+                transparent,
                 0.15,
-                '#9BCD98',
+                transparent,
                 0.2,
-                '#A9D4A7',
+                transparent,
                 0.25,
-                '#B7DBB5',
+                transparent,
                 0.3,
-                '#C6E2C4',
+                transparent,
                 0.35,
-                '#D4E9D3',
+                transparent,
                 0.4,
-                '#E2F0E1',
+                transparent,
                 0.45,
-                '#F0F7F0',
+                transparent,
                 0.5,
-                '#FFFFFF',
+                COLOR_RAMP[0],
                 0.55,
-                '#F0ECFF',
+                COLOR_RAMP[1],
                 0.6,
-                '#E2D9FF',
+                COLOR_RAMP[2],
                 0.65,
-                '#D4C6FF',
+                COLOR_RAMP[3],
                 0.7,
-                '#C5B4FF',
+                COLOR_RAMP[4],
                 0.75,
-                '#B7A1FF',
+                COLOR_RAMP[5],
                 0.8,
-                '#A98EFF',
+                COLOR_RAMP[6],
                 0.85,
-                '#9A7CFF',
+                COLOR_RAMP[7],
                 0.9,
-                '#8C69FF',
+                COLOR_RAMP[8],
                 0.95,
-                '#7E56FF',
+                COLOR_RAMP[9],
                 1,
-                '#7044FF'
+                COLOR_RAMP[10]
               ],
-              'fill-opacity': 1
+              'fill-opacity': opacity
             },
             'source-layer': 'layer0',
             type: 'fill'
