@@ -31,7 +31,7 @@ function BioClimaticPage(props) {
             items={sortBy(data.biovars, 'key').map((bv, i) => ({
               title: `BIO ${i + 1} = ${bv.name}`,
               key: bv.key,
-              data: biovarsData[bv.key],
+              data: sortBy(biovarsData[bv.key], 'name'),
               config: getConfig(bv.unit),
               metadata: {
                 dataset: bv.name.replace(/ *\([^)]*\) */g, ''),

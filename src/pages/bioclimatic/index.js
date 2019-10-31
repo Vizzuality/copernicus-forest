@@ -3,6 +3,7 @@ import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { Query } from 'urql';
+import { Label } from 'recharts';
 import { getYearsForScenario, getYearsRange, getEarliestAndLatestYears, parseYears } from './utils';
 import Component from './component';
 
@@ -113,17 +114,20 @@ const Container = () => {
       }
     ],
     yAxis: {
-      // domain: [0, 20],
-      unit,
-      // ticks: [0, 5, 10, 15, 20],
       customTick: true,
-      axisLine: false
+      tickSize: 0,
+      axisLine: false,
+      content: <Label value={unit} position="insideTop" dx={6} dy={-40} fill="#222" />
     },
     xAxis: {
+      tick: { fill: '#222' },
       padding: { left: -30, right: -30 }
     },
     grid: {
       vertical: false
+    },
+    composedChart: {
+      margin: { top: 40, right: 40, left: 0, bottom: 0 }
     },
     height: 300
   });

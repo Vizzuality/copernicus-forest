@@ -67,7 +67,7 @@ function CustomTick(props) {
   const { payload, index, y, ticks, unit } = props;
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
-    <text {...props} y={y + 4}>
+    <text {...props} y={y + 4} fill="#222222" dx={-16}>
       {payload.value}
       {((ticks && ticks.length && index === ticks.length - 1) || // last tick or
         props.index >= 4) && // def bigger than 4 (accordion) -> add unit
@@ -85,18 +85,25 @@ CustomTick.propTypes = {
 };
 
 function Chart({ className, data, config, metadata }) {
-  const { lines, areas, yAxis, xAxis, grid, showLegend, height } = config;
+  const { lines, areas, yAxis, xAxis, grid, showLegend, height, composedChart } = config;
   return (
     <div className={cx('c-chart', className)}>
       <ResponsiveContainer width="100%" height={height || 200}>
-        <ComposedChart data={data} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
+        <ComposedChart
+          data={data}
+          margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+          {...composedChart}
+        >
           <CartesianGrid {...grid} />
           <XAxis dataKey="name" {...xAxis} />
           <YAxis
             type="number"
             tick={yAxis.customTick && <CustomTick ticks={yAxis.ticks} unit={yAxis.unit} />}
             {...yAxis}
-          />
+          >
+            {' '}
+            {yAxis.content}{' '}
+          </YAxis>
           <Tooltip
             // TODO: make it actually work
             isAnimationActive
