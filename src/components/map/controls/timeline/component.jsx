@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { LegendItemTimeStep } from 'vizzuality-components';
+import Icon from 'components/icon';
 
 import styles from './styles.module.scss';
 
@@ -23,6 +24,9 @@ const TimelineComponent = ({
     <div className={cx(styles.container, className)}>
       {!hideHeader && data && (
         <div className={styles.header}>
+          <button className={styles.infoButton}>
+            <Icon name="icon-info" />
+          </button>
           <span className={styles.title}>{title}</span>
           {Object.keys(data).length > 1 &&
             Object.keys(data).map(key => (

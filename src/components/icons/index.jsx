@@ -90,6 +90,18 @@ const Icons = () => (
         <title>play</title>
         <path fill="#fff" d="M0.076 0.222l20.426 15.778-20.426 15.778z"></path>
       </symbol>
+      <symbol id="icon-info" viewBox="0 0 32 32">
+        <title>info</title>
+        <path d="M16 0c8.813 0 16 7.187 16 16s-7.187 16-16 16c-8.813 0-16-7.187-16-16s7.187-16 16-16zM16 2c-7.709 0-14 6.291-14 14s6.291 14 14 14c7.709 0 14-6.291 14-14s-6.291-14-14-14zM16 2c7.714 0 14 6.286 14 14s-6.287 14-14 14c-7.714 0-14-6.286-14-14s6.287-14 14-14zM16 4c-6.609 0-12 5.391-12 12s5.39 12 12 12c6.609 0 12-5.391 12-12s-5.39-12-12-12z"></path>
+        <path d="M13.984 13.588h4.032v12.158h-4.032v-12.158zM15.984 23.746h0.032v-8.158h-0.032v8.158z"></path>
+        <path
+          strokeLinejoin="miter"
+          strokeLinecap="butt"
+          strokeMiterlimit="4"
+          strokeWidth="2"
+          d="M14.984 7.762h2.032v2.032h-2.032v-2.032z"
+        ></path>
+      </symbol>
     </defs>
   </svg>
 );
