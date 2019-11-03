@@ -35,7 +35,7 @@ const DistributionPageComponent = ({
   return (
     <div className={styles.distribution}>
       <Map
-        mapboxApiAccessToken={process.env.react_app_mapbox_token}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
         viewport={viewport}
         setViewport={setViewport}
@@ -54,7 +54,7 @@ const DistributionPageComponent = ({
         )}
       </Map>
       <Map
-        mapboxApiAccessToken={process.env.react_app_mapbox_token}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
         viewport={viewport}
         showZoom={false}
