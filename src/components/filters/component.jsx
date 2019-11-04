@@ -42,7 +42,11 @@ const FiltersComponent = ({
           <Dropdown
             className={styles.dropdown}
             title={
-              scenario && parsedScenarios && parsedScenarios.find(s => s.value === scenario).label
+              `Future scenarios: ${scenario &&
+                parsedScenarios &&
+                parsedScenarios
+                  .find(s => s.value === scenario)
+                  .label.replace(/^[^-]*[^ -]*- */g, '')}` // split by hyphen, get only 'RCP' part
             }
             options={parsedScenarios}
             handleClick={option => setScenario(option.value)}

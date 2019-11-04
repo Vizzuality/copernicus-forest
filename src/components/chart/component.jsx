@@ -64,10 +64,11 @@ CustomTooltip.propTypes = {
 };
 
 function CustomTick(props) {
-  const { payload, index, y, ticks, unit } = props;
+  const { payload, index, y, ticks, unit, orientation } = props;
+  const isY = orientation === 'vertical';
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
-    <text {...props} y={y + 4} fill="#222222" dx={-16}>
+    <text {...props} y={isY ? y + 4 : y + 20} fill="#222222" dx={isY ? -16 : 0}>
       {payload.value}
       {((ticks && ticks.length && index === ticks.length - 1) || // last tick or
         props.index >= 4) && // def bigger than 4 (accordion) -> add unit
@@ -95,10 +96,22 @@ function Chart({ className, data, config, metadata }) {
           {...composedChart}
         >
           <CartesianGrid {...grid} />
-          <XAxis dataKey="name" {...xAxis} />
+          <XAxis
+            dataKey="name"
+            tick={
+              xAxis.customTick && (
+                <CustomTick ticks={xAxis.ticks} unit={xAxis.unit} orientation="horizontal" />
+              )
+            }
+            {...xAxis}
+          />
           <YAxis
             type="number"
-            tick={yAxis.customTick && <CustomTick ticks={yAxis.ticks} unit={yAxis.unit} />}
+            tick={
+              yAxis.customTick && (
+                <CustomTick ticks={yAxis.ticks} unit={yAxis.unit} orientation="vertical" />
+              )
+            }
             {...yAxis}
           >
             {' '}

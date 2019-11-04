@@ -31,11 +31,13 @@ function BioClimaticPage(props) {
             items={sortBy(data.biovars, 'key').map((bv, i) => ({
               title: `BIO ${i + 1} = ${bv.name}`,
               key: bv.key,
-              data: sortBy(biovarsData[bv.key], 'name'),
+              data: sortBy(biovarsData[bv.key], 'name').map(d =>
+                d.name === 1995 ? { ...d, name: 'current' } : d
+              ),
               config: getConfig(bv.unit),
               metadata: {
-                dataset: bv.name.replace(/ *\([^)]*\) */g, ''),
-                model: parsedScenario,
+                dataset: bv.name.replace(/ *\([^)]*\) */g, ''), // no "formulae" like (a-b)
+                model: parsedScenario.replace(/ *- *\w[^-]*$/g, ''), // no RCP code
                 unit: bv.unit
               }
             }))}

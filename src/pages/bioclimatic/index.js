@@ -27,7 +27,7 @@ const Container = () => {
   const parsedScenarios =
     scenarios &&
     scenarios.map(sc => ({
-      label: sc.name,
+      label: `${sc.name} - ${sc.key.replace('rcp45', 'RCP 4.5').replace('rcp85', 'RCP 8.5')}`,
       value: sc.key
     }));
 
@@ -120,7 +120,8 @@ const Container = () => {
       content: <Label value={unit} position="insideTop" dx={6} dy={-40} fill="#222" />
     },
     xAxis: {
-      tick: { fill: '#222' },
+      customTick: true,
+      tickSize: 0,
       padding: { left: -30, right: -30 }
     },
     grid: {
