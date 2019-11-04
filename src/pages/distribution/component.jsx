@@ -25,10 +25,10 @@ const DistributionPageComponent = ({
   const { iso } = (match && match.params) || '';
 
   const [opacity, setOpacity] = useState(1);
-  const cartoLayer = vectorLayerCarto(iso, opacity);
+  const cartoLayer = useMemo(() => vectorLayerCarto(iso, opacity), [iso, opacity]);
   // put active layers in the url
   // along with its opacities
-  const layers = [cartoLayer];
+  const layers = useMemo(() => [cartoLayer], [cartoLayer]);
 
   const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
 
