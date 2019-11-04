@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Component from './component';
 
@@ -16,13 +16,22 @@ const Timeline = ({
   hideTimeline
 }) => {
   const [speedIndex, setSpeedIndex] = useState(0);
+  const [year, setYear] = useState(null);
+
   const timelineSpeedMap = [
-    { name: 'x 1', value: 1000 },
-    { name: 'x 2', value: 500 },
-    { name: 'x 4', value: 250 }
+    { name: 'x1', value: 1000 },
+    { name: 'x2', value: 500 },
+    { name: 'x4', value: 250 }
   ];
 
   const activeScenario = data && activeTab && data[activeTab];
+  const { startYear } = activeScenario || {};
+
+  useEffect(() => {
+    if (!year) {
+      setYear(startYear);
+    }
+  }, [year, startYear]);
 
   const toggleTimelineSpeed = () => {
     const nextIndex = timelineSpeedMap.length === speedIndex + 1 ? 0 : speedIndex + 1;
@@ -33,11 +42,11 @@ const Timeline = ({
     canPlay: true,
     dateFormat: 'YYYY',
     interval: 'years',
-    minDate: `${activeScenario && activeScenario.startYear}-01-01`,
-    maxDate: `${activeScenario && activeScenario.endYear}-12-31`,
-    startDate: `${activeScenario && activeScenario.startYear}-01-01`,
-    endDate: `${activeScenario && activeScenario.endYear}-12-31`,
-    trimEndDate: `${activeScenario && activeScenario.startYear}-01-01`,
+    min: activeScenario && activeScenario.startYear,
+    max: activeScenario && activeScenario.endYear,
+    start: activeScenario && activeScenario.startYear,
+    end: activeScenario && activeScenario.endYear,
+    trim: activeScenario && activeScenario.endYear,
     speed: timelineSpeedMap[speedIndex].value,
     step: (activeScenario && activeScenario.step) || 10,
     marks: [],
@@ -63,7 +72,6 @@ const Timeline = ({
       height: '6px'
     },
     range: false,
-    trackColors: {},
     customClass: styles.legendItemTimeStep
   };
 
@@ -72,7 +80,6 @@ const Timeline = ({
       timelineSpeed={toggleTimelineSpeed}
       toggleTimelineSpeed={toggleTimelineSpeed}
       timelineSpeedMap={timelineSpeedMap}
-      timelineParams={timelineParams}
       data={data}
       title={title}
       activeTab={activeTab}
@@ -82,6 +89,9 @@ const Timeline = ({
       handleOnChange={handleOnChange}
       hideHeader={hideHeader}
       hideTimeline={hideTimeline}
+      year={year}
+      setYear={setYear}
+      timelineParams={timelineParams}
     />
   );
 };

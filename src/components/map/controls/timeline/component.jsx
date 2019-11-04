@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import { LegendItemTimeStep } from 'vizzuality-components';
+import { Timestep } from 'vizzuality-components';
 import Icon from 'components/icon';
 
 import styles from './styles.module.scss';
@@ -18,7 +19,9 @@ const TimelineComponent = ({
   timelineParams,
   handleOnChange,
   hideHeader,
-  hideTimeline
+  hideTimeline,
+  year,
+  setYear
 }) => {
   return (
     <div className={cx(styles.container, className)}>
@@ -42,11 +45,14 @@ const TimelineComponent = ({
       )}
       {!hideTimeline && (
         <div className={styles.timeline}>
-          <LegendItemTimeStep
-            activeLayer={{ id: 'id', timelineParams }}
-            handleOnChange={handleOnChange}
-            handleChange={() => {}}
+          <Timestep
+            {...timelineParams}
+            handleOnChange={dates => {
+              handleOnChange(dates);
+              setYear(dates[1]);
+            }}
           />
+          <span className={styles.year}>{year}</span>
           <button className={styles.speedButton} onClick={toggleTimelineSpeed}>
             {selectedSpeed.name}
           </button>
@@ -67,7 +73,9 @@ TimelineComponent.propTypes = {
   hideTimeline: PropTypes.bool,
   timelineParams: PropTypes.object,
   selectedSpeed: PropTypes.object,
-  toggleTimelineSpeed: PropTypes.func
+  toggleTimelineSpeed: PropTypes.func,
+  year: PropTypes.number,
+  setYear: PropTypes.func
 };
 
 export default TimelineComponent;
