@@ -68,7 +68,10 @@ class MapComponent extends PureComponent {
   onViewportChange = (v, interactionState) => {
     const { onViewportChange, setViewport } = this.props;
     const { loaded } = this.state;
-    if (loaded && !interactionState.inTransition) {
+    if (
+      (loaded && interactionState && !interactionState.inTransition) ||
+      (loaded && !interactionState)
+    ) {
       onViewportChange(v);
       if (setViewport) {
         setViewport(v);

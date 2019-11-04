@@ -20,6 +20,7 @@ function BioClimaticPage(props) {
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario).label;
   const biovarsData = groupBy(data.countryBiovarDistributions, 'biovar.key');
   const [activeLayers, setActiveLayers] = useState(layers.map(l => ({ ...l, active: true })));
+  const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
 
   return (
     <div className="c-bioclimatic l-page">
@@ -45,7 +46,8 @@ function BioClimaticPage(props) {
           <Map
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
             mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
-            viewport={{ zoom: 4, latitude: 40, longitude: -5 }}
+            viewport={viewport}
+            setViewport={setViewport}
           >
             {map => (
               <LayerManager map={map} plugin={PluginMapboxGl}>

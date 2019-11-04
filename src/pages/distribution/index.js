@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import debounce from 'lodash/debounce';
 import Component from './component';
 
 const DistributionPage = props => {
@@ -17,14 +16,10 @@ const DistributionPage = props => {
     setViewport(vp => ({ ...vp, zoom: newZoom }));
   };
 
-  const handleViewport = debounce(vw => {
-    setViewport(vw);
-  }, 50);
-
   return (
     <Component
       viewport={viewport}
-      setViewport={handleViewport}
+      setViewport={setViewport}
       zoomIn={zoomIn}
       zoomOut={zoomOut}
       // eslint-disable-next-line react/jsx-props-no-spreading
