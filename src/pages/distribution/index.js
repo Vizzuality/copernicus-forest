@@ -8,13 +8,13 @@ const DistributionPage = props => {
   const zoomIn = () => {
     const { zoom } = viewport;
     const newZoom = zoom + 1 <= 24 ? zoom + 1 : zoom;
-    setViewport({ ...viewport, zoom: newZoom });
+    setViewport(vp => ({ ...vp, zoom: newZoom }));
   };
 
   const zoomOut = () => {
     const { zoom } = viewport;
     const newZoom = zoom >= 1 ? zoom - 1 : zoom;
-    setViewport({ ...viewport, zoom: newZoom });
+    setViewport(vp => ({ ...vp, zoom: newZoom }));
   };
 
   const handleViewport = debounce(vw => {
