@@ -20,6 +20,13 @@ export const useSpeciesPerCountry = iso => {
     countries {
       iso,
       name
+    },
+    countrySpecieDistributions(where: {
+      country: { iso: ${iso} },
+    }) {
+      summary,
+      year,
+      biovar { key }
     }
   }`);
 };
