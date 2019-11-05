@@ -82,7 +82,6 @@ RampLegend.propTypes = {
   transparentRamp: PropTypes.shape({
     colorRGBA: PropTypes.array.isRequired // deepest color of the ramp in RGBA
   }), // if passed, ramp background would be set to have a transparent background-image (see alpha.png image in assets)
-  // colorRamp: PropTypes.array, // ramp of colours in HEX (needs to be passed if transparentRamp is not passed)
   // eslint-disable-next-line consistent-return
   colorRamp: props => {
     if (!props.transparentRamp) {
