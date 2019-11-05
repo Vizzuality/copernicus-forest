@@ -48,11 +48,11 @@ const TimelineComponent = ({
         <div className={styles.timeline}>
           <Timestep
             {...timelineParams}
-            handleOnChange={dates => {
-              handleOnChange(dates);
-              setYearIndex(dates[1]);
+            formatValue={value => {
+              handleOnChange(value);
+              setYearIndex(value);
+              return years && years[value];
             }}
-            formatValue={value => years && years[value]}
           />
           <span className={styles.year}>{currentYear}</span>
           <button className={styles.speedButton} onClick={toggleTimelineSpeed}>
