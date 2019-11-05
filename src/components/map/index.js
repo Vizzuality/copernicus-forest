@@ -42,15 +42,6 @@ class MapComponent extends PureComponent {
 
   flyToInterpolator = new FlyToInterpolator();
 
-  componentDidUpdate(prevProps) {
-    const { bounds: prevBounds } = prevProps;
-    const { bounds } = this.props;
-
-    if (!isEmpty(bounds) && !isEqual(bounds, prevBounds)) {
-      this.fitBounds();
-    }
-  }
-
   onLoad = () => {
     const { bounds, onLoad } = this.props;
     this.setState({ loaded: true });
