@@ -27,7 +27,7 @@ function SpeciesPage({ match }) {
     ? Object.values(activeSpeciesDataByYear).map(scenariosByYear => ({
         name: scenariosByYear[0].year,
         ...scenariosByYear.reduce(
-          (acc, sc) => ({ ...acc, [getScenarioName(sc.scenario.key)]: sc.summary }),
+          (acc, sc) => ({ ...acc, [getScenarioName(sc.scenario.key)]: sc.summary * 100 }),
           {}
         )
       }))
@@ -61,9 +61,9 @@ function SpeciesPage({ match }) {
   const config = {
     lines: data && styles && data.scenarios.map((sc, i) => ({ key: sc.name, color: colors[i] })),
     yAxis: {
-      // domain: [0, 100],
-      unit: '%'
-      // ticks: [0, 50, 100]
+      domain: [0, 100],
+      unit: '%',
+      ticks: [0, 50, 100]
     },
     xAxis: {
       padding: { left: 30, right: 30 }
@@ -106,7 +106,7 @@ function SpeciesPage({ match }) {
                 <Chart
                   data={activeSpeciesData}
                   config={config}
-                  // TODO: style tooltip
+                  metadata={{ dataset: activeSpecies.name }}
                 />
                 {/* <p className="species-source">Source: <a
                   target="_blank"

@@ -32,12 +32,7 @@ CustomDot.propTypes = {
 
 const CustomTooltip = props => {
   const { payload, label, metadata } = props;
-  const { dataset, unit, model } = metadata || {
-    // example metadata, delete
-    dataset: 'Annual Mean Temperature', // biovar
-    model: 'rcp85', // scenario
-    unit: '°C'
-  };
+  const { dataset, unit, model } = metadata || { dataset: 'Value' };
   return (
     <div className="custom-tooltip">
       <p className="label">{`${dataset} in ${label}`}</p>
@@ -50,7 +45,9 @@ const CustomTooltip = props => {
               <svg height="6" width="6">
                 <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
               </svg>
-              <span className="value">{`${model || p.name}: ${p.value}${p.unit || unit}`}</span>
+              <span className="value">{`${model || p.name}: ${p.value}${p.unit ||
+                unit ||
+                ''}`}</span>
             </p>
           ))}
     </div>
