@@ -4,7 +4,7 @@ import { useLocation, useHistory } from 'react-router-dom';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
 
-import { minBy, maxBy } from 'lodash';
+import { uniqBy } from 'lodash';
 
 import Component from './component';
 
@@ -47,26 +47,28 @@ const DistributionPage = props => {
     setViewport(vp => ({ ...vp, zoom: newZoom }));
   };
 
-  const getStartYear = sc => {
+  const getYears = sc => {
     const scenarioYears = sc.countryBiovarDistributions;
-    return scenarioYears && minBy(scenarioYears, ({ year }) => year).year;
-  };
-
-  const getEndYear = sc => {
-    const scenarioYears = sc.countryBiovarDistributions;
-    return scenarioYears && maxBy(scenarioYears, ({ year }) => year).year;
+    return (
+      scenarioYears &&
+      uniqBy(scenarioYears, 'year')
+        .map(({ year }) => year)
+        .sort()
+    );
   };
 
   const futureScenariosData =
     futureScenarios &&
     futureScenarios.reduce((acc, sc) => {
+      const years = getYears(sc);
       return {
         ...acc,
         [sc.key]: {
           name: sc.name,
-          startYear: getStartYear(sc),
-          endYear: getEndYear(sc),
-          step: 10
+          start: 0,
+          end: years.length - 1,
+          years,
+          step: 1
         }
       };
     }, {});
@@ -78,8 +80,8 @@ const DistributionPage = props => {
         ...acc,
         [sc.key]: {
           name: sc.name,
-          startYear: getStartYear(sc),
-          endYear: getEndYear(sc),
+          startYear: 0,
+          endYear: 0,
           step: 10
         }
       };

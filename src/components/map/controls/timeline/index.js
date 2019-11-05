@@ -16,7 +16,7 @@ const Timeline = ({
   hideTimeline
 }) => {
   const [speedIndex, setSpeedIndex] = useState(0);
-  const [year, setYear] = useState(null);
+  const [yearIndex, setYearIndex] = useState(null);
 
   const timelineSpeedMap = [
     { name: 'x1', value: 1000 },
@@ -25,13 +25,13 @@ const Timeline = ({
   ];
 
   const activeScenario = data && activeTab && data[activeTab];
-  const { startYear } = activeScenario || {};
+  const { start, end, step } = activeScenario || {};
 
   useEffect(() => {
-    if (!year) {
-      setYear(startYear);
+    if (!yearIndex) {
+      setYearIndex(start);
     }
-  }, [year, startYear]);
+  }, [yearIndex, start]);
 
   const toggleTimelineSpeed = () => {
     const nextIndex = timelineSpeedMap.length === speedIndex + 1 ? 0 : speedIndex + 1;
@@ -42,14 +42,14 @@ const Timeline = ({
     canPlay: true,
     dateFormat: 'YYYY',
     interval: 'years',
-    min: activeScenario && activeScenario.startYear,
-    max: activeScenario && activeScenario.endYear,
-    start: activeScenario && activeScenario.startYear,
-    end: activeScenario && activeScenario.endYear,
-    trim: activeScenario && activeScenario.endYear,
+    min: start,
+    max: end,
+    start,
+    end,
+    trim: start,
+    value: start,
     speed: timelineSpeedMap[speedIndex].value,
-    step: (activeScenario && activeScenario.step) || 10,
-    marks: [],
+    step: step || 1,
     handleStyle: {
       backgroundColor: '#5C5C5C',
       borderRadius: '0',
@@ -75,6 +75,8 @@ const Timeline = ({
     customClass: styles.legendItemTimeStep
   };
 
+  const currentYear = data && data[activeTab] && data[activeTab].years[yearIndex];
+
   return (
     <Component
       timelineSpeed={toggleTimelineSpeed}
@@ -89,9 +91,9 @@ const Timeline = ({
       handleOnChange={handleOnChange}
       hideHeader={hideHeader}
       hideTimeline={hideTimeline}
-      year={year}
-      setYear={setYear}
+      setYearIndex={setYearIndex}
       timelineParams={timelineParams}
+      currentYear={currentYear}
     />
   );
 };

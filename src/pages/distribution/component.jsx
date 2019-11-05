@@ -85,14 +85,7 @@ const DistributionPageComponent = ({
         title="Future distribution"
         data={futureScenariosData}
       />
-      <Timeline
-        // className={styles.timeline}
-        // activeTab={activeScenario}
-        // setActiveTab={setActiveScenario}
-        title="Current distribution"
-        data={currentScenariosData}
-        hideTimeline
-      />
+      <Timeline title="Current distribution" data={currentScenariosData} hideTimeline />
       <div className={styles.navigationBar}>
         <button className={styles.zoomButton} onClick={() => zoomIn()}>
           <Icon name="icon-zoomin" className="menu-icon" />
