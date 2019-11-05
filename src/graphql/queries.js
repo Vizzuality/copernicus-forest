@@ -21,12 +21,17 @@ export const useSpeciesPerCountry = iso => {
       iso,
       name
     },
+    scenarios{
+      name,
+      key
+    },
     countrySpecieDistributions(where: {
-      country: { iso: ${iso} },
+      country: { iso: "${iso}" },
     }) {
       summary,
       year,
-      biovar { key }
+      specie { scientificName },
+      scenario { key }
     }
   }`);
 };

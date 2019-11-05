@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import groupBy from 'lodash/groupBy';
 import { useSpeciesPerCountry } from 'graphql/queries';
 import Chart from 'components/chart';
 import Modal from 'components/modal';
 import styles from './styles.scss';
-import mockData from './data.json';
 
 function SpeciesPage({ match }) {
   const { iso, id } = (match && match.params) || {};
@@ -13,9 +13,25 @@ function SpeciesPage({ match }) {
   const [wikiInfo, setInfo] = useState(null);
 
   const { fetching, data, error } = useSpeciesPerCountry(iso);
+  const getScenarioName = key =>
+    data && data.scenarios && data.scenarios.find(sc => sc.key === key).name;
 
   const species = data ? data.species : [];
+  const speciesData = data ? groupBy(data.countrySpecieDistributions, 'specie.scientificName') : {};
   const activeSpecies = species.length ? species.find(sp => sp.id === id) || species[0] : null;
+  const activeSpeciesDataByYear =
+    speciesData && activeSpecies
+      ? groupBy(speciesData[activeSpecies.scientificName], 'year')
+      : null;
+  const activeSpeciesData = activeSpeciesDataByYear
+    ? Object.values(activeSpeciesDataByYear).map(scenariosByYear => ({
+        name: scenariosByYear[0].year,
+        ...scenariosByYear.reduce(
+          (acc, sc) => ({ ...acc, [getScenarioName(sc.scenario.key)]: sc.summary }),
+          {}
+        )
+      }))
+    : [];
 
   useEffect(() => {
     if (activeSpecies) {
@@ -40,21 +56,14 @@ function SpeciesPage({ match }) {
     return species[index + 1] ? species[index + 1].id : '#';
   };
 
+  const colors = [styles.colorViolet, styles.colorMustard, styles.colorViolet];
+
   const config = {
-    lines: [
-      {
-        key: 'Optimistic',
-        color: styles && styles.colorViolet
-      },
-      {
-        key: 'Business as usual',
-        color: styles && styles.colorMustard
-      }
-    ],
+    lines: data && styles && data.scenarios.map((sc, i) => ({ key: sc.name, color: colors[i] })),
     yAxis: {
-      domain: [0, 100],
-      unit: '%',
-      ticks: [0, 50, 100]
+      // domain: [0, 100],
+      unit: '%'
+      // ticks: [0, 50, 100]
     },
     xAxis: {
       padding: { left: 30, right: 30 }
@@ -94,7 +103,11 @@ function SpeciesPage({ match }) {
                   See in the table below a summary of the proportion of suitable area for this
                   species in the selected country.
                 </p>
-                <Chart data={mockData} config={config} />
+                <Chart
+                  data={activeSpeciesData}
+                  config={config}
+                  // TODO: style tooltip
+                />
                 {/* <p className="species-source">Source: <a
                   target="_blank"
                   rel="noopener noreferrer"
