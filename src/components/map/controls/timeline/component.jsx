@@ -21,7 +21,8 @@ const TimelineComponent = ({
   hideHeader,
   hideTimeline,
   setYearIndex,
-  currentYear
+  currentYear,
+  years
 }) => {
   return (
     <div className={cx(styles.container, className)}>
@@ -51,6 +52,7 @@ const TimelineComponent = ({
               handleOnChange(dates);
               setYearIndex(dates[1]);
             }}
+            formatValue={value => years && years[value]}
           />
           <span className={styles.year}>{currentYear}</span>
           <button className={styles.speedButton} onClick={toggleTimelineSpeed}>
@@ -75,7 +77,8 @@ TimelineComponent.propTypes = {
   selectedSpeed: PropTypes.object,
   toggleTimelineSpeed: PropTypes.func,
   currentYear: PropTypes.number,
-  setYearIndex: PropTypes.func
+  setYearIndex: PropTypes.func,
+  years: PropTypes.array
 };
 
 export default TimelineComponent;

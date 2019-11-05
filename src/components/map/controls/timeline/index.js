@@ -75,7 +75,8 @@ const Timeline = ({
     customClass: styles.legendItemTimeStep
   };
 
-  const currentYear = data && data[activeTab] && data[activeTab].years[yearIndex];
+  const years = data && data[activeTab] && data[activeTab].years;
+  const currentYear = years && years[yearIndex];
 
   return (
     <Component
@@ -94,6 +95,7 @@ const Timeline = ({
       setYearIndex={setYearIndex}
       timelineParams={timelineParams}
       currentYear={currentYear}
+      years={years}
     />
   );
 };
