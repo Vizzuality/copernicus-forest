@@ -20,33 +20,35 @@ const RampLegend = ({
   const [legendOpen, toggleLegend] = useState(true);
 
   return (
-    <>
+    <div className={styles.legendContainer}>
       {legendOpen && (
-        <div className={styles.legendContainer}>
+        <div className={styles.legend}>
           {activeSpecies && (
             <div className={styles.speciesName}>
               Species:
               <span className={styles.italic}>&nbsp;{activeSpecies.name}</span>
             </div>
           )}
-          <div className={styles.layerTitle}>{title}</div>
-          <div className={cx(styles.ramp, { [styles.transparent]: transparentRamp })}>
-            <div
-              className={styles.colors}
-              style={{
-                background: transparentRamp
-                  ? `linear-gradient(to right, rgba(193,191,234,0) 0%, rgba(255,255,255,1) 50%, rgba(${transparentRamp.colorRGBA.join(
-                      ', '
-                    )}) 100%)`
-                  : `linear-gradient(0.25turn, ${colorRamp.join(', ')})`
-              }}
-            >
-              <span className={styles.lowEndValue}>{lowEndValue}</span>
-              <span className={styles.middleValue}>{middleValue}</span>
-              <span className={styles.highEndValue}>{highEndValue}</span>
-              <span className={styles.lowEndName}>{lowEndName}</span>
-              <span className={styles.middleName}>{middleName}</span>
-              <span className={styles.highEndName}>{highEndName}</span>
+          <div className={styles.rampContainer}>
+            <div className={styles.layerTitle}>{title}:</div>
+            <div className={cx(styles.ramp, { [styles.transparent]: transparentRamp })}>
+              <div
+                className={styles.colors}
+                style={{
+                  background: transparentRamp
+                    ? `linear-gradient(to right, rgba(193,191,234,0) 0%, rgba(255,255,255,1) 50%, rgba(${transparentRamp.colorRGBA.join(
+                        ', '
+                      )}) 100%)`
+                    : `linear-gradient(0.25turn, ${colorRamp.join(', ')})`
+                }}
+              >
+                <span className={styles.lowEndValue}>{lowEndValue}</span>
+                <span className={styles.middleValue}>{middleValue}</span>
+                <span className={styles.highEndValue}>{highEndValue}</span>
+                <span className={styles.lowEndName}>{lowEndName}</span>
+                <span className={styles.middleName}>{middleName}</span>
+                <span className={styles.highEndName}>{highEndName}</span>
+              </div>
             </div>
           </div>
           <div className={styles.icons}>
@@ -56,20 +58,16 @@ const RampLegend = ({
             <button className={styles.button}>
               <Icon name="icon-opacity" />
             </button>
-            <button className={styles.button} onClick={() => toggleLegend(false)}>
-              <Icon className={styles.collapseIcon} name="icon-arrow-left" />
-            </button>
           </div>
         </div>
       )}
-      {!legendOpen && (
-        <div className={styles.closedLegend}>
-          <button onClick={() => toggleLegend(true)}>
-            <Icon className={styles.expandIcon} name="icon-arrow-left" />
-          </button>
-        </div>
-      )}
-    </>
+      <button
+        className={cx(styles.toggleLegend, { [styles.legendClosed]: !legendOpen })}
+        onClick={() => toggleLegend(!legendOpen)}
+      >
+        <Icon name="icon-arrow-left" />
+      </button>
+    </div>
   );
 };
 

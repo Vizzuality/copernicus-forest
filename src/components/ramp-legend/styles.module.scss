@@ -10,27 +10,36 @@ $value-side-offset: 4px;
 
 .legendContainer {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: $color-white;
   width: 100%;
   height: 70px;
-  padding: 0 $c-header-padding;
 }
 
-.closedLegend {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-white;
+  border-top: 1px solid $color-black;
+  padding-left: $c-header-padding;
+  height: 100%;
+  width: 100%;
+}
+
+.toggleLegend {
   display: flex;
   background-color: $color-white;
-  height: 70px;
+  height: 100%;
   padding: $c-header-padding;
   border-left: 1px solid $color-black;
   border-top: 1px solid $color-black;
+
+  svg {
+    transform: rotate(-90deg);
+  }
 }
 
 .layerTitle {
@@ -131,23 +140,14 @@ $value-side-offset: 4px;
 .icons {
   display: flex;
   height: 100%;
-  margin-left: auto;
 }
 
 .button {
   padding: 0 $c-header-padding;
   border-left: 1px solid $color-black;
-
-  &:last-child {
-    padding-right: 0;
-  }
 }
 
-.collapseIcon {
-  transform: rotate(-90deg);
-}
-
-.expandIcon {
+.legendClosed svg {
   transform: rotate(90deg);
 }
 
@@ -159,4 +159,9 @@ $value-side-offset: 4px;
   color: $color-gray-1;
   font-family: $font-family-2;
   margin-right: $c-header-padding;
+}
+
+.rampContainer {
+  display: flex;
+  margin: auto;
 }
