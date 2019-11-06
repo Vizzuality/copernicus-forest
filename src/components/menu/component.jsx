@@ -62,6 +62,18 @@ function Menu({ closeMenu, active }) {
           </Link>
         </div>
       ))}
+      <div className="partners">
+        <p>In partnership with:</p>
+        <p className="partner-logo">
+          <img src="/logos/copernicus.png" alt="Copernicus" />
+        </p>
+        <p className="partner-logo">
+          <img src="/logos/ECMWF.png" alt="ECMWF" />
+        </p>
+        <p className="partner-logo">
+          <img src="/logos/EC.png" alt="European Comission" />
+        </p>
+      </div>
     </div>
   );
 }

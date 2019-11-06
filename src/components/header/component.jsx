@@ -18,7 +18,7 @@ const HeaderComponent = props => {
         <nav className="header-links">
           <div className="left-aligned">
             <Link to="/" className="logo">
-              <img src="/logo.svg" alt="logo" />
+              <img src="/logos/logo.svg" alt="logo" />
             </Link>
             {!isHome && <CountriesDropdown />}
           </div>
