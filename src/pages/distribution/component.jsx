@@ -7,6 +7,7 @@ import Icon from 'components/icon';
 import { vectorLayerCarto } from 'layers';
 import { useRouteMatch } from 'react-router-dom';
 import RampLegend from 'components/ramp-legend';
+import Timeline from 'components/map/controls/timeline';
 
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
@@ -19,7 +20,11 @@ const DistributionPageComponent = ({
   zoomIn,
   zoomOut,
   speciesListVisible,
-  activeSpecies
+  activeSpecies,
+  activeFutureScenario,
+  setFutureScenario,
+  futureScenariosData,
+  currentScenariosData
 }) => {
   const match = useRouteMatch('/:iso');
   const { iso } = (match && match.params) || '';
@@ -73,6 +78,14 @@ const DistributionPageComponent = ({
           </LayerManager>
         )}
       </Map>
+      <Timeline
+        className={styles.futureScenariosTimeline}
+        activeTab={activeFutureScenario}
+        setActiveTab={setFutureScenario}
+        title="Future distribution"
+        data={futureScenariosData}
+      />
+      <Timeline title="Current distribution" data={currentScenariosData} hideTimeline />
       <div className={styles.navigationBar}>
         <button className={styles.zoomButton} onClick={() => zoomIn()}>
           <Icon name="icon-zoomin" className="menu-icon" />
@@ -104,7 +117,11 @@ DistributionPageComponent.propTypes = {
   zoomIn: PropTypes.func,
   zoomOut: PropTypes.func,
   activeSpecies: PropTypes.object,
-  speciesListVisible: PropTypes.bool
+  speciesListVisible: PropTypes.bool,
+  activeFutureScenario: PropTypes.string,
+  setFutureScenario: PropTypes.func,
+  futureScenariosData: PropTypes.object,
+  currentScenariosData: PropTypes.object
 };
 
 export default DistributionPageComponent;

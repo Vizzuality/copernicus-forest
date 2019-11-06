@@ -4,7 +4,13 @@ import { useQueryParams, setQueryParams } from 'url.js';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { Query } from 'urql';
 import { Label } from 'recharts';
-import { getYearsForScenario, getYearsRange, getEarliestAndLatestYears, parseYears } from './utils';
+import {
+  getYearsForScenario,
+  getYearsRange,
+  getEarliestAndLatestYears,
+  parseYears,
+  getYears
+} from './utils';
 import Component from './component';
 
 import styles from './styles.scss';
@@ -30,6 +36,23 @@ const Container = () => {
       label: sc.name,
       value: sc.key
     }));
+
+  // timeline data
+  const timelineData =
+    scenarios &&
+    scenarios.reduce((acc, sc) => {
+      const years = getYears(sc);
+      return {
+        ...acc,
+        [sc.key]: {
+          name: sc.name,
+          start: 0,
+          end: years.length - 1,
+          years,
+          step: 1
+        }
+      };
+    }, {});
 
   // computed properties
   const chosenScenario = useMemo(
@@ -155,7 +178,12 @@ const Container = () => {
       >
         {({ fetching, data: queryData }) =>
           fetching ? null : (
-            <Component data={queryData} filters={filters} getConfig={getChartConfig} />
+            <Component
+              data={queryData}
+              filters={filters}
+              getConfig={getChartConfig}
+              timelineData={timelineData}
+            />
           )}
       </Query>
     );

@@ -10,11 +10,12 @@ import Map from 'components/map';
 import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import LayerToggle from 'components/map/controls/layer-toggle';
+import Timeline from 'components/map/controls/timeline';
 
 import layers from 'layers.json';
 
 function BioClimaticPage(props) {
-  const { getConfig, filters, data } = props;
+  const { getConfig, filters, data, timelineData } = props;
   const { scenario, parsedScenarios } = filters;
 
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario).label;
@@ -60,6 +61,7 @@ function BioClimaticPage(props) {
               </LayerManager>
             )}
           </Map>
+          <Timeline className="timeline" activeTab={scenario} data={timelineData} hideHeader />
           <LayerToggle layers={activeLayers} setLayers={setActiveLayers} />
           <Modal
             title="Bioclimatic variables data"
@@ -76,7 +78,8 @@ function BioClimaticPage(props) {
 BioClimaticPage.propTypes = {
   data: PropTypes.object,
   getConfig: PropTypes.func,
-  filters: PropTypes.object
+  filters: PropTypes.object,
+  timelineData: PropTypes.object
 };
 
 export default BioClimaticPage;
