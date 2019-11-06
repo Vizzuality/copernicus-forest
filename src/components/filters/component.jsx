@@ -40,10 +40,10 @@ const FiltersComponent = ({
         )}
         {scenario && (
           <Dropdown
-            className={styles.dropdown}
-            title={
-              scenario && parsedScenarios && parsedScenarios.find(s => s.value === scenario).label
-            }
+            className={styles.dropdownLarge}
+            title={`Future scenarios: ${scenario &&
+              parsedScenarios &&
+              parsedScenarios.find(s => s.value === scenario).shortName}`}
             options={parsedScenarios}
             handleClick={option => setScenario(option.value)}
           />

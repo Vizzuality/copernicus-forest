@@ -29,12 +29,14 @@ const Container = () => {
   const { data } = useScenariosPerCountry(country);
 
   // parsing
-  const scenarios = data && data.scenarios;
+  const scenarios = data && data.scenarios && data.scenarios.filter(s => s.key !== 'current');
   const parsedScenarios =
     scenarios &&
     scenarios.map(sc => ({
-      label: sc.name,
-      value: sc.key
+      label: `${sc.name} - ${sc.shortName}`,
+      value: sc.key,
+      name: sc.name,
+      shortName: sc.shortName
     }));
 
   // timeline data
@@ -143,7 +145,8 @@ const Container = () => {
       content: <Label value={unit} position="insideTop" dx={6} dy={-40} fill="#222" />
     },
     xAxis: {
-      tick: { fill: '#222' },
+      customTick: true,
+      tickSize: 0,
       padding: { left: -30, right: -30 }
     },
     grid: {
@@ -168,7 +171,7 @@ const Container = () => {
         year_lte: ${chosenEndYear},
         year_gte: ${chosenStartYear},
         country: { iso: "${country}" },
-        scenario: { key: "${scenario}" }
+        scenario: { key: "${chosenScenario}" }
       }) {
         value: summary,
         name: year,

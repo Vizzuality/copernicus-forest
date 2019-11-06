@@ -16,6 +16,11 @@
   border-right: 1px solid;
 }
 
+.dropdownLarge {
+  @extend .dropdown;
+  min-width: 370px;
+}
+
 .leftAlign {
   height: 100%;
   display: flex;

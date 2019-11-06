@@ -64,7 +64,7 @@ const DistributionPage = props => {
       return {
         ...acc,
         [sc.key]: {
-          name: sc.name,
+          name: sc.shortName,
           start: 0,
           end: years.length - 1,
           years,
