@@ -34,7 +34,9 @@ const Container = () => {
     scenarios &&
     scenarios.map(sc => ({
       label: `${sc.name} - ${sc.shortName}`,
-      value: sc.key
+      value: sc.key,
+      name: sc.name,
+      shortName: sc.shortName
     }));
 
   // timeline data

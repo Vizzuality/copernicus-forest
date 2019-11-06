@@ -18,7 +18,7 @@ function BioClimaticPage(props) {
   const { getConfig, filters, data, timelineData } = props;
   const { scenario, parsedScenarios } = filters;
 
-  const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario).label;
+  const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario);
   const biovarsData = groupBy(data.countryBiovarDistributions, 'biovar.key');
   const [activeLayers, setActiveLayers] = useState(layers.map(l => ({ ...l, active: true })));
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
@@ -39,7 +39,7 @@ function BioClimaticPage(props) {
               config: getConfig(bv.unit),
               metadata: {
                 dataset: bv.name.replace(/ *\([^)]*\) */g, ''), // no "formulae" like (a-b)
-                model: parsedScenario.replace(/ *- *\w[^-]*$/g, ''), // no RCP code
+                model: parsedScenario.name,
                 unit: bv.unit
               }
             }))}
