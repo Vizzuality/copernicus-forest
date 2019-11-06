@@ -35,3 +35,14 @@ export const parseYears = uniqueYears => {
   const ordered = parsed && orderBy(parsed, 'value');
   return ordered;
 };
+
+export const getYears = sc => {
+  const scenarioYears = sc.countryBiovarDistributions;
+  return (
+    scenarioYears &&
+    uniqBy(scenarioYears, 'year')
+      .map(({ year }) => year)
+      .filter(year => year !== 1995)
+      .sort()
+  );
+};

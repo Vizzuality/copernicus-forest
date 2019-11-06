@@ -10,16 +10,18 @@ import Map from 'components/map';
 import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import LayerToggle from 'components/map/controls/layer-toggle';
+import Timeline from 'components/map/controls/timeline';
 
 import layers from 'layers.json';
 
 function BioClimaticPage(props) {
-  const { getConfig, filters, data } = props;
+  const { getConfig, filters, data, timelineData } = props;
   const { scenario, parsedScenarios } = filters;
 
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario).label;
   const biovarsData = groupBy(data.countryBiovarDistributions, 'biovar.key');
   const [activeLayers, setActiveLayers] = useState(layers.map(l => ({ ...l, active: true })));
+  const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
 
   return (
     <div className="c-bioclimatic l-page">
@@ -47,7 +49,8 @@ function BioClimaticPage(props) {
           <Map
             mapboxApiAccessToken={process.env.react_app_mapbox_token}
             mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
-            viewport={{ zoom: 4, latitude: 40, longitude: -5 }}
+            viewport={viewport}
+            setViewport={setViewport}
           >
             {map => (
               <LayerManager map={map} plugin={PluginMapboxGl}>
@@ -60,6 +63,7 @@ function BioClimaticPage(props) {
               </LayerManager>
             )}
           </Map>
+          <Timeline className="timeline" activeTab={scenario} data={timelineData} hideHeader />
           <LayerToggle layers={activeLayers} setLayers={setActiveLayers} />
           <Modal
             title="Bioclimatic variables data"
@@ -76,7 +80,8 @@ function BioClimaticPage(props) {
 BioClimaticPage.propTypes = {
   data: PropTypes.object,
   getConfig: PropTypes.func,
-  filters: PropTypes.object
+  filters: PropTypes.object,
+  timelineData: PropTypes.object
 };
 
 export default BioClimaticPage;

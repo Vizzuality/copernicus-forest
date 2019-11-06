@@ -48,7 +48,11 @@ const SpeciesDistributionComponent = props => {
           </button>
           <TabsBar data={speciesTabsData} />
         </div>
-        <ContentComponent match={match} />
+        <ContentComponent
+          match={match}
+          activeSpecies={activeSpecies}
+          speciesListVisible={speciesListVisible}
+        />
       </div>
     </div>
   );
