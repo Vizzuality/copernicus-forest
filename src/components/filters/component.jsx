@@ -40,7 +40,7 @@ const FiltersComponent = ({
         )}
         {scenario && (
           <Dropdown
-            className={styles.dropdown}
+            className={styles.dropdownLarge}
             title={
               `Future scenarios: ${scenario &&
                 parsedScenarios &&

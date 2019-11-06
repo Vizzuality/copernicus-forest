@@ -33,7 +33,7 @@ const Container = () => {
   const parsedScenarios =
     scenarios &&
     scenarios.map(sc => ({
-      label: `${sc.name} - ${sc.key.replace('rcp45', 'RCP 4.5').replace('rcp85', 'RCP 8.5')}`,
+      label: `${sc.name} - ${sc.shortName}`,
       value: sc.key
     }));
 

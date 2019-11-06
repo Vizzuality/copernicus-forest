@@ -74,6 +74,7 @@ export const useScenariosPerCountry = iso => {
     }) {
       key,
       name,
+      shortName,
       countryBiovarDistributions {
         year
   		}
