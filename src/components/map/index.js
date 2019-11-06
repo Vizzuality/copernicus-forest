@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
@@ -20,39 +20,27 @@ const DEFAULT_VIEWPORT = {
   lng: 0
 };
 
-class MapComponent extends Component {
+class MapComponent extends PureComponent {
   constructor(props) {
     super(props);
     // events = {};
     this.state = {
-      viewport: {
-        ...DEFAULT_VIEWPORT,
-        ...this.props.viewport // eslint-disable-line
-      },
       flying: false,
       loaded: false
     };
   }
 
-  componentDidUpdate(prevProps) {
-    const { viewport: prevViewport, bounds: prevBounds } = prevProps;
-    const { viewport, bounds } = this.props;
-    const { viewport: stateViewport } = this.state;
+  getMapContainerRef = ref => {
+    this.mapContainer = ref;
+  };
 
-    if (!isEqual(viewport, prevViewport)) {
-      this.setState({
-        // eslint-disable-line
-        viewport: {
-          ...stateViewport,
-          ...viewport
-        }
-      });
+  getMapRef = ref => {
+    if (ref) {
+      this.map = ref.getMap();
     }
+  };
 
-    if (!isEmpty(bounds) && !isEqual(bounds, prevBounds)) {
-      this.fitBounds();
-    }
-  }
+  flyToInterpolator = new FlyToInterpolator();
 
   onLoad = () => {
     const { bounds, onLoad } = this.props;
@@ -68,32 +56,32 @@ class MapComponent extends Component {
     });
   };
 
-  onViewportChange = v => {
+  onViewportChange = (v, interactionState) => {
     const { onViewportChange, setViewport } = this.props;
     const { loaded } = this.state;
-
-    if (loaded) {
-      this.setState({ viewport: v });
+    if (
+      (loaded && interactionState && !interactionState.inTransition) ||
+      (loaded && !interactionState)
+    ) {
       onViewportChange(v);
-      setViewport && setViewport(v);
+      if (setViewport) {
+        setViewport(v);
+      }
     }
   };
 
   onResize = v => {
-    const { onViewportChange } = this.props;
-    const { viewport } = this.state;
+    const { onViewportChange, viewport } = this.props;
     const newViewport = {
       ...viewport,
       ...v
     };
 
-    this.setState({ viewport: newViewport });
     onViewportChange(newViewport);
   };
 
   fitBounds = () => {
-    const { viewport } = this.state;
-    const { bounds, onViewportChange } = this.props;
+    const { bounds, onViewportChange, viewport } = this.props;
     const { bbox, options } = bounds;
 
     const v = {
@@ -108,7 +96,7 @@ class MapComponent extends Component {
     );
 
     const newViewport = {
-      ...this.state.viewport,
+      ...viewport,
       longitude,
       latitude,
       zoom,
@@ -117,8 +105,7 @@ class MapComponent extends Component {
     };
 
     this.setState({
-      flying: true,
-      viewport: newViewport
+      flying: true
     });
     onViewportChange(newViewport);
 
@@ -140,24 +127,21 @@ class MapComponent extends Component {
       doubleClickZoom,
       showZoom,
       zoomButtonsProps,
+      viewport,
       ...mapboxProps
     } = this.props;
-    const { viewport, loaded, flying } = this.state;
+    const { loaded, flying } = this.state;
 
     return (
       <div
-        ref={r => {
-          this.mapContainer = r;
-        }}
+        ref={this.getMapContainerRef}
         className={classnames({
           'c-map': true,
           [customClass]: !!customClass
         })}
       >
         <ReactMapGL
-          ref={map => {
-            this.map = map && map.getMap();
-          }}
+          ref={this.getMapRef}
           // CUSTOM PROPS FROM REACT MAPBOX API
           {...mapboxProps}
           // VIEWPORT
@@ -177,7 +161,7 @@ class MapComponent extends Component {
           onLoad={this.onLoad}
           // getCursor={getCursor}
 
-          transitionInterpolator={new FlyToInterpolator()}
+          transitionInterpolator={this.flyToInterpolator}
           transitionEasing={easeCubic}
         >
           {loaded && !!this.map && typeof children === 'function' && children(this.map)}

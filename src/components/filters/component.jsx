@@ -59,13 +59,13 @@ const FiltersComponent = ({
 };
 
 FiltersComponent.propTypes = {
-  startYear: PropTypes.string,
+  startYear: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   setStartYear: PropTypes.func,
   setEndYear: PropTypes.func,
   setScenario: PropTypes.func,
   parsedYears: PropTypes.array,
   enabledStartYears: PropTypes.array,
-  endYear: PropTypes.string,
+  endYear: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   enabledEndYears: PropTypes.array,
   scenario: PropTypes.string,
   parsedScenarios: PropTypes.array
