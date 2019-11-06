@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Component from './component';
 
@@ -26,12 +26,6 @@ const Timeline = ({
 
   const activeScenario = data && activeTab && data[activeTab];
   const { start, end, step } = activeScenario || {};
-
-  useEffect(() => {
-    if (!yearIndex) {
-      setYearIndex(start);
-    }
-  }, [yearIndex, start]);
 
   const toggleTimelineSpeed = () => {
     const nextIndex = timelineSpeedMap.length === speedIndex + 1 ? 0 : speedIndex + 1;

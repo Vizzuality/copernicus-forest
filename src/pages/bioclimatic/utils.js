@@ -42,6 +42,7 @@ export const getYears = sc => {
     scenarioYears &&
     uniqBy(scenarioYears, 'year')
       .map(({ year }) => year)
+      .filter(year => year !== 1995)
       .sort()
   );
 };

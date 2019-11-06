@@ -1,16 +1,15 @@
 import React, { useState, useMemo } from 'react';
+import PropTypes from 'prop-types';
 import { useLocation, useHistory } from 'react-router-dom';
-
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
-
 import { uniqBy } from 'lodash';
 
 import Component from './component';
 
 const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
-  
+
   const { match } = props;
   const { iso } = (match && match.params) || {};
 
@@ -53,6 +52,7 @@ const DistributionPage = props => {
       scenarioYears &&
       uniqBy(scenarioYears, 'year')
         .map(({ year }) => year)
+        .filter(year => year !== 1995)
         .sort()
     );
   };
@@ -93,14 +93,19 @@ const DistributionPage = props => {
       setViewport={setViewport}
       zoomIn={zoomIn}
       zoomOut={zoomOut}
-      // eslint-disable-next-line react/jsx-props-no-spreading
-      {...props}
       activeFutureScenario={activeFutureScenario}
       setFutureScenario={setFutureScenario}
       futureScenariosData={futureScenariosData}
       currentScenariosData={currentScenariosData}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
     />
   );
 };
 
+DistributionPage.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.object
+  })
+};
 export default DistributionPage;
