@@ -16,10 +16,9 @@ const HeaderComponent = props => {
     <div>
       <div className={cx('c-header', { __border: !isHome })}>
         <nav className="header-links">
-          {/* logo placeholder */}
           <div className="left-aligned">
             <Link to="/" className="logo">
-              <span>LOGO</span>
+              <img src="/logo.svg" alt="logo" />
             </Link>
             {!isHome && <CountriesDropdown />}
           </div>
@@ -27,7 +26,7 @@ const HeaderComponent = props => {
             {!isHome && (
               <>
                 <Link
-                  to={urls.species}
+                  to={urls.distribution}
                   className={cx('header-tab', {
                     __active: isSpeciesDistribution
                   })}

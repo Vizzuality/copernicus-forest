@@ -9,8 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $color-background;
-  background: linear-gradient(180deg, $color-background 0%, transparent 100%);
+  background: $color-white;
 
   &.__border {
     border-bottom: 1px solid $color-gray-1;
@@ -74,6 +73,11 @@
   height: 100%;
   border-left: 1px solid black;
   padding-left: 20px;
+}
+
+.left-aligned {
+  width: 330px;
+  justify-content: space-between;
 }
 
 .left-aligned, .right-aligned {

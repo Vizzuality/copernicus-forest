@@ -12,7 +12,7 @@ function SpeciesList({ species, country, activeSpecies }) {
           country &&
           species.map(s => (
             <li key={s.id}>
-              <Link to={`/${country.iso}/species/${s.id}`} className={styles.listItem}>
+              <Link to={`/${country.iso}/distribution/${s.id}`} className={styles.listItem}>
                 <p>{s.scientificName}</p>
               </Link>
             </li>

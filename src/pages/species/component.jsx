@@ -94,8 +94,8 @@ function SpeciesPage({ match }) {
             </div>
           )}
           <div className="species-detail">
-            <h3>{activeSpecies && activeSpecies.name}</h3>
-            <h1>{activeSpecies && activeSpecies.scientificName}</h1>
+            <h3>{activeSpecies && activeSpecies.scientificName}</h3>
+            <h1>{activeSpecies && activeSpecies.name}</h1>
             <p className="description">{wikiInfo && wikiInfo.extract}</p>
             {wikiInfo && (
               <div className="species-chart">
