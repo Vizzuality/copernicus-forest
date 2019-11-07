@@ -26,7 +26,7 @@ SpeciesList.propTypes = {
   species: PropTypes.array,
   country: PropTypes.object,
   activeSpecies: PropTypes.object,
-  page: PropTypes.string,
+  page: PropTypes.string
 };
 
 export default SpeciesList;

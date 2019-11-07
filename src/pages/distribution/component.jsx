@@ -31,15 +31,16 @@ const DistributionPageComponent = ({
 
   const [opacity, setOpacity] = useState(1);
 
-
-
-  const cartoLayer = useMemo(() => vectorLayerCarto(iso, activeSpecies && activeSpecies.name, activeFutureScenario, opacity), [iso, activeSpecies, activeFutureScenario, opacity]);
+  const cartoLayer = useMemo(
+    () => vectorLayerCarto(iso, activeSpecies && activeSpecies.name, activeFutureScenario, opacity),
+    [iso, activeSpecies, activeFutureScenario, opacity]
+  );
   // const cartoLayer = useMemo(() => vectorLayerCarto2(iso, opacity), [iso, opacity]);
 
   // put active layers in the url
   // along with its opacities
   const layers = useMemo(() => [cartoLayer], [cartoLayer]);
-  console.log('cartoLayer: ',cartoLayer)
+  console.log('cartoLayer: ', cartoLayer);
   const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
 
   return (

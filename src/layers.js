@@ -25,7 +25,7 @@ export const vectorLayerCarto = (iso, species, scenario, opacity = 1) => {
       where2: {
         species,
         scenario
-      },
+      }
     },
     layerConfig: {
       account: 'simbiotica',
@@ -100,7 +100,7 @@ export const vectorLayerCarto = (iso, species, scenario, opacity = 1) => {
       sql_config: [
         {
           key: 'where',
-          key_params: [ 
+          key_params: [
             {
               key: 'iso3',
               required: true
@@ -118,14 +118,13 @@ export const vectorLayerCarto = (iso, species, scenario, opacity = 1) => {
               key: 'scenario',
               required: true
             }
-          ],
-        },
+          ]
+        }
       ]
     },
     provider: 'cartodb'
   };
 };
-
 
 export const vectorLayerCarto2 = (iso, opacity = 1) => {
   return {
