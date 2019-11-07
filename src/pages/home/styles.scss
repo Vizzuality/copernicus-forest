@@ -78,6 +78,6 @@ $button-height: 70px;
 }
 
 .fp-tableCell {
-  display: flex;
+  display: flex !important;
   justify-content: center;
 }
