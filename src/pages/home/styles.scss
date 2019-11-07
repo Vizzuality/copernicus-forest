@@ -4,10 +4,10 @@ $button-width: 430px;
 $button-height: 70px;
 
 .c-home {
-  .section {
+  .wrapper {
     font-family: $font-family-2;
     color: $color-gray-1;
-    height: 100%;
+    min-width: 100%;
     display: flex;
     align-items: center;
     padding-bottom: 100px;
@@ -70,7 +70,10 @@ $button-height: 70px;
     color: $color-white;
     font-size: $font-size-big;
     font-family: $font-family;
-    font-weight: bold;
     line-height: 24px;
+
+    &:hover {
+      background: $color-dark-orange;
+    }
   }
 }
