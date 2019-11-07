@@ -7,9 +7,7 @@ $button-height: 70px;
   .wrapper {
     font-family: $font-family-2;
     color: $color-gray-1;
-    min-width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding-bottom: 100px;
     margin: 64px 0;
@@ -77,4 +75,9 @@ $button-height: 70px;
       background: $color-dark-orange;
     }
   }
+}
+
+.fp-tableCell {
+  display: flex;
+  justify-content: center;
 }
