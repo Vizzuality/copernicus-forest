@@ -1,7 +1,7 @@
 const fetch = require('isomorphic-fetch');
 // List of species for a country
 const speciesData = require('./TZA/species.json');
-const countrySpeciesData = require('./TZA/speciesRel.json');
+const countrySpeciesData = require('./PER/speciesRel.json');
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -121,22 +121,27 @@ countrySpeciesData.forEach(relation => countrySpeciesSet.add(relation));
 promises.push(
   [...countrySpeciesSet].map(async relation => {
     try {
-      const countrySpeciesQueryData = {
-        year: relation.timeInterval,
-        summary: relation.propTotalArea,
-        specie: {
-          scientificName: relation.species
-        },
-        country: {
-          iso: relation.iso
-        },
-        scenario: {
-          key: relation.scenario
-        }
-      };
+      const send = scenario => {
+        const countrySpeciesQueryData = {
+          year: relation.timeInterval,
+          summary: relation.propTotalArea,
+          specie: {
+            scientificName: relation.species
+          },
+          country: {
+            iso: relation.iso
+          },
+          scenario: {
+            key: scenario
+          }
+        };
 
-      // console.log(relation, countrySpeciesQueryData);
-      postQuery(createCountrySpecieRel, countrySpeciesQueryData);
+        postQuery(createCountrySpecieRel, countrySpeciesQueryData);
+      };
+      if (relation.scenario === 'current') {
+        send('rcp45');
+        send('rcp85');
+      } else send(relation.scenario);
     } catch (error) {
       console.log('err  ¯\\_(ツ)_/¯', error.message);
     }

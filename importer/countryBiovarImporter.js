@@ -67,20 +67,26 @@ async function postQuery(query, variables) {
  */
 
 const mapper = async relation => {
-  const countryBiovarQueryData = {
-    year: relation.timeInterval,
-    summary: relation.weightedMean,
-    biovar: {
-      key: relation.biovar
-    },
-    country: {
-      iso: relation.iso
-    },
-    scenario: {
-      key: relation.scenario
-    }
+  const send = scenario => {
+    const countryBiovarQueryData = {
+      year: relation.timeInterval,
+      summary: relation.weightedMean,
+      biovar: {
+        key: relation.biovar
+      },
+      country: {
+        iso: relation.iso
+      },
+      scenario: {
+        key: scenario
+      }
+    };
+    postQuery(createCountryBiovarRel, countryBiovarQueryData);
   };
-  postQuery(createCountryBiovarRel, countryBiovarQueryData);
+  if (relation.scenario === 'current') {
+    send('rcp45');
+    send('rcp85');
+  } else send(relation.scenario);
 };
 
 const errorMapper = async row => {
