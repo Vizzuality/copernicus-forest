@@ -13,45 +13,43 @@ const HeaderComponent = props => {
   const { isHome, urls, type, menuOpen, showMenu, isSpeciesDistribution } = props;
 
   return (
-    <div>
-      <div className={cx('c-header', { __border: !isHome })}>
-        <nav className="header-links">
-          <div className="left-aligned">
-            <Link to="/" className="logo">
-              <img src="/logos/logo.svg" alt="logo" />
-            </Link>
-            {!isHome && <CountriesDropdown />}
-          </div>
-          <div className="right-aligned">
-            {!isHome && (
-              <>
-                <Link
-                  to={urls.distribution}
-                  className={cx('header-tab', {
-                    __active: isSpeciesDistribution
-                  })}
-                >
-                  <span className="tab-title">Species distribution</span>
-                </Link>
-                <Link
-                  to={urls.bioclimatic}
-                  className={cx('header-tab', { __active: type === 'bioclimatic' })}
-                >
-                  <span className="tab-title">Bioclimatic variables</span>
-                </Link>
-              </>
-            )}
-            <button
-              className={cx('menu-button', { 'menu-button-with-border': !isHome })}
-              onClick={() => showMenu(!menuOpen)}
-            >
-              <Icon name="icon-about" className="menu-icon" />
-              About
-            </button>
-          </div>
-        </nav>
-        <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
-      </div>
+    <div className={cx('c-header', { __border: !isHome })}>
+      <nav className="header-links">
+        <div className="left-aligned">
+          <Link to="/" className="logo">
+            <img src="/logos/logo.svg" alt="logo" />
+          </Link>
+          {!isHome && <CountriesDropdown />}
+        </div>
+        <div className="right-aligned">
+          {!isHome && (
+            <>
+              <Link
+                to={urls.distribution}
+                className={cx('header-tab', {
+                  __active: isSpeciesDistribution
+                })}
+              >
+                <span className="tab-title">Species distribution</span>
+              </Link>
+              <Link
+                to={urls.bioclimatic}
+                className={cx('header-tab', { __active: type === 'bioclimatic' })}
+              >
+                <span className="tab-title">Bioclimatic variables</span>
+              </Link>
+            </>
+          )}
+          <button
+            className={cx('menu-button', { 'menu-button-with-border': !isHome })}
+            onClick={() => showMenu(!menuOpen)}
+          >
+            <Icon name="icon-about" className="menu-icon" />
+            About
+          </button>
+        </div>
+      </nav>
+      <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
     </div>
   );
 };

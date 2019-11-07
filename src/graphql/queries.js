@@ -23,6 +23,7 @@ export const useSpeciesPerCountry = iso => {
     },
     scenarios{
       name,
+      shortName,
       key
     },
     countrySpecieDistributions(where: {

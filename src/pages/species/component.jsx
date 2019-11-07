@@ -14,7 +14,7 @@ function SpeciesPage({ match }) {
 
   const { fetching, data, error } = useSpeciesPerCountry(iso);
   const getScenarioName = key =>
-    data && data.scenarios && data.scenarios.find(sc => sc.key === key).name;
+    data && data.scenarios && data.scenarios.find(sc => sc.key === key).shortName;
 
   const species = data ? data.species : [];
   const speciesData = data ? groupBy(data.countrySpecieDistributions, 'specie.scientificName') : {};
@@ -59,7 +59,8 @@ function SpeciesPage({ match }) {
   const colors = [styles.colorViolet, styles.colorMustard, styles.colorViolet];
 
   const config = {
-    lines: data && styles && data.scenarios.map((sc, i) => ({ key: sc.name, color: colors[i] })),
+    lines:
+      data && styles && data.scenarios.map((sc, i) => ({ key: sc.shortName, color: colors[i] })),
     yAxis: {
       domain: [0, 100],
       unit: '%',
@@ -84,7 +85,7 @@ function SpeciesPage({ match }) {
         <div className="content">
           {species && (
             <div className="species-navbar">
-              {/* provisional arrows */}
+              {/* provisional arrows. TODO: change this ! */}
               <Link to={getPrevSpecie()} className="nav-button">
                 &lt;
               </Link>

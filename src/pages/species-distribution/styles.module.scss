@@ -31,6 +31,8 @@ $species-list-width: 330px;
   display: flex;
   flex-direction: column;
   width: $species-list-width;
+  font-style: italic;
+  font-family: $font-family-2;
 
   img {
     display: flex;

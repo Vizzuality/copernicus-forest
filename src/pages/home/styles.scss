@@ -1,5 +1,8 @@
 @import '~styles/settings';
 
+$button-width: 430px;
+$button-height: 70px;
+
 .c-home {
   .section {
     font-family: $font-family-2;
@@ -16,8 +19,13 @@
 
     .section-title {
       font-size: 64px;
+      font-weight: bold;
       line-height: 84px;
       margin-bottom: 44px;
+
+      .title-color{ 
+        color: $color-orange;
+      }
     }
 
     .section-body {
@@ -44,5 +52,25 @@
       left: 250px;
       align-self: center;
     }
+  }
+
+  .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $button-height;
+    width: $button-width;
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - #{$button-width / 2});
+    z-index: $z-index-4;
+    cursor: pointer;
+    // transition: all 0.5s ease;
+    background: $color-orange;
+    color: $color-white;
+    font-size: $font-size-big;
+    font-family: $font-family;
+    font-weight: bold;
+    line-height: 24px;
   }
 }
