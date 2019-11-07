@@ -1,9 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useLocation, useHistory } from 'react-router-dom';
+import { uniqBy } from 'lodash';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
-import { uniqBy } from 'lodash';
+import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
 
 import Component from './component';
 
@@ -12,6 +13,8 @@ const DistributionPage = props => {
 
   const { match } = props;
   const { iso } = (match && match.params) || {};
+
+  useEffect(() => setViewport(COUNTRIES_DEFAULT_VIEWPORTS[iso]), [iso]);
 
   const location = useLocation();
   const history = useHistory();
