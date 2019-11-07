@@ -73,6 +73,9 @@ function Menu({ closeMenu, active }) {
         <p className="partner-logo">
           <img src="/logos/EC.png" alt="European Comission" />
         </p>
+        <p className="partner-logo">
+          <img src="/logos/graphcms.svg" alt="Powered by graphCMS" />
+        </p>
       </div>
     </div>
   );
