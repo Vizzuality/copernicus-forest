@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
 import Icon from 'components/icon';
-import { vectorLayerCarto } from 'layers';
+import { vectorLayerCarto, vectorLayerCarto2 } from 'layers';
 import { useRouteMatch } from 'react-router-dom';
 import RampLegend from 'components/ramp-legend';
 import Timeline from 'components/map/controls/timeline';
@@ -30,11 +30,16 @@ const DistributionPageComponent = ({
   const { iso } = (match && match.params) || '';
 
   const [opacity, setOpacity] = useState(1);
-  const cartoLayer = useMemo(() => vectorLayerCarto(iso, opacity), [iso, opacity]);
+
+
+
+  const cartoLayer = useMemo(() => vectorLayerCarto(iso, activeSpecies && activeSpecies.name, activeFutureScenario, opacity), [iso, activeSpecies, activeFutureScenario, opacity]);
+  // const cartoLayer = useMemo(() => vectorLayerCarto2(iso, opacity), [iso, opacity]);
+
   // put active layers in the url
   // along with its opacities
   const layers = useMemo(() => [cartoLayer], [cartoLayer]);
-
+  console.log('cartoLayer: ',cartoLayer)
   const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
 
   return (
