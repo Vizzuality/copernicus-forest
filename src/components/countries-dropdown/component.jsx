@@ -6,9 +6,9 @@ import cx from 'classnames';
 import styles from './styles.module.scss';
 
 const CountriesDropdown = () => {
-  const match = useRouteMatch('/:iso');
+  const match = useRouteMatch('/:iso/:page');
 
-  const { iso } = (match && match.params) || '';
+  const { iso, page } = (match && match.params) || '';
   const [countrySelectorOpen, setCountrySelector] = useState(false);
   const activeCountry = COUNTRIES.find(country => country.iso === iso);
 
@@ -31,7 +31,7 @@ const CountriesDropdown = () => {
             <Link
               key={country.iso}
               className={styles.imageLink}
-              to={`/${country.iso}/species/`}
+              to={`/${country.iso}/${page}/`}
               onClick={toggleCountryDropdown}
             >
               <img className={styles['shape__no-hover']} src={country.svg} alt={country.name} />

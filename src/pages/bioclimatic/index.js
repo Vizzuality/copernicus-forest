@@ -1,6 +1,7 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect, useState } from 'react';
 import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
+import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { Query } from 'urql';
 import { Label } from 'recharts';
@@ -24,9 +25,12 @@ const Container = () => {
   const { country } = (match && match.params) || {};
   const currentQueryParams = useQueryParams();
   const { startYear, endYear, scenario } = currentQueryParams;
+  const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
 
   // graphql
   const { data } = useScenariosPerCountry(country);
+
+  useEffect(() => setViewport(COUNTRIES_DEFAULT_VIEWPORTS[country])[country], [country]);
 
   // parsing
   const scenarios = data && data.scenarios && data.scenarios.filter(s => s.key !== 'current');
@@ -186,6 +190,8 @@ const Container = () => {
               filters={filters}
               getConfig={getChartConfig}
               timelineData={timelineData}
+              viewport={viewport}
+              setViewport={setViewport}
             />
           )}
       </Query>
