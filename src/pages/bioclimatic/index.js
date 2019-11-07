@@ -30,7 +30,7 @@ const Container = () => {
   // graphql
   const { data } = useScenariosPerCountry(country);
 
-  useEffect(() => setViewport(COUNTRIES_DEFAULT_VIEWPORTS[country])[country], [country]);
+  useEffect(() => setViewport(COUNTRIES_DEFAULT_VIEWPORTS[country]), [country]);
 
   // parsing
   const scenarios = data && data.scenarios && data.scenarios.filter(s => s.key !== 'current');
