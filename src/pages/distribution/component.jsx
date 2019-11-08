@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
 import Icon from 'components/icon';
-import { vectorLayerCarto, vectorLayerCarto2 } from 'layers';
+import { vectorLayerCarto } from 'layers';
 import { useRouteMatch } from 'react-router-dom';
 import RampLegend from 'components/ramp-legend';
 import Timeline from 'components/map/controls/timeline';
@@ -30,18 +30,34 @@ const DistributionPageComponent = ({
   const { iso } = (match && match.params) || '';
 
   const [opacity, setOpacity] = useState(1);
+  const [year, setYear] = useState(2020);
 
   const cartoLayer = useMemo(
-    () => vectorLayerCarto(iso, activeSpecies && activeSpecies.name, activeFutureScenario, opacity),
-    [iso, activeSpecies, activeFutureScenario, opacity]
+    () =>
+      vectorLayerCarto(
+        iso,
+        activeSpecies && activeSpecies.name,
+        activeFutureScenario,
+        year,
+        opacity
+      ),
+    [iso, activeSpecies, activeFutureScenario, opacity, year]
   );
   // const cartoLayer = useMemo(() => vectorLayerCarto2(iso, opacity), [iso, opacity]);
 
   // put active layers in the url
   // along with its opacities
   const layers = useMemo(() => [cartoLayer], [cartoLayer]);
-  console.log('cartoLayer: ', cartoLayer);
+
   const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
+
+  const changeYear = yearIndex => {
+    const currentYear =
+      futureScenariosData &&
+      activeFutureScenario &&
+      futureScenariosData[activeFutureScenario].years[yearIndex];
+    setYear(currentYear);
+  };
 
   return (
     <div className={styles.distribution}>
@@ -52,7 +68,7 @@ const DistributionPageComponent = ({
         setViewport={setViewport}
         showZoom={false}
       >
-        {map => (
+        {/* {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
             {activeLayers
               .filter(l => l.active)
@@ -62,7 +78,7 @@ const DistributionPageComponent = ({
                 <Layer key={layer.id} {...layer} />
               ))}
           </LayerManager>
-        )}
+        )} */}
       </Map>
       <Map
         mapboxApiAccessToken={process.env.react_app_mapbox_token}
@@ -76,11 +92,11 @@ const DistributionPageComponent = ({
           <LayerManager map={map} plugin={PluginMapboxGl}>
             {activeLayers
               .filter(l => l.active)
-              .map(layer => (
+              .map(layer => {
                 // TODO: fix all eslint-disables
                 // eslint-disable-next-line react/jsx-props-no-spreading
-                <Layer key={layer.id} {...layer} />
-              ))}
+                return <Layer key={layer.id} {...layer} />;
+              })}
           </LayerManager>
         )}
       </Map>
@@ -90,6 +106,7 @@ const DistributionPageComponent = ({
         setActiveTab={setFutureScenario}
         title="Future distribution"
         data={futureScenariosData}
+        handleOnChange={yearIndex => changeYear(yearIndex)}
       />
       <Timeline title="Current distribution" data={currentScenariosData} hideTimeline />
       <div className={styles.navigationBar}>
