@@ -31,6 +31,8 @@ $species-list-width: 330px;
   display: flex;
   flex-direction: column;
   width: $species-list-width;
+  font-style: italic;
+  font-family: $font-family-2;
 
   img {
     display: flex;
@@ -38,9 +40,9 @@ $species-list-width: 330px;
     align-items: center;
     text-align: center;
     white-space: pre-line;
-    height: 440px;
-    // object-fit: cover;
-    // object-position: top;
+    height: $species-list-width;
+    object-fit: cover;
+    object-position: center;
     color: $color-white;
   }
 }

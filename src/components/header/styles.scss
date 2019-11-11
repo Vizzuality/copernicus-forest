@@ -9,10 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $color-background;
-  background: linear-gradient(180deg, $color-background 0%, transparent 100%);
+  position: fixed;
+  top: 0;
 
   &.__border {
+    position: initial;
+    background: $color-white;
     border-bottom: 1px solid $color-gray-1;
     z-index: initial;
   }
@@ -74,6 +76,11 @@
   height: 100%;
   border-left: 1px solid black;
   padding-left: 20px;
+}
+
+.left-aligned {
+  width: 330px;
+  justify-content: space-between;
 }
 
 .left-aligned, .right-aligned {

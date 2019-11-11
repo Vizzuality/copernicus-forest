@@ -1,7 +1,17 @@
 const fetch = require('isomorphic-fetch');
 // List of species for a country
-const speciesData = require('./TZA/species.json');
-const countrySpeciesData = require('./TZA/speciesRel.json');
+// const speciesData = require('./TZA/species.json');
+const speciesData = [];
+// const countrySpeciesData = require(`./${process.argv[2] || 'SWE'}/speciesRel.json`);
+const countrySpeciesData = require('./SWE/speciesRel.json');
+
+const speciesWhitelist = [
+  'Dalbergia',
+  'Eucalyptus',
+  'Alnus acuminata',
+  'Guazuma ulmifolia',
+  'Simarouba amara'
+];
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -66,8 +76,8 @@ async function postQuery(query, variables) {
     // Parse the response to verify success
     const body = await resp.json();
     if (body.errors && body.errors.length > 0) throw Error(body.errors[0].message);
-    // const bodyData = await body.data;
-    // console.log('Uploaded', bodyData);
+    const bodyData = await body.data;
+    console.log('Uploaded', bodyData.createCountrySpecieDistribution.id);
   } catch (error) {
     console.log(`${JSON.stringify(variables)},`);
   }
@@ -121,26 +131,34 @@ countrySpeciesData.forEach(relation => countrySpeciesSet.add(relation));
 promises.push(
   [...countrySpeciesSet].map(async relation => {
     try {
-      const countrySpeciesQueryData = {
-        year: relation.timeInterval,
-        summary: relation.propTotalArea,
-        specie: {
-          scientificName: relation.species
-        },
-        country: {
-          iso: relation.iso
-        },
-        scenario: {
-          key: relation.scenario
-        }
-      };
+      const send = scenario => {
+        const countrySpeciesQueryData = {
+          year: relation.timeInterval,
+          summary: relation.propTotalArea,
+          specie: {
+            scientificName: relation.species
+          },
+          country: {
+            iso: relation.iso
+          },
+          scenario: {
+            key: scenario
+          }
+        };
 
-      // console.log(relation, countrySpeciesQueryData);
-      postQuery(createCountrySpecieRel, countrySpeciesQueryData);
+        postQuery(createCountrySpecieRel, countrySpeciesQueryData);
+      };
+      if (speciesWhitelist.indexOf(relation.species) >= 0) {
+        if (relation.scenario === 'current') {
+          send('rcp45');
+          send('rcp85');
+        } else send(relation.scenario);
+      } else if (relation.timeInterval === 2020 && relation.scenario === 'rcp45')
+        console.log(`${relation.species} not in whitelist`);
     } catch (error) {
       console.log('err  ¯\\_(ツ)_/¯', error.message);
     }
   })
 );
 
-Promise.all(promises).then(() => console.log('Done'));
+Promise.all(promises).then(() => console.log('Done. \n', speciesWhitelist));

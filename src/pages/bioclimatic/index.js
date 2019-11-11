@@ -5,6 +5,8 @@ import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { Query } from 'urql';
 import { Label } from 'recharts';
+import sortBy from 'lodash/sortBy';
+
 import {
   getYearsForScenario,
   getYearsRange,
@@ -36,12 +38,15 @@ const Container = () => {
   const scenarios = data && data.scenarios && data.scenarios.filter(s => s.key !== 'current');
   const parsedScenarios =
     scenarios &&
-    scenarios.map(sc => ({
-      label: `${sc.name} - ${sc.shortName}`,
-      value: sc.key,
-      name: sc.name,
-      shortName: sc.shortName
-    }));
+    sortBy(
+      scenarios.map(sc => ({
+        label: `${sc.name} - ${sc.shortName}`,
+        value: sc.key,
+        name: sc.name,
+        shortName: sc.shortName
+      })),
+      'value'
+    );
 
   // timeline data
   const timelineData =
@@ -62,7 +67,10 @@ const Container = () => {
 
   // computed properties
   const chosenScenario = useMemo(
-    () => (parsedScenarios && parsedScenarios.length ? scenario || parsedScenarios[0].value : ''),
+    () =>
+      parsedScenarios && parsedScenarios.length
+        ? scenario || (parsedScenarios[1] && parsedScenarios[1].value)
+        : '',
     [parsedScenarios, scenario]
   );
 

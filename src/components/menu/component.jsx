@@ -5,6 +5,10 @@ import Icon from 'components/icon';
 
 import './styles.scss';
 
+/*
+ * 'About' Sidebar
+ */
+
 function useClickOutside(ref, closeMenu) {
   function handleClickOutside(event) {
     if (closeMenu && ref.current && !ref.current.contains(event.target)) {
@@ -28,17 +32,21 @@ function Menu({ closeMenu, active }) {
 
   const links = [
     {
-      name: 'Home',
-      path: '/'
+      name: 'Species distribution data',
+      path: '/SWE/distribution/'
     },
     {
-      name: 'Species distribution',
-      path: '/SWE/species/'
-    },
-    {
-      name: 'Bioclimatic variables',
+      name: 'Bioclimatic variables data',
       path: '/SWE/bioclimatic/'
     }
+    /* {
+      name: 'Contact us',
+      path: '/contact'
+    },
+    {
+      name: 'Privacy policy',
+      path: '/privacy'
+    } */
   ];
 
   return (
@@ -47,13 +55,35 @@ function Menu({ closeMenu, active }) {
         <Icon name="icon-close" className="close-icon" />
         Close
       </button>
-      {links.map(l => (
-        <div className="menu-link" key={l.name}>
-          <Link to={l.path} onClick={closeMenu}>
-            {l.name}
-          </Link>
+      <div className="menu-content">
+        <div className="menu-links">
+          {links.map(l => (
+            <div className="menu-link" key={l.name}>
+              <Link to={l.path} onClick={closeMenu}>
+                {l.name}
+              </Link>
+            </div>
+          ))}
         </div>
-      ))}
+        <div className="partners">
+          <p>In partnership with:</p>
+          <p className="partner-logo">
+            <img src="/logos/copernicus.png" alt="Copernicus" />
+          </p>
+          <p className="partner-logo">
+            <img src="/logos/ECMWF.png" alt="ECMWF" />
+          </p>
+          <p className="partner-logo">
+            <img src="/logos/EC.png" alt="European Comission" />
+          </p>
+        </div>
+        <div className="partners">
+          <p>Powered by:</p>
+          <p className="partner-logo">
+            <img src="/logos/graphcms.svg" alt="Powered by graphCMS" />
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

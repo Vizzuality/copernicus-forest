@@ -3,11 +3,11 @@
   "alias": ["forest-forward.com"],
   "name": "copernicus-forest",
   "env": {
-    "REACT_APP_MAPBOX_TOKEN": "@react_app_mapbox_token"
+    "react_app_mapbox_token": "@react_app_mapbox_token"
   },
   "build": {
     "env": {
-      "REACT_APP_MAPBOX_TOKEN": "@react_app_mapbox_token"
+      "react_app_mapbox_token": "@react_app_mapbox_token"
     }
   }
 }
