@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
-import { LayerManager, Layer } from 'layer-manager/dist/components';
-import { PluginMapboxGl } from 'layer-manager';
+// import { LayerManager, Layer } from 'layer-manager/dist/components';
+// import { PluginMapboxGl } from 'layer-manager';
 import sortBy from 'lodash/sortBy';
 import groupBy from 'lodash/groupBy';
 
@@ -10,6 +10,7 @@ import Map from 'components/map';
 import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import Timeline from 'components/map/controls/timeline';
+import RampLegend from 'components/ramp-legend';
 
 function BioClimaticPage(props) {
   const { getConfig, filters, data, timelineData, viewport, setViewport } = props;
@@ -64,6 +65,13 @@ function BioClimaticPage(props) {
                   and extreme climatic conditions, including a combination of both environmental factors for current and future scenarios.`}
             storageKey="bioclimatic"
           />
+          <RampLegend
+            title="Anual Mean Temperature"
+            colorRamp={['#E15383', '#FFA679', '#FEF6B5']} // purple
+            lowEndName="Low"
+            highEndName="High"
+            // handleOpacity={o => return o}
+          />
         </div>
       </div>
     </div>
@@ -74,7 +82,9 @@ BioClimaticPage.propTypes = {
   data: PropTypes.object,
   getConfig: PropTypes.func,
   filters: PropTypes.object,
-  timelineData: PropTypes.object
+  timelineData: PropTypes.object,
+  viewport: PropTypes.object,
+  setViewport: PropTypes.func
 };
 
 export default BioClimaticPage;

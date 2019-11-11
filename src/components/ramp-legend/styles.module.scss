@@ -49,7 +49,8 @@ $value-side-offset: 4px;
 }
 
 .ramp {
-  width: 550px;
+  max-width: 550px;
+  flex: 1;
   height: 10px;
   border-top: 1px solid $color-gray-1;
   border-bottom: 1px solid $color-gray-1;
@@ -164,4 +165,6 @@ $value-side-offset: 4px;
 .rampContainer {
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: center;
 }
