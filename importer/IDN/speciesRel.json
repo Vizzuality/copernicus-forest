@@ -5,7 +5,7 @@
     "scenario": "current",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.3
+    "propTotalArea": 272
   },
   {
     "iso": "IDN",
@@ -13,7 +13,7 @@
     "scenario": "current",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.3
+    "propTotalArea": 315
   },
   {
     "iso": "IDN",
@@ -21,7 +21,7 @@
     "scenario": "current",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.3
+    "propTotalArea": 322
   },
   {
     "iso": "IDN",
@@ -29,7 +29,7 @@
     "scenario": "current",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0.1
+    "propTotalArea": 109
   },
   {
     "iso": "IDN",
@@ -37,7 +37,7 @@
     "scenario": "current",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0.1
+    "propTotalArea": 81
   },
   {
     "iso": "IDN",
@@ -45,7 +45,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.21
   },
   {
     "iso": "IDN",
@@ -53,7 +53,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.3
+    "propTotalArea": 255
   },
   {
     "iso": "IDN",
@@ -61,7 +61,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.3
+    "propTotalArea": 283
   },
   {
     "iso": "IDN",
@@ -69,7 +69,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0.1
+    "propTotalArea": 66
   },
   {
     "iso": "IDN",
@@ -77,7 +77,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0.1
+    "propTotalArea": 52
   },
   {
     "iso": "IDN",
@@ -85,7 +85,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.2
+    "propTotalArea": 209
   },
   {
     "iso": "IDN",
@@ -93,7 +93,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 237
   },
   {
     "iso": "IDN",
@@ -101,7 +101,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.3
+    "propTotalArea": 276
   },
   {
     "iso": "IDN",
@@ -109,7 +109,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0.1
+    "propTotalArea": 72
   },
   {
     "iso": "IDN",
@@ -117,7 +117,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0.1
+    "propTotalArea": 57
   },
   {
     "iso": "IDN",
@@ -125,7 +125,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.2
+    "propTotalArea": 165
   },
   {
     "iso": "IDN",
@@ -133,7 +133,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.23
   },
   {
     "iso": "IDN",
@@ -141,7 +141,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.3
+    "propTotalArea": 261
   },
   {
     "iso": "IDN",
@@ -149,7 +149,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0.1
+    "propTotalArea": 61
   },
   {
     "iso": "IDN",
@@ -157,7 +157,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0.1
+    "propTotalArea": 53
   },
   {
     "iso": "IDN",
@@ -165,7 +165,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.2
+    "propTotalArea": 157
   },
   {
     "iso": "IDN",
@@ -173,7 +173,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 219
   },
   {
     "iso": "IDN",
@@ -181,7 +181,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.3
+    "propTotalArea": 256
   },
   {
     "iso": "IDN",
@@ -189,7 +189,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0.1
+    "propTotalArea": 62
   },
   {
     "iso": "IDN",
@@ -197,7 +197,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0.1
+    "propTotalArea": 54
   },
   {
     "iso": "IDN",
@@ -205,7 +205,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 122
   },
   {
     "iso": "IDN",
@@ -213,7 +213,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 223
   },
   {
     "iso": "IDN",
@@ -221,7 +221,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 243
   },
   {
     "iso": "IDN",
@@ -229,7 +229,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 43
   },
   {
     "iso": "IDN",
@@ -237,7 +237,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 46
   },
   {
     "iso": "IDN",
@@ -245,7 +245,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 109
   },
   {
     "iso": "IDN",
@@ -253,7 +253,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 198
   },
   {
     "iso": "IDN",
@@ -261,7 +261,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 226
   },
   {
     "iso": "IDN",
@@ -269,7 +269,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 46
   },
   {
     "iso": "IDN",
@@ -277,7 +277,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 42
   },
   {
     "iso": "IDN",
@@ -285,7 +285,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 97
   },
   {
     "iso": "IDN",
@@ -293,7 +293,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 209
   },
   {
     "iso": "IDN",
@@ -301,7 +301,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 235
   },
   {
     "iso": "IDN",
@@ -309,7 +309,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 0.04
   },
   {
     "iso": "IDN",
@@ -317,7 +317,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 0.04
   },
   {
     "iso": "IDN",
@@ -325,7 +325,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 74
   },
   {
     "iso": "IDN",
@@ -333,7 +333,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 182
   },
   {
     "iso": "IDN",
@@ -341,7 +341,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 207
   },
   {
     "iso": "IDN",
@@ -349,7 +349,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 43
   },
   {
     "iso": "IDN",
@@ -357,7 +357,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 26
   },
   {
     "iso": "IDN",
@@ -365,7 +365,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 89
   },
   {
     "iso": "IDN",
@@ -373,7 +373,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 192
   },
   {
     "iso": "IDN",
@@ -381,7 +381,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 217
   },
   {
     "iso": "IDN",
@@ -389,7 +389,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 49
   },
   {
     "iso": "IDN",
@@ -397,7 +397,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 38
   },
   {
     "iso": "IDN",
@@ -405,7 +405,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 55
   },
   {
     "iso": "IDN",
@@ -413,7 +413,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 169
   },
   {
     "iso": "IDN",
@@ -421,7 +421,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 176
   },
   {
     "iso": "IDN",
@@ -429,7 +429,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 38
   },
   {
     "iso": "IDN",
@@ -437,7 +437,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 15
   },
   {
     "iso": "IDN",
@@ -445,7 +445,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.09
   },
   {
     "iso": "IDN",
@@ -453,7 +453,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 196
   },
   {
     "iso": "IDN",
@@ -461,7 +461,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 217
   },
   {
     "iso": "IDN",
@@ -469,7 +469,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0.1
+    "propTotalArea": 51
   },
   {
     "iso": "IDN",
@@ -477,7 +477,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 34
   },
   {
     "iso": "IDN",
@@ -485,7 +485,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 58
   },
   {
     "iso": "IDN",
@@ -493,7 +493,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 159
   },
   {
     "iso": "IDN",
@@ -501,7 +501,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 177
   },
   {
     "iso": "IDN",
@@ -509,7 +509,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 39
   },
   {
     "iso": "IDN",
@@ -517,7 +517,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 13
   },
   {
     "iso": "IDN",
@@ -525,7 +525,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 77
   },
   {
     "iso": "IDN",
@@ -533,7 +533,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 183
   },
   {
     "iso": "IDN",
@@ -541,7 +541,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 207
   },
   {
     "iso": "IDN",
@@ -549,7 +549,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0.1
+    "propTotalArea": 51
   },
   {
     "iso": "IDN",
@@ -557,7 +557,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 31
   },
   {
     "iso": "IDN",
@@ -565,7 +565,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 51
   },
   {
     "iso": "IDN",
@@ -573,7 +573,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.1
+    "propTotalArea": 143
   },
   {
     "iso": "IDN",
@@ -581,7 +581,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 161
   },
   {
     "iso": "IDN",
@@ -589,7 +589,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 37
   },
   {
     "iso": "IDN",
@@ -597,7 +597,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 7
   },
   {
     "iso": "IDN",
@@ -605,7 +605,7 @@
     "scenario": "rcp45",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0.1
+    "propTotalArea": 68
   },
   {
     "iso": "IDN",
@@ -613,7 +613,7 @@
     "scenario": "rcp45",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.2
+    "propTotalArea": 176
   },
   {
     "iso": "IDN",
@@ -621,7 +621,7 @@
     "scenario": "rcp45",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.2
+    "propTotalArea": 197
   },
   {
     "iso": "IDN",
@@ -629,7 +629,7 @@
     "scenario": "rcp45",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 0.04
   },
   {
     "iso": "IDN",
@@ -637,7 +637,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 27
   },
   {
     "iso": "IDN",
@@ -645,7 +645,7 @@
     "scenario": "rcp85",
     "species": "Dryobalanops",
     "gbifId": 3189689,
-    "propTotalArea": 0
+    "propTotalArea": 44
   },
   {
     "iso": "IDN",
@@ -653,7 +653,7 @@
     "scenario": "rcp85",
     "species": "Dipterocarpus",
     "gbifId": 7299001,
-    "propTotalArea": 0.1
+    "propTotalArea": 125
   },
   {
     "iso": "IDN",
@@ -661,7 +661,7 @@
     "scenario": "rcp85",
     "species": "Shorea",
     "gbifId": 3189683,
-    "propTotalArea": 0.1
+    "propTotalArea": 141
   },
   {
     "iso": "IDN",
@@ -669,7 +669,7 @@
     "scenario": "rcp85",
     "species": "Anisoptera",
     "gbifId": 3233915,
-    "propTotalArea": 0
+    "propTotalArea": 32
   },
   {
     "iso": "IDN",
@@ -677,6 +677,6 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 0
+    "propTotalArea": 2
   }
 ]

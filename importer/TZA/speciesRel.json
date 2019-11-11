@@ -5,7 +5,7 @@
     "scenario": "current",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.328
   },
   {
     "iso": "TZA",
@@ -13,7 +13,15 @@
     "scenario": "current",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.472
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.385
   },
   {
     "iso": "TZA",
@@ -21,7 +29,7 @@
     "scenario": "current",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.299
   },
   {
     "iso": "TZA",
@@ -29,7 +37,15 @@
     "scenario": "current",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.545
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.491
   },
   {
     "iso": "TZA",
@@ -37,7 +53,135 @@
     "scenario": "current",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.532
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.228
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.128
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.324
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.371
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.358
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.288
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.217
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.148
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.208
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.167
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.124
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.148
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.23
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.181
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.195
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.236
   },
   {
     "iso": "TZA",
@@ -45,7 +189,7 @@
     "scenario": "rcp45",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.206
   },
   {
     "iso": "TZA",
@@ -53,151 +197,727 @@
     "scenario": "rcp45",
     "species": "Albizia",
     "gbifId": 2972897,
+    "propTotalArea": 0.388
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.321
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.301
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.563
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.442
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.453
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.343
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.115
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.294
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.302
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.25
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.24
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.199
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.152
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.16
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.118
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.113
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.16
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.178
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.265
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.27
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.184
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.199
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.363
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.324
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.27
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.55
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.432
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.443
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.34
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.098
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.285
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.282
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.265
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.222
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.192
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.144
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.146
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.112
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.097
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.148
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.161
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.263
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.267
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.207
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.176
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.349
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.282
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.29
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.556
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.418
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.41
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.362
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.097
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.286
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.283
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.216
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.227
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.194
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.157
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.144
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.112
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.105
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.161
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.166
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.288
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.289
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.164
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.159
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.329
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.307
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.265
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.532
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.417
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
     "propTotalArea": 0.4
   },
   {
     "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Brachystegia",
-    "gbifId": 2952646,
-    "propTotalArea": 0.3
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Combretum",
-    "gbifId": 2986357,
-    "propTotalArea": 0.6
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp45",
-    "species": "Leucaena",
-    "gbifId": 2970337,
-    "propTotalArea": 0.5
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Acacia",
-    "gbifId": 2978223,
-    "propTotalArea": 0.2
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Albizia",
-    "gbifId": 2972897,
-    "propTotalArea": 0.4
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Brachystegia",
-    "gbifId": 2952646,
-    "propTotalArea": 0.3
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Combretum",
-    "gbifId": 2986357,
-    "propTotalArea": 0.6
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2020,
-    "scenario": "rcp85",
-    "species": "Leucaena",
-    "gbifId": 2970337,
-    "propTotalArea": 0.4
-  },
-  {
-    "iso": "TZA",
     "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Acacia",
-    "gbifId": 2978223,
-    "propTotalArea": 0.2
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Albizia",
-    "gbifId": 2972897,
-    "propTotalArea": 0.3
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Brachystegia",
-    "gbifId": 2952646,
-    "propTotalArea": 0.3
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Combretum",
-    "gbifId": 2986357,
-    "propTotalArea": 0.6
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2030,
-    "scenario": "rcp45",
-    "species": "Leucaena",
-    "gbifId": 2970337,
-    "propTotalArea": 0.4
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.369
   },
   {
     "iso": "TZA",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Acacia",
-    "gbifId": 2978223,
-    "propTotalArea": 0.2
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.087
   },
   {
     "iso": "TZA",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Albizia",
-    "gbifId": 2972897,
-    "propTotalArea": 0.3
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.271
   },
   {
     "iso": "TZA",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Brachystegia",
-    "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.261
   },
   {
     "iso": "TZA",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Combretum",
-    "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.227
   },
   {
     "iso": "TZA",
     "timeInterval": 2030,
     "scenario": "rcp85",
-    "species": "Leucaena",
-    "gbifId": 2970337,
-    "propTotalArea": 0.4
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.204
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.174
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.14
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.122
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.095
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.088
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.149
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.141
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.275
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.293
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.204
   },
   {
     "iso": "TZA",
@@ -205,7 +925,7 @@
     "scenario": "rcp45",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.141
   },
   {
     "iso": "TZA",
@@ -213,7 +933,15 @@
     "scenario": "rcp45",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.31
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.252
   },
   {
     "iso": "TZA",
@@ -221,7 +949,7 @@
     "scenario": "rcp45",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.335
   },
   {
     "iso": "TZA",
@@ -229,7 +957,15 @@
     "scenario": "rcp45",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.6
+    "propTotalArea": 0.558
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.397
   },
   {
     "iso": "TZA",
@@ -237,7 +973,135 @@
     "scenario": "rcp45",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.4
+    "propTotalArea": 0.359
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.411
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.102
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.309
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.283
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.173
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.223
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.197
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.177
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.145
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.107
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.111
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.17
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.169
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.312
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.343
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.142
   },
   {
     "iso": "TZA",
@@ -245,7 +1109,7 @@
     "scenario": "rcp85",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.125
   },
   {
     "iso": "TZA",
@@ -253,7 +1117,15 @@
     "scenario": "rcp85",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.294
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.274
   },
   {
     "iso": "TZA",
@@ -261,7 +1133,7 @@
     "scenario": "rcp85",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.269
   },
   {
     "iso": "TZA",
@@ -269,11 +1141,387 @@
     "scenario": "rcp85",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.501
   },
   {
     "iso": "TZA",
     "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.388
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.34
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.407
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.081
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.244
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.229
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.19
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.188
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.166
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.139
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.11
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.085
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.091
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.149
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.122
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.289
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.325
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.184
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.132
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.3
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.243
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.32
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.552
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.394
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Leucaena",
+    "gbifId": 2970337,
+    "propTotalArea": 0.33
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.437
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.104
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.301
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.269
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.157
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.215
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.18
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.18
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.137
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.097
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.105
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.174
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.153
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.329
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.362
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.146
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Acacia",
+    "gbifId": 2978223,
+    "propTotalArea": 0.092
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Albizia",
+    "gbifId": 2972897,
+    "propTotalArea": 0.236
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.198
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Brachystegia",
+    "gbifId": 2952646,
+    "propTotalArea": 0.257
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Combretum",
+    "gbifId": 2986357,
+    "propTotalArea": 0.483
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.341
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
     "scenario": "rcp85",
     "species": "Leucaena",
     "gbifId": 2970337,
@@ -282,82 +1530,130 @@
   {
     "iso": "TZA",
     "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Acacia",
-    "gbifId": 2978223,
-    "propTotalArea": 0.1
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Albizia",
-    "gbifId": 2972897,
-    "propTotalArea": 0.3
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Brachystegia",
-    "gbifId": 2952646,
-    "propTotalArea": 0.3
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Combretum",
-    "gbifId": 2986357,
-    "propTotalArea": 0.6
-  },
-  {
-    "iso": "TZA",
-    "timeInterval": 2050,
-    "scenario": "rcp45",
-    "species": "Leucaena",
-    "gbifId": 2970337,
-    "propTotalArea": 0.3
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.452
   },
   {
     "iso": "TZA",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Acacia",
-    "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.082
   },
   {
     "iso": "TZA",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Albizia",
-    "gbifId": 2972897,
-    "propTotalArea": 0.2
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.233
   },
   {
     "iso": "TZA",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Brachystegia",
-    "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.191
   },
   {
     "iso": "TZA",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Combretum",
-    "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.158
   },
   {
     "iso": "TZA",
     "timeInterval": 2050,
     "scenario": "rcp85",
-    "species": "Leucaena",
-    "gbifId": 2970337,
-    "propTotalArea": 0.3
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.159
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.14
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.14
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.096
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.069
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.084
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.17
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.098
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.303
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.387
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.155
   },
   {
     "iso": "TZA",
@@ -365,7 +1661,7 @@
     "scenario": "rcp45",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.108
   },
   {
     "iso": "TZA",
@@ -373,7 +1669,15 @@
     "scenario": "rcp45",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.264
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.23
   },
   {
     "iso": "TZA",
@@ -381,7 +1685,7 @@
     "scenario": "rcp45",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.288
   },
   {
     "iso": "TZA",
@@ -389,7 +1693,15 @@
     "scenario": "rcp45",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.522
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.362
   },
   {
     "iso": "TZA",
@@ -397,7 +1709,135 @@
     "scenario": "rcp45",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.315
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.446
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.087
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.29
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.232
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.152
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.192
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.168
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.156
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.118
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.081
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.093
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.169
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.123
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.329
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.363
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.16
   },
   {
     "iso": "TZA",
@@ -405,7 +1845,7 @@
     "scenario": "rcp85",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.065
   },
   {
     "iso": "TZA",
@@ -413,7 +1853,15 @@
     "scenario": "rcp85",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.172
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.148
   },
   {
     "iso": "TZA",
@@ -421,7 +1869,7 @@
     "scenario": "rcp85",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.257
   },
   {
     "iso": "TZA",
@@ -429,7 +1877,15 @@
     "scenario": "rcp85",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.493
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.315
   },
   {
     "iso": "TZA",
@@ -437,7 +1893,135 @@
     "scenario": "rcp85",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.232
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.502
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.078
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.232
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.174
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.106
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.151
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.131
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.132
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.091
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.066
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.083
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.186
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.091
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.317
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.453
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.111
   },
   {
     "iso": "TZA",
@@ -445,7 +2029,7 @@
     "scenario": "rcp45",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.098
   },
   {
     "iso": "TZA",
@@ -453,7 +2037,15 @@
     "scenario": "rcp45",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.242
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.199
   },
   {
     "iso": "TZA",
@@ -461,7 +2053,7 @@
     "scenario": "rcp45",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.288
   },
   {
     "iso": "TZA",
@@ -469,7 +2061,15 @@
     "scenario": "rcp45",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.522
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.34
   },
   {
     "iso": "TZA",
@@ -477,7 +2077,135 @@
     "scenario": "rcp45",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.276
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.463
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.093
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.286
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.223
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.136
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.188
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.156
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.164
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.115
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.078
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.095
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.183
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.119
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.321
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.394
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.144
   },
   {
     "iso": "TZA",
@@ -485,7 +2213,7 @@
     "scenario": "rcp85",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0
+    "propTotalArea": 0.037
   },
   {
     "iso": "TZA",
@@ -493,7 +2221,15 @@
     "scenario": "rcp85",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.137
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.129
   },
   {
     "iso": "TZA",
@@ -501,7 +2237,7 @@
     "scenario": "rcp85",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.207
   },
   {
     "iso": "TZA",
@@ -509,7 +2245,15 @@
     "scenario": "rcp85",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.456
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.266
   },
   {
     "iso": "TZA",
@@ -517,7 +2261,135 @@
     "scenario": "rcp85",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.185
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.531
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.061
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.205
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.141
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.079
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.124
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.118
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.099
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.075
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.059
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.068
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.198
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.072
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.323
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.512
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.088
   },
   {
     "iso": "TZA",
@@ -525,7 +2397,7 @@
     "scenario": "rcp45",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.093
   },
   {
     "iso": "TZA",
@@ -533,7 +2405,15 @@
     "scenario": "rcp45",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.229
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.191
   },
   {
     "iso": "TZA",
@@ -541,7 +2421,7 @@
     "scenario": "rcp45",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.287
   },
   {
     "iso": "TZA",
@@ -549,7 +2429,15 @@
     "scenario": "rcp45",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.53
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.335
   },
   {
     "iso": "TZA",
@@ -557,7 +2445,135 @@
     "scenario": "rcp45",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.275
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.477
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.098
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.274
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.218
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.129
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.176
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.141
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.161
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.11
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.074
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.095
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.184
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.116
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.344
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.404
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.12
   },
   {
     "iso": "TZA",
@@ -565,7 +2581,7 @@
     "scenario": "rcp85",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0
+    "propTotalArea": 0.027
   },
   {
     "iso": "TZA",
@@ -573,7 +2589,15 @@
     "scenario": "rcp85",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.099
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.112
   },
   {
     "iso": "TZA",
@@ -581,7 +2605,7 @@
     "scenario": "rcp85",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.185
   },
   {
     "iso": "TZA",
@@ -589,7 +2613,15 @@
     "scenario": "rcp85",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.4
+    "propTotalArea": 0.448
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.236
   },
   {
     "iso": "TZA",
@@ -597,7 +2629,135 @@
     "scenario": "rcp85",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.177
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.602
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.049
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.217
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.124
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.053
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.121
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.117
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.087
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.071
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.053
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.063
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.209
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.07
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.333
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.56
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.048
   },
   {
     "iso": "TZA",
@@ -605,7 +2765,7 @@
     "scenario": "rcp45",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.081
   },
   {
     "iso": "TZA",
@@ -613,7 +2773,15 @@
     "scenario": "rcp45",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.221
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.193
   },
   {
     "iso": "TZA",
@@ -621,7 +2789,7 @@
     "scenario": "rcp45",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.275
   },
   {
     "iso": "TZA",
@@ -629,7 +2797,15 @@
     "scenario": "rcp45",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.5
+    "propTotalArea": 0.507
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.339
   },
   {
     "iso": "TZA",
@@ -637,7 +2813,135 @@
     "scenario": "rcp45",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.3
+    "propTotalArea": 0.269
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.471
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.089
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.27
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.207
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.134
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.173
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.147
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.153
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.105
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.073
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.089
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.188
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.115
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.339
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.402
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.122
   },
   {
     "iso": "TZA",
@@ -645,7 +2949,7 @@
     "scenario": "rcp85",
     "species": "Acacia",
     "gbifId": 2978223,
-    "propTotalArea": 0
+    "propTotalArea": 0.022
   },
   {
     "iso": "TZA",
@@ -653,7 +2957,15 @@
     "scenario": "rcp85",
     "species": "Albizia",
     "gbifId": 2972897,
-    "propTotalArea": 0.1
+    "propTotalArea": 0.074
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Balanites",
+    "gbifId": 3189897,
+    "propTotalArea": 0.121
   },
   {
     "iso": "TZA",
@@ -661,7 +2973,7 @@
     "scenario": "rcp85",
     "species": "Brachystegia",
     "gbifId": 2952646,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.183
   },
   {
     "iso": "TZA",
@@ -669,7 +2981,15 @@
     "scenario": "rcp85",
     "species": "Combretum",
     "gbifId": 2986357,
-    "propTotalArea": 0.4
+    "propTotalArea": 0.433
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Commiphora",
+    "gbifId": 2972896,
+    "propTotalArea": 0.203
   },
   {
     "iso": "TZA",
@@ -677,6 +2997,134 @@
     "scenario": "rcp85",
     "species": "Leucaena",
     "gbifId": 2970337,
-    "propTotalArea": 0.2
+    "propTotalArea": 0.165
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Afzelia quanzensis",
+    "gbifId": 5358281,
+    "propTotalArea": 0.64
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Albizia gummifera",
+    "gbifId": 8343428,
+    "propTotalArea": 0.048
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Brachystegia spiciformis",
+    "gbifId": 2952670,
+    "propTotalArea": 0.223
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Combretum molle",
+    "gbifId": 7961582,
+    "propTotalArea": 0.126
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Euphorbia candelabrum",
+    "gbifId": 3066041,
+    "propTotalArea": 0.014
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Julbernardia globiflora",
+    "gbifId": 2981760,
+    "propTotalArea": 0.127
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Markhamia obtusifolia",
+    "gbifId": 5668622,
+    "propTotalArea": 0.119
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Ocotea usambarensis",
+    "gbifId": 4181253,
+    "propTotalArea": 0.082
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Parinari excelsa",
+    "gbifId": 2985000,
+    "propTotalArea": 0.069
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Pinus patula",
+    "gbifId": 5285090,
+    "propTotalArea": 0.051
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Podocarpus latifolius",
+    "gbifId": 5285951,
+    "propTotalArea": 0.064
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Pterocarpus angolensis",
+    "gbifId": 5349240,
+    "propTotalArea": 0.234
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Pygeum africanum",
+    "gbifId": 3022854,
+    "propTotalArea": 0.074
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Tamarindus indica",
+    "gbifId": 2975768,
+    "propTotalArea": 0.338
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Tectona grandis",
+    "gbifId": 2925649,
+    "propTotalArea": 0.625
+  },
+  {
+    "iso": "TZA",
+    "timeInterval": 2090,
+    "scenario": "rcp85",
+    "species": "Terminalia sericea",
+    "gbifId": 3699769,
+    "propTotalArea": 0.028
   }
 ]
