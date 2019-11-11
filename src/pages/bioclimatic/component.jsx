@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
@@ -9,18 +9,20 @@ import Modal from 'components/modal';
 import Map from 'components/map';
 import Accordion from 'components/accordion';
 import Filters from 'components/filters';
-import LayerToggle from 'components/map/controls/layer-toggle';
 import Timeline from 'components/map/controls/timeline';
-
-import layers from 'layers.json';
 
 function BioClimaticPage(props) {
   const { getConfig, filters, data, timelineData, viewport, setViewport } = props;
   const { scenario, parsedScenarios } = filters;
 
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario);
+  const biovarsList = sortBy(data.biovars, 'key');
   const biovarsData = groupBy(data.countryBiovarDistributions, 'biovar.key');
-  const [activeLayers, setActiveLayers] = useState(layers.map(l => ({ ...l, active: true })));
+
+  const chosenBiovar = useMemo(() => filters.biovar || (biovarsList[0] && biovarsList[0].key), [
+    biovarsList,
+    filters.biovar
+  ]);
 
   return (
     <div className="c-bioclimatic l-page">
@@ -29,9 +31,11 @@ function BioClimaticPage(props) {
       <div className="content">
         <div className="bioclimatic-chart">
           <Accordion
-            items={sortBy(data.biovars, 'key').map((bv, i) => ({
+            activeItemId={chosenBiovar}
+            setItem={item => filters.setBiovar(item.id)}
+            items={biovarsList.map((bv, i) => ({
               title: `BIO ${i + 1} = ${bv.name}`,
-              key: bv.key,
+              id: bv.key,
               data: sortBy(biovarsData[bv.key], 'name').map(d =>
                 d.name === 1995 ? { ...d, name: 'current' } : d
               ),
@@ -51,19 +55,9 @@ function BioClimaticPage(props) {
             viewport={viewport}
             setViewport={setViewport}
           >
-            {map => (
-              <LayerManager map={map} plugin={PluginMapboxGl}>
-                {activeLayers
-                  .filter(l => l.active)
-                  .map(layer => (
-                    // eslint-disable-next-line react/jsx-props-no-spreading
-                    <Layer key={layer.id} {...layer} />
-                  ))}
-              </LayerManager>
-            )}
+            {() => null}
           </Map>
           <Timeline className="timeline" activeTab={scenario} data={timelineData} hideHeader />
-          <LayerToggle layers={activeLayers} setLayers={setActiveLayers} />
           <Modal
             title="Bioclimatic variables data"
             text={`Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality

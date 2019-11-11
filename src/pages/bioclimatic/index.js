@@ -26,7 +26,7 @@ const Container = () => {
 
   const { country } = (match && match.params) || {};
   const currentQueryParams = useQueryParams();
-  const { startYear, endYear, scenario } = currentQueryParams;
+  const { startYear, endYear, scenario, biovar } = currentQueryParams;
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
 
   // graphql
@@ -114,6 +114,8 @@ const Container = () => {
     const { earliest, latest } = getYearsRange(scenarioYears);
     setQueryParams({ scenario: sc, startYear: earliest, endYear: latest }, location, history);
   };
+  const setBiovarQuery = bv =>
+    setQueryParams({ ...currentQueryParams, biovar: bv }, location, history);
 
   // callbacks
   const setStartYear = year => {
@@ -125,6 +127,8 @@ const Container = () => {
   };
 
   const filters = {
+    biovar,
+    setBiovar: setBiovarQuery,
     startYear: String(chosenStartYear),
     setStartYear,
     setEndYear,
