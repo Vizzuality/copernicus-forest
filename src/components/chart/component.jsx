@@ -45,9 +45,9 @@ const CustomTooltip = props => {
               <svg height="6" width="6">
                 <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
               </svg>
-              <span className="value">{`${model || p.name}: ${p.value}${p.unit ||
-                unit ||
-                ''}`}</span>
+              <span className="value">{`${model || p.name}: ${
+                p.value && p.value.toFixed ? p.value.toFixed(1) : p.value
+              }${p.unit || unit || ''}`}</span>
             </p>
           ))}
     </div>
