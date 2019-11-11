@@ -24,8 +24,7 @@ export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
       },
       where2: {
         species,
-        scenario,
-        timeinterval: year
+        scenario
       }
     },
     layerConfig: {
@@ -34,7 +33,7 @@ export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
         layers: [
           {
             options: {
-              sql: `WITH a AS (SELECT cartodb_id, the_geom_webmercator, uuid, iso3 FROM all_geometry {{where}}) SELECT a.the_geom_webmercator, a.cartodb_id, b.uuid, b.timeinterval, b.species, b.scenario, b.probabilityemca FROM ${iso.toLowerCase()}_zonal_spp_uuid as b INNER JOIN a ON b.uuid = a.uuid {{where2}}`
+              sql: `WITH a AS (SELECT cartodb_id, the_geom_webmercator, uuid, iso3 FROM all_geometry {{where}}) SELECT a.the_geom_webmercator, a.cartodb_id, b.uuid, b.timeinterval as year, b.species, b.scenario, b.probabilityemca FROM ${iso.toLowerCase()}_zonal_spp_uuid as b INNER JOIN a ON b.uuid = a.uuid {{where2}}`
             },
             type: 'cartodb'
           }
@@ -43,6 +42,7 @@ export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
         minzoom: 2,
         vectorLayers: [
           {
+            filter: ['==', 'year', year],
             paint: {
               'fill-color': [
                 'interpolate',
@@ -116,10 +116,6 @@ export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
             },
             {
               key: 'scenario',
-              required: true
-            },
-            {
-              key: 'timeinterval',
               required: true
             }
           ]

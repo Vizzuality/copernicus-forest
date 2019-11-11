@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useLocation, useHistory } from 'react-router-dom';
 import { uniqBy } from 'lodash';
@@ -27,11 +27,8 @@ const DistributionPage = props => {
   const futureScenarios = scenarios && scenarios.filter(({ key }) => key !== 'current');
   const currentScenarios = scenarios && scenarios.filter(({ key }) => key === 'current');
 
-  const activeFutureScenario = useMemo(
-    () =>
-      futureScenarios && futureScenarios.length ? futureScenario || futureScenarios[0].key : '',
-    [futureScenarios, futureScenario]
-  );
+  const activeFutureScenario =
+    futureScenarios && futureScenarios.length ? futureScenario || futureScenarios[0].key : '';
 
   const setFutureScenario = sc => {
     setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);

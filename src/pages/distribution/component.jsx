@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
@@ -30,7 +30,20 @@ const DistributionPageComponent = ({
   const { iso } = (match && match.params) || '';
 
   const [opacity, setOpacity] = useState(1);
-  const [year, setYear] = useState(2020);
+  const [yearIndex, setYearIndex] = useState(0);
+
+  useEffect(() => {
+    if (yearIndex !== 0) {
+      setYearIndex(0);
+    }
+    // in this particular case we want to reset the activeIndex when tab changes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeFutureScenario]);
+
+  const currentYear =
+    futureScenariosData &&
+    activeFutureScenario &&
+    futureScenariosData[activeFutureScenario].years[yearIndex];
 
   const cartoLayer = useMemo(
     () =>
@@ -38,10 +51,10 @@ const DistributionPageComponent = ({
         iso,
         activeSpecies && activeSpecies.name,
         activeFutureScenario,
-        year,
+        currentYear,
         opacity
       ),
-    [iso, activeSpecies, activeFutureScenario, opacity, year]
+    [iso, activeSpecies, activeFutureScenario, opacity, currentYear]
   );
   // const cartoLayer = useMemo(() => vectorLayerCarto2(iso, opacity), [iso, opacity]);
 
@@ -50,14 +63,6 @@ const DistributionPageComponent = ({
   const layers = useMemo(() => [cartoLayer], [cartoLayer]);
 
   const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
-
-  const changeYear = yearIndex => {
-    const currentYear =
-      futureScenariosData &&
-      activeFutureScenario &&
-      futureScenariosData[activeFutureScenario].years[yearIndex];
-    setYear(currentYear);
-  };
 
   return (
     <div className={styles.distribution}>
@@ -106,7 +111,8 @@ const DistributionPageComponent = ({
         setActiveTab={setFutureScenario}
         title="Future distribution"
         data={futureScenariosData}
-        handleOnChange={yearIndex => changeYear(yearIndex)}
+        yearIndex={yearIndex}
+        handleOnChange={setYearIndex}
       />
       <Timeline title="Current distribution" data={currentScenariosData} hideTimeline />
       <div className={styles.navigationBar}>

@@ -20,7 +20,6 @@ const TimelineComponent = ({
   handleOnChange,
   hideHeader,
   hideTimeline,
-  setYearIndex,
   currentYear,
   years
 }) => {
@@ -47,12 +46,10 @@ const TimelineComponent = ({
       {!hideTimeline && (
         <div className={styles.timeline}>
           <Timestep
+            key={activeTab}
             {...timelineParams}
-            formatValue={value => {
-              handleOnChange(value);
-              setYearIndex(value);
-              return years && years[value];
-            }}
+            handleOnChange={values => handleOnChange(values[1])}
+            formatValue={value => years && years[value]}
           />
           <span className={styles.year}>{currentYear}</span>
           <button className={styles.speedButton} onClick={toggleTimelineSpeed}>

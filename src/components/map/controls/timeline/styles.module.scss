@@ -15,14 +15,11 @@ $timeline-size: 45px;
   display: flex;
   height: $timeline-size;
   width: 100%;
-
-  & > * {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .title {
+  display: flex;
+  align-items: center;
   color: $color-white;
   flex: 1;
   font-size: $font-size-big;
@@ -30,6 +27,8 @@ $timeline-size: 45px;
 }
 
 .tab {
+  display: flex;
+  align-items: center;
   color: $color-gray-4;
   cursor: pointer;
   border-left: 1px solid $color-gray-3;
@@ -49,10 +48,6 @@ $timeline-size: 45px;
   height: $timeline-size;
   position: relative;
   width: 100%;
-
-  & > *:first-child {
-    flex: 1;
-  }
 }
 
 .speedButton {
@@ -65,26 +60,28 @@ $timeline-size: 45px;
 
 .legendItemTimeStep {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  height: 100%; 
+  height: 100%;
 
-  & > * {
+  :global .vizzuality__player-btn,
+  :global .vizzuality__timestep-slider {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
   }
 
-  & > *:first-child {
+  :global .vizzuality__player-btn {
     width: $timeline-size;
   }
 
-  & > *:last-child {
+  :global .vizzuality__timestep-slider {
     flex: 1;
     border-left: 1px solid $color-gray-3;
 
-    & > *:first-child {
+    :global .vizzuality-slider {
       width: 100%;
       margin-left: 105px;
       margin-right: 38px;
@@ -93,6 +90,8 @@ $timeline-size: 45px;
 }
 
 .infoButton {
+  display: flex;
+  align-items: center;
   padding: 0 10px 0 24px;
   svg {
     fill: $color-white;;
