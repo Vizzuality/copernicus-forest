@@ -39,9 +39,8 @@ const Timeline = ({
     minAbs: start,
     maxAbs: end,
     start,
-    end,
-    trim: start,
-    value: yearIndex,
+    end: yearIndex,
+    trim: end + 1,
     speed: timelineSpeedMap[speedIndex].value,
     step: step || 1,
     handleStyle: {

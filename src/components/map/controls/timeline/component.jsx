@@ -48,8 +48,11 @@ const TimelineComponent = ({
           <Timestep
             key={activeTab}
             {...timelineParams}
-            handleOnChange={values => handleOnChange(values[1])}
-            formatValue={value => years && years[value]}
+            formatValue={value => {
+              // FIXME: there a bug in the timestep component, this is the best way to make it work
+              handleOnChange(value);
+              return years && years[value];
+            }}
           />
           <span className={styles.year}>{currentYear}</span>
           <button className={styles.speedButton} onClick={toggleTimelineSpeed}>

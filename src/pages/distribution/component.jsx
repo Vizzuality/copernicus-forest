@@ -112,7 +112,7 @@ const DistributionPageComponent = ({
         title="Future distribution"
         data={futureScenariosData}
         yearIndex={yearIndex}
-        handleOnChange={setYearIndex}
+        handleOnChange={index => setYearIndex(() => index)}
       />
       <Timeline title="Current distribution" data={currentScenariosData} hideTimeline />
       <div className={styles.navigationBar}>
