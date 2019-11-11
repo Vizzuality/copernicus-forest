@@ -6,6 +6,7 @@ import { useScenariosPerCountry } from 'graphql/queries';
 import { Query } from 'urql';
 import { Label } from 'recharts';
 import sortBy from 'lodash/sortBy';
+import { bioclimaticLayerCarto } from 'layers';
 
 import {
   getYearsForScenario,
@@ -141,6 +142,17 @@ const Container = () => {
     parsedScenarios
   };
 
+  const cartoLayer = useMemo(
+    () => bioclimaticLayerCarto(country, chosenScenario, 'Picea abies', 2090, 1),
+    [country, chosenScenario]
+  );
+
+  // put active layers in the url
+  // along with its opacities
+  const layers = useMemo(() => [cartoLayer], [cartoLayer]);
+
+  const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
+
   const getChartConfig = unit => ({
     lines: [
       {
@@ -204,6 +216,7 @@ const Container = () => {
               timelineData={timelineData}
               viewport={viewport}
               setViewport={setViewport}
+              activeLayers={activeLayers}
             />
           )}
       </Query>

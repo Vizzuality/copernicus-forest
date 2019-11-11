@@ -11,9 +11,11 @@ import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import Timeline from 'components/map/controls/timeline';
 import RampLegend from 'components/ramp-legend';
+import { LayerManager, Layer } from 'layer-manager/dist/components';
+import { PluginMapboxGl } from 'layer-manager';
 
 function BioClimaticPage(props) {
-  const { getConfig, filters, data, timelineData, viewport, setViewport } = props;
+  const { getConfig, filters, data, timelineData, viewport, setViewport, activeLayers } = props;
   const { scenario, parsedScenarios } = filters;
 
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario);
@@ -56,7 +58,17 @@ function BioClimaticPage(props) {
             viewport={viewport}
             setViewport={setViewport}
           >
-            {() => null}
+            {map => (
+              <LayerManager map={map} plugin={PluginMapboxGl}>
+                {activeLayers
+                  .filter(l => l.active)
+                  .map(layer => (
+                    // TODO: fix all eslint-disables
+                    // eslint-disable-next-line react/jsx-props-no-spreading
+                    <Layer key={layer.id} {...layer} />
+                  ))}
+              </LayerManager>
+            )}
           </Map>
           <Timeline className="timeline" activeTab={scenario} data={timelineData} hideHeader />
           <Modal
@@ -67,7 +79,7 @@ function BioClimaticPage(props) {
           />
           <RampLegend
             title="Anual Mean Temperature"
-            colorRamp={['#E15383', '#FFA679', '#FEF6B5']} // purple
+            colorRamp={['#FEF6B5', '#FFA679', '#E15383']} // purple
             lowEndName="Low"
             highEndName="High"
             // handleOpacity={o => return o}
