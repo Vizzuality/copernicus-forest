@@ -143,8 +143,8 @@ const Container = () => {
   };
 
   const cartoLayer = useMemo(
-    () => bioclimaticLayerCarto(country, chosenScenario, 'Picea abies', 2090, 1),
-    [country, chosenScenario]
+    () => bioclimaticLayerCarto(country, chosenScenario, biovar, 2090, 1),
+    [country, chosenScenario, biovar]
   );
 
   // put active layers in the url

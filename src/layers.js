@@ -148,7 +148,7 @@ export const currentDistributionCartoLayer = (iso, species, opacity = 1) => {
               'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'probabilityemca'],
+                ['get', 'wieghtedmean'],
                 0,
                 transparent,
                 0.5,

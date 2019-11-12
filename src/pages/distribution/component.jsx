@@ -91,9 +91,9 @@ const DistributionPageComponent = ({
       <RampLegend
         title="Committee average"
         transparentRamp={{ colorRGBA: [112, 68, 255, 1] }} // purple
-        lowEndValue={0}
-        middleValue={0.5}
-        highEndValue={1}
+        lowEndValue="0"
+        middleValue="0.5"
+        highEndValue="1"
         lowEndName="Agreed absences"
         middleName="Uncertain"
         highEndName="Agreed presence"
