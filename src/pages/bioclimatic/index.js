@@ -28,6 +28,7 @@ const Container = () => {
   const currentQueryParams = useQueryParams();
   const { startYear, endYear, scenario, biovar } = currentQueryParams;
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
+  const [yearIndex, setYearIndex] = useState(0);
 
   // graphql
   const { data } = useScenariosPerCountry(country);
@@ -205,6 +206,8 @@ const Container = () => {
               viewport={viewport}
               setViewport={setViewport}
               country={country}
+              yearIndex={yearIndex}
+              setYearIndex={setYearIndex}
             />
           )}
       </Query>

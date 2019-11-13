@@ -18,7 +18,17 @@ import { PluginMapboxGl } from 'layer-manager';
 import { getBuckets } from './utils';
 
 function BioClimaticPage(props) {
-  const { getConfig, filters, data, timelineData, viewport, setViewport, country } = props;
+  const {
+    getConfig,
+    filters,
+    data,
+    timelineData,
+    viewport,
+    setViewport,
+    country,
+    yearIndex,
+    setYearIndex
+  } = props;
   const { scenario, parsedScenarios } = filters;
 
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario);
@@ -29,18 +39,20 @@ function BioClimaticPage(props) {
     filters.biovar
   ]);
 
+  const years = scenario && timelineData && timelineData[scenario] && timelineData[scenario].years;
+
   const bioclimaticLayers = useMemo(() => {
     const buckets = getBuckets(biovarsData[chosenBiovar]);
     const bioclimaticLayer = bioclimaticLayerCarto(
       country,
       scenario,
       chosenBiovar,
-      2090,
+      years[yearIndex],
       1,
       buckets
     );
     return [bioclimaticLayer].map(l => ({ ...l, active: true }));
-  }, [country, scenario, biovarsData, chosenBiovar]);
+  }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex]);
 
   return (
     <div className="c-bioclimatic l-page">
@@ -85,7 +97,14 @@ function BioClimaticPage(props) {
               </LayerManager>
             )}
           </Map>
-          <Timeline className="timeline" activeTab={scenario} data={timelineData} hideHeader />
+          <Timeline
+            className="timeline"
+            activeTab={scenario}
+            data={timelineData}
+            yearIndex={yearIndex}
+            handleOnChange={setYearIndex}
+            hideHeader
+          />
           <Modal
             title="Bioclimatic variables data"
             text={`Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
