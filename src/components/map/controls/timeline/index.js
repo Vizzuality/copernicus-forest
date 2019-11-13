@@ -22,9 +22,9 @@ const Timeline = ({
   const [speedIndex, setSpeedIndex] = useState(0);
 
   const timelineSpeedMap = [
-    { name: 'x1', value: 1000 },
-    { name: 'x2', value: 500 },
-    { name: 'x4', value: 250 }
+    { name: 'x1', value: 2000 },
+    { name: 'x2', value: 1000 },
+    { name: 'x4', value: 500 }
   ];
 
   const toggleTimelineSpeed = () => {

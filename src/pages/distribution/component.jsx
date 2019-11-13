@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useMemo, useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
 import Icon from 'components/icon';
-import { vectorLayerCarto } from 'layers';
-import { useRouteMatch } from 'react-router-dom';
 import RampLegend from 'components/ramp-legend';
 import Timeline from 'components/map/controls/timeline';
 
@@ -24,46 +22,12 @@ const DistributionPageComponent = ({
   activeFutureScenario,
   setFutureScenario,
   futureScenariosData,
-  currentScenariosData
+  futureScenariosLayers,
+  currentScenariosLayers,
+  yearIndex,
+  setYearIndex,
+  setOpacity
 }) => {
-  const match = useRouteMatch('/:iso');
-  const { iso } = (match && match.params) || '';
-
-  const [opacity, setOpacity] = useState(1);
-  const [yearIndex, setYearIndex] = useState(0);
-
-  useEffect(() => {
-    if (yearIndex !== 0) {
-      setYearIndex(0);
-    }
-    // in this particular case we want to reset the activeIndex when tab changes
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeFutureScenario]);
-
-  const currentYear =
-    futureScenariosData &&
-    activeFutureScenario &&
-    futureScenariosData[activeFutureScenario].years[yearIndex];
-
-  const cartoLayer = useMemo(
-    () =>
-      vectorLayerCarto(
-        iso,
-        activeSpecies && activeSpecies.name,
-        activeFutureScenario,
-        currentYear,
-        opacity
-      ),
-    [iso, activeSpecies, activeFutureScenario, opacity, currentYear]
-  );
-  // const cartoLayer = useMemo(() => vectorLayerCarto2(iso, opacity), [iso, opacity]);
-
-  // put active layers in the url
-  // along with its opacities
-  const layers = useMemo(() => [cartoLayer], [cartoLayer]);
-
-  const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
-
   return (
     <div className={styles.distribution}>
       <Map
@@ -73,9 +37,9 @@ const DistributionPageComponent = ({
         setViewport={setViewport}
         showZoom={false}
       >
-        {/* {map => (
+        {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
-            {activeLayers
+            {currentScenariosLayers
               .filter(l => l.active)
               .map(layer => (
                 // TODO: fix all eslint-disables
@@ -83,7 +47,7 @@ const DistributionPageComponent = ({
                 <Layer key={layer.id} {...layer} />
               ))}
           </LayerManager>
-        )} */}
+        )}
       </Map>
       <Map
         mapboxApiAccessToken={process.env.react_app_mapbox_token}
@@ -95,7 +59,7 @@ const DistributionPageComponent = ({
       >
         {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
-            {activeLayers
+            {futureScenariosLayers
               .filter(l => l.active)
               .map(layer => {
                 // TODO: fix all eslint-disables
@@ -114,7 +78,7 @@ const DistributionPageComponent = ({
         yearIndex={yearIndex}
         handleOnChange={index => setYearIndex(() => index)}
       />
-      <Timeline title="Current distribution" data={currentScenariosData} hideTimeline />
+      <Timeline title="Current distribution" data={{}} hideTimeline />
       <div className={styles.navigationBar}>
         <button className={styles.zoomButton} onClick={() => zoomIn()}>
           <Icon name="icon-zoomin" className="menu-icon" />
@@ -150,7 +114,11 @@ DistributionPageComponent.propTypes = {
   activeFutureScenario: PropTypes.string,
   setFutureScenario: PropTypes.func,
   futureScenariosData: PropTypes.object,
-  currentScenariosData: PropTypes.object
+  futureScenariosLayers: PropTypes.array,
+  currentScenariosLayers: PropTypes.array,
+  yearIndex: PropTypes.number,
+  setYearIndex: PropTypes.func,
+  setOpacity: PropTypes.func
 };
 
 export default DistributionPageComponent;
