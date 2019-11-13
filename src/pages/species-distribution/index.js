@@ -39,12 +39,14 @@ const SpeciesDistribution = () => {
       name: 'Species summary',
       path: urls.species,
       active: pathname.includes('/species/'),
+      page: 'species',
       component: Species
     },
     {
       name: 'Map distribution',
       path: urls.distribution,
       active: pathname.includes('/distribution/'),
+      page: 'distribution',
       component: Distribution
     }
   ];
@@ -72,6 +74,7 @@ const SpeciesDistribution = () => {
       wikiInfo={wikiInfo}
       activeSpecies={activeSpecies}
       species={species}
+      activePage={activePage.page}
       activeCountry={activeCountry}
       speciesTabsData={speciesTabsData}
       ContentComponent={activePage.component}

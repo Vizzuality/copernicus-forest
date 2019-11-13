@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useMemo, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
 import Icon from 'components/icon';
-import { vectorLayerCarto } from 'layers';
-import { useRouteMatch } from 'react-router-dom';
 import RampLegend from 'components/ramp-legend';
 import Timeline from 'components/map/controls/timeline';
 
@@ -24,19 +22,12 @@ const DistributionPageComponent = ({
   activeFutureScenario,
   setFutureScenario,
   futureScenariosData,
-  currentScenariosData
+  futureScenariosLayers,
+  currentScenariosLayers,
+  yearIndex,
+  setYearIndex,
+  setOpacity
 }) => {
-  const match = useRouteMatch('/:iso');
-  const { iso } = (match && match.params) || '';
-
-  const [opacity, setOpacity] = useState(1);
-  const cartoLayer = useMemo(() => vectorLayerCarto(iso, opacity), [iso, opacity]);
-  // put active layers in the url
-  // along with its opacities
-  const layers = useMemo(() => [cartoLayer], [cartoLayer]);
-
-  const activeLayers = useMemo(() => layers.map(l => ({ ...l, active: true })), [layers]);
-
   return (
     <div className={styles.distribution}>
       <Map
@@ -48,7 +39,7 @@ const DistributionPageComponent = ({
       >
         {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
-            {activeLayers
+            {currentScenariosLayers
               .filter(l => l.active)
               .map(layer => (
                 // TODO: fix all eslint-disables
@@ -68,13 +59,13 @@ const DistributionPageComponent = ({
       >
         {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
-            {activeLayers
+            {futureScenariosLayers
               .filter(l => l.active)
-              .map(layer => (
+              .map(layer => {
                 // TODO: fix all eslint-disables
                 // eslint-disable-next-line react/jsx-props-no-spreading
-                <Layer key={layer.id} {...layer} />
-              ))}
+                return <Layer key={layer.id} {...layer} />;
+              })}
           </LayerManager>
         )}
       </Map>
@@ -84,8 +75,10 @@ const DistributionPageComponent = ({
         setActiveTab={setFutureScenario}
         title="Future distribution"
         data={futureScenariosData}
+        yearIndex={yearIndex}
+        handleOnChange={index => setYearIndex(() => index)}
       />
-      <Timeline title="Current distribution" data={currentScenariosData} hideTimeline />
+      <Timeline title="Current distribution" data={{}} hideTimeline />
       <div className={styles.navigationBar}>
         <button className={styles.zoomButton} onClick={() => zoomIn()}>
           <Icon name="icon-zoomin" className="menu-icon" />
@@ -121,7 +114,11 @@ DistributionPageComponent.propTypes = {
   activeFutureScenario: PropTypes.string,
   setFutureScenario: PropTypes.func,
   futureScenariosData: PropTypes.object,
-  currentScenariosData: PropTypes.object
+  futureScenariosLayers: PropTypes.array,
+  currentScenariosLayers: PropTypes.array,
+  yearIndex: PropTypes.number,
+  setYearIndex: PropTypes.func,
+  setOpacity: PropTypes.func
 };
 
 export default DistributionPageComponent;

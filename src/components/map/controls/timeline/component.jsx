@@ -20,7 +20,6 @@ const TimelineComponent = ({
   handleOnChange,
   hideHeader,
   hideTimeline,
-  setYearIndex,
   currentYear,
   years
 }) => {
@@ -47,10 +46,11 @@ const TimelineComponent = ({
       {!hideTimeline && (
         <div className={styles.timeline}>
           <Timestep
+            key={activeTab}
             {...timelineParams}
             formatValue={value => {
+              // FIXME: there a bug in the timestep component, this is the best way to make it work
               handleOnChange(value);
-              setYearIndex(value);
               return years && years[value];
             }}
           />

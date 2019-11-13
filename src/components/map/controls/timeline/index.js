@@ -7,6 +7,7 @@ import styles from './styles.module.scss';
 
 const Timeline = ({
   data,
+  yearIndex,
   activeTab,
   setActiveTab,
   className,
@@ -15,17 +16,16 @@ const Timeline = ({
   hideHeader,
   hideTimeline
 }) => {
+  const activeScenario = data && activeTab && data[activeTab];
+  const { start, end, step, years } = activeScenario || {};
+
   const [speedIndex, setSpeedIndex] = useState(0);
-  const [yearIndex, setYearIndex] = useState(null);
 
   const timelineSpeedMap = [
-    { name: 'x1', value: 1000 },
-    { name: 'x2', value: 500 },
-    { name: 'x4', value: 250 }
+    { name: 'x1', value: 2000 },
+    { name: 'x2', value: 1000 },
+    { name: 'x4', value: 500 }
   ];
-
-  const activeScenario = data && activeTab && data[activeTab];
-  const { start, end, step } = activeScenario || {};
 
   const toggleTimelineSpeed = () => {
     const nextIndex = timelineSpeedMap.length === speedIndex + 1 ? 0 : speedIndex + 1;
@@ -34,14 +34,13 @@ const Timeline = ({
 
   const timelineParams = {
     canPlay: true,
-    dateFormat: 'YYYY',
-    interval: 'years',
     min: start,
     max: end,
+    minAbs: start,
+    maxAbs: end,
     start,
-    end,
-    trim: start,
-    value: start,
+    end: yearIndex,
+    trim: end + 1,
     speed: timelineSpeedMap[speedIndex].value,
     step: step || 1,
     handleStyle: {
@@ -69,7 +68,6 @@ const Timeline = ({
     customClass: styles.legendItemTimeStep
   };
 
-  const years = data && data[activeTab] && data[activeTab].years;
   const currentYear = years && years[yearIndex];
 
   return (
@@ -86,7 +84,6 @@ const Timeline = ({
       handleOnChange={handleOnChange}
       hideHeader={hideHeader}
       hideTimeline={hideTimeline}
-      setYearIndex={setYearIndex}
       timelineParams={timelineParams}
       currentYear={currentYear}
       years={years}

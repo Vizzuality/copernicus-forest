@@ -17,7 +17,8 @@ const SpeciesDistributionComponent = props => {
     speciesTabsData,
     ContentComponent,
     speciesListVisible,
-    toggleSpeciesList
+    toggleSpeciesList,
+    activePage
   } = props;
 
   return (
@@ -32,7 +33,12 @@ const SpeciesDistributionComponent = props => {
           }
         />
         {activeSpecies && (
-          <SpeciesList species={species} country={activeCountry} activeSpecies={activeSpecies} />
+          <SpeciesList
+            species={species}
+            country={activeCountry}
+            activeSpecies={activeSpecies}
+            page={activePage}
+          />
         )}
       </div>
       <div className={cx(styles.content, { [styles.contentStretched]: !speciesListVisible })}>
