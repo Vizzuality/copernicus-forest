@@ -11,21 +11,36 @@ import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import Timeline from 'components/map/controls/timeline';
 import RampLegend from 'components/ramp-legend';
+import { bioclimaticLayerCarto } from 'layers';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
 
+import { getBuckets } from './utils';
+
 function BioClimaticPage(props) {
-  const { getConfig, filters, data, timelineData, viewport, setViewport, activeLayers } = props;
+  const { getConfig, filters, data, timelineData, viewport, setViewport, country } = props;
   const { scenario, parsedScenarios } = filters;
 
   const parsedScenario = parsedScenarios && parsedScenarios.find(s => s.value === scenario);
   const biovarsList = sortBy(data.biovars, 'key');
   const biovarsData = groupBy(data.countryBiovarDistributions, 'biovar.key');
-
   const chosenBiovar = useMemo(() => filters.biovar || (biovarsList[0] && biovarsList[0].key), [
     biovarsList,
     filters.biovar
   ]);
+
+  const bioclimaticLayers = useMemo(() => {
+    const buckets = getBuckets(biovarsData[chosenBiovar]);
+    const bioclimaticLayer = bioclimaticLayerCarto(
+      country,
+      scenario,
+      chosenBiovar,
+      2090,
+      1,
+      buckets
+    );
+    return [bioclimaticLayer].map(l => ({ ...l, active: true }));
+  }, [country, scenario, biovarsData, chosenBiovar]);
 
   return (
     <div className="c-bioclimatic l-page">
@@ -60,7 +75,7 @@ function BioClimaticPage(props) {
           >
             {map => (
               <LayerManager map={map} plugin={PluginMapboxGl}>
-                {activeLayers
+                {bioclimaticLayers
                   .filter(l => l.active)
                   .map(layer => (
                     // TODO: fix all eslint-disables

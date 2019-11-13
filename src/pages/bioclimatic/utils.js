@@ -46,3 +46,13 @@ export const getYears = sc => {
       .sort()
   );
 };
+
+export const getBuckets = array => {
+  const sortedValues = array.map(({ value }) => value).sort((a, b) => a - b);
+  console.log('sortedValues: ', sortedValues);
+  return [
+    sortedValues[0],
+    sortedValues[Math.round((sortedValues.length - 1) / 2)],
+    sortedValues[sortedValues.length - 1]
+  ];
+};
