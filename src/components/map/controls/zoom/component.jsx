@@ -1,16 +1,23 @@
 import React from 'react';
-import cx from 'classnames';
 import PropTypes from 'prop-types';
-import { NavigationControl } from 'react-map-gl';
+import Icon from 'components/icon';
 
 import styles from './styles.module.scss';
 
-const ZoomComponent = ({ theme }) => {
-  return <NavigationControl showCompass={false} className={cx(styles.zoom, theme)} />;
-};
+const ZoomComponent = ({ zoomIn, zoomOut }) => (
+  <>
+    <button className={styles.mapNavigationButton} onClick={zoomIn}>
+      <Icon name="icon-zoomin" className="menu-icon" />
+    </button>
+    <button className={styles.mapNavigationButton} onClick={zoomOut}>
+      <Icon name="icon-zoomout" className="menu-icon" />
+    </button>
+  </>
+);
 
 ZoomComponent.propTypes = {
-  theme: PropTypes.object
+  zoomIn: PropTypes.func,
+  zoomOut: PropTypes.func
 };
 
 export default ZoomComponent;

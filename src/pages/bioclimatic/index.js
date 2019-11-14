@@ -16,7 +16,7 @@ import {
 } from './utils';
 import Component from './component';
 
-import styles from './styles.scss';
+import styles from './styles.module.scss';
 
 const Container = () => {
   // location, query params

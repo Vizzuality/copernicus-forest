@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 // import { PluginMapboxGl } from 'layer-manager';
 import sortBy from 'lodash/sortBy';
 import groupBy from 'lodash/groupBy';
-
+import LayerToggle from 'components/map/controls/layer-toggle';
+import Zoom from 'components/map/controls/zoom';
 import Modal from 'components/modal';
 import Map from 'components/map';
 import Accordion from 'components/accordion';
@@ -14,8 +15,11 @@ import RampLegend from 'components/ramp-legend';
 import { bioclimaticLayerCarto } from 'layers';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
+import cx from 'classnames';
 
 import { getBuckets } from './utils';
+
+import styles from './styles.module.scss';
 
 function BioClimaticPage(props) {
   const {
@@ -55,11 +59,11 @@ function BioClimaticPage(props) {
   }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex]);
 
   return (
-    <div className="c-bioclimatic l-page">
+    <div className={cx(styles.bioclimatic, 'l-page')}>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Filters {...filters} />
-      <div className="content">
-        <div className="bioclimatic-chart">
+      <div className={styles.content}>
+        <div className={styles.bioclimaticChart}>
           <Accordion
             activeItemId={chosenBiovar}
             setItem={item => filters.setBiovar(item.id)}
@@ -78,7 +82,7 @@ function BioClimaticPage(props) {
             }))}
           />
         </div>
-        <div className="map-wrapper">
+        <div className={styles.mapWrapper}>
           <Map
             mapboxApiAccessToken={process.env.react_app_mapbox_token}
             mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
@@ -98,13 +102,17 @@ function BioClimaticPage(props) {
             )}
           </Map>
           <Timeline
-            className="timeline"
+            className={styles.timeline}
             activeTab={scenario}
             data={timelineData}
             yearIndex={yearIndex}
             handleOnChange={setYearIndex}
             hideHeader
           />
+          <div className={styles.navigationBar}>
+            <Zoom viewport={viewport} setViewport={setViewport} />
+            <LayerToggle theme={styles.layerToggle} />
+          </div>
           <Modal
             title="Bioclimatic variables data"
             text={`Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
@@ -130,7 +138,10 @@ BioClimaticPage.propTypes = {
   filters: PropTypes.object,
   timelineData: PropTypes.object,
   viewport: PropTypes.object,
-  setViewport: PropTypes.func
+  setViewport: PropTypes.func,
+  country: PropTypes.string,
+  yearIndex: PropTypes.number,
+  setYearIndex: PropTypes.func
 };
 
 export default BioClimaticPage;
