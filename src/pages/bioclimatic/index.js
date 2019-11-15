@@ -199,20 +199,20 @@ const Container = () => {
       }
     }`}
       >
-        {({ fetching, data: queryData }) =>
-          fetching ? null : (
-            <Component
-              data={queryData}
-              filters={filters}
-              getConfig={getChartConfig}
-              timelineData={timelineData}
-              viewport={viewport}
-              setViewport={setViewport}
-              country={country}
-              yearIndex={yearIndex}
-              setYearIndex={setYearIndex}
-            />
-          )}
+        {({ fetching, data: queryData = {} }) => (
+          <Component
+            data={queryData}
+            filters={filters}
+            getConfig={getChartConfig}
+            timelineData={timelineData}
+            viewport={viewport}
+            setViewport={setViewport}
+            country={country}
+            yearIndex={yearIndex}
+            setYearIndex={setYearIndex}
+            fetching={fetching}
+          />
+        )}
       </Query>
     );
   }

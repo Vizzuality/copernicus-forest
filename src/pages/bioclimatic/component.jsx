@@ -31,7 +31,8 @@ function BioClimaticPage(props) {
     setViewport,
     country,
     yearIndex,
-    setYearIndex
+    setYearIndex,
+    fetching
   } = props;
   const { scenario, parsedScenarios } = filters;
 
@@ -43,9 +44,13 @@ function BioClimaticPage(props) {
     filters.biovar
   ]);
 
+  const chosenBiovarList = biovarsList.find(({ key }) => key === chosenBiovar);
+  const biovarName = (chosenBiovarList && chosenBiovarList.name.split('(', 1)) || '';
+
   const years = scenario && timelineData && timelineData[scenario] && timelineData[scenario].years;
 
   const bioclimaticLayers = useMemo(() => {
+    if (fetching) return [];
     const buckets = getBuckets(biovarsData[chosenBiovar]);
     const bioclimaticLayer = bioclimaticLayerCarto(
       country,
@@ -56,7 +61,7 @@ function BioClimaticPage(props) {
       buckets
     );
     return [bioclimaticLayer].map(l => ({ ...l, active: true }));
-  }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex]);
+  }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching]);
 
   return (
     <div className={cx(styles.bioclimatic, 'l-page')}>
@@ -120,7 +125,7 @@ function BioClimaticPage(props) {
             storageKey="bioclimatic"
           />
           <RampLegend
-            title="Anual Mean Temperature"
+            title={biovarName}
             colorRamp={['#FEF6B5', '#FFA679', '#E15383']} // purple
             lowEndName="Low"
             highEndName="High"
@@ -141,7 +146,8 @@ BioClimaticPage.propTypes = {
   setViewport: PropTypes.func,
   country: PropTypes.string,
   yearIndex: PropTypes.number,
-  setYearIndex: PropTypes.func
+  setYearIndex: PropTypes.func,
+  fetching: PropTypes.bool
 };
 
 export default BioClimaticPage;
