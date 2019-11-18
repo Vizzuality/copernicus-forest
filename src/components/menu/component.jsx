@@ -68,19 +68,31 @@ function Menu({ closeMenu, active }) {
         <div className="partners">
           <p>In partnership with:</p>
           <p className="partner-logo">
-            <img src="/logos/copernicus.png" alt="Copernicus" />
+            <a
+              href="https://www.copernicus.eu/en"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <img src="/logos/copernicus.png" alt="Copernicus" />
+            </a>
           </p>
           <p className="partner-logo">
-            <img src="/logos/ECMWF.png" alt="ECMWF" />
+            <a href="https://www.ecmwf.int" target="_blank" rel="noopener noreferrer nofollow">
+              <img src="/logos/ECMWF.png" alt="ECMWF" />
+            </a>
           </p>
           <p className="partner-logo">
-            <img src="/logos/EC.png" alt="European Comission" />
+            <a href="https://ec.europa.eu" target="_blank" rel="noopener noreferrer nofollow">
+              <img src="/logos/EC.png" alt="European Comission" />
+            </a>
           </p>
         </div>
         <div className="partners">
           <p>Powered by:</p>
           <p className="partner-logo">
-            <img src="/logos/graphcms.svg" alt="Powered by graphCMS" />
+            <a href="https://graphcms.com" target="_blank" rel="noopener noreferrer nofollow">
+              <img src="/logos/graphcms.svg" alt="Powered by graphCMS" />
+            </a>
           </p>
         </div>
       </div>
