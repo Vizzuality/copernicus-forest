@@ -54,8 +54,8 @@ const Container = () => {
     scenarios &&
     scenarios.reduce((acc, sc) => {
       const years = getYears(sc);
-      const startIndex = years.indexOf(startYear * 1);
-      const endIndex = years.indexOf(endYear * 1);
+      const startIndex = years.indexOf(Number(startYear));
+      const endIndex = years.indexOf(Number(endYear));
 
       return {
         ...acc,
