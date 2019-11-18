@@ -1,7 +1,5 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
-// import { LayerManager, Layer } from 'layer-manager/dist/components';
-// import { PluginMapboxGl } from 'layer-manager';
 import sortBy from 'lodash/sortBy';
 import groupBy from 'lodash/groupBy';
 import LayerToggle from 'components/map/controls/layer-toggle';
