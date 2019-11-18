@@ -1,4 +1,4 @@
-const transparent = 'rgba(255, 255, 255, 0)';
+import { SPECIES_RAMP_COLORS, BIOCLIMATIC_RAMP_COLORS } from 'constants.js';
 
 export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
   return {
@@ -35,11 +35,11 @@ export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
                 ['linear'],
                 ['get', 'probabilityemca'],
                 0,
-                transparent,
+                SPECIES_RAMP_COLORS[0],
                 0.5,
-                '#FFFFFF',
+                SPECIES_RAMP_COLORS[1],
                 1,
-                '#7044FF'
+                SPECIES_RAMP_COLORS[2]
               ],
               'fill-opacity': opacity
             },
@@ -113,11 +113,11 @@ export const currentDistributionCartoLayer = (iso, species, opacity = 1) => {
                 ['linear'],
                 ['get', 'probabilityemca'],
                 0,
-                transparent,
+                SPECIES_RAMP_COLORS[0],
                 0.5,
-                '#FFFFFF',
+                SPECIES_RAMP_COLORS[1],
                 1,
-                '#7044FF'
+                SPECIES_RAMP_COLORS[2]
               ],
               'fill-opacity': opacity
             },
@@ -192,11 +192,11 @@ export const bioclimaticLayerCarto = (iso, scenario, biovar, year, opacity = 1, 
                 ['linear'],
                 ['get', 'wieghtedmean'],
                 buckets[0],
-                '#FEF6B5',
+                BIOCLIMATIC_RAMP_COLORS[0],
                 buckets[1],
-                '#FEAE7F',
+                BIOCLIMATIC_RAMP_COLORS[1],
                 buckets[2],
-                '#E15383'
+                BIOCLIMATIC_RAMP_COLORS[2]
               ],
               'fill-opacity': opacity
             },

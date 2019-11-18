@@ -13,6 +13,7 @@ import RampLegend from 'components/ramp-legend';
 import { bioclimaticLayerCarto } from 'layers';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
+import { BIOCLIMATIC_RAMP_COLORS } from 'constants.js';
 import cx from 'classnames';
 
 import { getBuckets } from './utils';
@@ -124,7 +125,7 @@ function BioClimaticPage(props) {
           />
           <RampLegend
             title={biovarName}
-            colorRamp={['#FEF6B5', '#FFA679', '#E15383']} // purple
+            colorRamp={BIOCLIMATIC_RAMP_COLORS} // purple
             lowEndName="Low"
             highEndName="High"
             // handleOpacity={o => return o}

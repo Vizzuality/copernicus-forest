@@ -49,3 +49,6 @@ export const COUNTRIES_DEFAULT_VIEWPORTS = {
   PER: { zoom: 4, latitude: -10.471441, longitude: -75.135125 },
   TZA: { zoom: 5, latitude: -5.790175, longitude: 36.718777 }
 };
+
+export const BIOCLIMATIC_RAMP_COLORS = ['#FEF6B5', '#FFA679', '#E15383']; // [min, mid, max]
+export const SPECIES_RAMP_COLORS = ['rgba(255, 255, 255, 0)', '#FFFFFF', '#7044FF']; // [min (transparent), mid, max]
