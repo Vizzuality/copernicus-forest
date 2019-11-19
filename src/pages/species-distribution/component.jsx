@@ -4,6 +4,7 @@ import SpeciesList from 'components/species-list';
 import TabsBar from 'components/tabs';
 import cx from 'classnames';
 import Icon from 'components/icon';
+import Modal from 'components/modal';
 
 import styles from './styles.module.scss';
 
@@ -58,6 +59,12 @@ const SpeciesDistributionComponent = props => {
           match={match}
           activeSpecies={activeSpecies}
           speciesListVisible={speciesListVisible}
+        />
+        <Modal
+          title="Species distribution data"
+          text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
+            the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
+          storageKey="species"
         />
       </div>
     </div>
