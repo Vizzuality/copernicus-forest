@@ -50,5 +50,6 @@ export const COUNTRIES_DEFAULT_VIEWPORTS = {
   TZA: { zoom: 5, latitude: -5.790175, longitude: 36.718777 }
 };
 
-export const BIOCLIMATIC_RAMP_COLORS = ['#FEF6B5', '#FFA679', '#E15383']; // [min, mid, max]
 export const SPECIES_RAMP_COLORS = ['rgba(255, 255, 255, 0)', '#FFFFFF', '#7044FF']; // [min (transparent), mid, max]
+export const TEMPERATURE_RAMP_COLORS = ['#FEF6B5', '#FFA679', '#E15383']; // [min, mid, max]
+export const PERCIPITATION_RAMP_COLORS = ['#A6BDDB', '#3690C0', '#034E7B']; // [min, mid, max]

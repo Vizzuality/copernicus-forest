@@ -13,7 +13,7 @@ import RampLegend from 'components/ramp-legend';
 import { bioclimaticLayerCarto } from 'layers';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
-import { BIOCLIMATIC_RAMP_COLORS } from 'constants.js';
+import { TEMPERATURE_RAMP_COLORS, PERCIPITATION_RAMP_COLORS } from 'constants.js';
 import cx from 'classnames';
 
 import { getBuckets } from './utils';
@@ -48,6 +48,9 @@ function BioClimaticPage(props) {
 
   const years = scenario && timelineData && timelineData[scenario] && timelineData[scenario].years;
 
+  const biovarNumber = chosenBiovar && Number(chosenBiovar.replace('biovar', ''));
+  const rampColors = biovarNumber >= 12 ? PERCIPITATION_RAMP_COLORS : TEMPERATURE_RAMP_COLORS; // change colors ramp, depending on the selected biovar
+
   const bioclimaticLayers = useMemo(() => {
     if (fetching) return [];
     const buckets = getBuckets(biovarsData[chosenBiovar]);
@@ -57,9 +60,11 @@ function BioClimaticPage(props) {
       chosenBiovar,
       years[yearIndex],
       1,
-      buckets
+      buckets,
+      rampColors
     );
     return [bioclimaticLayer].map(l => ({ ...l, active: true }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching]);
 
   return (
@@ -125,7 +130,7 @@ function BioClimaticPage(props) {
           />
           <RampLegend
             title={biovarName}
-            colorRamp={BIOCLIMATIC_RAMP_COLORS} // purple
+            colorRamp={rampColors} // purple
             lowEndName="Low"
             highEndName="High"
             // handleOpacity={o => return o}

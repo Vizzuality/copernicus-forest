@@ -1,4 +1,4 @@
-import { SPECIES_RAMP_COLORS, BIOCLIMATIC_RAMP_COLORS } from 'constants.js';
+import { SPECIES_RAMP_COLORS } from 'constants.js';
 
 export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
   return {
@@ -157,7 +157,15 @@ export const currentDistributionCartoLayer = (iso, species, opacity = 1) => {
   };
 };
 
-export const bioclimaticLayerCarto = (iso, scenario, biovar, year, opacity = 1, buckets) => {
+export const bioclimaticLayerCarto = (
+  iso,
+  scenario,
+  biovar,
+  year,
+  opacity = 1,
+  buckets,
+  rampColors
+) => {
   return {
     id: `${iso}${scenario}${biovar}`,
     name: 'Bioclimatic layer',
@@ -192,11 +200,11 @@ export const bioclimaticLayerCarto = (iso, scenario, biovar, year, opacity = 1, 
                 ['linear'],
                 ['get', 'wieghtedmean'],
                 buckets[0],
-                BIOCLIMATIC_RAMP_COLORS[0],
+                rampColors[0],
                 buckets[1],
-                BIOCLIMATIC_RAMP_COLORS[1],
+                rampColors[1],
                 buckets[2],
-                BIOCLIMATIC_RAMP_COLORS[2]
+                rampColors[2]
               ],
               'fill-opacity': opacity
             },
