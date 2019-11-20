@@ -1,23 +1,45 @@
 @import '~styles/settings';
 @import '~components/map/controls/styles.scss';
 
-.distribution {
+.bioclimatic {
   display: flex;
-  height: 100%;
-  position: relative;
-  width: 100%;
+  flex-direction: column;
+}
 
-  & > div:first-child {
-    border-right: 1px solid $color-black;
+.content {
+  height: calc(100% - 70px);
+  display: flex;
+
+  & > * {
+    flex: 1;
   }
+}
+
+.bioclimaticChart {
+  width: 100%;
+  max-width: 50vw;
+  height: 100%;
+  max-height: 100%;
+  background-color: $color-white;
+  text-transform: uppercase;
+}
+
+.mapWrapper {
+  position: relative;
+  border-left: 1px solid $color-black;
+}
+
+.timeline {
+  top: 0;
 }
 
 .navigationBar {
   border: 1px solid $color-black;
+  border-left: 0;
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: calc(50% - #{$navigation-button-size} / 2 - 2px);
+  left: 0;
   top: calc(50% - 2 * #{$navigation-button-size});
 
   > *:not(:last-child) {
@@ -27,23 +49,4 @@
 
 .zoomButton {
   @extend .mapNavigationButton;
-  border-bottom: 1px solid $color-gray-1 !important;
-}
-
-.layerToggle {
-  border: none;
-  position: unset;
-}
-
-.futureScenariosTimeline {
-  left: calc(50%);
-}
-
-:global {
-  .mapCustomClass {
-    .overlays {
-      overflow: unset !important;
-    }
-    
-  }
 }

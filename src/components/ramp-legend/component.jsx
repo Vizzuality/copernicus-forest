@@ -29,26 +29,27 @@ const RampLegend = ({
               <span className={styles.italic}>&nbsp;{activeSpecies.name}</span>
             </div>
           )}
-          <div className={styles.rampContainer}>
+          <div className={styles.layerContainer}>
             <div className={styles.layerTitle}>{title}:</div>
-            <div className={cx(styles.ramp, { [styles.transparent]: transparentRamp })}>
-              <div
-                className={styles.colors}
-                style={{
-                  background: transparentRamp
-                    ? `linear-gradient(to right, rgba(193,191,234,0) 0%, rgba(255,255,255,1) 50%, rgba(${transparentRamp.colorRGBA.join(
-                        ', '
-                      )}) 100%)`
-                    : `linear-gradient(0.25turn, ${colorRamp.join(', ')})`
-                }}
-              >
-                <span className={styles.lowEndValue}>{lowEndValue}</span>
-                <span className={styles.middleValue}>{middleValue}</span>
-                <span className={styles.highEndValue}>{highEndValue}</span>
-                <span className={styles.lowEndName}>{lowEndName}</span>
-                <span className={styles.middleName}>{middleName}</span>
-                <span className={styles.highEndName}>{highEndName}</span>
+            <div className={styles.rampContainer}>
+              <span className={lowEndValue && styles.lowEndValue}>{lowEndValue}</span>
+              <span className={middleValue && styles.middleValue}>{middleValue}</span>
+              <span className={highEndValue && styles.highEndValue}>{highEndValue}</span>
+              <div className={cx(styles.ramp, { [styles.transparent]: transparentRamp })}>
+                <div
+                  className={styles.colors}
+                  style={{
+                    background: transparentRamp
+                      ? `linear-gradient(to right, rgba(193,191,234,0) 0%, rgba(255,255,255,1) 50%, rgba(${transparentRamp.colorRGBA.join(
+                          ', '
+                        )}) 100%)`
+                      : `linear-gradient(0.25turn, ${colorRamp.join(', ')})`
+                  }}
+                />
               </div>
+              <span className={styles.lowEndName}>{lowEndName}</span>
+              <span className={styles.middleName}>{middleName}</span>
+              <span className={styles.highEndName}>{highEndName}</span>
             </div>
           </div>
           <div className={styles.icons}>

@@ -9,7 +9,6 @@ import isEmpty from 'lodash/isEmpty';
 import ReactMapGL, { FlyToInterpolator, TRANSITION_EVENTS } from 'react-map-gl';
 import WebMercatorViewport from 'viewport-mercator-project';
 import { easeCubic } from 'd3-ease';
-import ZoomButtons from './controls/zoom';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './styles.scss';
@@ -125,8 +124,6 @@ class MapComponent extends PureComponent {
       touchZoom,
       touchRotate,
       doubleClickZoom,
-      showZoom,
-      zoomButtonsProps,
       viewport,
       ...mapboxProps
     } = this.props;
@@ -165,7 +162,6 @@ class MapComponent extends PureComponent {
           transitionEasing={easeCubic}
         >
           {loaded && !!this.map && typeof children === 'function' && children(this.map)}
-          {showZoom && <ZoomButtons {...zoomButtonsProps} />}
         </ReactMapGL>
       </div>
     );
@@ -194,9 +190,7 @@ MapComponent.propTypes = {
   onLoad:
     PropTypes.func /** A function that exposes when the map is loaded. It returns and object with the `this.map` and `this.mapContainer` reference. */,
   onViewportChange: PropTypes.func /** A function that exposes the viewport */,
-  getCursor: PropTypes.func /** A function that exposes the viewport */,
-  showZoom: PropTypes.bool /** A boolean that shows zoom buttons */,
-  zoomButtonsProps: PropTypes.object /** An object that contains props for ZoomButtons widget */
+  getCursor: PropTypes.func /** A function that exposes the viewport */
 };
 
 MapComponent.defaultProps = {
@@ -206,8 +200,6 @@ MapComponent.defaultProps = {
   bounds: {},
   dragPan: true,
   dragRotate: true,
-  showZoom: true,
-
   onViewportChange: () => {},
   onLoad: () => {},
   getCursor: ({ isHovering, isDragging }) => {

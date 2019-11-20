@@ -37,18 +37,6 @@ const DistributionPage = props => {
     setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);
   };
 
-  const zoomIn = () => {
-    const { zoom } = viewport;
-    const newZoom = zoom + 1 <= 24 ? zoom + 1 : zoom;
-    setViewport(vp => ({ ...vp, zoom: newZoom }));
-  };
-
-  const zoomOut = () => {
-    const { zoom } = viewport;
-    const newZoom = zoom >= 1 ? zoom - 1 : zoom;
-    setViewport(vp => ({ ...vp, zoom: newZoom }));
-  };
-
   const getYears = sc => {
     const scenarioYears = sc.countryBiovarDistributions;
     return (
@@ -122,8 +110,6 @@ const DistributionPage = props => {
     <Component
       viewport={viewport}
       setViewport={setViewport}
-      zoomIn={zoomIn}
-      zoomOut={zoomOut}
       activeFutureScenario={activeFutureScenario}
       setFutureScenario={setFutureScenario}
       futureScenariosData={futureScenariosData}

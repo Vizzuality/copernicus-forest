@@ -19,6 +19,10 @@
 .dropdownLarge {
   @extend .dropdown;
   min-width: 370px;
+
+  button {
+    margin: auto;
+  }
 }
 
 .leftAlign {

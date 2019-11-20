@@ -42,38 +42,48 @@ $value-side-offset: 4px;
   }
 }
 
+.layerContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
 .layerTitle {
   color: $color-gray-1;
   font-size: $font-size-20;
   margin-right: $c-header-padding;
 }
 
-.ramp {
-  width: 550px;
-  height: 10px;
-  border-top: 1px solid $color-gray-1;
-  border-bottom: 1px solid $color-gray-1;
+.rampContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20px auto 20px;
+  max-width: 550px;
+  flex: 1;
+  margin-right: 24px;
+}
+
+%rampLabel {
+  @extend %font;
   position: relative;
-  margin-right: $c-header-padding;
 
   &::before {
     content: "";
-    width: 1px;
-    height: 16px;
     background-color: $color-black;
-    position: absolute;
     bottom: 0;
+    position: absolute;
+    height: 7px;
+    width: 1px;
   }
+}
 
-  &::after {
-    content: "";
-    width: 1px;
-    height: 16px;
-    background-color: $color-black;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+.ramp {
+  border: 1px solid $color-gray-1;
+  height: 10px;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .transparent {
@@ -86,55 +96,43 @@ $value-side-offset: 4px;
 }
 
 .lowEndValue {
-  @extend %font;
-  position: absolute;
-  top: calc(-1 * #{$value-top-offset});
-  left: calc(-1 * #{$value-side-offset});
+  @extend %rampLabel;
 }
 
 .lowEndName {
   @extend %font;
-  position: absolute;
-  bottom: calc(-1 * #{$value-top-offset});
-  left: calc(-1 * #{$value-side-offset});
-}
-
-.highEndValue {
-  @extend %font;
-  position: absolute;
-  right: calc(-1 * #{$value-side-offset});
-  top: calc(-1 * #{$value-top-offset});
-}
-
-.highEndName {
-  @extend %font;
-  position: absolute;
-  right: calc(-1 * #{$value-side-offset});
-  bottom: calc(-1 * #{$value-top-offset});
+  align-self: flex-end;
+  justify-self: start;
 }
 
 .middleValue {
-  @extend %font;
-  position: absolute;
-  top: calc(-1 * #{$value-top-offset});
-  left: 47%;
+  @extend %rampLabel;
+  justify-self: center;
 
   &::before {
-    content: "";
-    width: 1px;
-    height: 7px;
-    background-color: $color-black;
-    position: absolute;
-    bottom: -10px;
     left: 50%;
   }
 }
 
 .middleName {
   @extend %font;
-  position: absolute;
-  bottom: calc(-1 * #{$value-top-offset});
-  left: 43%;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.highEndValue {
+  @extend %rampLabel;
+  justify-self: end;
+
+  &::before {
+    right: 0;
+  }
+}
+
+.highEndName {
+  @extend %font;
+  align-self: flex-end;
+  justify-self: end;
 }
 
 .icons {
@@ -159,9 +157,4 @@ $value-side-offset: 4px;
   color: $color-gray-1;
   font-family: $font-family-2;
   margin-right: $c-header-padding;
-}
-
-.rampContainer {
-  display: flex;
-  align-items: center;
 }

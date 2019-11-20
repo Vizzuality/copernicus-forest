@@ -50,9 +50,13 @@ const SpeciesDistributionComponent = props => {
             })}
           >
             <Icon name="icon-arrow-left" />
-            {/* <Icon name={speciesListVisible ? "icon-arrow-left" : "icon-collapsed"} /> */}
           </button>
           <TabsBar data={speciesTabsData} />
+          <div className={styles.downloadBtnContainer}>
+            <button onClick={() => {}} className={styles.downloadBtn}>
+              <Icon name="icon-download" />
+            </button>
+          </div>
         </div>
         <ContentComponent
           match={match}
