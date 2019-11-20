@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
@@ -7,15 +7,30 @@ import MiniChart from 'components/minichart';
 import Chart from 'components/chart';
 import styles from './styles.scss';
 
-function Accordion({ items }) {
-  const [activeItem, setItem] = useState(items.length && items[0]);
+function useScrollToActiveItem() {
+  const list = useRef(null);
+  const hasBeenSet = useRef(null);
+  useEffect(() => {
+    const item = list.current.querySelector('.js--active');
+    if (list.current && !hasBeenSet.current && item) {
+      hasBeenSet.current = true;
+      const rect = item.getBoundingClientRect();
+      list.current.scrollTop += rect.y + rect.height / 2 - window.innerHeight / 2;
+    }
+  });
+
+  return list;
+}
+function Accordion(props) {
+  const { items, setItem, activeItemId } = props;
+  const listRef = useScrollToActiveItem();
   const [hoveredItem, setHover] = useState(null);
 
   return (
     <div className="c-accordion">
-      <ul>
+      <ul className="accordion-list" ref={listRef}>
         {items.map(item => {
-          const isActive = activeItem && item.key === activeItem.key;
+          const isActive = item.id === activeItemId;
           const isHover = item === hoveredItem;
           const area = {
             ...item.config.areas[0],
@@ -24,9 +39,13 @@ function Accordion({ items }) {
             isAnimationActive: false
           };
           return (
-            <li key={item.key || item.title} className={cx('accordion-item', { __open: isActive })}>
+            <li
+              key={item.key || item.title}
+              className={cx('accordion-item', { __open: isActive, 'js--active': isActive })}
+            >
               <button
-                onClick={() => (isActive ? setItem(null) : setItem(item))}
+                disabled={isActive}
+                onClick={() => setItem(item)}
                 onMouseEnter={() => setHover(item)}
                 onMouseLeave={() => setHover(null)}
                 className="accordion-title"

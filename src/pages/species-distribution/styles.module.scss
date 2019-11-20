@@ -50,7 +50,7 @@ $species-list-width: 330px;
 .navBar {
   display: flex;
   border-bottom: 1px solid $color-black;
-
+  padding-right: 24px;
 }
 
 .toggleBarButton {
@@ -65,4 +65,10 @@ $species-list-width: 330px;
 
 .expandBarButton svg {
   transform: rotate(180deg);
+}
+
+.downloadBtnContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }

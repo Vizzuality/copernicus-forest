@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
 import LayerToggle from 'components/map/controls/layer-toggle';
-import Icon from 'components/icon';
+import Zoom from 'components/map/controls/zoom';
 import RampLegend from 'components/ramp-legend';
 import Timeline from 'components/map/controls/timeline';
 
@@ -15,8 +15,6 @@ import styles from './styles.module.scss';
 const DistributionPageComponent = ({
   viewport,
   setViewport,
-  zoomIn,
-  zoomOut,
   speciesListVisible,
   activeSpecies,
   activeFutureScenario,
@@ -80,20 +78,15 @@ const DistributionPageComponent = ({
       />
       <Timeline title="Current distribution" data={{}} hideTimeline />
       <div className={styles.navigationBar}>
-        <button className={styles.zoomButton} onClick={() => zoomIn()}>
-          <Icon name="icon-zoomin" className="menu-icon" />
-        </button>
-        <button className={styles.zoomButton} onClick={() => zoomOut()}>
-          <Icon name="icon-zoomout" className="menu-icon" />
-        </button>
+        <Zoom viewport={viewport} setViewport={setViewport} />
         <LayerToggle theme={styles.layerToggle} />
       </div>
       <RampLegend
         title="Committee average"
         transparentRamp={{ colorRGBA: [112, 68, 255, 1] }} // purple
-        lowEndValue={0}
-        middleValue={0.5}
-        highEndValue={1}
+        lowEndValue="0"
+        middleValue="0.5"
+        highEndValue="1"
         lowEndName="Agreed absences"
         middleName="Uncertain"
         highEndName="Agreed presence"
@@ -107,8 +100,6 @@ const DistributionPageComponent = ({
 DistributionPageComponent.propTypes = {
   viewport: PropTypes.object,
   setViewport: PropTypes.func,
-  zoomIn: PropTypes.func,
-  zoomOut: PropTypes.func,
   activeSpecies: PropTypes.object,
   speciesListVisible: PropTypes.bool,
   activeFutureScenario: PropTypes.string,

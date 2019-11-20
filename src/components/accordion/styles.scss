@@ -1,6 +1,13 @@
 @import '~styles/settings';
 
 .c-accordion {
+  height: 100%;
+
+  .accordion-list {
+    overflow: auto;
+    height: 100%;
+  }
+
   .accordion-item {
     border-bottom: 1px solid black;
     font-family: $font-family-2;

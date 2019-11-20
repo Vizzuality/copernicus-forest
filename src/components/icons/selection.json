@@ -4,6 +4,35 @@
     {
       "icon": {
         "paths": [
+          "M4096 128h-4096v768h4096z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "width": 4096,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "zoomout (2)"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 49,
+        "id": 0,
+        "name": "zoomout",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 11,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M512 0c282.030 0 512 229.97 512 512s-229.97 512-512 512c-282.030 0-512-229.97-512-512s229.97-512 512-512zM512 64c-246.69 0-448 201.31-448 448s201.31 448 448 448c246.69 0 448-201.31 448-448s-201.31-448-448-448zM512 64c246.855 0 448 201.164 448 448 0 246.816-201.184 448-448 448-246.855 0-448-201.164-448-448 0-246.816 201.184-448 448-448zM512 128c-211.476 0-384 172.524-384 384 0 211.497 172.486 384 384 384 211.476 0 384-172.524 384-384 0-211.497-172.486-384-384-384z",
           "M447.488 434.816h129.024v389.056h-129.024v-389.056zM511.488 759.872h1.024v-261.056h-1.024v261.056z",
           "M479.488 248.384h65.024v65.024h-65.024v-65.024z"
@@ -21,10 +50,6 @@
         ],
         "isMulticolor": false,
         "isMulticolor2": true,
-        "grid": 0,
-        "tags": [
-          "icon_info"
-        ],
         "colorPermutations": {
           "25525525513434341": [
             {},
@@ -33,7 +58,11 @@
               "s": 0
             }
           ]
-        }
+        },
+        "tags": [
+          "icon_info"
+        ],
+        "grid": 0
       },
       "attrs": [
         {},
@@ -48,12 +77,12 @@
       ],
       "properties": {
         "order": 26,
-        "id": 11,
+        "id": 0,
         "name": "info",
         "prevSize": 32
       },
-      "setIdx": 0,
-      "setId": 8,
+      "setIdx": 1,
+      "setId": 10,
       "iconIdx": 0
     },
     {
@@ -62,25 +91,25 @@
           "M0 0h236.288v1024h-236.288z",
           "M531.712 0h236.288v1024h-236.288z"
         ],
-        "attrs": [],
         "width": 768,
+        "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
+        "colorPermutations": {},
         "tags": [
           "pause"
         ],
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
-        "order": 43,
-        "id": 28,
+        "order": 28,
+        "id": 0,
         "name": "pause",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 0
     },
     {
@@ -93,21 +122,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
+        "colorPermutations": {},
         "tags": [
           "info"
         ],
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 44,
-        "id": 26,
-        "name": "info",
+        "id": 1,
+        "name": "info1",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 1
     },
     {
@@ -118,21 +147,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
+        "colorPermutations": {},
         "tags": [
           "search"
         ],
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 45,
-        "id": 25,
+        "id": 2,
         "name": "search",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 2
     },
     {
@@ -142,25 +171,25 @@
           "M803.532 760.924l-51.105 102.209c-15.46 30.921-9.388 68.266 15.073 92.695 15.024 15.058 35.462 23.537 56.774 23.537s41.75-8.479 56.803-23.566c24.425-24.419 30.48-61.763 15.009-92.675l-51.101-102.201c-8.54-17.080-32.914-17.080-41.454 0z",
           "M223.405 434.786v-229.905c0-39.743 32.218-71.961 71.961-71.961s71.961 32.218 71.961 71.961c0 28.388 23.013 51.401 51.401 51.401s51.401-23.013 51.401-51.401c0-96.519-78.244-174.763-174.763-174.763s-174.763 78.244-174.763 174.763v229.905c0 28.388 23.013 51.401 51.401 51.401s51.401-23.013 51.401-51.401z"
         ],
-        "attrs": [],
         "width": 904,
+        "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
+        "colorPermutations": {},
         "tags": [
           "bucket"
         ],
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 46,
-        "id": 24,
+        "id": 3,
         "name": "bucket",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 3
     },
     {
@@ -169,25 +198,25 @@
           "M761.152 264.896l-269.952-244.544c-31.296-28.352-83.52-26.816-113.344 3.008l-244.544 243.072c-84.992 84.992-132.736 199.808-129.728 320.64 1.472 120.768 50.688 234.112 138.688 317.632 82.048 77.568 190.912 119.296 305.728 119.296s223.68-43.264 305.728-120.768c88-83.52 137.216-196.864 138.688-317.632 3.008-119.296-43.264-234.112-131.264-320.64v-0.064zM682.112 828.608c-62.656 59.648-146.176 90.944-234.112 90.944s-171.52-32.832-234.112-90.944c-67.136-64.128-105.856-150.592-107.392-243.072s34.304-180.416 99.904-246.080l228.16-228.16 253.504 228.16c65.6 65.6 101.44 153.6 99.904 246.080 0 92.48-37.312 178.944-105.856 243.072v0z",
           "M646.336 382.72l-187.904-169.984c-7.488-7.424-19.392-1.472-19.392 8.96v630.848c0 5.952 5.952 11.904 11.904 11.904 28.352 0 56.64-4.48 83.52-14.912 213.248-79.040 250.56-328.064 111.872-466.752v-0.064z"
         ],
-        "attrs": [],
         "width": 896,
+        "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
+        "colorPermutations": {},
         "tags": [
           "opacity"
         ],
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 47,
-        "id": 23,
+        "id": 4,
         "name": "opacity",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 4
     },
     {
@@ -199,21 +228,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "left"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 32,
-        "id": 12,
+        "id": 5,
         "name": "arrow-left",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 5
     },
     {
@@ -225,81 +254,22 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "expand"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 34,
-        "id": 14,
+        "id": 6,
         "name": "expand",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 6
-    },
-    {
-      "icon": {
-        "paths": [
-          "M992 384h-352v-352c0-17.672-14.328-32-32-32h-192c-17.672 0-32 14.328-32 32v352h-352c-17.672 0-32 14.328-32 32v192c0 17.672 14.328 32 32 32h352v352c0 17.672 14.328 32 32 32h192c17.672 0 32-14.328 32-32v-352h352c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32z"
-        ],
-        "attrs": [],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "tags": [
-          "plus",
-          "add",
-          "sum"
-        ],
-        "defaultCode": 59914,
-        "grid": 16,
-        "colorPermutations": {}
-      },
-      "attrs": [],
-      "properties": {
-        "ligatures": "plus, add",
-        "name": "zoomin",
-        "id": 15,
-        "order": 35,
-        "prevSize": 20
-      },
-      "setIdx": 0,
-      "setId": 2,
-      "iconIdx": 7
-    },
-    {
-      "icon": {
-        "paths": [
-          "M0 416v192c0 17.672 14.328 32 32 32h960c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32h-960c-17.672 0-32 14.328-32 32z"
-        ],
-        "attrs": [],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "tags": [
-          "minus",
-          "subtract",
-          "minimize",
-          "line"
-        ],
-        "defaultCode": 59915,
-        "grid": 16,
-        "colorPermutations": {}
-      },
-      "attrs": [],
-      "properties": {
-        "ligatures": "minus, subtract",
-        "name": "zoomout",
-        "id": 17,
-        "order": 36,
-        "prevSize": 20
-      },
-      "setIdx": 0,
-      "setId": 2,
-      "iconIdx": 8
     },
     {
       "icon": {
@@ -309,24 +279,24 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "stack",
           "layers"
         ],
         "defaultCode": 59694,
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "ligatures": "stack, layers",
         "name": "stack",
-        "id": 16,
+        "id": 9,
         "order": 37,
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 9
     },
     {
@@ -340,21 +310,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "collapsed"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 33,
-        "id": 13,
+        "id": 10,
         "name": "collapsed",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 10
     },
     {
@@ -368,21 +338,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "about"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 38,
-        "id": 18,
+        "id": 11,
         "name": "about",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 11
     },
     {
@@ -393,21 +363,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "close"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 39,
-        "id": 19,
+        "id": 12,
         "name": "close",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 12
     },
     {
@@ -419,21 +389,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "download"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 40,
-        "id": 20,
+        "id": 13,
         "name": "download",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 13
     },
     {
@@ -444,21 +414,21 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "dropdown"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
-        "order": 41,
-        "id": 21,
+        "order": 29,
+        "id": 14,
         "name": "dropdown",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 14
     },
     {
@@ -470,22 +440,50 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
+        "colorPermutations": {},
         "tags": [
           "menu"
         ],
-        "grid": 16,
-        "colorPermutations": {}
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "order": 42,
-        "id": 22,
+        "id": 15,
         "name": "menu",
         "prevSize": 20
       },
-      "setIdx": 0,
-      "setId": 2,
+      "setIdx": 2,
+      "setId": 9,
       "iconIdx": 15
+    },
+    {
+      "icon": {
+        "paths": [
+          "M592 0v432h432v160h-432v432h-160v-432.064l-432 0.064v-160l432-0.064v-431.936z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "zoomin (1)"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 50,
+        "id": 0,
+        "name": "zoomin",
+        "prevSize": 32
+      },
+      "setIdx": 5,
+      "setId": 6,
+      "iconIdx": 2
     }
   ],
   "height": 1024,
@@ -513,11 +511,13 @@
       "color": 0,
       "bgColor": 16777215,
       "classSelector": ".icon",
-      "name": "icomoon"
+      "name": "icomoon",
+      "height": 32,
+      "columns": 16,
+      "margin": 16
     },
     "historySize": 50,
     "showCodes": true,
-    "gridSize": 16,
-    "showGrid": true
+    "gridSize": 16
   }
 }

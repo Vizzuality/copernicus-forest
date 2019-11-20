@@ -16,7 +16,7 @@ import {
 } from './utils';
 import Component from './component';
 
-import styles from './styles.scss';
+import styles from './styles.module.scss';
 
 const Container = () => {
   // location, query params
@@ -26,8 +26,9 @@ const Container = () => {
 
   const { country } = (match && match.params) || {};
   const currentQueryParams = useQueryParams();
-  const { startYear, endYear, scenario } = currentQueryParams;
+  const { startYear, endYear, scenario, biovar } = currentQueryParams;
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
+  const [yearIndex, setYearIndex] = useState(0);
 
   // graphql
   const { data } = useScenariosPerCountry(country);
@@ -53,12 +54,15 @@ const Container = () => {
     scenarios &&
     scenarios.reduce((acc, sc) => {
       const years = getYears(sc);
+      const startIndex = years.indexOf(Number(startYear));
+      const endIndex = years.indexOf(Number(endYear));
+
       return {
         ...acc,
         [sc.key]: {
           name: sc.name,
-          start: 0,
-          end: years.length - 1,
+          start: startIndex !== -1 ? startIndex : 0,
+          end: endIndex !== -1 ? endIndex : years.length - 1,
           years,
           step: 1
         }
@@ -114,6 +118,8 @@ const Container = () => {
     const { earliest, latest } = getYearsRange(scenarioYears);
     setQueryParams({ scenario: sc, startYear: earliest, endYear: latest }, location, history);
   };
+  const setBiovarQuery = bv =>
+    setQueryParams({ ...currentQueryParams, biovar: bv }, location, history);
 
   // callbacks
   const setStartYear = year => {
@@ -125,6 +131,8 @@ const Container = () => {
   };
 
   const filters = {
+    biovar,
+    setBiovar: setBiovarQuery,
     startYear: String(chosenStartYear),
     setStartYear,
     setEndYear,
@@ -191,17 +199,20 @@ const Container = () => {
       }
     }`}
       >
-        {({ fetching, data: queryData }) =>
-          fetching ? null : (
-            <Component
-              data={queryData}
-              filters={filters}
-              getConfig={getChartConfig}
-              timelineData={timelineData}
-              viewport={viewport}
-              setViewport={setViewport}
-            />
-          )}
+        {({ fetching, data: queryData = {} }) => (
+          <Component
+            data={queryData}
+            filters={filters}
+            getConfig={getChartConfig}
+            timelineData={timelineData}
+            viewport={viewport}
+            setViewport={setViewport}
+            country={country}
+            yearIndex={yearIndex}
+            setYearIndex={setYearIndex}
+            fetching={fetching}
+          />
+        )}
       </Query>
     );
   }
