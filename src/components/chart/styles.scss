@@ -28,4 +28,12 @@
       margin-left: 4px;
     }
   }
+
+  .custom-legend {
+    .legend-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+    }
+  }
 }
