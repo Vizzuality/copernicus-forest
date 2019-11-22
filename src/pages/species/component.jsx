@@ -78,6 +78,10 @@ function SpeciesPage({ match }) {
 
   const speciesIndex = species.length && species.findIndex(item => item.id === activeSpecies.id);
 
+  // Species modal:
+  const modalOpenedBefore = sessionStorage.getItem('species');
+  const [isModalOpen, setModalOpen] = useState(!modalOpenedBefore);
+
   return (
     <div className="c-species l-page">
       {fetching && <p>Loading...</p>}
@@ -116,20 +120,15 @@ function SpeciesPage({ match }) {
                   config={config}
                   metadata={{ dataset: activeSpecies.name, unit: activeSpecies.unit || '%' }}
                 />
-                {/* <p className="species-source">Source: <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={`https://en.wikipedia.org/wiki/${activeSpecies.wikipediaSlug}`}
-                >
-                  wikipedia.com
-                </a></p> */}
               </div>
             )}
             <Modal
               title="Species distribution data"
               text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
                 the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
-              storageKey="species"
+              isOpen={isModalOpen}
+              afterOpen={() => sessionStorage.setItem('species', true)}
+              handleClose={() => setModalOpen(false)}
             />
           </div>
         </div>

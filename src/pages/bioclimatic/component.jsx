@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import sortBy from 'lodash/sortBy';
 import groupBy from 'lodash/groupBy';
@@ -67,6 +67,10 @@ function BioClimaticPage(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching]);
 
+  // Bioclimatic variables modal:
+  const modalOpenedBefore = sessionStorage.getItem('bioclimatic');
+  const [isModalOpen, setModalOpen] = useState(!modalOpenedBefore);
+
   return (
     <div className={cx(styles.bioclimatic, 'l-page')}>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
@@ -126,7 +130,9 @@ function BioClimaticPage(props) {
             title="Bioclimatic variables data"
             text={`Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
                   and extreme climatic conditions, including a combination of both environmental factors for current and future scenarios.`}
-            storageKey="bioclimatic"
+            isOpen={isModalOpen}
+            afterOpen={() => sessionStorage.setItem('bioclimatic', true)}
+            handleClose={() => setModalOpen(false)}
           />
           <RampLegend
             title={biovarName}

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import ReactTooltip from 'react-tooltip';
+// import ReactTooltip from 'react-tooltip';
 import cx from 'classnames';
 import Icon from 'components/icon';
+import Modal from 'components/modal';
 import styles from './styles.module.scss';
 
 const InfoComponent = ({ className, infoKey }) => {
@@ -16,17 +17,27 @@ const InfoComponent = ({ className, infoKey }) => {
 			8.5 Watt/m2 in the case of RCP 8.5. RCP 8.5 describes a scenario of Rising Emissions and it would lead to an increase of temperature
 			of around 4.3 °C `
   };
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
   return (
-    <div
+    <button
       className={cx(styles.info, className)}
-      data-tip
-      data-for={`info-tooltip-${infoKey.replace(/\s+/g, '')}`}
+      // data-tip
+      // data-for={`info-tooltip-${infoKey.replace(/\s+/g, '')}`}
+      onClick={() => setModalOpen(true)}
     >
       <Icon name="icon-info" />
-      <ReactTooltip type="dark" effect="float" id={`info-tooltip-${infoKey.replace(/\s+/g, '')}`}>
+      {/* <ReactTooltip type="dark" effect="float" id={`info-tooltip-${infoKey.replace(/\s+/g, '')}`}>
         <p className={styles.tooltip}>{infoValues[infoKey]}</p>
-      </ReactTooltip>
-    </div>
+      </ReactTooltip> */}
+      <Modal
+        title={infoKey}
+        text={infoValues[infoKey]}
+        isOpen={isModalOpen}
+        handleClose={() => setModalOpen(false)}
+      />
+    </button>
   );
 };
 
