@@ -52,6 +52,7 @@ $species-list-width: 330px;
   display: flex;
   border-bottom: 1px solid $color-black;
   padding-right: 24px;
+  overflow-y: hidden;
 }
 
 .toggleBarButton {
