@@ -22,6 +22,7 @@ const LayersToggleModalComponent = ({ handleCloseModal, data }) => {
             <>
               {group.map(({ value, checked, handleChange, name }) => (
                 <Switch
+                  key={value}
                   value={value}
                   checked={checked}
                   handleChange={() => handleChange({ [value]: !checked })}

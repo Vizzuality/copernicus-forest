@@ -92,9 +92,9 @@ const Timeline = ({
 };
 
 Timeline.propTypes = {
-  activeTab: PropTypes.bool,
+  activeTab: PropTypes.string,
   setActiveTab: PropTypes.func,
-  className: PropTypes.object,
+  className: PropTypes.string,
   handleOnChange: PropTypes.func,
   hideHeader: PropTypes.bool,
   hideTimeline: PropTypes.bool,

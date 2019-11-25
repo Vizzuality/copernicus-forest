@@ -11,7 +11,11 @@ const TabsComponent = ({ data }) => {
       {data &&
         data.map(({ name, path, active }) => {
           return (
-            <Link to={path} className={cx(styles.button, { [styles.buttonActive]: active })}>
+            <Link
+              key={name}
+              to={path}
+              className={cx(styles.button, { [styles.buttonActive]: active })}
+            >
               <span className={styles.buttonText}>{name}</span>
             </Link>
           );
@@ -21,7 +25,7 @@ const TabsComponent = ({ data }) => {
 };
 
 TabsComponent.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.array
 };
 
 export default TabsComponent;

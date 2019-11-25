@@ -34,11 +34,9 @@ const MapComponent = props => {
     onLoad,
     flyToInterpolator,
     loaded,
-    getMap,
+    map,
     ...mapboxProps
   } = props;
-
-  const map = getMap();
 
   return (
     <div

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import isEmpty from 'lodash/isEmpty';
 import { FlyToInterpolator, TRANSITION_EVENTS } from 'react-map-gl';
@@ -21,22 +21,22 @@ const MapComponent = props => {
   const currentQueryParams = useQueryParams();
   const { admin, label } = currentQueryParams;
 
-  const getMap = () => {
+  const map = useMemo(() => {
     return loaded && mapRef && mapRef.current && mapRef.current.getMap();
-  };
+  }, [loaded, mapRef]);
 
   useEffect(() => {
     const isEnabled = admin ? admin === 'true' : true;
-    const map = getMap();
     map && map.setPaintProperty('admin', 'line-opacity', isEnabled ? 1 : 0);
-  }, [admin]);
+  }, [admin, map]);
 
   useEffect(() => {
     const isEnabled = label ? label === 'true' : true;
-    const map = getMap();
-    map && map.setPaintProperty('country-label', 'text-opacity', isEnabled ? 1 : 0);
-    map && map.setPaintProperty('place-label', 'text-opacity', isEnabled ? 1 : 0);
-  }, [label]);
+    if (map) {
+      map.setPaintProperty('country-label', 'text-opacity', isEnabled ? 1 : 0);
+      map.setPaintProperty('place-label', 'text-opacity', isEnabled ? 1 : 0);
+    }
+  }, [label, map]);
 
   const onLoad = () => {
     const { bounds, onLoad } = props;
@@ -47,7 +47,7 @@ const MapComponent = props => {
     }
 
     onLoad({
-      map: getMap(),
+      map,
       mapContainer: mapContainerRef
     });
   };
@@ -133,7 +133,7 @@ const MapComponent = props => {
       getCursor={getCursor}
       transitionInterpolator={flyToInterpolator}
       loaded={loaded}
-      getMap={getMap}
+      map={map}
     />
   );
 };

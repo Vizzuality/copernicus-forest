@@ -55,7 +55,7 @@ const HeaderComponent = props => {
 };
 
 HeaderComponent.propTypes = {
-  isHome: PropTypes.object,
+  isHome: PropTypes.bool,
   urls: PropTypes.object,
   type: PropTypes.string,
   menuOpen: PropTypes.bool,
