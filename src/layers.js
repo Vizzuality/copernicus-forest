@@ -78,7 +78,7 @@ export const vectorLayerCarto = (iso, species, scenario, year, opacity = 1) => {
   };
 };
 
-export const currentDistributionCartoLayer = (iso, species, opacity) => {
+export const currentDistributionCartoLayer = (iso, species, opacity = 1) => {
   const SCENARIO = 'current';
   return {
     id: `${iso}${species}${SCENARIO}`,

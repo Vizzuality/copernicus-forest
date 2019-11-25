@@ -28,33 +28,20 @@ const DistributionPageComponent = ({
 }) => {
   return (
     <div className={styles.distribution}>
-      <Map
-        mapboxApiAccessToken={process.env.react_app_mapbox_token}
-        mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
-        viewport={viewport}
-        setViewport={setViewport}
-        showZoom={false}
-      >
+      <Map viewport={viewport} setViewport={setViewport}>
         {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
             {currentScenariosLayers
               .filter(l => l.active)
-              .map(layer => (
+              .map(layer => {
                 // TODO: fix all eslint-disables
                 // eslint-disable-next-line react/jsx-props-no-spreading
-                <Layer key={layer.id} {...layer} />
-              ))}
+                return <Layer key={layer.id} {...layer} />;
+              })}
           </LayerManager>
         )}
       </Map>
-      <Map
-        mapboxApiAccessToken={process.env.react_app_mapbox_token}
-        mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
-        viewport={viewport}
-        showZoom={false}
-        setViewport={setViewport}
-        customClass="mapCustomClass"
-      >
+      <Map viewport={viewport} setViewport={setViewport} customClass="mapCustomClass">
         {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
             {futureScenariosLayers

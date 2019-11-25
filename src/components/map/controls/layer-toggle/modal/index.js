@@ -12,14 +12,14 @@ const LayersToggleModal = ({ tooltipRef }) => {
   const location = useLocation();
   const history = useHistory();
   const currentQueryParams = useQueryParams();
-  const { admin, labels } = currentQueryParams;
+  const { admin, label } = currentQueryParams;
 
   const layersData = useMemo(() => {
     return {
-      labels: labels === 'true' || false,
-      admin: admin === 'true' || false
+      label: label ? label === 'true' : true,
+      admin: admin ? admin === 'true' : true
     };
-  }, [labels, admin]);
+  }, [label, admin]);
 
   const updateParams = params => {
     setQueryParams({ ...currentQueryParams, ...params }, location, history);
@@ -48,8 +48,8 @@ const LayersToggleModal = ({ tooltipRef }) => {
     ],
     [
       {
-        value: 'labels', // it's also a param's name (key) in URL
-        checked: layersData.labels,
+        value: 'label', // it's also a param's name (key) in URL
+        checked: layersData.label,
         handleChange: updateParams,
         name: 'Labels'
       },

@@ -3,6 +3,7 @@ import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import ReactMapGL from 'react-map-gl';
+import { MAPBOX_STYLE_DEFAULT } from 'constants.js';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './styles.scss';
@@ -48,6 +49,8 @@ const MapComponent = props => {
         ref={mapRef}
         // CUSTOM PROPS FROM REACT MAPBOX API
         {...mapboxProps}
+        mapStyle={MAPBOX_STYLE_DEFAULT}
+        mapboxApiAccessToken={process.env.react_app_mapbox_token}
         // VIEWPORT
         {...viewport}
         width="100%"
