@@ -5,7 +5,8 @@ import { uniqBy, sortBy } from 'lodash';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
 import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
-import { vectorLayerCarto, currentDistributionCartoLayer } from 'layers';
+import speciesDistributionLayer from 'layers/speciesDistribution';
+import currentDistributionLayer from 'layers/currentDistribution';
 
 import Component from './component';
 
@@ -91,7 +92,7 @@ const DistributionPage = props => {
   const speciesName = useMemo(() => activeSpecies && activeSpecies.name, [activeSpecies]);
 
   const futureDistLayers = useMemo(() => {
-    const futureDistLayer = vectorLayerCarto(
+    const futureDistLayer = speciesDistributionLayer(
       iso,
       speciesName,
       activeFutureScenario,
@@ -102,7 +103,7 @@ const DistributionPage = props => {
   }, [iso, speciesName, activeFutureScenario, currentYear, opacity]);
 
   const currentDistLayers = useMemo(() => {
-    const currentDistLayer = currentDistributionCartoLayer(iso, speciesName, opacity);
+    const currentDistLayer = currentDistributionLayer(iso, speciesName, opacity);
     return [currentDistLayer].map(l => ({ ...l, active: true }));
   }, [iso, speciesName, opacity]);
 

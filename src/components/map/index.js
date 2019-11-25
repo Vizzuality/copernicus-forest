@@ -1,14 +1,12 @@
 /* eslint-disable */
-import React, { useState, useRef, useMemo, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Component from './component';
 import isEmpty from 'lodash/isEmpty';
-
 import { FlyToInterpolator, TRANSITION_EVENTS } from 'react-map-gl';
 import WebMercatorViewport from 'viewport-mercator-project';
-import { easeCubic } from 'd3-ease';
-import { useLocation, useHistory } from 'react-router-dom';
-import { useQueryParams, setQueryParams } from 'url.js';
+import { useQueryParams } from 'url.js';
+
+import Component from './component';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -20,25 +18,23 @@ const MapComponent = props => {
 
   const flyToInterpolator = new FlyToInterpolator();
 
-  const location = useLocation();
-  const history = useHistory();
   const currentQueryParams = useQueryParams();
   const { admin, label } = currentQueryParams;
 
+  const getMap = () => {
+    return loaded && mapRef && mapRef.current && mapRef.current.getMap();
+  };
+
   useEffect(() => {
     const isEnabled = admin ? admin === 'true' : true;
-    loaded &&
-      mapRef &&
-      mapRef.current &&
-      mapRef.current.getMap().setPaintProperty('admin', 'line-opacity', isEnabled ? 1 : 0);
+    const map = getMap();
+    map && map.setPaintProperty('admin', 'line-opacity', isEnabled ? 1 : 0);
   }, [admin]);
 
   useEffect(() => {
     const isEnabled = label ? label === 'true' : true;
-    loaded &&
-      mapRef &&
-      mapRef.current &&
-      mapRef.current.getMap().setPaintProperty('label', 'text-opacity', isEnabled ? 1 : 0);
+    const map = getMap();
+    map && map.setPaintProperty('label', 'text-opacity', isEnabled ? 1 : 0);
   }, [label]);
 
   const onLoad = () => {
@@ -50,7 +46,7 @@ const MapComponent = props => {
     }
 
     onLoad({
-      map: mapRef.current.getMap(),
+      map: getMap(),
       mapContainer: mapContainerRef
     });
   };
@@ -109,8 +105,6 @@ const MapComponent = props => {
   };
 
   const {
-    customClass,
-    children,
     getCursor,
     dragPan,
     dragRotate,
@@ -137,8 +131,8 @@ const MapComponent = props => {
       onLoad={onLoad}
       getCursor={getCursor}
       transitionInterpolator={flyToInterpolator}
-      transitionEasing={easeCubic}
       loaded={loaded}
+      getMap={getMap}
     />
   );
 };

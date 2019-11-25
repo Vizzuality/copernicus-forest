@@ -10,7 +10,7 @@ import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import Timeline from 'components/map/controls/timeline';
 import RampLegend from 'components/ramp-legend';
-import { bioclimaticLayerCarto } from 'layers';
+import bioclimaticLayer from 'layers/bioclimatic';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
 import { TEMPERATURE_RAMP_COLORS, PERCIPITATION_RAMP_COLORS } from 'constants.js';
@@ -55,7 +55,7 @@ function BioClimaticPage(props) {
   const bioclimaticLayers = useMemo(() => {
     if (fetching) return [];
     const buckets = getBuckets(biovarsData[chosenBiovar]);
-    const bioclimaticLayer = bioclimaticLayerCarto(
+    const layer = bioclimaticLayer(
       country,
       scenario,
       chosenBiovar,
@@ -64,7 +64,7 @@ function BioClimaticPage(props) {
       buckets,
       rampColors
     );
-    return [bioclimaticLayer].map(l => ({ ...l, active: true }));
+    return [layer].map(l => ({ ...l, active: true }));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching, opacity]);
 
