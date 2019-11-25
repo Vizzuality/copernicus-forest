@@ -34,7 +34,8 @@ const MapComponent = props => {
   useEffect(() => {
     const isEnabled = label ? label === 'true' : true;
     const map = getMap();
-    map && map.setPaintProperty('label', 'text-opacity', isEnabled ? 1 : 0);
+    map && map.setPaintProperty('country-label', 'text-opacity', isEnabled ? 1 : 0);
+    map && map.setPaintProperty('place-label', 'text-opacity', isEnabled ? 1 : 0);
   }, [label]);
 
   const onLoad = () => {
