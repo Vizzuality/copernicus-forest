@@ -16,6 +16,7 @@ const LayersToggleModal = ({ tooltipRef }) => {
 
   const layersData = useMemo(() => {
     return {
+      // converts URL params value from string to bool
       label: label ? label === 'true' : true,
       admin: admin ? admin === 'true' : true
     };
