@@ -1,7 +1,7 @@
 import { SPECIES_RAMP_COLORS } from 'constants.js';
 
 // vector carto layer for species distribution data
-export default (iso, species, scenario, year, opacity = 1) => {
+export default (iso, species, scenario, year, opacity) => {
   return {
     id: `${iso}${species}${scenario}${year}`,
     name: 'Species distribution carto layer',
