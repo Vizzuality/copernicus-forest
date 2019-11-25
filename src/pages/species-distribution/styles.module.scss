@@ -4,7 +4,8 @@ $species-list-width: 330px;
 
 .container {
   display: flex;
-  height: calc(100% - 70px);
+  // TODO: use layout.scss (l-page) instead of modules
+  height: calc(100vh - 70px);
   position: relative;
 }
 

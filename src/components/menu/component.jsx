@@ -67,7 +67,7 @@ function Menu({ closeMenu, active }) {
               >
                 {l.name}
               </button>
-              <div className="menu-link-content">{activeLink === l.key && l.content}</div>
+              {activeLink === l.key && <p className="menu-link-content">{l.content}</p>}
             </div>
           ))}
         </div>

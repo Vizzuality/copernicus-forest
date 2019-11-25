@@ -49,11 +49,6 @@ function Dropdown({
     <div className={cx('c-dropdown', className, { 'dropdown-white': opened })} ref={wrapperRef}>
       <button className="dd-header" onClick={() => open(!opened)}>
         <div className="dd-header-title">{title}</div>
-        {/* ARROW ICON
-        opened
-          ? <FontAwesome name="angle-up" size="2x"/>
-        : <FontAwesome name="angle-down" size="2x"/>
-        */}
         <Icon name="icon-dropdown" className={cx('dropdown-icon', { __open: opened })} />
       </button>
       {opened && (

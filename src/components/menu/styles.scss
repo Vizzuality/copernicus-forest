@@ -49,6 +49,13 @@
       &:last-child {
         border-bottom: 1px solid $color-gray-2;
       }
+
+      .menu-link-content {
+        padding: 32px 0 20px;
+        font-family: $font-family-2;
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
 
     .partners {
