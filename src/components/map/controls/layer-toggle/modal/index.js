@@ -1,11 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import ReactTooltip from 'react-tooltip';
 import PropTypes from 'prop-types';
+import { useLocation, useHistory } from 'react-router-dom';
+import { useQueryParams, setQueryParams } from 'url.js';
 
 import Component from './component';
 
 const LayersToggleModal = ({ tooltipRef }) => {
   const [checked, setChecked] = useState(false);
+
+  const location = useLocation();
+  const history = useHistory();
+  const currentQueryParams = useQueryParams();
+  const { admin, labels } = currentQueryParams;
+
+  const layersData = useMemo(() => {
+    return {
+      labels: labels === 'true' || false,
+      admin: admin === 'true' || false
+    };
+  }, [labels, admin]);
+
+  const updateParams = params => {
+    setQueryParams({ ...currentQueryParams, ...params }, location, history);
+  };
 
   const handleCloseModal = () => {
     const { current } = tooltipRef;
@@ -13,8 +31,44 @@ const LayersToggleModal = ({ tooltipRef }) => {
     ReactTooltip.hide();
   };
 
+  const data = [
+    [
+      {
+        value: 'landUse', // it's also a param's name (key) in URL
+        checked: false,
+        handleChange: () => {},
+        name: 'Land use'
+      },
+      {
+        value: 'plantations', // it's also a param's name (key) in URL
+        checked: false,
+        handleChange: () => {},
+        name: 'Plantations'
+      }
+    ],
+    [
+      {
+        value: 'labels', // it's also a param's name (key) in URL
+        checked: layersData.labels,
+        handleChange: updateParams,
+        name: 'Labels'
+      },
+      {
+        value: 'admin', // it's also a param's name (key) in URL
+        checked: layersData.admin,
+        handleChange: updateParams,
+        name: 'Admin'
+      }
+    ]
+  ];
+
   return (
-    <Component checked={checked} setChecked={setChecked} handleCloseModal={handleCloseModal} />
+    <Component
+      checked={checked}
+      setChecked={setChecked}
+      handleCloseModal={handleCloseModal}
+      data={data}
+    />
   );
 };
 

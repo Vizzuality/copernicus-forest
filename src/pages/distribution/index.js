@@ -11,7 +11,7 @@ import Component from './component';
 
 const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
-  const [opacity, setOpacity] = useState(1);
+  const [opacity, setOpacity] = useState(0.6);
   const [yearIndex, setYearIndex] = useState(0);
 
   const { match, activeSpecies } = props;
