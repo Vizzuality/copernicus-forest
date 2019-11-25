@@ -3,6 +3,7 @@ import { SPECIES_RAMP_COLORS } from 'constants.js';
 // vector carto layer for species distribution data, scenario "current"
 export default (iso, species, opacity = 1) => {
   const SCENARIO = 'current';
+  console.log('opacity: ', opacity);
   return {
     id: `${iso}${species}${SCENARIO}`,
     name: 'Current distribution carto layer',
@@ -29,6 +30,7 @@ export default (iso, species, opacity = 1) => {
         minzoom: 2,
         vectorLayers: [
           {
+            filter: ['==', 'timeinterval', 1995],
             paint: {
               'fill-color': [
                 'interpolate',

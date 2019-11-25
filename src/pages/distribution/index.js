@@ -88,7 +88,7 @@ const DistributionPage = props => {
   const years =
     futureScenariosData && activeFutureScenario && futureScenariosData[activeFutureScenario].years;
 
-  const currentYear = useMemo(() => years && years[yearIndex], [years, yearIndex]);
+  const selectedYear = useMemo(() => years && years[yearIndex], [years, yearIndex]);
   const speciesName = useMemo(() => activeSpecies && activeSpecies.name, [activeSpecies]);
 
   const futureDistLayers = useMemo(() => {
@@ -96,11 +96,11 @@ const DistributionPage = props => {
       iso,
       speciesName,
       activeFutureScenario,
-      currentYear,
+      selectedYear,
       opacity
     );
     return [futureDistLayer].map(l => ({ ...l, active: true }));
-  }, [iso, speciesName, activeFutureScenario, currentYear, opacity]);
+  }, [iso, speciesName, activeFutureScenario, selectedYear, opacity]);
 
   const currentDistLayers = useMemo(() => {
     const currentDistLayer = currentDistributionLayer(iso, speciesName, opacity);

@@ -4,7 +4,7 @@ import { SPECIES_RAMP_COLORS } from 'constants.js';
 export default (iso, species, scenario, year, opacity = 1) => {
   return {
     id: `${iso}${species}${scenario}${year}`,
-    name: 'Committee average',
+    name: 'Species distribution carto layer',
     sqlParams: {
       where: {
         iso3: iso
