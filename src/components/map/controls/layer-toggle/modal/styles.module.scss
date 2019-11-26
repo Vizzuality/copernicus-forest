@@ -23,6 +23,10 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
+
+  > div:last-child {
+    display: none;
+  }
 }
 
 .spacer {

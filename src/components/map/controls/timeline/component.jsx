@@ -34,6 +34,7 @@ const TimelineComponent = ({
           {Object.keys(data).length > 1 &&
             Object.keys(data).map(key => (
               <button
+                key={key}
                 id={key}
                 className={cx(styles.tab, { [styles.activeTab]: key === activeTab })}
                 onClick={() => setActiveTab(key)}
@@ -65,9 +66,9 @@ const TimelineComponent = ({
 };
 
 TimelineComponent.propTypes = {
-  activeTab: PropTypes.bool,
+  activeTab: PropTypes.string,
   setActiveTab: PropTypes.func,
-  className: PropTypes.object,
+  className: PropTypes.string,
   handleOnChange: PropTypes.func,
   title: PropTypes.string,
   data: PropTypes.object,

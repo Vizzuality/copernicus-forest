@@ -10,7 +10,7 @@ import Accordion from 'components/accordion';
 import Filters from 'components/filters';
 import Timeline from 'components/map/controls/timeline';
 import RampLegend from 'components/ramp-legend';
-import { bioclimaticLayerCarto } from 'layers';
+import bioclimaticLayer from 'layers/bioclimatic';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
 import { TEMPERATURE_RAMP_COLORS, PERCIPITATION_RAMP_COLORS } from 'constants.js';
@@ -31,7 +31,8 @@ function BioClimaticPage(props) {
     country,
     yearIndex,
     setYearIndex,
-    fetching
+    fetching,
+    opacity
   } = props;
   const { scenario, parsedScenarios } = filters;
 
@@ -54,18 +55,18 @@ function BioClimaticPage(props) {
   const bioclimaticLayers = useMemo(() => {
     if (fetching) return [];
     const buckets = getBuckets(biovarsData[chosenBiovar]);
-    const bioclimaticLayer = bioclimaticLayerCarto(
+    const layer = bioclimaticLayer(
       country,
       scenario,
       chosenBiovar,
       years[yearIndex],
-      1,
+      opacity,
       buckets,
       rampColors
     );
-    return [bioclimaticLayer].map(l => ({ ...l, active: true }));
+    return [layer].map(l => ({ ...l, active: true }));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching]);
+  }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching, opacity]);
 
   // Bioclimatic variables modal:
   const modalOpenedBefore = sessionStorage.getItem('bioclimatic');
@@ -96,12 +97,7 @@ function BioClimaticPage(props) {
           />
         </div>
         <div className={styles.mapWrapper}>
-          <Map
-            mapboxApiAccessToken={process.env.react_app_mapbox_token}
-            mapStyle="mapbox://styles/fannycc/ck06rjkc5049k1co3b5fjj6li"
-            viewport={viewport}
-            setViewport={setViewport}
-          >
+          <Map viewport={viewport} setViewport={setViewport}>
             {map => (
               <LayerManager map={map} plugin={PluginMapboxGl}>
                 {bioclimaticLayers

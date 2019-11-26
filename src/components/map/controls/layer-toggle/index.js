@@ -17,7 +17,7 @@ const LayerToggle = ({ theme }) => {
 };
 
 LayerToggle.propTypes = {
-  theme: PropTypes.object
+  theme: PropTypes.string
 };
 
 export default LayerToggle;
