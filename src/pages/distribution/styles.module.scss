@@ -3,7 +3,7 @@
 
 .distribution {
   display: flex;
-  height: 100%;
+  flex: 1;
   position: relative;
   width: 100%;
 
@@ -44,6 +44,6 @@
     .overlays {
       overflow: unset !important;
     }
-    
+
   }
 }

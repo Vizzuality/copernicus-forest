@@ -42,7 +42,7 @@
         right: 26px;
 
         &.__open {
-          transform: rotate(180deg);
+          display: none;
         }
       }
     }

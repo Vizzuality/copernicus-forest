@@ -1,15 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Icon from 'components/icon';
 import { COUNTRIES } from 'constants.js';
 import { Link, useRouteMatch } from 'react-router-dom';
 import cx from 'classnames';
 import styles from './styles.module.scss';
 
-const CountriesDropdown = () => {
+function useClickOutside(ref, closeDropdown) {
+  function handleClickOutside(event) {
+    if (closeDropdown && ref.current && !ref.current.contains(event.target)) {
+      closeDropdown();
+    }
+  }
+
+  useEffect(() => {
+    // Bind the event listener
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  });
+}
+
+function CountriesDropdown() {
   const match = useRouteMatch('/:iso/:page');
 
   const { iso, page } = (match && match.params) || '';
   const [countrySelectorOpen, setCountrySelector] = useState(false);
+  const wrapperRef = useRef(null);
+  const closeDropdown = () => setCountrySelector(false);
+  useClickOutside(wrapperRef, closeDropdown);
   const activeCountry = COUNTRIES.find(country => country.iso === iso);
 
   const toggleCountryDropdown = () => {
@@ -17,7 +37,7 @@ const CountriesDropdown = () => {
   };
 
   return (
-    <>
+    <div ref={wrapperRef}>
       <button
         className={cx(styles.countryButton, { [styles.countryButtonActive]: countrySelectorOpen })}
         onClick={toggleCountryDropdown}
@@ -44,8 +64,8 @@ const CountriesDropdown = () => {
           ))}
         </div>
       )}
-    </>
+    </div>
   );
-};
+}
 
 export default CountriesDropdown;

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import groupBy from 'lodash/groupBy';
 import { useSpeciesPerCountry } from 'graphql/queries';
+import cx from 'classnames';
 import Chart from 'components/chart';
 import Modal from 'components/modal';
 import styles from './styles.scss';
@@ -44,13 +45,11 @@ function SpeciesPage({ match }) {
     setInfo(null);
   }, [activeSpecies, setInfo]);
 
-  const getPrevSpecie = () => {
-    const index = species.findIndex(item => item.id === activeSpecies.id);
+  const getPrevSpecie = index => {
     if (index === 0) return '#';
     return species[index - 1] ? species[index - 1].id : '#';
   };
-  const getNextSpecie = () => {
-    const index = species.findIndex(item => item.id === activeSpecies.id);
+  const getNextSpecie = index => {
     if (index === species.length - 1) return '#';
     if (index === 0) return species[1].id;
     return species[index + 1] ? species[index + 1].id : '#';
@@ -77,6 +76,12 @@ function SpeciesPage({ match }) {
     height: 200
   };
 
+  const speciesIndex = species.length && species.findIndex(item => item.id === activeSpecies.id);
+
+  // Species modal:
+  const modalOpenedBefore = sessionStorage.getItem('species');
+  const [isModalOpen, setModalOpen] = useState(!modalOpenedBefore);
+
   return (
     <div className="c-species l-page">
       {fetching && <p>Loading...</p>}
@@ -86,10 +91,16 @@ function SpeciesPage({ match }) {
           {species && (
             <div className="species-navbar">
               {/* provisional arrows. TODO: change this ! */}
-              <Link to={getPrevSpecie()} className="nav-button">
+              <Link
+                to={getPrevSpecie(speciesIndex)}
+                className={cx('nav-button', { disabled: speciesIndex === 0 })}
+              >
                 &lt;
               </Link>
-              <Link to={getNextSpecie()} className="nav-button">
+              <Link
+                to={getNextSpecie(speciesIndex)}
+                className={cx('nav-button', { disabled: speciesIndex === species.length - 1 })}
+              >
                 &gt;
               </Link>
             </div>
@@ -107,22 +118,17 @@ function SpeciesPage({ match }) {
                 <Chart
                   data={activeSpeciesData}
                   config={config}
-                  metadata={{ dataset: activeSpecies.name }}
+                  metadata={{ dataset: activeSpecies.name, unit: activeSpecies.unit || '%' }}
                 />
-                {/* <p className="species-source">Source: <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={`https://en.wikipedia.org/wiki/${activeSpecies.wikipediaSlug}`}
-                >
-                  wikipedia.com
-                </a></p> */}
               </div>
             )}
             <Modal
               title="Species distribution data"
               text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
                 the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
-              storageKey="species"
+              isOpen={isModalOpen}
+              afterOpen={() => sessionStorage.setItem('species', true)}
+              handleClose={() => setModalOpen(false)}
             />
           </div>
         </div>

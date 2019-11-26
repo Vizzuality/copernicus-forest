@@ -41,15 +41,38 @@
     flex-direction: column;
 
     .menu-link {
-      padding: 22px 24px;
-      border-top: 1px solid $color-gray-2;
-      font-size: $font-size-h3;
-      line-height: 26px;
+      .menu-link-title {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 22px 24px;
+        border-top: 1px solid $color-gray-2;
+        font-size: $font-size-h3;
+        line-height: 26px;
 
-      &:last-child {
-        border-bottom: 1px solid $color-gray-2;
+        &:last-child {
+          border-bottom: 1px solid $color-gray-2;
+        }
+
+        .expand-icon {
+          position: absolute;
+          right: 26px;
+          fill: $color-white;
+
+          &.__open {
+            transform: rotate(180deg);
+          }
+        }
       }
+    
+    .menu-link-content {
+      padding: 10px 24px 42px;
+      font-family: $font-family-2;
+      font-size: 18px;
+      line-height: 30px;
     }
+  }
 
     .partners {
       margin-top: 80px;

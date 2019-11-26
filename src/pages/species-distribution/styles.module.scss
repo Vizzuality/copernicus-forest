@@ -4,7 +4,8 @@ $species-list-width: 330px;
 
 .container {
   display: flex;
-  height: calc(100% - 70px);
+  // TODO: use layout.scss (l-page) instead of modules
+  height: calc(100vh - 70px);
   position: relative;
 }
 
@@ -49,8 +50,11 @@ $species-list-width: 330px;
 
 .navBar {
   display: flex;
-  border-bottom: 1px solid $color-black;
-  padding-right: 24px;
+  //overflow-y: hidden;
+
+  & > * {
+    border-bottom: 1px solid $color-black;
+  }
 }
 
 .toggleBarButton {
@@ -71,4 +75,5 @@ $species-list-width: 330px;
   display: flex;
   flex: 1;
   justify-content: flex-end;
+  padding-right: 24px;
 }

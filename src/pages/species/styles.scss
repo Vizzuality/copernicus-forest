@@ -29,7 +29,7 @@ $sidebar-size: 330px;
           color: $color-gray-3;
           font-size: 16px;
           font-family: $font-family-2;
-          margin: 20px 0;
+          margin: 30px 0;
 
           a {
             text-decoration: underline;
@@ -73,9 +73,13 @@ $sidebar-size: 330px;
         font-weight: bold;
         font-size: 24px;
         width: $button-size;
-        color: white;
+        color: $color-white;
         background-color: $color-orange;
         padding-bottom: 4px;
+
+        &.disabled {
+          color: rgba($color-white, 0.5);
+        }
       }
 
       .nav-link {

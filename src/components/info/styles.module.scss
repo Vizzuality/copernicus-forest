@@ -1,0 +1,15 @@
+@import '~styles/settings';
+
+.info {
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.tooltip{
+	max-width: 250px;
+	padding: 13px 0;
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 16px;
+	text-transform: initial;
+}

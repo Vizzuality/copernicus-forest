@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 
@@ -21,16 +21,14 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 function ModalComponent(props) {
-  const { title, text, storageKey } = props;
-  const openedBefore = !!sessionStorage.getItem(storageKey);
-  const [isOpen, setOpen] = useState(!openedBefore);
+  const { title, text, isOpen, afterOpen, handleClose } = props;
 
   return (
     <div>
       <Modal
         isOpen={isOpen}
-        onAfterOpen={() => sessionStorage.setItem(storageKey, true)}
-        onRequestClose={() => setOpen(false)}
+        onAfterOpen={afterOpen}
+        onRequestClose={handleClose}
         style={customStyles}
         contentLabel="Modal"
         overlayClassName="modal-background"
@@ -39,7 +37,7 @@ function ModalComponent(props) {
           <h2 className="modal-title">{title}</h2>
           <p className="modal-text">{text}</p>
           <div className="modal-button-wrapper">
-            <button className="modal-button" onClick={() => setOpen(false)}>
+            <button className="modal-button" onClick={handleClose}>
               Ok, got it
             </button>
           </div>
@@ -52,7 +50,9 @@ function ModalComponent(props) {
 ModalComponent.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
-  storageKey: PropTypes.string
+  isOpen: PropTypes.bool.isRequired,
+  handleClose: PropTypes.func.isRequired,
+  afterOpen: PropTypes.func
 };
 
 export default ModalComponent;

@@ -10,9 +10,11 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  Surface,
   ResponsiveContainer
 } from 'recharts';
 import cx from 'classnames';
+// import Info from 'components/info';
 import './styles.scss';
 
 function CustomDot(props) {
@@ -79,7 +81,46 @@ CustomTick.propTypes = {
   index: PropTypes.number,
   y: PropTypes.number,
   ticks: PropTypes.array,
-  unit: PropTypes.string
+  unit: PropTypes.string,
+  orientation: PropTypes.string
+};
+
+function CustomLegend(props) {
+  const { payload, iconSize } = props;
+  const SIZE = 32;
+  const halfSize = SIZE / 2;
+  const sixthSize = SIZE / 6;
+  const thirdSize = SIZE / 3;
+  const viewBox = { x: 0, y: 0, width: SIZE, height: SIZE };
+  const svgStyle = { display: 'inline-block', verticalAlign: 'middle', marginRight: 4 };
+
+  return (
+    <ul className="custom-legend">
+      {payload.map((entry, index) => (
+        <li key={`item-${index}`} className="legend-item">
+          <Surface width={iconSize} height={iconSize} viewBox={viewBox} style={svgStyle}>
+            <path
+              strokeWidth={4}
+              fill="none"
+              stroke={entry.color}
+              d={`M0,${halfSize}h${thirdSize}
+										A${sixthSize},${sixthSize},0,1,1,${2 * thirdSize},${halfSize}
+										H${SIZE}M${2 * thirdSize},${halfSize}
+										A${sixthSize},${sixthSize},0,1,1,${thirdSize},${halfSize}`}
+              className="recharts-legend-icon"
+            />
+          </Surface>
+          {entry.value}
+          {/* <Info infoKey={entry.value} /> */}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+CustomLegend.propTypes = {
+  payload: PropTypes.object,
+  iconSize: PropTypes.number
 };
 
 function Chart({ className, data, config, metadata }) {
@@ -120,7 +161,9 @@ function Chart({ className, data, config, metadata }) {
             animationBegin={2000}
             content={<CustomTooltip metadata={metadata} />}
           />
-          {showLegend && <Legend align="right" layout="vertical" verticalAlign="top" />}
+          {showLegend && (
+            <Legend align="right" layout="vertical" verticalAlign="top" content={CustomLegend} />
+          )}
           {areas &&
             areas.map(area => (
               <Area

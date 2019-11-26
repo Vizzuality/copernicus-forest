@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import SpeciesList from 'components/species-list';
 import TabsBar from 'components/tabs';
 import cx from 'classnames';
 import Icon from 'components/icon';
+import Modal from 'components/modal';
 
 import styles from './styles.module.scss';
 
@@ -20,6 +21,10 @@ const SpeciesDistributionComponent = props => {
     toggleSpeciesList,
     activePage
   } = props;
+
+  // Species modal:
+  const modalOpenedBefore = sessionStorage.getItem('species');
+  const [isModalOpen, setModalOpen] = useState(!modalOpenedBefore);
 
   return (
     <div className={styles.container}>
@@ -63,6 +68,14 @@ const SpeciesDistributionComponent = props => {
           activeSpecies={activeSpecies}
           speciesListVisible={speciesListVisible}
         />
+        <Modal
+          title="Species distribution data"
+          text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
+            the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
+          isOpen={isModalOpen}
+          afterOpen={() => sessionStorage.setItem('species', true)}
+          handleClose={() => setModalOpen(false)}
+        />
       </div>
     </div>
   );
@@ -77,7 +90,8 @@ SpeciesDistributionComponent.propTypes = {
   speciesTabsData: PropTypes.array,
   ContentComponent: PropTypes.func,
   speciesListVisible: PropTypes.bool,
-  toggleSpeciesList: PropTypes.func
+  toggleSpeciesList: PropTypes.func,
+  activePage: PropTypes.string
 };
 
 export default SpeciesDistributionComponent;

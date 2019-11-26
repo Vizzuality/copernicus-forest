@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import Icon from 'components/icon';
+import cx from 'classnames';
 
 import './styles.scss';
 
@@ -33,21 +33,21 @@ function Menu({ closeMenu, active }) {
   const links = [
     {
       name: 'Species distribution data',
-      path: '/SWE/distribution/'
+      key: 'species',
+      path: '/SWE/distribution/',
+      content: `Species distribution models combine information on species occurrence with environmental characteristics to estimate
+        the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`
     },
     {
       name: 'Bioclimatic variables data',
-      path: '/SWE/bioclimatic/'
+      key: 'bioclimatic',
+      path: '/SWE/bioclimatic/',
+      content: `Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
+        and extreme climatic conditions, including a combination of both environmental factors for current and future scenarios.`
     }
-    /* {
-      name: 'Contact us',
-      path: '/contact'
-    },
-    {
-      name: 'Privacy policy',
-      path: '/privacy'
-    } */
   ];
+
+  const [activeLink, setActiveLink] = useState(null);
 
   return (
     <div className={`c-menu ${active ? '-open' : ''}`} ref={wrapperRef}>
@@ -59,28 +59,52 @@ function Menu({ closeMenu, active }) {
         <div className="menu-links">
           {links.map(l => (
             <div className="menu-link" key={l.name}>
-              <Link to={l.path} onClick={closeMenu}>
+              <button
+                className="menu-link-title"
+                onClick={() => {
+                  if (!activeLink || activeLink !== l.key) {
+                    setActiveLink(l.key);
+                  } else setActiveLink(null);
+                }}
+              >
                 {l.name}
-              </Link>
+                <Icon
+                  name="icon-expand"
+                  className={cx('expand-icon', { __open: activeLink === l.key })}
+                />
+              </button>
+              {activeLink === l.key && <p className="menu-link-content">{l.content}</p>}
             </div>
           ))}
         </div>
         <div className="partners">
           <p>In partnership with:</p>
           <p className="partner-logo">
-            <img src="/logos/copernicus.png" alt="Copernicus" />
+            <a
+              href="https://www.copernicus.eu/en"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <img src="/logos/copernicus.png" alt="Copernicus" />
+            </a>
           </p>
           <p className="partner-logo">
-            <img src="/logos/ECMWF.png" alt="ECMWF" />
+            <a href="https://www.ecmwf.int" target="_blank" rel="noopener noreferrer nofollow">
+              <img src="/logos/ECMWF.png" alt="ECMWF" />
+            </a>
           </p>
           <p className="partner-logo">
-            <img src="/logos/EC.png" alt="European Comission" />
+            <a href="https://ec.europa.eu" target="_blank" rel="noopener noreferrer nofollow">
+              <img src="/logos/EC.png" alt="European Comission" />
+            </a>
           </p>
         </div>
         <div className="partners">
           <p>Powered by:</p>
           <p className="partner-logo">
-            <img src="/logos/graphcms.svg" alt="Powered by graphCMS" />
+            <a href="https://graphcms.com" target="_blank" rel="noopener noreferrer nofollow">
+              <img src="/logos/graphcms.svg" alt="Powered by graphCMS" />
+            </a>
           </p>
         </div>
       </div>
