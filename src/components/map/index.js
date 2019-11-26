@@ -1,63 +1,59 @@
 /* eslint-disable */
-import React, { PureComponent } from 'react';
-import classnames from 'classnames';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
-
-import isEqual from 'lodash/isEqual';
 import isEmpty from 'lodash/isEmpty';
-
-import ReactMapGL, { FlyToInterpolator, TRANSITION_EVENTS } from 'react-map-gl';
+import { FlyToInterpolator, TRANSITION_EVENTS } from 'react-map-gl';
 import WebMercatorViewport from 'viewport-mercator-project';
-import { easeCubic } from 'd3-ease';
+import { useQueryParams } from 'url.js';
+
+import Component from './component';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
-import './styles.scss';
 
-const DEFAULT_VIEWPORT = {
-  zoom: 2,
-  lat: 0,
-  lng: 0
-};
+const MapComponent = props => {
+  const [flying, setFlying] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const mapContainerRef = useRef(null);
+  const mapRef = useRef(null);
 
-class MapComponent extends PureComponent {
-  constructor(props) {
-    super(props);
-    // events = {};
-    this.state = {
-      flying: false,
-      loaded: false
-    };
-  }
+  const flyToInterpolator = new FlyToInterpolator();
 
-  getMapContainerRef = ref => {
-    this.mapContainer = ref;
-  };
+  const currentQueryParams = useQueryParams();
+  const { admin, label } = currentQueryParams;
 
-  getMapRef = ref => {
-    if (ref) {
-      this.map = ref.getMap();
+  const map = useMemo(() => {
+    return loaded && mapRef && mapRef.current && mapRef.current.getMap();
+  }, [loaded, mapRef]);
+
+  useEffect(() => {
+    const isEnabled = admin ? admin === 'true' : true;
+    map && map.setPaintProperty('admin', 'line-opacity', isEnabled ? 1 : 0);
+  }, [admin, map]);
+
+  useEffect(() => {
+    const isEnabled = label ? label === 'true' : true;
+    if (map) {
+      map.setPaintProperty('country-label', 'text-opacity', isEnabled ? 1 : 0);
+      map.setPaintProperty('place-label', 'text-opacity', isEnabled ? 1 : 0);
     }
-  };
+  }, [label, map]);
 
-  flyToInterpolator = new FlyToInterpolator();
-
-  onLoad = () => {
-    const { bounds, onLoad } = this.props;
-    this.setState({ loaded: true });
+  const onLoad = () => {
+    const { bounds, onLoad } = props;
+    setLoaded(true);
 
     if (!isEmpty(bounds) && !!bounds.bbox) {
-      this.fitBounds();
+      fitBounds();
     }
 
     onLoad({
-      map: this.map,
-      mapContainer: this.mapContainer
+      map,
+      mapContainer: mapContainerRef
     });
   };
 
-  onViewportChange = (v, interactionState) => {
-    const { onViewportChange, setViewport } = this.props;
-    const { loaded } = this.state;
+  const onViewportChange = (v, interactionState) => {
+    const { onViewportChange, setViewport } = props;
     if (
       (loaded && interactionState && !interactionState.inTransition) ||
       (loaded && !interactionState)
@@ -69,8 +65,8 @@ class MapComponent extends PureComponent {
     }
   };
 
-  onResize = v => {
-    const { onViewportChange, viewport } = this.props;
+  const onResize = v => {
+    const { onViewportChange, viewport } = props;
     const newViewport = {
       ...viewport,
       ...v
@@ -79,13 +75,13 @@ class MapComponent extends PureComponent {
     onViewportChange(newViewport);
   };
 
-  fitBounds = () => {
-    const { bounds, onViewportChange, viewport } = this.props;
+  const fitBounds = () => {
+    const { bounds, onViewportChange, viewport } = props;
     const { bbox, options } = bounds;
 
     const v = {
-      width: this.mapContainer.offsetWidth,
-      height: this.mapContainer.offsetHeight,
+      width: mapContainer.offsetWidth,
+      height: mapContainer.offsetHeight,
       ...viewport
     };
 
@@ -103,77 +99,49 @@ class MapComponent extends PureComponent {
       transitionInterruption: TRANSITION_EVENTS.UPDATE
     };
 
-    this.setState({
-      flying: true
-    });
+    setFlying(true);
     onViewportChange(newViewport);
 
-    setTimeout(() => {
-      this.setState({ flying: false });
-    }, 2500);
+    setTimeout(() => setFlying(false), 2500);
   };
 
-  render() {
-    const {
-      customClass,
-      children,
-      getCursor,
-      dragPan,
-      dragRotate,
-      scrollZoom,
-      touchZoom,
-      touchRotate,
-      doubleClickZoom,
-      viewport,
-      ...mapboxProps
-    } = this.props;
-    const { loaded, flying } = this.state;
+  const {
+    getCursor,
+    dragPan,
+    dragRotate,
+    scrollZoom,
+    touchZoom,
+    touchRotate,
+    doubleClickZoom
+  } = props;
 
-    return (
-      <div
-        ref={this.getMapContainerRef}
-        className={classnames({
-          'c-map': true,
-          [customClass]: !!customClass
-        })}
-      >
-        <ReactMapGL
-          ref={this.getMapRef}
-          // CUSTOM PROPS FROM REACT MAPBOX API
-          {...mapboxProps}
-          // VIEWPORT
-          {...viewport}
-          width="100%"
-          height="100%"
-          // INTERACTIVE
-          dragPan={!flying && dragPan}
-          dragRotate={!flying && dragRotate}
-          scrollZoom={!flying && scrollZoom}
-          touchZoom={!flying && touchZoom}
-          touchRotate={!flying && touchRotate}
-          doubleClickZoom={!flying && doubleClickZoom}
-          // DEFAULT FUNC IMPLEMENTATIONS
-          onViewportChange={this.onViewportChange}
-          onResize={this.onResize}
-          onLoad={this.onLoad}
-          // getCursor={getCursor}
-
-          transitionInterpolator={this.flyToInterpolator}
-          transitionEasing={easeCubic}
-        >
-          {loaded && !!this.map && typeof children === 'function' && children(this.map)}
-        </ReactMapGL>
-      </div>
-    );
-  }
-}
+  return (
+    <Component
+      {...props}
+      mapContainerRef={mapContainerRef}
+      mapRef={mapRef}
+      dragPan={!flying && dragPan}
+      dragRotate={!flying && dragRotate}
+      scrollZoom={!flying && scrollZoom}
+      touchZoom={!flying && touchZoom}
+      touchRotate={!flying && touchRotate}
+      doubleClickZoom={!flying && doubleClickZoom}
+      // DEFAULT FUNC IMPLEMENTATIONS
+      onViewportChange={onViewportChange}
+      onResize={onResize}
+      onLoad={onLoad}
+      getCursor={getCursor}
+      transitionInterpolator={flyToInterpolator}
+      loaded={loaded}
+      map={map}
+    />
+  );
+};
 
 MapComponent.propTypes = {
   /** An object that defines the viewport
    * @see https://uber.github.io/react-map-gl/#/Documentation/api-reference/interactive-map?section=initialization
    */
-  viewport: PropTypes.shape({}),
-
   children: PropTypes.func /** A function that returns the map instance */,
   customClass: PropTypes.string /** Custom css class for styling */,
   bounds: PropTypes.shape({
@@ -196,7 +164,6 @@ MapComponent.propTypes = {
 MapComponent.defaultProps = {
   children: null,
   customClass: null,
-  viewport: DEFAULT_VIEWPORT,
   bounds: {},
   dragPan: true,
   dragRotate: true,

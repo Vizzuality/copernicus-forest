@@ -23,6 +23,7 @@ const Container = () => {
   const match = useRouteMatch('/:country');
   const location = useLocation();
   const history = useHistory();
+  const [opacity, setOpacity] = useState(0.6);
 
   const { country } = (match && match.params) || {};
   const currentQueryParams = useQueryParams();
@@ -211,6 +212,8 @@ const Container = () => {
             yearIndex={yearIndex}
             setYearIndex={setYearIndex}
             fetching={fetching}
+            opacity={opacity}
+            setOpacity={setOpacity}
           />
         )}
       </Query>

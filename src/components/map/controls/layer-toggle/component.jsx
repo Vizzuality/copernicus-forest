@@ -43,7 +43,7 @@ LayerToggleComponent.propTypes = {
   tooltipRef: PropTypes.object,
   toggleLayerActive: PropTypes.bool,
   setToggleLayerActive: PropTypes.func,
-  theme: PropTypes.object
+  theme: PropTypes.string
 };
 
 export default LayerToggleComponent;

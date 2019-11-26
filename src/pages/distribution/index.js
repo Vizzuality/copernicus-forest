@@ -5,13 +5,14 @@ import { uniqBy, sortBy } from 'lodash';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
 import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
-import { vectorLayerCarto, currentDistributionCartoLayer } from 'layers';
+import speciesDistributionLayer from 'layers/speciesDistribution';
+import currentDistributionLayer from 'layers/currentDistribution';
 
 import Component from './component';
 
 const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
-  const [opacity, setOpacity] = useState(1);
+  const [opacity, setOpacity] = useState(0.6);
   const [yearIndex, setYearIndex] = useState(0);
 
   const { match, activeSpecies } = props;
@@ -87,22 +88,22 @@ const DistributionPage = props => {
   const years =
     futureScenariosData && activeFutureScenario && futureScenariosData[activeFutureScenario].years;
 
-  const currentYear = useMemo(() => years && years[yearIndex], [years, yearIndex]);
+  const selectedYear = useMemo(() => years && years[yearIndex], [years, yearIndex]);
   const speciesName = useMemo(() => activeSpecies && activeSpecies.name, [activeSpecies]);
 
   const futureDistLayers = useMemo(() => {
-    const futureDistLayer = vectorLayerCarto(
+    const futureDistLayer = speciesDistributionLayer(
       iso,
       speciesName,
       activeFutureScenario,
-      currentYear,
+      selectedYear,
       opacity
     );
     return [futureDistLayer].map(l => ({ ...l, active: true }));
-  }, [iso, speciesName, activeFutureScenario, currentYear, opacity]);
+  }, [iso, speciesName, activeFutureScenario, selectedYear, opacity]);
 
   const currentDistLayers = useMemo(() => {
-    const currentDistLayer = currentDistributionCartoLayer(iso, speciesName, opacity);
+    const currentDistLayer = currentDistributionLayer(iso, speciesName, opacity);
     return [currentDistLayer].map(l => ({ ...l, active: true }));
   }, [iso, speciesName, opacity]);
 

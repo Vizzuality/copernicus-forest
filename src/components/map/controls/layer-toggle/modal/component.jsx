@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.scss';
 
-const LayersToggleModalComponent = ({ handleCloseModal, checked, setChecked }) => {
+const LayersToggleModalComponent = ({ handleCloseModal, data }) => {
   return (
     <div className={styles.toggleLayerModal}>
       <div className={styles.header}>
@@ -15,39 +15,30 @@ const LayersToggleModalComponent = ({ handleCloseModal, checked, setChecked }) =
         </button>
       </div>
       <div className={styles.content}>
-        <Switch
-          value="layer-1"
-          checked={checked}
-          handleChange={() => setChecked(!checked)}
-          name="Land use"
-        />
-        <Switch
-          value="layer-2"
-          checked={checked}
-          handleChange={() => setChecked(!checked)}
-          name="Plantations"
-        />
-        <div className={styles.spacer} />
-        <Switch
-          value="layer-3"
-          checked={checked}
-          handleChange={() => setChecked(!checked)}
-          name="Labels"
-        />
-        <Switch
-          value="layer-4"
-          checked={checked}
-          handleChange={() => setChecked(!checked)}
-          name="Admin"
-        />
+        {data &&
+          data.map((
+            group // render each layers group separately [land use & plantations], spacer [labels & admin]
+          ) => (
+            <>
+              {group.map(({ value, checked, handleChange, name }) => (
+                <Switch
+                  key={value}
+                  value={value}
+                  checked={checked}
+                  handleChange={() => handleChange({ [value]: !checked })}
+                  name={name}
+                />
+              ))}
+              <div className={styles.spacer} />
+            </>
+          ))}
       </div>
     </div>
   );
 };
 
 LayersToggleModalComponent.propTypes = {
-  checked: PropTypes.bool,
-  setChecked: PropTypes.func,
+  data: PropTypes.array,
   handleCloseModal: PropTypes.func
 };
 
