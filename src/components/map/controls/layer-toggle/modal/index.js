@@ -12,15 +12,17 @@ const LayersToggleModal = ({ tooltipRef }) => {
   const location = useLocation();
   const history = useHistory();
   const currentQueryParams = useQueryParams();
-  const { admin, label } = currentQueryParams;
+  const { admin, label, landUse, plantations } = currentQueryParams;
 
   const layersData = useMemo(() => {
     return {
       // converts URL params value from string to bool or sets true as default when no value provided
       label: label ? label === 'true' : true,
-      admin: admin ? admin === 'true' : true
+      admin: admin ? admin === 'true' : true,
+      landUse: landUse ? landUse === 'true' : true,
+      plantations: plantations ? plantations === 'true' : true
     };
-  }, [label, admin]);
+  }, [label, admin, landUse, plantations]);
 
   const updateParams = params => {
     setQueryParams({ ...currentQueryParams, ...params }, location, history);
@@ -36,14 +38,14 @@ const LayersToggleModal = ({ tooltipRef }) => {
     [
       {
         value: 'landUse', // it's also a param's name (key) in URL
-        checked: false,
-        handleChange: () => {},
+        checked: layersData.landUse,
+        handleChange: updateParams,
         name: 'Land use'
       },
       {
         value: 'plantations', // it's also a param's name (key) in URL
-        checked: false,
-        handleChange: () => {},
+        checked: layersData.plantations,
+        handleChange: updateParams,
         name: 'Plantations'
       }
     ],
