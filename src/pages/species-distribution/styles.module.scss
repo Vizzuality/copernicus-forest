@@ -50,9 +50,11 @@ $species-list-width: 330px;
 
 .navBar {
   display: flex;
-  border-bottom: 1px solid $color-black;
-  padding-right: 24px;
-  overflow-y: hidden;
+  //overflow-y: hidden;
+
+  & > * {
+    border-bottom: 1px solid $color-black;
+  }
 }
 
 .toggleBarButton {
@@ -73,4 +75,5 @@ $species-list-width: 330px;
   display: flex;
   flex: 1;
   justify-content: flex-end;
+  padding-right: 24px;
 }
