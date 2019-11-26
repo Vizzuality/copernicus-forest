@@ -24,7 +24,7 @@ const DistributionPage = props => {
   const history = useHistory();
   const currentQueryParams = useQueryParams();
 
-  const { futureScenario } = currentQueryParams;
+  const { futureScenario, currentScenario } = currentQueryParams;
   const { data } = useScenariosPerCountry(iso);
 
   const scenarios = data && data.scenarios;
@@ -33,9 +33,13 @@ const DistributionPage = props => {
 
   const activeFutureScenario =
     futureScenarios && futureScenarios.length ? futureScenario || futureScenarios[0].key : '';
-
   const setFutureScenario = sc => {
     setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);
+  };
+
+  const activeCurrentScenario = currentScenario || 'modeled';
+  const setCurrentScenario = sc => {
+    setQueryParams({ ...currentQueryParams, currentScenario: sc }, location, history);
   };
 
   const getYears = sc => {
@@ -57,6 +61,21 @@ const DistributionPage = props => {
       }, {})
     );
   }, [futureScenarios]);
+
+  const currentScenariosData = {
+    observed: {
+      name: 'observed',
+      start: 0,
+      end: 0,
+      step: 1
+    },
+    modeled: {
+      name: 'modeled',
+      start: 0,
+      end: 0,
+      step: 1
+    }
+  };
 
   const futureScenariosData =
     futureScenarios &&
@@ -115,7 +134,10 @@ const DistributionPage = props => {
       setFutureScenario={setFutureScenario}
       futureScenariosData={futureScenariosData}
       futureScenariosLayers={futureDistLayers}
+      currentScenariosData={currentScenariosData}
       currentScenariosLayers={currentDistLayers}
+      activeCurrentScenario={activeCurrentScenario}
+      setCurrentScenario={setCurrentScenario}
       yearIndex={yearIndex}
       setYearIndex={setYearIndex}
       setOpacity={setOpacity}
