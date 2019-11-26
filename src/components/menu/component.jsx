@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Icon from 'components/icon';
+import cx from 'classnames';
 
 import './styles.scss';
 
@@ -59,6 +60,7 @@ function Menu({ closeMenu, active }) {
           {links.map(l => (
             <div className="menu-link" key={l.name}>
               <button
+                className="menu-link-title"
                 onClick={() => {
                   if (!activeLink || activeLink !== l.key) {
                     setActiveLink(l.key);
@@ -66,6 +68,10 @@ function Menu({ closeMenu, active }) {
                 }}
               >
                 {l.name}
+                <Icon
+                  name="icon-expand"
+                  className={cx('expand-icon', { __open: activeLink === l.key })}
+                />
               </button>
               {activeLink === l.key && <p className="menu-link-content">{l.content}</p>}
             </div>

@@ -14,7 +14,7 @@ import {
   ResponsiveContainer
 } from 'recharts';
 import cx from 'classnames';
-import Info from 'components/info';
+// import Info from 'components/info';
 import './styles.scss';
 
 function CustomDot(props) {
@@ -111,7 +111,7 @@ function CustomLegend(props) {
             />
           </Surface>
           {entry.value}
-          <Info infoKey={entry.value} />
+          {/* <Info infoKey={entry.value} /> */}
         </li>
       ))}
     </ul>
