@@ -1,7 +1,7 @@
 const fetch = require('isomorphic-fetch');
 const pMap = require('p-map');
 // List of species for a country
-const countryBiovarData = require('./PER/biovarRel.json');
+const countryBiovarData = require('./TZA/biovarRel.json');
 const errors = require('./errors.json');
 
 // graphCMS settings > Endpoints

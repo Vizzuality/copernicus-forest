@@ -5,7 +5,7 @@
     "scenario": "current",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 364
+    "propTotalArea": 0.364
   },
   {
     "iso": "PER",
@@ -13,7 +13,7 @@
     "scenario": "current",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 476
+    "propTotalArea": 0.476
   },
   {
     "iso": "PER",
@@ -21,7 +21,7 @@
     "scenario": "current",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 239
+    "propTotalArea": 0.239
   },
   {
     "iso": "PER",
@@ -29,7 +29,7 @@
     "scenario": "current",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 304
+    "propTotalArea": 0.304
   },
   {
     "iso": "PER",
@@ -37,7 +37,7 @@
     "scenario": "current",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 222
+    "propTotalArea": 0.222
   },
   {
     "iso": "PER",
@@ -45,7 +45,7 @@
     "scenario": "current",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 261
+    "propTotalArea": 0.261
   },
   {
     "iso": "PER",
@@ -53,7 +53,7 @@
     "scenario": "current",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 492
+    "propTotalArea": 0.492
   },
   {
     "iso": "PER",
@@ -61,7 +61,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 429
+    "propTotalArea": 0.429
   },
   {
     "iso": "PER",
@@ -69,7 +69,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 449
+    "propTotalArea": 0.449
   },
   {
     "iso": "PER",
@@ -77,7 +77,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 194
+    "propTotalArea": 0.194
   },
   {
     "iso": "PER",
@@ -93,7 +93,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 249
+    "propTotalArea": 0.249
   },
   {
     "iso": "PER",
@@ -101,7 +101,7 @@
     "scenario": "rcp45",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 104
+    "propTotalArea": 0.104
   },
   {
     "iso": "PER",
@@ -109,7 +109,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 489
+    "propTotalArea": 0.489
   },
   {
     "iso": "PER",
@@ -117,7 +117,7 @@
     "scenario": "rcp85",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 402
+    "propTotalArea": 0.402
   },
   {
     "iso": "PER",
@@ -125,7 +125,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 459
+    "propTotalArea": 0.459
   },
   {
     "iso": "PER",
@@ -133,7 +133,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 176
+    "propTotalArea": 0.176
   },
   {
     "iso": "PER",
@@ -149,7 +149,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 215
+    "propTotalArea": 0.215
   },
   {
     "iso": "PER",
@@ -157,7 +157,7 @@
     "scenario": "rcp85",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 163
+    "propTotalArea": 0.163
   },
   {
     "iso": "PER",
@@ -165,7 +165,7 @@
     "scenario": "rcp85",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 346
+    "propTotalArea": 0.346
   },
   {
     "iso": "PER",
@@ -173,7 +173,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 428
+    "propTotalArea": 0.428
   },
   {
     "iso": "PER",
@@ -181,7 +181,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 454
+    "propTotalArea": 0.454
   },
   {
     "iso": "PER",
@@ -189,7 +189,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 169
+    "propTotalArea": 0.169
   },
   {
     "iso": "PER",
@@ -197,7 +197,7 @@
     "scenario": "rcp45",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 295
+    "propTotalArea": 0.295
   },
   {
     "iso": "PER",
@@ -205,7 +205,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 236
+    "propTotalArea": 0.236
   },
   {
     "iso": "PER",
@@ -213,7 +213,7 @@
     "scenario": "rcp45",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 99
+    "propTotalArea": 0.099
   },
   {
     "iso": "PER",
@@ -221,7 +221,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 416
+    "propTotalArea": 0.416
   },
   {
     "iso": "PER",
@@ -229,7 +229,7 @@
     "scenario": "rcp85",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 381
+    "propTotalArea": 0.381
   },
   {
     "iso": "PER",
@@ -237,7 +237,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 464
+    "propTotalArea": 0.464
   },
   {
     "iso": "PER",
@@ -245,7 +245,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 142
+    "propTotalArea": 0.142
   },
   {
     "iso": "PER",
@@ -253,7 +253,7 @@
     "scenario": "rcp85",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 301
+    "propTotalArea": 0.301
   },
   {
     "iso": "PER",
@@ -261,7 +261,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 196
+    "propTotalArea": 0.196
   },
   {
     "iso": "PER",
@@ -269,7 +269,7 @@
     "scenario": "rcp85",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 109
+    "propTotalArea": 0.109
   },
   {
     "iso": "PER",
@@ -277,7 +277,7 @@
     "scenario": "rcp85",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 292
+    "propTotalArea": 0.292
   },
   {
     "iso": "PER",
@@ -285,7 +285,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 406
+    "propTotalArea": 0.406
   },
   {
     "iso": "PER",
@@ -293,7 +293,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 454
+    "propTotalArea": 0.454
   },
   {
     "iso": "PER",
@@ -301,7 +301,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 146
+    "propTotalArea": 0.146
   },
   {
     "iso": "PER",
@@ -309,7 +309,7 @@
     "scenario": "rcp45",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 291
+    "propTotalArea": 0.291
   },
   {
     "iso": "PER",
@@ -317,7 +317,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 216
+    "propTotalArea": 0.216
   },
   {
     "iso": "PER",
@@ -333,7 +333,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 372
+    "propTotalArea": 0.372
   },
   {
     "iso": "PER",
@@ -349,7 +349,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 446
+    "propTotalArea": 0.446
   },
   {
     "iso": "PER",
@@ -357,7 +357,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 136
+    "propTotalArea": 0.136
   },
   {
     "iso": "PER",
@@ -373,7 +373,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 208
+    "propTotalArea": 0.208
   },
   {
     "iso": "PER",
@@ -381,7 +381,7 @@
     "scenario": "rcp85",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 82
+    "propTotalArea": 0.082
   },
   {
     "iso": "PER",
@@ -397,7 +397,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 414
+    "propTotalArea": 0.414
   },
   {
     "iso": "PER",
@@ -405,7 +405,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 446
+    "propTotalArea": 0.446
   },
   {
     "iso": "PER",
@@ -413,7 +413,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 134
+    "propTotalArea": 0.134
   },
   {
     "iso": "PER",
@@ -421,7 +421,7 @@
     "scenario": "rcp45",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 285
+    "propTotalArea": 0.285
   },
   {
     "iso": "PER",
@@ -429,7 +429,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 217
+    "propTotalArea": 0.217
   },
   {
     "iso": "PER",
@@ -437,7 +437,7 @@
     "scenario": "rcp45",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 42
+    "propTotalArea": 0.042
   },
   {
     "iso": "PER",
@@ -445,7 +445,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 378
+    "propTotalArea": 0.378
   },
   {
     "iso": "PER",
@@ -453,7 +453,7 @@
     "scenario": "rcp85",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 425
+    "propTotalArea": 0.425
   },
   {
     "iso": "PER",
@@ -461,7 +461,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 421
+    "propTotalArea": 0.421
   },
   {
     "iso": "PER",
@@ -469,7 +469,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 137
+    "propTotalArea": 0.137
   },
   {
     "iso": "PER",
@@ -477,7 +477,7 @@
     "scenario": "rcp85",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 271
+    "propTotalArea": 0.271
   },
   {
     "iso": "PER",
@@ -485,7 +485,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 272
+    "propTotalArea": 0.272
   },
   {
     "iso": "PER",
@@ -493,7 +493,7 @@
     "scenario": "rcp85",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 26
+    "propTotalArea": 0.026
   },
   {
     "iso": "PER",
@@ -509,7 +509,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 425
+    "propTotalArea": 0.425
   },
   {
     "iso": "PER",
@@ -525,7 +525,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 137
+    "propTotalArea": 0.137
   },
   {
     "iso": "PER",
@@ -533,7 +533,7 @@
     "scenario": "rcp45",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 277
+    "propTotalArea": 0.277
   },
   {
     "iso": "PER",
@@ -541,7 +541,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 236
+    "propTotalArea": 0.236
   },
   {
     "iso": "PER",
@@ -549,7 +549,7 @@
     "scenario": "rcp45",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 36
+    "propTotalArea": 0.036
   },
   {
     "iso": "PER",
@@ -557,7 +557,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 416
+    "propTotalArea": 0.416
   },
   {
     "iso": "PER",
@@ -565,7 +565,7 @@
     "scenario": "rcp85",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 384
+    "propTotalArea": 0.384
   },
   {
     "iso": "PER",
@@ -573,7 +573,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 404
+    "propTotalArea": 0.404
   },
   {
     "iso": "PER",
@@ -581,7 +581,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 136
+    "propTotalArea": 0.136
   },
   {
     "iso": "PER",
@@ -589,7 +589,7 @@
     "scenario": "rcp85",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 257
+    "propTotalArea": 0.257
   },
   {
     "iso": "PER",
@@ -597,7 +597,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 431
+    "propTotalArea": 0.431
   },
   {
     "iso": "PER",
@@ -605,7 +605,7 @@
     "scenario": "rcp85",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 15
+    "propTotalArea": 0.015
   },
   {
     "iso": "PER",
@@ -613,7 +613,7 @@
     "scenario": "rcp85",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 288
+    "propTotalArea": 0.288
   },
   {
     "iso": "PER",
@@ -621,7 +621,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 419
+    "propTotalArea": 0.419
   },
   {
     "iso": "PER",
@@ -629,7 +629,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 426
+    "propTotalArea": 0.426
   },
   {
     "iso": "PER",
@@ -637,7 +637,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 136
+    "propTotalArea": 0.136
   },
   {
     "iso": "PER",
@@ -645,7 +645,7 @@
     "scenario": "rcp45",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 274
+    "propTotalArea": 0.274
   },
   {
     "iso": "PER",
@@ -653,7 +653,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 226
+    "propTotalArea": 0.226
   },
   {
     "iso": "PER",
@@ -661,7 +661,7 @@
     "scenario": "rcp45",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 33
+    "propTotalArea": 0.033
   },
   {
     "iso": "PER",
@@ -669,7 +669,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 387
+    "propTotalArea": 0.387
   },
   {
     "iso": "PER",
@@ -677,7 +677,7 @@
     "scenario": "rcp85",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 356
+    "propTotalArea": 0.356
   },
   {
     "iso": "PER",
@@ -685,7 +685,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 397
+    "propTotalArea": 0.397
   },
   {
     "iso": "PER",
@@ -693,7 +693,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 129
+    "propTotalArea": 0.129
   },
   {
     "iso": "PER",
@@ -701,7 +701,7 @@
     "scenario": "rcp85",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 243
+    "propTotalArea": 0.243
   },
   {
     "iso": "PER",
@@ -709,7 +709,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 482
+    "propTotalArea": 0.482
   },
   {
     "iso": "PER",
@@ -725,7 +725,7 @@
     "scenario": "rcp85",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 219
+    "propTotalArea": 0.219
   },
   {
     "iso": "PER",
@@ -733,7 +733,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 402
+    "propTotalArea": 0.402
   },
   {
     "iso": "PER",
@@ -741,7 +741,7 @@
     "scenario": "rcp45",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 425
+    "propTotalArea": 0.425
   },
   {
     "iso": "PER",
@@ -749,7 +749,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 139
+    "propTotalArea": 0.139
   },
   {
     "iso": "PER",
@@ -765,7 +765,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 244
+    "propTotalArea": 0.244
   },
   {
     "iso": "PER",
@@ -773,7 +773,7 @@
     "scenario": "rcp45",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 26
+    "propTotalArea": 0.026
   },
   {
     "iso": "PER",
@@ -781,7 +781,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 378
+    "propTotalArea": 0.378
   },
   {
     "iso": "PER",
@@ -789,7 +789,7 @@
     "scenario": "rcp85",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 337
+    "propTotalArea": 0.337
   },
   {
     "iso": "PER",
@@ -797,7 +797,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 387
+    "propTotalArea": 0.387
   },
   {
     "iso": "PER",
@@ -805,7 +805,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 123
+    "propTotalArea": 0.123
   },
   {
     "iso": "PER",
@@ -813,7 +813,7 @@
     "scenario": "rcp85",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 221
+    "propTotalArea": 0.221
   },
   {
     "iso": "PER",
@@ -821,7 +821,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 509
+    "propTotalArea": 0.509
   },
   {
     "iso": "PER",
@@ -829,7 +829,7 @@
     "scenario": "rcp85",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 6
+    "propTotalArea": 0.006
   },
   {
     "iso": "PER",
@@ -837,7 +837,7 @@
     "scenario": "rcp85",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 166
+    "propTotalArea": 0.166
   },
   {
     "iso": "PER",
@@ -845,7 +845,7 @@
     "scenario": "rcp45",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 408
+    "propTotalArea": 0.408
   },
   {
     "iso": "PER",
@@ -861,7 +861,7 @@
     "scenario": "rcp45",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 138
+    "propTotalArea": 0.138
   },
   {
     "iso": "PER",
@@ -869,7 +869,7 @@
     "scenario": "rcp45",
     "species": "Alnus acuminata",
     "gbifId": 2876131,
-    "propTotalArea": 271
+    "propTotalArea": 0.271
   },
   {
     "iso": "PER",
@@ -877,7 +877,7 @@
     "scenario": "rcp45",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 262
+    "propTotalArea": 0.262
   },
   {
     "iso": "PER",
@@ -885,7 +885,7 @@
     "scenario": "rcp45",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 24
+    "propTotalArea": 0.024
   },
   {
     "iso": "PER",
@@ -893,7 +893,7 @@
     "scenario": "rcp45",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 376
+    "propTotalArea": 0.376
   },
   {
     "iso": "PER",
@@ -901,7 +901,7 @@
     "scenario": "rcp85",
     "species": "Dalbergia",
     "gbifId": 2968358,
-    "propTotalArea": 288
+    "propTotalArea": 0.288
   },
   {
     "iso": "PER",
@@ -909,7 +909,7 @@
     "scenario": "rcp85",
     "species": "Eucalyptus",
     "gbifId": 7493935,
-    "propTotalArea": 378
+    "propTotalArea": 0.378
   },
   {
     "iso": "PER",
@@ -917,7 +917,7 @@
     "scenario": "rcp85",
     "species": "Swietenia",
     "gbifId": 3190483,
-    "propTotalArea": 114
+    "propTotalArea": 0.114
   },
   {
     "iso": "PER",
@@ -933,7 +933,7 @@
     "scenario": "rcp85",
     "species": "Guazuma ulmifolia",
     "gbifId": 3152195,
-    "propTotalArea": 447
+    "propTotalArea": 0.447
   },
   {
     "iso": "PER",
@@ -941,7 +941,7 @@
     "scenario": "rcp85",
     "species": "Parkia velutina",
     "gbifId": 5348846,
-    "propTotalArea": 2
+    "propTotalArea": 0.002
   },
   {
     "iso": "PER",
@@ -949,6 +949,6 @@
     "scenario": "rcp85",
     "species": "Simarouba amara",
     "gbifId": 7720664,
-    "propTotalArea": 111
+    "propTotalArea": 0.111
   }
 ]

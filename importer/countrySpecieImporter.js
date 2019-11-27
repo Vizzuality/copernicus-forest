@@ -5,13 +5,9 @@ const speciesData = [];
 // const countrySpeciesData = require(`./${process.argv[2] || 'SWE'}/speciesRel.json`);
 const countrySpeciesData = require('./SWE/speciesRel.json');
 
-const speciesWhitelist = [
-  'Dalbergia',
-  'Eucalyptus',
-  'Alnus acuminata',
-  'Guazuma ulmifolia',
-  'Simarouba amara'
-];
+const speciesWhitelist =
+  // countrySpeciesData.filter(r => r.scenario === 'rcp85' && r.timeInterval === 2030).map(r => r.species);
+  ['Pinus mugo', 'Picea abies', 'Pinus sylvestris', 'Picea glauca', 'Picea sitchensis'];
 
 // graphCMS settings > Endpoints
 const endpoint = process.env.graphCMSURL;
@@ -20,6 +16,7 @@ const endpoint = process.env.graphCMSURL;
 const token = process.env.graphCMSImportToken;
 
 if (!token || !endpoint) throw Error('Please enter credentials');
+// if(speciesWhitelist.length !== 5) throw Error(`Check species whitelist manually. Length: ${speciesWhitelist.length}`);
 
 // Our mutation to write data to our database
 const createSpecie = `mutation createSpecie(
