@@ -7,6 +7,7 @@ import { useQueryParams, setQueryParams } from 'url.js';
 import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
 import speciesDistributionLayer from 'layers/speciesDistribution';
 import currentDistributionLayer from 'layers/currentDistribution';
+import speciesOccurenceLayer from 'layers/speciesOccurence';
 
 import Component from './component';
 
@@ -122,9 +123,14 @@ const DistributionPage = props => {
   }, [iso, speciesName, activeFutureScenario, selectedYear, opacity]);
 
   const currentDistLayers = useMemo(() => {
-    const currentDistLayer = currentDistributionLayer(iso, speciesName, opacity);
-    return [currentDistLayer].map(l => ({ ...l, active: true }));
-  }, [iso, speciesName, opacity]);
+    let selectedLayer;
+    if (activeCurrentScenario === 'observed') {
+      selectedLayer = speciesOccurenceLayer(iso, speciesName, 1);
+    } else {
+      selectedLayer = currentDistributionLayer(iso, speciesName, opacity);
+    }
+    return [selectedLayer].map(l => ({ ...l, active: true }));
+  }, [iso, speciesName, opacity, activeCurrentScenario]);
 
   return (
     <Component

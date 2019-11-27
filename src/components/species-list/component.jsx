@@ -1,22 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 import styles from './styles.module.scss';
 
 function SpeciesList({ species, country, page, activeSpecies }) {
+  const currentQueryParams = useLocation();
+
   return (
     <div className={styles.container}>
       <div className={styles.speciesActive}>{activeSpecies.scientificName}</div>
       <ul className={styles.list}>
         {species &&
           country &&
-          species.map(s => (
-            <li key={s.id}>
-              <Link to={`/${country.iso}/${page}/${s.id}`} className={styles.listItem}>
-                <p>{s.scientificName}</p>
-              </Link>
-            </li>
-          ))}
+          species.map(s => {
+            const URL = {
+              pathname: `/${country.iso}/${page}/${s.id}`,
+              search: currentQueryParams ? currentQueryParams.search : ''
+            };
+            return (
+              <li key={s.id}>
+                <Link to={URL} className={styles.listItem}>
+                  <p>{s.scientificName}</p>
+                </Link>
+              </li>
+            );
+          })}
       </ul>
     </div>
   );
