@@ -68,7 +68,8 @@ function CustomTick(props) {
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <text {...props} y={isY ? y + 4 : y + 20} fill="#222222" dx={isY ? -16 : 0}>
-      {payload.value}
+      {/* eslint-disable-next-line no-restricted-globals */}
+      {isNaN(Number(payload.value)) ? payload.value : payload.value.toFixed(0)}
       {((ticks && ticks.length && index === ticks.length - 1) || // last tick or
         props.index >= 4) && // def bigger than 4 (accordion) -> add unit
         unit}

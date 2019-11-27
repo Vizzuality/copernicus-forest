@@ -146,7 +146,7 @@ const Container = () => {
     parsedScenarios
   };
 
-  const getChartConfig = unit => ({
+  const getChartConfig = (unit, range) => ({
     lines: [
       {
         key: 'value',
@@ -160,6 +160,13 @@ const Container = () => {
       }
     ],
     yAxis: {
+      domain: range,
+      ticks: [
+        +range[0],
+        range[1] - (range[1] - range[0]) * 0.66,
+        range[1] - (range[1] - range[0]) * 0.33,
+        +range[1]
+      ],
       customTick: true,
       tickSize: 0,
       axisLine: false,
