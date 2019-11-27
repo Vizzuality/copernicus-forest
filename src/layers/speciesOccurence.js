@@ -28,17 +28,10 @@ export default (iso, species, opacity = 1) => {
           {
             paint: {
               'circle-color': SPECIES_RAMP_COLORS[2],
-              'circle-stroke-color': SPECIES_RAMP_COLORS[1],
-              'circle-stroke-width': 1,
-              'circle-opacity': opacity
-              // 'circle-radius': {
-              //   type: 'interval',
-              //   stops: [
-              //       [0, 2],
-              //       [100, 30],
-              //       [750, 40]
-              //   ]
-              // },
+              'circle-opacity': opacity,
+              'circle-radius': {
+                stops: [[12, 2], [22, 180]]
+              }
             },
             'source-layer': 'layer0',
             type: 'circle'
