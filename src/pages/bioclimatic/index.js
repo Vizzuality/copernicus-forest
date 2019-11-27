@@ -146,45 +146,54 @@ const Container = () => {
     parsedScenarios
   };
 
-  const getChartConfig = (unit, range) => ({
-    lines: [
-      {
-        key: 'value',
-        color: styles.colorPink
-      }
-    ],
-    areas: [
-      {
-        key: 'value',
-        color: styles.colorPink
-      }
-    ],
-    yAxis: {
-      domain: range,
-      ticks: [
+  const getChartConfig = (unit, range) => {
+    let ticks;
+    if (range[1] - range[0] <= 1) ticks = [+range[0], +range[1]];
+    else if (range[1] - range[0] <= 2)
+      ticks = [+range[0], range[1] - (range[1] - range[0]) / 2, +range[1]];
+    else
+      ticks = [
         +range[0],
         range[1] - (range[1] - range[0]) * 0.66,
         range[1] - (range[1] - range[0]) * 0.33,
         +range[1]
+      ];
+    console.log(range, ticks);
+    return {
+      lines: [
+        {
+          key: 'value',
+          color: styles.colorPink
+        }
       ],
-      customTick: true,
-      tickSize: 0,
-      axisLine: false,
-      content: <Label value={unit} position="insideTop" dx={6} dy={-40} fill="#222" />
-    },
-    xAxis: {
-      customTick: true,
-      tickSize: 0,
-      padding: { left: -30, right: -30 }
-    },
-    grid: {
-      vertical: false
-    },
-    composedChart: {
-      margin: { top: 40, right: 40, left: 0, bottom: 0 }
-    },
-    height: 300
-  });
+      areas: [
+        {
+          key: 'value',
+          color: styles.colorPink
+        }
+      ],
+      yAxis: {
+        domain: range,
+        ticks,
+        customTick: true,
+        tickSize: 0,
+        axisLine: false,
+        content: <Label value={unit} position="insideTop" dx={6} dy={-40} fill="#222" />
+      },
+      xAxis: {
+        customTick: true,
+        tickSize: 0,
+        padding: { left: -30, right: -30 }
+      },
+      grid: {
+        vertical: false
+      },
+      composedChart: {
+        margin: { top: 40, right: 40, left: 0, bottom: 0 }
+      },
+      height: 300
+    };
+  };
 
   if (chosenStartYear && chosenEndYear && country && chosenScenario) {
     return (

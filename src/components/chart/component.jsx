@@ -65,11 +65,15 @@ CustomTooltip.propTypes = {
 function CustomTick(props) {
   const { payload, index, y, ticks, unit, orientation } = props;
   const isY = orientation === 'vertical';
+  let value;
+  // eslint-disable-next-line no-restricted-globals
+  if (isNaN(Number(payload.value))) value = payload.value;
+  else if (payload.value > 100) value = payload.value.toFixed(0);
+  else value = payload.value.toFixed(1);
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <text {...props} y={isY ? y + 4 : y + 20} fill="#222222" dx={isY ? -16 : 0}>
-      {/* eslint-disable-next-line no-restricted-globals */}
-      {isNaN(Number(payload.value)) ? payload.value : payload.value.toFixed(0)}
+      {value}
       {((ticks && ticks.length && index === ticks.length - 1) || // last tick or
         props.index >= 4) && // def bigger than 4 (accordion) -> add unit
         unit}
