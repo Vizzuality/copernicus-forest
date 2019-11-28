@@ -14,6 +14,7 @@ function SpeciesList({ species, country, page, activeSpecies }) {
         {species &&
           country &&
           species.map(s => {
+            // search preserves params when clicking on another species. Without this, we're losing information about selected layers on the map
             const URL = {
               pathname: `/${country.iso}/${page}/${s.id}`,
               search: currentQueryParams ? currentQueryParams.search : ''
