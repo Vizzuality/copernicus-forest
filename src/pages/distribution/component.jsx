@@ -21,7 +21,10 @@ const DistributionPageComponent = ({
   setFutureScenario,
   futureScenariosData,
   futureScenariosLayers,
+  currentScenariosData,
   currentScenariosLayers,
+  activeCurrentScenario,
+  setCurrentScenario,
   yearIndex,
   setYearIndex,
   setOpacity
@@ -63,7 +66,13 @@ const DistributionPageComponent = ({
         yearIndex={yearIndex}
         handleOnChange={index => setYearIndex(() => index)}
       />
-      <Timeline title="Current distribution" data={{}} hideTimeline />
+      <Timeline
+        title="Current distribution"
+        data={currentScenariosData}
+        hideTimeline
+        activeTab={activeCurrentScenario}
+        setActiveTab={setCurrentScenario}
+      />
       <div className={styles.navigationBar}>
         <Zoom viewport={viewport} setViewport={setViewport} />
         <LayerToggle theme={styles.layerToggle} />
@@ -93,6 +102,9 @@ DistributionPageComponent.propTypes = {
   setFutureScenario: PropTypes.func,
   futureScenariosData: PropTypes.object,
   futureScenariosLayers: PropTypes.array,
+  activeCurrentScenario: PropTypes.string,
+  setCurrentScenario: PropTypes.func,
+  currentScenariosData: PropTypes.object,
   currentScenariosLayers: PropTypes.array,
   yearIndex: PropTypes.number,
   setYearIndex: PropTypes.func,

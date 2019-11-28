@@ -7,6 +7,7 @@ import { useQueryParams, setQueryParams } from 'url.js';
 import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
 import speciesDistributionLayer from 'layers/speciesDistribution';
 import currentDistributionLayer from 'layers/currentDistribution';
+import speciesOccurenceLayer from 'layers/speciesOccurence';
 
 import Component from './component';
 
@@ -24,7 +25,7 @@ const DistributionPage = props => {
   const history = useHistory();
   const currentQueryParams = useQueryParams();
 
-  const { futureScenario } = currentQueryParams;
+  const { futureScenario, currentScenario } = currentQueryParams;
   const { data } = useScenariosPerCountry(iso);
 
   const scenarios = data && data.scenarios;
@@ -33,9 +34,13 @@ const DistributionPage = props => {
 
   const activeFutureScenario =
     futureScenarios && futureScenarios.length ? futureScenario || futureScenarios[0].key : '';
-
   const setFutureScenario = sc => {
     setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);
+  };
+
+  const activeCurrentScenario = currentScenario || 'modeled';
+  const setCurrentScenario = sc => {
+    setQueryParams({ ...currentQueryParams, currentScenario: sc }, location, history);
   };
 
   const getYears = sc => {
@@ -57,6 +62,21 @@ const DistributionPage = props => {
       }, {})
     );
   }, [futureScenarios]);
+
+  const currentScenariosData = {
+    observed: {
+      name: 'observed',
+      start: 0,
+      end: 0,
+      step: 1
+    },
+    modeled: {
+      name: 'modeled',
+      start: 0,
+      end: 0,
+      step: 1
+    }
+  };
 
   const futureScenariosData =
     futureScenarios &&
@@ -103,9 +123,14 @@ const DistributionPage = props => {
   }, [iso, speciesName, activeFutureScenario, selectedYear, opacity]);
 
   const currentDistLayers = useMemo(() => {
-    const currentDistLayer = currentDistributionLayer(iso, speciesName, opacity);
-    return [currentDistLayer].map(l => ({ ...l, active: true }));
-  }, [iso, speciesName, opacity]);
+    let selectedLayer;
+    if (activeCurrentScenario === 'observed') {
+      selectedLayer = speciesOccurenceLayer(iso, speciesName, 1);
+    } else {
+      selectedLayer = currentDistributionLayer(iso, speciesName, opacity);
+    }
+    return [selectedLayer].map(l => ({ ...l, active: true }));
+  }, [iso, speciesName, opacity, activeCurrentScenario]);
 
   return (
     <Component
@@ -115,7 +140,10 @@ const DistributionPage = props => {
       setFutureScenario={setFutureScenario}
       futureScenariosData={futureScenariosData}
       futureScenariosLayers={futureDistLayers}
+      currentScenariosData={currentScenariosData}
       currentScenariosLayers={currentDistLayers}
+      activeCurrentScenario={activeCurrentScenario}
+      setCurrentScenario={setCurrentScenario}
       yearIndex={yearIndex}
       setYearIndex={setYearIndex}
       setOpacity={setOpacity}
