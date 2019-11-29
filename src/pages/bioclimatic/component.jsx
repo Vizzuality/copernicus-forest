@@ -81,28 +81,19 @@ function BioClimaticPage(props) {
           <Accordion
             activeItemId={chosenBiovar}
             setItem={item => filters.setBiovar(item.id)}
-            items={biovarsList.map((bv, i) => {
-              const chartData = sortBy(biovarsData[bv.key], 'name');
-              const chartValues = chartData.map(d => d.value);
-              const minData = Math.min(...chartValues);
-              const maxData = Math.max(...chartValues);
-              // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_2
-              const range = [
-                (minData - (maxData - minData) / 2).toFixed(0),
-                (+maxData + +(maxData - minData) / 2).toFixed(0)
-              ];
-              return {
-                title: `BIO ${i + 1} = ${bv.name}`,
-                id: bv.key,
-                data: chartData.map(d => (d.name === 1995 ? { ...d, name: 'current' } : d)),
-                config: getConfig(bv.unit, range),
-                metadata: {
-                  dataset: bv.name.replace(/ *\([^)]*\) */g, ''), // no "formulae" like (a-b)
-                  model: parsedScenario.name,
-                  unit: bv.unit
-                }
-              };
-            })}
+            items={biovarsList.map((bv, i) => ({
+              title: `BIO ${i + 1} = ${bv.name}`,
+              id: bv.key,
+              data: sortBy(biovarsData[bv.key], 'name').map(d =>
+                d.name === 1995 ? { ...d, name: 'current' } : d
+              ),
+              config: getConfig(bv.unit),
+              metadata: {
+                dataset: bv.name.replace(/ *\([^)]*\) */g, ''), // no "formulae" like (a-b)
+                model: parsedScenario.name,
+                unit: bv.unit
+              }
+            }))}
           />
         </div>
         <div className={styles.mapWrapper}>

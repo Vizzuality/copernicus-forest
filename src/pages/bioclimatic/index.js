@@ -146,19 +146,7 @@ const Container = () => {
     parsedScenarios
   };
 
-  const getChartConfig = (unit, range) => {
-    let ticks;
-    if (range[1] - range[0] <= 1) ticks = [+range[0], +range[1]];
-    else if (range[1] - range[0] <= 2)
-      ticks = [+range[0], range[1] - (range[1] - range[0]) / 2, +range[1]];
-    else
-      ticks = [
-        +range[0],
-        range[1] - (range[1] - range[0]) * 0.66,
-        range[1] - (range[1] - range[0]) * 0.33,
-        +range[1]
-      ];
-    console.log(range, ticks);
+  const getChartConfig = unit => {
     return {
       lines: [
         {
@@ -173,8 +161,8 @@ const Container = () => {
         }
       ],
       yAxis: {
-        domain: range,
-        ticks,
+        domain: ['auto', 'auto'],
+        interval: 'preserveEnd',
         customTick: true,
         tickSize: 0,
         axisLine: false,
