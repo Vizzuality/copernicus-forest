@@ -109,7 +109,7 @@ const DistributionPage = props => {
     futureScenariosData && activeFutureScenario && futureScenariosData[activeFutureScenario].years;
 
   const selectedYear = useMemo(() => years && years[yearIndex], [years, yearIndex]);
-  const speciesName = useMemo(() => activeSpecies && activeSpecies.name, [activeSpecies]);
+  const speciesName = useMemo(() => activeSpecies && activeSpecies.scientificName, [activeSpecies]);
 
   const futureDistLayers = useMemo(() => {
     const futureDistLayer = speciesDistributionLayer(
