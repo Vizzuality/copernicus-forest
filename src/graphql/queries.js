@@ -8,7 +8,7 @@ const useBuildBaseQuery = query => {
 export const useSpeciesPerCountry = iso => {
   return useBuildBaseQuery(`{
     species(where: {
-      countrySpecieDistributions_every: {
+      countrySpecieDistributions_some: {
         country: { iso: "${iso}" }
       }
     }) {
