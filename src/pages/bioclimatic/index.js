@@ -146,38 +146,42 @@ const Container = () => {
     parsedScenarios
   };
 
-  const getChartConfig = unit => ({
-    lines: [
-      {
-        key: 'value',
-        color: styles.colorPink
-      }
-    ],
-    areas: [
-      {
-        key: 'value',
-        color: styles.colorPink
-      }
-    ],
-    yAxis: {
-      customTick: true,
-      tickSize: 0,
-      axisLine: false,
-      content: <Label value={unit} position="insideTop" dx={6} dy={-40} fill="#222" />
-    },
-    xAxis: {
-      customTick: true,
-      tickSize: 0,
-      padding: { left: -30, right: -30 }
-    },
-    grid: {
-      vertical: false
-    },
-    composedChart: {
-      margin: { top: 40, right: 40, left: 0, bottom: 0 }
-    },
-    height: 300
-  });
+  const getChartConfig = unit => {
+    return {
+      lines: [
+        {
+          key: 'value',
+          color: styles.colorPink
+        }
+      ],
+      areas: [
+        {
+          key: 'value',
+          color: styles.colorPink
+        }
+      ],
+      yAxis: {
+        domain: ['auto', 'auto'],
+        interval: 'preserveEnd',
+        customTick: true,
+        tickSize: 0,
+        axisLine: false,
+        content: <Label value={unit} position="insideTop" dx={6} dy={-40} fill="#222" />
+      },
+      xAxis: {
+        customTick: true,
+        tickSize: 0,
+        padding: { left: -30, right: -30 }
+      },
+      grid: {
+        vertical: false
+      },
+      composedChart: {
+        margin: { top: 40, right: 40, left: 0, bottom: 0 }
+      },
+      height: 300
+    };
+  };
 
   if (chosenStartYear && chosenEndYear && country && chosenScenario) {
     return (

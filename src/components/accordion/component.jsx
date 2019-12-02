@@ -55,7 +55,15 @@ function Accordion(props) {
                   <MiniChart
                     className="accordion-minichart"
                     data={item.data}
-                    config={{ area, height: 25 }}
+                    config={{
+                      area,
+                      height: 25,
+                      yAxis: {
+                        domain: item.config.yAxis.domain,
+                        ticks: item.config.yAxis.ticks,
+                        customTick: true
+                      }
+                    }}
                   />
                 )}
                 <Icon name="icon-expand" className={cx('expand-icon', { __open: isActive })} />
@@ -79,7 +87,9 @@ function Accordion(props) {
 }
 
 Accordion.propTypes = {
-  items: PropTypes.array
+  items: PropTypes.array,
+  setItem: PropTypes.func,
+  activeItemId: PropTypes.string
 };
 
 export default Accordion;

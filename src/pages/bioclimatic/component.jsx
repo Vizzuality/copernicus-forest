@@ -153,7 +153,8 @@ BioClimaticPage.propTypes = {
   country: PropTypes.string,
   yearIndex: PropTypes.number,
   setYearIndex: PropTypes.func,
-  fetching: PropTypes.bool
+  fetching: PropTypes.bool,
+  opacity: PropTypes.number
 };
 
 export default BioClimaticPage;

@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AreaChart, Area, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, YAxis, ResponsiveContainer } from 'recharts';
 import cx from 'classnames';
 import './styles.scss';
 
 function MiniChart({ className, data, config }) {
-  const { height, area } = config;
+  const { height, area, yAxis } = config;
   return (
     <div className={cx('c-minichart', className)}>
       <ResponsiveContainer width="100%" height={height || 50}>
@@ -19,6 +19,7 @@ function MiniChart({ className, data, config }) {
             fill={area.color}
             {...area}
           />
+          <YAxis {...yAxis} hide />
         </AreaChart>
       </ResponsiveContainer>
     </div>

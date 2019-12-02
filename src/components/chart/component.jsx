@@ -48,7 +48,7 @@ const CustomTooltip = props => {
                 <circle cx="3" cy="3" r="3" strokeWidth="0" fill={p.stroke || p.fill} />
               </svg>
               <span className="value">{`${model || p.name}: ${
-                p.value && p.value.toFixed ? p.value.toFixed(1) : p.value
+                p.value && p.value.toFixed ? p.value.toFixed(2) : p.value
               }${p.unit || unit || ''}`}</span>
             </p>
           ))}
@@ -65,10 +65,15 @@ CustomTooltip.propTypes = {
 function CustomTick(props) {
   const { payload, index, y, ticks, unit, orientation } = props;
   const isY = orientation === 'vertical';
+  let value;
+  // eslint-disable-next-line no-restricted-globals
+  if (isNaN(Number(payload.value))) value = payload.value;
+  else if (payload.value > 100) value = payload.value.toFixed(0);
+  else value = payload.value.toFixed(2);
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <text {...props} y={isY ? y + 4 : y + 20} fill="#222222" dx={isY ? -16 : 0}>
-      {payload.value}
+      {value}
       {((ticks && ticks.length && index === ticks.length - 1) || // last tick or
         props.index >= 4) && // def bigger than 4 (accordion) -> add unit
         unit}
