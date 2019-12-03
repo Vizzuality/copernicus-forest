@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
+import ReactTooltip from 'react-tooltip';
 import cx from 'classnames';
 import Icon from 'components/icon';
+import OpacityModal from './opacity-modal';
+
 import styles from './styles.module.scss';
 
 const RampLegend = ({
@@ -18,7 +21,7 @@ const RampLegend = ({
   // handleOpacity
 }) => {
   const [legendOpen, toggleLegend] = useState(true);
-
+  const tooltipRef = useRef(null);
   return (
     <div className={styles.legendContainer}>
       {legendOpen && (
@@ -56,9 +59,29 @@ const RampLegend = ({
             <button className={styles.button}>
               <Icon name="icon-info" />
             </button>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              data-for="opacityTooltip"
+              data-tip=""
+              data-place="top"
+            >
               <Icon name="icon-opacity" />
             </button>
+            <ReactTooltip
+              id="opacityTooltip"
+              ref={tooltipRef}
+              clickable
+              className="opacityTooltip"
+              effect="solid"
+              globalEventOff="click"
+              event="click"
+              place="top"
+              //   afterShow={() => setToggleLayerActive(true)}
+              //   afterHide={() => setToggleLayerActive(false)}
+              offset={{ right: 68, top: 60 }} // bottom: 240px/2 - 45px/2 = 98px <=> (modal height / 2) - (toggle button height / 2), right: 1 <=> avoid overlapping modal with button border
+            >
+              <OpacityModal>jajco</OpacityModal>
+            </ReactTooltip>
           </div>
         </div>
       )}

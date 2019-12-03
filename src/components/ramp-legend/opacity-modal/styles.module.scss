@@ -1,0 +1,33 @@
+@import '~styles/settings';
+// @import '../../styles.scss';
+
+.opacityModal {
+  align-items: center;
+  display: flex;
+  height: 46px;
+  padding: 24px;
+  width: 330px;
+}
+
+.title {
+  color: $color-gray-1;
+  font-size: $font-size-big;
+  user-select: none;
+}
+
+:global {
+  .opacityTooltip {
+    color: $color-gray-1 !important;
+    background-color: $color-background !important;
+    border: 1px solid $color-black;
+    border-bottom: none;
+    border-radius: 0;
+    margin-left: 0 !important;
+    padding: 0;
+    opacity: 1 !important;
+  
+    &:before, &:after {
+      display: none;
+    }
+  }
+}
