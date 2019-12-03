@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip';
 import cx from 'classnames';
@@ -23,7 +23,6 @@ const RampLegend = ({
   const [legendOpen, toggleLegend] = useState(true);
   const [opacityModalOpen, setOpacityModalOpen] = useState(false);
 
-  const tooltipRef = useRef(null);
   return (
     <div className={styles.legendContainer}>
       {legendOpen && (
@@ -72,7 +71,6 @@ const RampLegend = ({
             </button>
             <ReactTooltip
               id="opacityTooltip"
-              ref={tooltipRef}
               clickable
               className="opacityTooltip"
               effect="solid"
@@ -81,7 +79,7 @@ const RampLegend = ({
               place="top"
               afterShow={() => setOpacityModalOpen(true)}
               afterHide={() => setOpacityModalOpen(false)}
-              offset={{ right: 68, top: 60 }} // bottom: 240px/2 - 45px/2 = 98px <=> (modal height / 2) - (toggle button height / 2), right: 1 <=> avoid overlapping modal with button border
+              offset={{ right: 68, top: 60 }}
             >
               <OpacityModal>jajco</OpacityModal>
             </ReactTooltip>
