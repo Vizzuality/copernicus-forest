@@ -4,7 +4,7 @@ import { useLocation, useHistory } from 'react-router-dom';
 import { uniqBy, sortBy } from 'lodash';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
-import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
+import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY } from 'constants.js';
 import speciesDistributionLayer from 'layers/speciesDistribution';
 import currentDistributionLayer from 'layers/currentDistribution';
 import speciesOccurenceLayer from 'layers/speciesOccurence';
@@ -13,7 +13,6 @@ import Component from './component';
 
 const DistributionPage = props => {
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
-  const [opacity, setOpacity] = useState(0.6);
   const [yearIndex, setYearIndex] = useState(0);
 
   const { match, activeSpecies } = props;
@@ -25,7 +24,7 @@ const DistributionPage = props => {
   const history = useHistory();
   const currentQueryParams = useQueryParams();
 
-  const { futureScenario, currentScenario } = currentQueryParams;
+  const { futureScenario, currentScenario, opacity } = currentQueryParams;
   const { data } = useScenariosPerCountry(iso);
 
   const scenarios = data && data.scenarios;
@@ -42,6 +41,10 @@ const DistributionPage = props => {
   const setCurrentScenario = sc => {
     setQueryParams({ ...currentQueryParams, currentScenario: sc }, location, history);
   };
+
+  const layerOpacity = useMemo(() => {
+    return opacity && Number(opacity) ? Number(opacity) / 100 : DEFAULT_LAYER_OPACITY / 100;
+  }, [opacity]);
 
   const getYears = sc => {
     const scenarioYears = sc.countryBiovarDistributions;
@@ -117,20 +120,20 @@ const DistributionPage = props => {
       speciesName,
       activeFutureScenario,
       selectedYear,
-      opacity
+      layerOpacity
     );
     return [futureDistLayer].map(l => ({ ...l, active: true }));
-  }, [iso, speciesName, activeFutureScenario, selectedYear, opacity]);
+  }, [iso, speciesName, activeFutureScenario, selectedYear, layerOpacity]);
 
   const currentDistLayers = useMemo(() => {
     let selectedLayer;
     if (activeCurrentScenario === 'observed') {
       selectedLayer = speciesOccurenceLayer(iso, speciesName, 1);
     } else {
-      selectedLayer = currentDistributionLayer(iso, speciesName, opacity);
+      selectedLayer = currentDistributionLayer(iso, speciesName, layerOpacity);
     }
     return [selectedLayer].map(l => ({ ...l, active: true }));
-  }, [iso, speciesName, opacity, activeCurrentScenario]);
+  }, [iso, speciesName, layerOpacity, activeCurrentScenario]);
 
   return (
     <Component
@@ -146,7 +149,6 @@ const DistributionPage = props => {
       setCurrentScenario={setCurrentScenario}
       yearIndex={yearIndex}
       setYearIndex={setYearIndex}
-      setOpacity={setOpacity}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
     />

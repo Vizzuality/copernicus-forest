@@ -21,6 +21,8 @@ const RampLegend = ({
   // handleOpacity
 }) => {
   const [legendOpen, toggleLegend] = useState(true);
+  const [opacityModalOpen, setOpacityModalOpen] = useState(false);
+
   const tooltipRef = useRef(null);
   return (
     <div className={styles.legendContainer}>
@@ -64,6 +66,7 @@ const RampLegend = ({
               data-for="opacityTooltip"
               data-tip=""
               data-place="top"
+              style={{ backgroundColor: opacityModalOpen ? '#EDECEA ' : 'white' }}
             >
               <Icon name="icon-opacity" />
             </button>
@@ -76,8 +79,8 @@ const RampLegend = ({
               globalEventOff="click"
               event="click"
               place="top"
-              //   afterShow={() => setToggleLayerActive(true)}
-              //   afterHide={() => setToggleLayerActive(false)}
+              afterShow={() => setOpacityModalOpen(true)}
+              afterHide={() => setOpacityModalOpen(false)}
               offset={{ right: 68, top: 60 }} // bottom: 240px/2 - 45px/2 = 98px <=> (modal height / 2) - (toggle button height / 2), right: 1 <=> avoid overlapping modal with button border
             >
               <OpacityModal>jajco</OpacityModal>

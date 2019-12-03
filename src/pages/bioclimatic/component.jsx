@@ -135,7 +135,6 @@ function BioClimaticPage(props) {
             colorRamp={rampColors} // purple
             lowEndName="Low"
             highEndName="High"
-            // handleOpacity={o => return o}
           />
         </div>
       </div>

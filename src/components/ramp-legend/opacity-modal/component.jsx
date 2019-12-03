@@ -2,6 +2,7 @@
 import React from 'react';
 import Slider from 'rc-slider';
 import PropTypes from 'prop-types';
+import { DEFAULT_LAYER_OPACITY } from 'constants.js';
 
 import styles from './styles.module.scss';
 
@@ -12,7 +13,6 @@ const OpacityModalComponent = ({ handleChangeOpacity, layerOpacity }) => {
       borderRadius: '0',
       border: '2px solid #313131',
       height: '12px',
-      // transform: 'translateX(10%)',
       width: '6px',
       zIndex: 2
     },
@@ -34,7 +34,7 @@ const OpacityModalComponent = ({ handleChangeOpacity, layerOpacity }) => {
       <Slider
         min={0}
         max={100}
-        defaultValue={60}
+        defaultValue={DEFAULT_LAYER_OPACITY}
         onChange={handleChangeOpacity}
         className={styles.slider}
         {...sliderStyles}
