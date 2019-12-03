@@ -15,6 +15,10 @@
   user-select: none;
 }
 
+.slider {
+  margin: 0 8px;
+}
+
 :global {
   .opacityTooltip {
     color: $color-gray-1 !important;
@@ -28,6 +32,10 @@
   
     &:before, &:after {
       display: none;
+    }
+
+    .rc-slider-handle {
+      transform: translate(2px, 2px) !important; //it's a workaround, it doesn't work when we define `translate` function in `handleStyle`
     }
   }
 }

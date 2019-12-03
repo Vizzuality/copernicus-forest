@@ -5,16 +5,14 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.scss';
 
-const OpacityModalComponent = ({ handleChangeOpacity }) => {
+const OpacityModalComponent = ({ handleChangeOpacity, layerOpacity }) => {
   const sliderStyles = {
     handleStyle: {
       backgroundColor: '#5C5C5C',
       borderRadius: '0',
-      border: '2px solid white',
-      borderTopWidth: '5px',
-      borderBottomWidth: '5px',
-      height: '16px',
-      transform: 'translateX(2px)',
+      border: '2px solid #313131',
+      height: '12px',
+      // transform: 'translateX(10%)',
       width: '6px',
       zIndex: 2
     },
@@ -24,7 +22,7 @@ const OpacityModalComponent = ({ handleChangeOpacity }) => {
       height: '6px'
     },
     railStyle: {
-      backgroundColor: '#5C5C5C',
+      backgroundColor: '#999999',
       borderRadius: '0',
       height: '6px'
     }
@@ -33,14 +31,22 @@ const OpacityModalComponent = ({ handleChangeOpacity }) => {
   return (
     <div className={styles.opacityModal}>
       <span className={styles.title}>Opacity</span>
-      <Slider min={0} max={100} defaultValue={60} handle={handleChangeOpacity} {...sliderStyles} />
-      <span className={styles.value}>%</span>
+      <Slider
+        min={0}
+        max={100}
+        defaultValue={60}
+        onChange={handleChangeOpacity}
+        className={styles.slider}
+        {...sliderStyles}
+      />
+      <span className={styles.value}>{layerOpacity}%</span>
     </div>
   );
 };
 
 OpacityModalComponent.propTypes = {
-  handleChangeOpacity: PropTypes.func
+  handleChangeOpacity: PropTypes.func,
+  layerOpacity: PropTypes.number
 };
 
 export default OpacityModalComponent;
