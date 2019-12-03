@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'rc-slider';
 import PropTypes from 'prop-types';
 import { DEFAULT_LAYER_OPACITY } from 'constants.js';
@@ -7,6 +7,8 @@ import { DEFAULT_LAYER_OPACITY } from 'constants.js';
 import styles from './styles.module.scss';
 
 const OpacityModalComponent = ({ handleChangeOpacity, layerOpacity }) => {
+  const [currentOpacity, setCurrentOpacity] = useState(layerOpacity || DEFAULT_LAYER_OPACITY);
+
   const sliderStyles = {
     handleStyle: {
       backgroundColor: '#5C5C5C',
@@ -30,16 +32,17 @@ const OpacityModalComponent = ({ handleChangeOpacity, layerOpacity }) => {
 
   return (
     <div className={styles.opacityModal}>
-      <span className={styles.title}>Opacity</span>
+      <span>Opacity</span>
       <Slider
+        className={styles.slider}
         min={0}
         max={100}
-        defaultValue={DEFAULT_LAYER_OPACITY}
-        onChange={handleChangeOpacity}
-        className={styles.slider}
+        defaultValue={layerOpacity || DEFAULT_LAYER_OPACITY}
+        onChange={value => setCurrentOpacity(value)} // updates the 'currentOpacity' text each time when user will move the slider handler
+        onAfterChange={handleChangeOpacity} // updates URL and layer's opacity only when 'ontouchend' or 'onmouseup' events is triggered
         {...sliderStyles}
       />
-      <span className={styles.value}>{layerOpacity}%</span>
+      <span>{currentOpacity}%</span>
     </div>
   );
 };

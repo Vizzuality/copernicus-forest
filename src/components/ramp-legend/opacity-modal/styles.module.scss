@@ -3,15 +3,12 @@
 
 .opacityModal {
   align-items: center;
+  color: $color-gray-1;
+  font-size: $font-size-big;
   display: flex;
   height: 46px;
   padding: 24px;
   width: 330px;
-}
-
-.title {
-  color: $color-gray-1;
-  font-size: $font-size-big;
   user-select: none;
 }
 
@@ -35,7 +32,7 @@
     }
 
     .rc-slider-handle {
-      transform: translate(2px, 2px) !important; //it's a workaround, it doesn't work when we define `translate` function in `handleStyle`
+      transform: translate(2px, 2px) !important; // it's a workaround, `translate` doesn't work when we explicitly pass it through `handleStyle` prop
     }
   }
 }
