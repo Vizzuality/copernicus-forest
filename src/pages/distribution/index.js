@@ -8,6 +8,7 @@ import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
 import speciesDistributionLayer from 'layers/speciesDistribution';
 import currentDistributionLayer from 'layers/currentDistribution';
 import speciesOccurenceLayer from 'layers/speciesOccurence';
+import urbanLayer from 'layers/urban';
 
 import Component from './component';
 
@@ -129,7 +130,8 @@ const DistributionPage = props => {
     } else {
       selectedLayer = currentDistributionLayer(iso, speciesName, opacity);
     }
-    return [selectedLayer].map(l => ({ ...l, active: true }));
+    const z = urbanLayer();
+    return [].map(l => ({ ...l, active: true }));
   }, [iso, speciesName, opacity, activeCurrentScenario]);
 
   return (

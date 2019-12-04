@@ -32,7 +32,31 @@ const DistributionPageComponent = ({
   return (
     <div className={styles.distribution}>
       <Map viewport={viewport} setViewport={setViewport}>
-        {map => (
+      {map => {
+          map.addLayer({
+            'id': 'urban-world',
+            'type': 'raster',
+            'source': {
+              'type': 'raster',
+              "tiles": ["https://storage.cloud.google.com/forest-forward/tilesets/urbanWorld/{z}/{x}/{y}.png"],
+              "tileSize": 1,
+              },
+              minzoom: 0,
+              maxzoom: 12
+            // 'layout': {},
+            // 'paint': {
+            // 'fill-color': '#f08',
+            // 'fill-opacity': 0.4
+            // }
+            // This is the important part of this example: the addLayer
+            // method takes 2 arguments: the layer as an object, and a string
+            // representing another layer's name. if the other layer
+            // exists in the stylesheet already, the new layer will be positioned
+            // right before that layer in the stack, making it possible to put
+            // 'overlays' anywhere in the layer stack.
+            // Insert the layer beneath the first symbol layer.
+            });
+          return (
           <LayerManager map={map} plugin={PluginMapboxGl}>
             {currentScenariosLayers
               .filter(l => l.active)
@@ -42,20 +66,22 @@ const DistributionPageComponent = ({
                 return <Layer key={layer.id} {...layer} />;
               })}
           </LayerManager>
-        )}
+        )}}
       </Map>
       <Map viewport={viewport} setViewport={setViewport} customClass="mapCustomClass">
-        {map => (
-          <LayerManager map={map} plugin={PluginMapboxGl}>
-            {futureScenariosLayers
-              .filter(l => l.active)
-              .map(layer => {
-                // TODO: fix all eslint-disables
-                // eslint-disable-next-line react/jsx-props-no-spreading
-                return <Layer key={layer.id} {...layer} />;
-              })}
-          </LayerManager>
-        )}
+        {map => {
+
+          return (
+            <LayerManager map={map} plugin={PluginMapboxGl}>
+              {futureScenariosLayers
+                .filter(l => l.active)
+                .map(layer => {
+                  // TODO: fix all eslint-disables
+                  // eslint-disable-next-line react/jsx-props-no-spreading
+                  return <Layer key={layer.id} {...layer} />;
+                })}
+            </LayerManager>
+        )}}
       </Map>
       <Timeline
         className={styles.futureScenariosTimeline}
