@@ -55,3 +55,5 @@ export const TEMPERATURE_RAMP_COLORS = ['#FEF6B5', '#FFA679', '#E15383']; // [mi
 export const PERCIPITATION_RAMP_COLORS = ['#A6BDDB', '#3690C0', '#034E7B']; // [min, mid, max]
 
 export const MAPBOX_STYLE_DEFAULT = 'mapbox://styles/copernicus-forests/ck3eh5kj049be1cobcp1uh4vn';
+
+export const DEFAULT_LAYER_OPACITY = 60;

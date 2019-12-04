@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect, useState } from 'react';
 import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
-import { COUNTRIES_DEFAULT_VIEWPORTS } from 'constants.js';
+import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY } from 'constants.js';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { Query } from 'urql';
 import { Label } from 'recharts';
@@ -23,13 +23,16 @@ const Container = () => {
   const match = useRouteMatch('/:country');
   const location = useLocation();
   const history = useHistory();
-  const [opacity, setOpacity] = useState(0.6);
 
   const { country } = (match && match.params) || {};
   const currentQueryParams = useQueryParams();
-  const { startYear, endYear, scenario, biovar } = currentQueryParams;
+  const { startYear, endYear, scenario, biovar, opacity } = currentQueryParams;
   const [viewport, setViewport] = useState({ zoom: 4, latitude: 40, longitude: -5 });
   const [yearIndex, setYearIndex] = useState(0);
+
+  const layerOpacity = useMemo(() => {
+    return opacity && Number(opacity) ? Number(opacity) / 100 : DEFAULT_LAYER_OPACITY / 100;
+  }, [opacity]);
 
   // graphql
   const { data } = useScenariosPerCountry(country);
@@ -216,8 +219,7 @@ const Container = () => {
             yearIndex={yearIndex}
             setYearIndex={setYearIndex}
             fetching={fetching}
-            opacity={opacity}
-            setOpacity={setOpacity}
+            opacity={layerOpacity}
           />
         )}
       </Query>
