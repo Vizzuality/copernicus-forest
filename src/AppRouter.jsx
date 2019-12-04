@@ -32,7 +32,7 @@ function AppRouter() {
               />
               <Route path="/:iso/species/:id?" component={SpeciesDistributionComponent} />
               <Route path="/:iso/distribution/:id?" component={SpeciesDistributionComponent} />
-              <Route path="/:iso/bioclimatic(/:id?)" component={BioclimaticPage} />
+              <Route path="/:iso/bioclimatic/:id?" component={BioclimaticPage} />
             </Switch>
           </Suspense>
         </div>
