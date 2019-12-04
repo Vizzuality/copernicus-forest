@@ -22,7 +22,7 @@ const SpeciesDistribution = () => {
 
   useEffect(() => {
     if (species && species.length && !id) {
-      history.push(`${pathname}${species[0].id}`);
+      history.push(`${pathname}/${species[0].id}`);
     }
   }, [history, id, pathname, species]);
 
@@ -38,14 +38,14 @@ const SpeciesDistribution = () => {
     {
       name: 'Species summary',
       path: urls.species,
-      active: pathname.includes('/species/'),
+      active: pathname.includes('/species'),
       page: 'species',
       component: Species
     },
     {
       name: 'Map distribution',
       path: urls.distribution,
-      active: pathname.includes('/distribution/'),
+      active: pathname.includes('/distribution'),
       page: 'distribution',
       component: Distribution
     }
