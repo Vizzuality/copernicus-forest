@@ -58,7 +58,7 @@ const CustomTooltip = props => {
 
 CustomTooltip.propTypes = {
   payload: PropTypes.array,
-  label: PropTypes.string,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   metadata: PropTypes.object
 };
 

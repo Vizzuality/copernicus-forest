@@ -12,9 +12,9 @@ const Header = () => {
   const isSpeciesDistribution = ['species', 'distribution'].includes(type);
 
   const urls = {
-    species: type === 'species' ? '#' : `/${country}/species/`,
-    distribution: type === 'distribution' ? '#' : `/${country}/distribution/`,
-    bioclimatic: type === 'bioclimatic' ? '#' : `/${country}/bioclimatic/`
+    species: type === 'species' ? '#' : `/${country}/species`,
+    distribution: type === 'distribution' ? '#' : `/${country}/distribution`,
+    bioclimatic: type === 'bioclimatic' ? '#' : `/${country}/bioclimatic`
   };
 
   return (

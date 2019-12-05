@@ -47,7 +47,7 @@ function HomePage() {
                   <div className={styles.row}>
                     {COUNTRIES.map(country => (
                       <div key={country.name} style={{ gridArea: country.name }}>
-                        <Link className={styles.imageLink} to={`/${country.iso}/distribution/`}>
+                        <Link className={styles.imageLink} to={`/${country.iso}/distribution`}>
                           <img
                             className={styles['shape__no-hover']}
                             src={country.svg}

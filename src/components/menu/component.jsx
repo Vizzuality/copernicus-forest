@@ -34,14 +34,12 @@ function Menu({ closeMenu, active }) {
     {
       name: 'Species distribution data',
       key: 'species',
-      path: '/SWE/distribution/',
       content: `Species distribution models combine information on species occurrence with environmental characteristics to estimate
         the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`
     },
     {
       name: 'Bioclimatic variables data',
       key: 'bioclimatic',
-      path: '/SWE/bioclimatic/',
       content: `Bioclimatic variables derived from Copernicus describing temperature and precipitation annual tendencies, seasonality
         and extreme climatic conditions, including a combination of both environmental factors for current and future scenarios.`
     }
