@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import ReactTooltip from 'react-tooltip';
 import cx from 'classnames';
 import Icon from 'components/icon';
+import OpacityModal from './opacity-modal';
+
 import styles from './styles.module.scss';
 
 const RampLegend = ({
@@ -18,6 +21,7 @@ const RampLegend = ({
   // handleOpacity
 }) => {
   const [legendOpen, toggleLegend] = useState(true);
+  const [opacityModalOpen, setOpacityModalOpen] = useState(false);
 
   return (
     <div className={styles.legendContainer}>
@@ -56,9 +60,29 @@ const RampLegend = ({
             <button className={styles.button}>
               <Icon name="icon-info" />
             </button>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              data-for="opacityTooltip"
+              data-tip=""
+              data-place="top"
+              style={{ backgroundColor: opacityModalOpen ? '#EDECEA ' : 'white' }}
+            >
               <Icon name="icon-opacity" />
             </button>
+            <ReactTooltip
+              id="opacityTooltip"
+              clickable
+              className="opacityTooltip"
+              effect="solid"
+              globalEventOff="click"
+              event="click"
+              place="top"
+              afterShow={() => setOpacityModalOpen(true)}
+              afterHide={() => setOpacityModalOpen(false)}
+              offset={{ right: 68, top: 60 }}
+            >
+              <OpacityModal>jajco</OpacityModal>
+            </ReactTooltip>
           </div>
         </div>
       )}

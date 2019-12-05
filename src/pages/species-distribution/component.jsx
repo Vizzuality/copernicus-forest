@@ -39,7 +39,7 @@ const SpeciesDistributionComponent = props => {
         />
         {activeSpecies && (
           <SpeciesList
-            species={species}
+            species={species.filter(s => s.id !== activeSpecies.id)}
             country={activeCountry}
             activeSpecies={activeSpecies}
             page={activePage}

@@ -26,8 +26,7 @@ const DistributionPageComponent = ({
   activeCurrentScenario,
   setCurrentScenario,
   yearIndex,
-  setYearIndex,
-  setOpacity
+  setYearIndex
 }) => {
   return (
     <div className={styles.distribution}>
@@ -87,7 +86,6 @@ const DistributionPageComponent = ({
         middleName="Uncertain"
         highEndName="Agreed presence"
         activeSpecies={speciesListVisible ? '' : activeSpecies}
-        handleOpacity={o => setOpacity(o)}
       />
     </div>
   );
@@ -107,8 +105,7 @@ DistributionPageComponent.propTypes = {
   currentScenariosData: PropTypes.object,
   currentScenariosLayers: PropTypes.array,
   yearIndex: PropTypes.number,
-  setYearIndex: PropTypes.func,
-  setOpacity: PropTypes.func
+  setYearIndex: PropTypes.func
 };
 
 export default DistributionPageComponent;
