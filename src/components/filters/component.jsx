@@ -14,6 +14,7 @@ const FiltersComponent = ({
   endYear,
   enabledEndYears,
   scenario,
+  downloadUrl,
   parsedScenarios
 }) => {
   return (
@@ -49,16 +50,19 @@ const FiltersComponent = ({
           />
         )}
       </div>
-      <div className={styles.rightAlign}>
-        <button onClick={() => {}} className={styles.button}>
-          <Icon name="icon-download" className={styles.icon} />
-        </button>
-      </div>
+      {downloadUrl && (
+        <div className={styles.rightAlign}>
+          <a href={downloadUrl} target="_blank" rel="noopener noreferrer" className={styles.button}>
+            <Icon name="icon-download" className={styles.icon} />
+          </a>
+        </div>
+      )}
     </div>
   );
 };
 
 FiltersComponent.propTypes = {
+  downloadUrl: PropTypes.string,
   startYear: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   setStartYear: PropTypes.func,
   setEndYear: PropTypes.func,

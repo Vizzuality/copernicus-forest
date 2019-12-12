@@ -12,6 +12,7 @@ const SpeciesDistributionComponent = props => {
   const {
     match,
     wikiInfo,
+    downloadUrl,
     activeSpecies,
     species,
     activeCountry,
@@ -57,11 +58,13 @@ const SpeciesDistributionComponent = props => {
             <Icon name="icon-arrow-left" />
           </button>
           <TabsBar data={speciesTabsData} />
-          <div className={styles.downloadBtnContainer}>
-            <button onClick={() => {}} className={styles.downloadBtn}>
-              <Icon name="icon-download" />
-            </button>
-          </div>
+          {downloadUrl && (
+            <div className={styles.downloadBtnContainer}>
+              <button onClick={() => {}} className={styles.downloadBtn}>
+                <Icon name="icon-download" />
+              </button>
+            </div>
+          )}
         </div>
         <ContentComponent
           match={match}
@@ -91,6 +94,7 @@ SpeciesDistributionComponent.propTypes = {
   ContentComponent: PropTypes.func,
   speciesListVisible: PropTypes.bool,
   toggleSpeciesList: PropTypes.func,
+  downloadUrl: PropTypes.string,
   activePage: PropTypes.string
 };
 

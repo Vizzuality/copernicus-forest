@@ -85,6 +85,7 @@ function BioClimaticPage(props) {
         <div className={styles.bioclimaticChart}>
           <Accordion
             activeItemId={chosenBiovar}
+            scrollKey={country}
             setItem={item => filters.setBiovar(item.id)}
             items={biovarsList.map((bv, i) => ({
               title: `BIO ${i + 1} = ${bv.name}`,
