@@ -44,17 +44,16 @@ function BioClimaticPage(props) {
     filters.biovar
   ]);
 
-  const chosenBiovarList = biovarsList.find(({ key }) => key === chosenBiovar);
-  const biovarName = (chosenBiovarList && chosenBiovarList.name.split('(', 1)) || '';
+  const chosenBiovarItem = biovarsList.find(({ key }) => key === chosenBiovar);
 
   const years = scenario && timelineData && timelineData[scenario] && timelineData[scenario].years;
 
   const biovarNumber = chosenBiovar && Number(chosenBiovar.replace('biovar', ''));
   const rampColors = biovarNumber >= 12 ? PERCIPITATION_RAMP_COLORS : TEMPERATURE_RAMP_COLORS; // change colors ramp, depending on the selected biovar
 
+  const buckets = fetching ? [] : getBuckets(biovarsData[chosenBiovar]);
   const bioclimaticLayers = useMemo(() => {
     if (fetching) return [];
-    const buckets = getBuckets(biovarsData[chosenBiovar]);
     const layer = bioclimaticLayer(
       country,
       scenario,
@@ -72,6 +71,12 @@ function BioClimaticPage(props) {
   const modalOpenedBefore = sessionStorage.getItem('bioclimatic');
   const [isModalOpen, setModalOpen] = useState(!modalOpenedBefore);
 
+  const lowEndValue =
+    buckets[0] && chosenBiovarItem ? `${buckets[0].toFixed(1)} ${chosenBiovarItem.unit}` : null;
+  const highEndValue =
+    buckets[buckets.length - 1] && chosenBiovarItem
+      ? `${buckets[buckets.length - 1].toFixed(1)} ${chosenBiovarItem.unit}`
+      : null;
   return (
     <div className={cx(styles.bioclimatic, 'l-page')}>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
@@ -131,10 +136,12 @@ function BioClimaticPage(props) {
             handleClose={() => setModalOpen(false)}
           />
           <RampLegend
-            title={biovarName}
+            title={`BIO ${biovarNumber + 1}`}
             colorRamp={rampColors} // purple
             lowEndName="Low"
             highEndName="High"
+            lowEndValue={lowEndValue}
+            highEndValue={highEndValue}
           />
         </div>
       </div>
