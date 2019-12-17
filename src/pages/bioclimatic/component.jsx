@@ -137,7 +137,7 @@ function BioClimaticPage(props) {
             handleClose={() => setModalOpen(false)}
           />
           <RampLegend
-            title={`BIO ${biovarNumber + 1}`}
+            title={`BIO ${biovarNumber}`}
             colorRamp={rampColors} // purple
             lowEndName="Low"
             highEndName="High"
