@@ -42,7 +42,7 @@ function CountriesDropdown() {
         className={cx(styles.countryButton, { [styles.countryButtonActive]: countrySelectorOpen })}
         onClick={toggleCountryDropdown}
       >
-        <span className={styles.title}>{activeCountry.name}</span>
+        <span className={styles.title}>{activeCountry ? activeCountry.name : null}</span>
         <Icon name="icon-dropdown" className={styles.expandIcon} />
       </button>
       {countrySelectorOpen && (

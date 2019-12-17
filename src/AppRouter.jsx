@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Provider, createClient } from 'urql';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Icons from 'components/icons';
 import './App.scss';
 
@@ -24,6 +24,12 @@ function AppRouter() {
             <Header />
             <Switch>
               <Route path="/" exact component={HomePage} />
+              <Redirect
+                from="/:iso"
+                exact
+                to="/:iso/distribution/:id?"
+                component={SpeciesDistributionComponent}
+              />
               <Route path="/:iso/species/:id?" component={SpeciesDistributionComponent} />
               <Route path="/:iso/distribution/:id?" component={SpeciesDistributionComponent} />
               <Route path="/:iso/bioclimatic/:id?" component={BioclimaticPage} />
