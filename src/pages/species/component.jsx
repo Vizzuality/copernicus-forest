@@ -118,7 +118,7 @@ function SpeciesPage({ match }) {
                 <Chart
                   data={activeSpeciesData}
                   config={config}
-                  metadata={{ dataset: activeSpecies.name, unit: activeSpecies.unit || '%' }}
+                  metadata={{ dataset: 'Suitable area', unit: activeSpecies.unit || '%' }}
                 />
               </div>
             )}
