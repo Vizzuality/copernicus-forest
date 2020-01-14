@@ -18,7 +18,9 @@ const DistributionPage = props => {
   const { match, activeSpecies } = props;
   const { iso } = (match && match.params) || {};
 
-  useEffect(() => setViewport(COUNTRIES_DEFAULT_VIEWPORTS[iso]), [iso]);
+  useEffect(() => {
+    setViewport(COUNTRIES_DEFAULT_VIEWPORTS[iso]);
+  }, [iso]);
 
   const location = useLocation();
   const history = useHistory();

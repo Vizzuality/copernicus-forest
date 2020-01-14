@@ -7,9 +7,13 @@ import MiniChart from 'components/minichart';
 import Chart from 'components/chart';
 import styles from './styles.scss';
 
-function useScrollToActiveItem() {
+function useScrollToActiveItem(scrollKey) {
   const list = useRef(null);
   const hasBeenSet = useRef(null);
+  useEffect(() => {
+    hasBeenSet.current = false;
+  }, [scrollKey]);
+
   useEffect(() => {
     const item = list.current.querySelector('.js--active');
     if (list.current && !hasBeenSet.current && item) {
@@ -22,8 +26,8 @@ function useScrollToActiveItem() {
   return list;
 }
 function Accordion(props) {
-  const { items, setItem, activeItemId } = props;
-  const listRef = useScrollToActiveItem();
+  const { items, setItem, activeItemId, scrollKey } = props;
+  const listRef = useScrollToActiveItem(scrollKey);
   const [hoveredItem, setHover] = useState(null);
 
   return (
@@ -89,6 +93,7 @@ function Accordion(props) {
 Accordion.propTypes = {
   items: PropTypes.array,
   setItem: PropTypes.func,
+  scrollKey: PropTypes.string,
   activeItemId: PropTypes.string
 };
 

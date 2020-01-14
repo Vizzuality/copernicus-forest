@@ -51,7 +51,7 @@ function CountriesDropdown() {
             <Link
               key={country.iso}
               className={styles.imageLink}
-              to={`/${country.iso}/${page}/`}
+              to={`/${country.iso}/${page}`}
               onClick={toggleCountryDropdown}
             >
               <img className={styles['shape__no-hover']} src={country.svg} alt={country.name} />
