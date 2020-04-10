@@ -1,90 +1,188 @@
 @import '~styles/settings';
 
-.c-header {
-  z-index: $z-index-5;
-  height: $c-header-height;
-  width: 100%;
-  font-family: $font-family;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
 
-  &.__border {
-    position: initial;
-    background: $color-white;
-    border-bottom: 1px solid $color-gray-1;
-    z-index: initial;
+.info-link {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  position: relative;
+  display: none;
+}
+
+@media (min-width: 980px) {
+  .info-link {
+    display: block;
+    left: 82px;
+    top: 3px;
+    position: absolute;
   }
+}
 
-  .header-links {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    align-items: center;
+
+#skiptocontent a {
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: white;
+  background: transparent;
+  transition: top 0.3s ease-out;
+  transition: background 0.3s ease-out;
+  transition: top 0.3s ease-out, background 0.3s linear;
+  z-index: 100;
+
+  &:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #941333;
+    outline: 0;
+    transition: top 0.3s ease-in, background 0.2s linear;
+  }
+}
+
+
+header {
+  display: block;
+
+  &.banner {
+    border-bottom: 5px solid #941333;
+    background-color: white;
+    overflow: hidden;
     position: relative;
+    // background-image: url('background/bg-header.png');
 
-    .logo,
-    .header-tab {
-      margin: 0 24px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
+    @media (min-width: 980px) {
+      padding: 0 0 18px 0;
     }
 
-    .header-tab {
-      &.__active {
-        &::after {
-          content: "";
+  }
+
+  .banner__logo {
+    .info-link {
+      a {
+        display: inline;
+        border-bottom: 5px solid white;
+        position: relative;
+        position: relative;
+
+        &:after {
+          content: '';
           position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 3px;
-          background-color: $color-orange;
+          bottom: -1px;
+          right: 0;
+          width: 0;
+          height: 1px;
+          background: #941333;
+          transition: all 0.3s ease 0s;
         }
-      }
 
-      &:last-child {
-        border-right: 1px solid $color-gray-1;
+        &:hover {
+          &:after {
+            width: 100%;
+            left: 0;
+            right: auto;
+          }
+        }
+
+        &:focus {
+          outline: 0;
+          &:after {
+            width: 100%;
+            left: 0;
+            right: auto;
+          }
+        }
+        
       }
     }
   }
 
-  .tab-title {
-    font-size: $font-size-big;
-    font-weight: bold;
+
+.menus {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    background-color: #292929;
   }
 
-  .menu-button {
-    margin-right: 24px;
-    font-size: $font-size-big;
-    font-weight: bold;
+  @media (min-width: 700px) {
+    .menus {
+      background-color: transparent;
+    }
+  }
 
-    .menu-icon {
-      margin-right: 10px;
+  @media (min-width: 980px) {
+    .menus {
+      padding: 0 18px;
+      width: 70%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .menus .nav__main-wrapper {
+      position: absolute;
+      right: 20px;
+      top: 18px;
+    }
+  }
+
+  @media (min-width: 980px) {
+    .menus .nav__main-wrapper {
+      -ms-flex-order: 2;
+          order: 2;
+      padding-top: 20px;
+      background-color: transparent;
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .menus .nav__sub-wrapper {
+    background-color: #292929;
+  }
+
+  @media (min-width: 980px) {
+    .menus .nav__sub-wrapper {
+      -ms-flex-order: 1;
+          order: 1;
+      background-color: transparent;
     }
   }
 }
 
-.menu-button-with-border {
-  height: 100%;
-  border-left: 1px solid black;
-  padding-left: 20px;
-}
 
-.left-aligned {
-  width: 330px;
-  justify-content: space-between;
-}
-
-.left-aligned, .right-aligned {
-  height: 100%;
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 700px) and (max-width: 980px) {
+  .mobile-menu-label:before {
+    content: 'Menu';
+    padding-left: 35px;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 32 32">\a     <path fill="#ffffff" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>\a     </svg>') no-repeat left center;
+  }
+  .mobile-menu-box:checked ~ .menus .nav__sub-wrapper {
+    height: auto;
+  }
+  .mobile-menu-box:checked ~ .mobile-menu-labels .mobile-menu-label:before {
+    content: 'Close';
+    padding-left: 25px;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">\a     <path fill="#aaa" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>\a     </svg>') no-repeat left center;
+  }
+  .nav__sub-wrapper {
+    margin-top: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+  }
+  .mobile-menu-box:checked ~ .menus .nav__sub-wrapper {
+    height: auto;
+    max-height: 1000px;
+  }
+  .mobile-menu-label {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-menu-box:checked ~ .mobile-menu-labels .mobile-menu-label {
+    color: #aaa;
+    background-color: #292929;
+  }
 }

@@ -4,6 +4,7 @@ import App from './AppRouter';
 import * as serviceWorker from './serviceWorker';
 
 import './styles/index.scss';
+import './assets/scss/style.scss';
 import 'vizzuality-components/dist/legend.css';
 
 // eslint-disable-next-line react/jsx-filename-extension

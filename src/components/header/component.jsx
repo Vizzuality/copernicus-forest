@@ -1,66 +1,91 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cx from 'classnames';
-import CountriesDropdown from 'components/countries-dropdown';
-import PropTypes from 'prop-types';
 
-import Menu from 'components/menu';
-import Icon from 'components/icon';
-
+import BgHeader from 'assets/img/bg-header.png';
+import LogoImage from 'assets/img/c3s-logo.svg';
 import './styles.scss';
 
 const HeaderComponent = props => {
-  const { isHome, urls, type, menuOpen, showMenu, isSpeciesDistribution } = props;
-
   return (
-    <div className={cx('c-header', { __border: !isHome })}>
-      <nav className="header-links">
-        <div className="left-aligned">
-          <Link to="/" className="logo">
-            <img src="/logos/logo.svg" alt="logo" />
+    <header role="banner" className="banner" style={{ backgroundImage: `url(${BgHeader})` }}>
+      <div id="skiptocontent">
+        <a href="#maincontent">skip to main content</a>
+      </div>
+      <div className="banner__inner">
+        <input
+          type="checkbox"
+          name="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          className="mobile-menu-box"
+        />
+        <div className="banner__logo">
+          <p className="info-link">
+            Implemented by <a href="https://www.ecmwf.int">ECMWF</a> as part of{' '}
+            <a href="#" className="toggle">
+              The Copernicus Programme
+            </a>
+          </p>
+          <Link to="/" title="Home" rel="home" id="logo">
+            <img className="logo" src={LogoImage} height="66" alt="Home" />
           </Link>
-          {!isHome && <CountriesDropdown />}
         </div>
-        <div className="right-aligned">
-          {!isHome && (
-            <>
-              <Link
-                to={urls.distribution}
-                className={cx('header-tab', {
-                  __active: isSpeciesDistribution
-                })}
-              >
-                <span className="tab-title">Species distribution</span>
-              </Link>
-              <Link
-                to={urls.bioclimatic}
-                className={cx('header-tab', { __active: type === 'bioclimatic' })}
-              >
-                <span className="tab-title">Bioclimatic variables</span>
-              </Link>
-            </>
-          )}
-          <button
-            className={cx('menu-button', { 'menu-button-with-border': !isHome })}
-            onClick={() => showMenu(!menuOpen)}
-          >
-            <Icon name="icon-about" className="menu-icon" />
-            About
-          </button>
+        <div className="menus">
+          <div className="nav__main-wrapper">
+            <nav role="navigation">
+              <ul block="ce_main_menu" className="nav__main">
+                <li className="menu-item menu-item--collapsed">
+                  <a
+                    href="https://climate.copernicus.eu/about-us"
+                    data-drupal-link-system-path="node/47"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li className="menu-item menu-item--collapsed">
+                  <a
+                    href="https://climate.copernicus.eu/what-we-do"
+                    data-drupal-link-system-path="node/93"
+                  >
+                    What we do
+                  </a>
+                </li>
+                <li className="menu-item menu-item--collapsed">
+                  <a href="http://cds.climate.copernicus.eu/">Data </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className="nav__sub-wrapper">
+            <nav role="navigation">
+              <ul block="secondarynavigation" className="nav__sub">
+                <li className="menu-item">
+                  <a href="https://climate.copernicus.eu/news">News</a>
+                </li>
+                <li className="menu-item">
+                  <a href="https://climate.copernicus.eu/events">Events</a>
+                </li>
+                <li className="menu-item menu-item--collapsed">
+                  <a href="https://climate.copernicus.eu/press-releases">Press</a>
+                </li>
+                <li className="menu-item">
+                  <a href="https://climate.copernicus.eu/complete-list-tenders-issued-c3s">
+                    Tenders
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a href="https://climate.copernicus.eu/help-support">Help &amp; Support</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </nav>
-      <Menu closeMenu={() => showMenu(false)} active={menuOpen} />
-    </div>
+        <div className="mobile-menu-labels">
+          <label htmlFor="mobile-menu-toggle" className="mobile-menu-label hidden" />
+          <label htmlFor="search-toggle" className="search-toggle search-label" />
+        </div>
+      </div>
+    </header>
   );
-};
-
-HeaderComponent.propTypes = {
-  isHome: PropTypes.bool,
-  urls: PropTypes.object,
-  type: PropTypes.string,
-  menuOpen: PropTypes.bool,
-  showMenu: PropTypes.func,
-  isSpeciesDistribution: PropTypes.bool
 };
 
 export default HeaderComponent;
