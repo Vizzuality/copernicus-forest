@@ -1,8 +1,6 @@
 @import '~styles/settings';
 
 
-
-
 #skiptocontent a {
   padding: 6px;
   position: absolute;
@@ -72,6 +70,8 @@ header {
 
   .banner__logo {
 
+    padding-left: 18px;
+
     a {
       position: relative;
       display: inline-block;
@@ -101,6 +101,7 @@ header {
       font-size: 12px;
       position: relative;
       display: none;
+      z-index: 1;
       
       @media (min-width: 980px) {
         display: block;
@@ -113,7 +114,7 @@ header {
         display: inline;
         border-bottom: 5px solid white;
         position: relative;
-        position: relative;
+        cursor: pointer;
 
         &:after {
           content: '';
@@ -154,60 +155,54 @@ header {
   }
 
 
-.menus {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column;
-        flex-flow: column;
-    background-color: #292929;
-  }
+  .menus {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column;
+          flex-flow: column;
+      background-color: #292929;
 
-  @media (min-width: 700px) {
-    .menus {
-      background-color: transparent;
-    }
-  }
+      @media (min-width: 700px) {
+        background-color: transparent;
+      }
 
-  @media (min-width: 980px) {
-    .menus {
-      padding: 0 18px;
-      width: 70%;
-    }
-  }
+      @media (min-width: 980px) {
+        padding: 0 18px;
+        width: 70%;
+      }
 
-  @media (min-width: 700px) {
-    .menus .nav__main-wrapper {
-      position: absolute;
-      right: 20px;
-      top: 18px;
-    }
-  }
+      .nav__main-wrapper {
+        @media (min-width: 700px) {
+          position: absolute;
+          right: 20px;
+          top: 18px;
+        }
+        @media (min-width: 980px) {
+          -ms-flex-order: 2;
+              order: 2;
+          padding-top: 20px;
+          background-color: transparent;
+          position: relative;
+          right: 0;
+          top: 0;
+        }
+      }
 
-  @media (min-width: 980px) {
-    .menus .nav__main-wrapper {
-      -ms-flex-order: 2;
-          order: 2;
-      padding-top: 20px;
-      background-color: transparent;
-      position: relative;
-      right: 0;
-      top: 0;
-    }
-  }
-
-  .menus .nav__sub-wrapper {
-    background-color: #292929;
-  }
-
-  @media (min-width: 980px) {
-    .menus .nav__sub-wrapper {
-      -ms-flex-order: 1;
+      .nav__sub-wrapper {
+        background-color: #292929;
+        @media (min-width: 980px) {
+          -ms-flex-order: 1;
           order: 1;
-      background-color: transparent;
-    }
+          background-color: transparent;
+        }
+      }
   }
 }
-
+.mobile-menu-labels {
+  label {
+    cursor: pointer;
+  }
+}
 
 @media screen and (min-width: 700px) and (max-width: 980px) {
   .mobile-menu-label:before {
@@ -367,3 +362,7 @@ header {
     top: 51px;
   }
 }
+
+
+
+

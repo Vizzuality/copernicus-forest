@@ -1,11 +1,34 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import BgHeader from 'assets/img/bg-header.png';
 import LogoImage from 'assets/img/c3s-logo.svg';
+import LogosBlock from './components/LogosBlock';
 import './styles.scss';
+import SearchBlock from './components/SearchBlock';
 
 const HeaderComponent = () => {
+  const barRef = useRef({});
+  const searchRef = useRef({});
+  const [logosOuterHeight, setLogosOuterHeight] = useState(0);
+  const [searchOuterHeight, setSearchOuterHeight] = useState(0);
+  const [isOpen, setOpen] = useState(false);
+
+  const clickToProgram = e => {
+    e.preventDefault();
+    setOpen(!isOpen);
+    const panel = barRef.current;
+    const height = logosOuterHeight ? 0 : panel.scrollHeight;
+    setLogosOuterHeight(height);
+  };
+
+  const clickToSearch = e => {
+    e.preventDefault();
+    setOpen(!isOpen);
+    const panel = searchRef.current;
+    const height = searchOuterHeight ? 0 : panel.scrollHeight;
+    setSearchOuterHeight(height);
+  };
+
   return (
     <>
       <header role="banner" className="banner" style={{ backgroundImage: `url(${BgHeader})` }}>
@@ -22,7 +45,7 @@ const HeaderComponent = () => {
           <div className="banner__logo">
             <p className="info-link">
               Implemented by <a href="https://www.ecmwf.int">ECMWF</a> as part of{' '}
-              <a href="#" className="toggle">
+              <a href="/" onClick={e => clickToProgram(e)}>
                 The Copernicus Programme
               </a>
             </p>
@@ -82,10 +105,16 @@ const HeaderComponent = () => {
           </div>
           <div className="mobile-menu-labels">
             <label htmlFor="mobile-menu-toggle" className="mobile-menu-label hidden" />
-            <label htmlFor="search-toggle" className="search-toggle search-label" />
+            <label
+              htmlFor="search-toggle"
+              className="search-toggle search-label"
+              onClick={e => clickToSearch(e)}
+            />
           </div>
         </div>
       </header>
+      <LogosBlock barRef={barRef} outerHeight={logosOuterHeight} onClose={clickToProgram} />
+      <SearchBlock searchRef={searchRef} outerHeight={searchOuterHeight} />
     </>
   );
 };

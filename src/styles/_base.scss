@@ -24,6 +24,12 @@ body {
 
 * {
   box-sizing: border-box;
+  &:after {
+    box-sizing: border-box;
+  }
+  &:before {
+    box-sizing: border-box;
+  }
 }
 
 html {
@@ -91,7 +97,76 @@ input {
 }
 
 
+label {
+  font-family: "Lato", sans-serif;
+}
 
+button,
+input {
+  border: 0;
+  padding: 18px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  border: 1px solid #941333;
+  border-radius: 0;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  button,
+  input {
+    width: auto;
+  }
+}
+
+button[type="button"], button[type="file"]::-webkit-file-upload-button, button[type="submit"], button[type="image"],
+input[type="button"],
+input[type="file"]::-webkit-file-upload-button,
+input[type="submit"],
+input[type="image"] {
+  border: 1px solid #941333;
+  background-color: #941333;
+  color: white;
+}
+
+button[type="button"]:hover, button[type="button"]:focus, button[type="file"]::-webkit-file-upload-button:hover, button[type="file"]::-webkit-file-upload-button:focus, button[type="submit"]:hover, button[type="submit"]:focus, button[type="image"]:hover, button[type="image"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="file"]::-webkit-file-upload-button:hover,
+input[type="file"]::-webkit-file-upload-button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="image"]:hover,
+input[type="image"]:focus {
+  background-color: #941333;
+  opacity: 0.8;
+  color: white;
+}
+
+button[type="reset"],
+input[type="reset"] {
+  color: #941333;
+  background-color: white;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  background-color: #941333;
+  color: white;
+}
+
+button:hover, button:focus {
+  background-color: #941333;
+  opacity: 0.8;
+  color: white;
+}
+
+form label {
+  display: block;
+}
 
 
 .menu--horiz {
