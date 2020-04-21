@@ -25,14 +25,24 @@ const logos = [
   }
 ];
 
-const LogosBlock = ({ onClose = () => {}, barRef = {}, outerHeight = 0 }) => {
+const LogosBlock = ({ position = 'header', onClose = () => {}, barRef = {}, outerHeight = 0 }) => {
   const onCloseBar = e => {
     e.preventDefault();
     onClose(e);
   };
 
+  const isFooter = position === 'footer';
+  const mainClass = ['c-logos-block-section'];
+  if (isFooter) {
+    mainClass.push('isFooter');
+  }
+
   return (
-    <div ref={barRef} className="c-logos-block-section" style={{ height: outerHeight }}>
+    <div
+      ref={barRef}
+      className={mainClass.join(' ')}
+      style={{ height: isFooter ? 'auto' : outerHeight }}
+    >
       <div className="bar">
         <div className="bar__inner ">
           <div className="logos-block">
@@ -46,16 +56,18 @@ const LogosBlock = ({ onClose = () => {}, barRef = {}, outerHeight = 0 }) => {
                 />
               </a>
             ))}
-            <a
-              href="/"
-              onClick={e => onCloseBar(e)}
-              className="button toggle button--light close-toggle-permanently"
-            >
-              <svg className="social-link-icon-img">
-                <use xlinkHref="#icon-cross" />
-              </svg>
-              close
-            </a>
+            {!isFooter && (
+              <a
+                href="/"
+                onClick={e => onCloseBar(e)}
+                className="button toggle button--light close-toggle-permanently"
+              >
+                <svg className="social-link-icon-img">
+                  <use xlinkHref="#icon-cross" />
+                </svg>
+                close
+              </a>
+            )}
           </div>
         </div>
       </div>

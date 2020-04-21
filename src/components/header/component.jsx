@@ -1,10 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/jsx-no-comment-textnodes */
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { HEADER_MENU_FIRST, HEADER_MENU_SECOND } from 'constants.js';
 import BgHeader from 'assets/img/bg-header.png';
 import LogoImage from 'assets/img/c3s-logo.svg';
-import LogosBlock from './components/LogosBlock';
-import './styles.scss';
+import LogosBlock from '../LogosBlock';
 import SearchBlock from './components/SearchBlock';
+
+import './styles.scss';
 
 const HeaderComponent = () => {
   const barRef = useRef({});
@@ -32,9 +37,6 @@ const HeaderComponent = () => {
   return (
     <>
       <header role="banner" className="banner" style={{ backgroundImage: `url(${BgHeader})` }}>
-        <div id="skiptocontent">
-          <a href="#maincontent">skip to main content</a>
-        </div>
         <div className="banner__inner">
           <input
             type="checkbox"
@@ -57,48 +59,26 @@ const HeaderComponent = () => {
             <div className="nav__main-wrapper">
               <nav role="navigation">
                 <ul block="ce_main_menu" className="nav__main">
-                  <li className="menu-item menu-item--collapsed">
-                    <a
-                      href="https://climate.copernicus.eu/about-us"
-                      data-drupal-link-system-path="node/47"
-                    >
-                      About Us
-                    </a>
-                  </li>
-                  <li className="menu-item menu-item--collapsed">
-                    <a
-                      href="https://climate.copernicus.eu/what-we-do"
-                      data-drupal-link-system-path="node/93"
-                    >
-                      What we do
-                    </a>
-                  </li>
-                  <li className="menu-item menu-item--collapsed">
-                    <a href="http://cds.climate.copernicus.eu/">Data </a>
-                  </li>
+                  {HEADER_MENU_SECOND.map(m => (
+                    <li key={m.link} className="menu-item menu-item--collapsed">
+                      <Link to={m.link} title={m.title}>
+                        {m.title}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
             <div className="nav__sub-wrapper">
               <nav role="navigation">
                 <ul block="secondarynavigation" className="nav__sub">
-                  <li className="menu-item">
-                    <a href="https://climate.copernicus.eu/news">News</a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="https://climate.copernicus.eu/events">Events</a>
-                  </li>
-                  <li className="menu-item menu-item--collapsed">
-                    <a href="https://climate.copernicus.eu/press-releases">Press</a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="https://climate.copernicus.eu/complete-list-tenders-issued-c3s">
-                      Tenders
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="https://climate.copernicus.eu/help-support">Help &amp; Support</a>
-                  </li>
+                  {HEADER_MENU_FIRST.map(m => (
+                    <li className="menu-item">
+                      <Link to={m.link} title={m.title}>
+                        {m.title}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
@@ -114,7 +94,7 @@ const HeaderComponent = () => {
         </div>
       </header>
       <LogosBlock barRef={barRef} outerHeight={logosOuterHeight} onClose={clickToProgram} />
-      <SearchBlock searchRef={searchRef} outerHeight={searchOuterHeight} />
+      <SearchBlock position="header" searchRef={searchRef} outerHeight={searchOuterHeight} />
     </>
   );
 };

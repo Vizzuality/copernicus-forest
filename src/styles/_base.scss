@@ -169,6 +169,208 @@ form label {
 }
 
 
+h1, .h1 {
+  font-size: 28px;
+  line-height: 28px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media screen and (min-width: 360px) {
+  h1, .h1 {
+    font-size: calc(28px + 27 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  h1, .h1 {
+    line-height: calc(28px + 27 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1, .h1 {
+    line-height: 55px;
+  }
+}
+
+h1--alt, .h1--alt {
+  font-size: 28px;
+  line-height: 28px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 360px) {
+  h1--alt, .h1--alt {
+    font-size: calc(28px + 27 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1--alt, .h1--alt {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  h1--alt, .h1--alt {
+    line-height: calc(28px + 27 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1--alt, .h1--alt {
+    line-height: 55px;
+  }
+}
+
+h2, .h2 {
+  font-size: 23px;
+  line-height: 23px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 360px) {
+  h2, .h2 {
+    font-size: calc(23px + 5 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  h2, .h2 {
+    line-height: calc(23px + 5 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2, .h2 {
+    line-height: 28px;
+  }
+}
+
+h2--alt, .h2--alt {
+  font-size: 23px;
+  line-height: 23px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 360px) {
+  h2--alt, .h2--alt {
+    font-size: calc(23px + 5 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2--alt, .h2--alt {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  h2--alt, .h2--alt {
+    line-height: calc(23px + 5 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2--alt, .h2--alt {
+    line-height: 28px;
+  }
+}
+
+h3, .h3 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 360px) {
+  h3, .h3 {
+    font-size: calc(18px + 5 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  h3, .h3 {
+    line-height: calc(28px + 4 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h3, .h3 {
+    line-height: 32px;
+  }
+}
+
+h3--alt, .h3--alt {
+  font-size: 23px;
+  line-height: 23px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 360px) {
+  h3--alt, .h3--alt {
+    font-size: calc(23px + 5 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h3--alt, .h3--alt {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  h3--alt, .h3--alt {
+    line-height: calc(23px + 5 * (100vw - 360px) / 840);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h3--alt, .h3--alt {
+    line-height: 28px;
+  }
+}
+
+h4, .h4 {
+  font-family: "Lato", sans-serif;
+}
+
+
+
 .menu--horiz {
   list-style: none;
   list-style-type: none;

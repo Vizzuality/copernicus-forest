@@ -5,6 +5,7 @@ import Icons from 'components/icons';
 import './App.scss';
 
 const Header = lazy(() => import('components/header'));
+const Footer = lazy(() => import('components/footer'));
 const HomePage = lazy(() => import('pages/home'));
 const SpeciesDistributionComponent = lazy(() => import('pages/species-distribution'));
 const BioclimaticPage = lazy(() => import('pages/bioclimatic'));
@@ -34,6 +35,7 @@ function AppRouter() {
               <Route path="/:iso/distribution/:id?" component={SpeciesDistributionComponent} />
               <Route path="/:iso/bioclimatic/:id?" component={BioclimaticPage} />
             </Switch>
+            <Footer />
           </Suspense>
         </div>
       </Provider>
