@@ -6,6 +6,7 @@
   flex-direction: column;
   flex: 1;
   overflow: hidden;
+  background-color: $color-white;
 }
 
 .list {
@@ -16,24 +17,27 @@
 .listItem {
   display: flex;
   align-items: center;
-  padding: 12px 24px;
-  font-size: 18px;
+  padding: 10px 24px;
+  font-size: 16px;
   font-style: italic;
-  border-top: 1px solid $color-gray-3;
-  color: $color-white;
+  border-bottom: 2px solid $color-gray-5;
+  color: $color-black;
+  background-color: $color-white;  
+  line-height: 22px;
 
   &:hover {
-    background-color: $color-gray-2;
-  }
-
-  &:last-child{
-    border-bottom: 1px solid $color-gray-3;
+    background-color: $color-gray-5;
   }
 }
 
 .speciesActive {
   @extend .listItem;
-  font-size: 30px;
   padding: 18px 24px;
-  background-color: $color-gray-2;
+  background-color: $color-white;
+  color: $color-black;
+  font-size: 20px;
+
+  &:hover {
+    background-color: $color-white;  
+  }
 }

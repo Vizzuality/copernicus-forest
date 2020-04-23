@@ -30,13 +30,11 @@ const SpeciesDistributionComponent = props => {
   return (
     <div className={styles.container}>
       <div className={styles.speciesSidebar}>
-        <img
-          src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
-          alt={
-            activeSpecies &&
-            `Image not available:
-            ${activeSpecies.name}`
-          }
+        <div 
+          className={styles.imageBox}
+          style={{
+            backgroundImage: `url(${wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source})`
+          }}
         />
         {activeSpecies && (
           <SpeciesList
@@ -47,24 +45,25 @@ const SpeciesDistributionComponent = props => {
           />
         )}
       </div>
+         
       <div className={cx(styles.content, { [styles.contentStretched]: !speciesListVisible })}>
         <div className={styles.navBar}>
-          <button
+        <button
             onClick={toggleSpeciesList}
             className={cx(styles.toggleBarButton, {
               [styles.expandBarButton]: !speciesListVisible
             })}
           >
             <Icon name="icon-arrow-left" />
-          </button>
-          <TabsBar data={speciesTabsData} />
+        </button>
+          {/* <TabsBar data={speciesTabsData} />
           {downloadUrl && (
             <div className={styles.downloadBtnContainer}>
               <button onClick={() => {}} className={styles.downloadBtn}>
                 <Icon name="icon-download" />
               </button>
             </div>
-          )}
+          )} */}
         </div>
         <ContentComponent
           match={match}
