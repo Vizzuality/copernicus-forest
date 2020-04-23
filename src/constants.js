@@ -60,20 +60,12 @@ export const DEFAULT_LAYER_OPACITY = 60;
 
 export const FOOTER_MENU = [
   {
-    title: 'About us',
-    link: '/about-us'
-  },
-  {
     title: 'Contact us',
     link: '/contact-us'
   },
   {
     title: 'Cookies',
     link: '/cookies'
-  },
-  {
-    title: 'Data Protection Officer',
-    link: '/data-protection-officer'
   },
   {
     title: 'Data Protection Officer',
@@ -132,10 +124,6 @@ export const HEADER_MENU_FIRST = [
 ];
 
 export const HEADER_MENU_SECOND = [
-  {
-    title: 'About us',
-    link: '/about-us'
-  },
   {
     title: 'What we do',
     link: '/what-we-do'

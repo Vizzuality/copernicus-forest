@@ -8,6 +8,7 @@ import BgHeader from 'assets/img/bg-header.png';
 import LogoImage from 'assets/img/c3s-logo.svg';
 import LogosBlock from '../LogosBlock';
 import SearchBlock from './components/SearchBlock';
+import SubHeader from './components/SubHeader';
 
 import './styles.scss';
 
@@ -95,6 +96,7 @@ const HeaderComponent = () => {
       </header>
       <LogosBlock barRef={barRef} outerHeight={logosOuterHeight} onClose={clickToProgram} />
       <SearchBlock position="header" searchRef={searchRef} outerHeight={searchOuterHeight} />
+      <SubHeader />
     </>
   );
 };

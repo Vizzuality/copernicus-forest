@@ -24,7 +24,7 @@ function AppRouter() {
           <Suspense fallback={<Placeholder />}>
             <Header />
             <Switch>
-              <Route path="/" exact component={HomePage} />
+              <Route path="/" exact component={SpeciesDistributionComponent} />
               <Redirect
                 from="/:iso"
                 exact

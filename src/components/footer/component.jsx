@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import LogosBlock from 'components/LogosBlock';
 import BgFooter from 'assets/img/bg-header.png';

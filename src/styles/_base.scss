@@ -7,7 +7,7 @@ body {
     overflow: hidden;
   }
   
-  font-family: $font-family;
+  font-family: $font-family-3;
   font-size: $font-size-default;
   -webkit-font-smoothing: antialiased;
 
@@ -16,10 +16,6 @@ body {
   overflow-x: hidden;
   font-size: 18px;
   line-height: 1.66666667em;
-}
-
-.page-content {
-  position: relative;
 }
 
 * {
