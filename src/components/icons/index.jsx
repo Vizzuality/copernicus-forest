@@ -82,12 +82,12 @@ const Icons = () => (
       </symbol>
       <symbol id="icon-pause" viewBox="0 0 24 32">
         <title>pause</title>
-        <path fill="#fff" d="M0 0h7.384v32h-7.384z"></path>
-        <path fill="#fff" d="M16.616 0h7.384v32h-7.384z"></path>
+        <path fill="#000" d="M0 0h7.384v32h-7.384z"></path>
+        <path fill="#000" d="M16.616 0h7.384v32h-7.384z"></path>
       </symbol>
       <symbol id="icon-play" viewBox="0 0 21 32">
         <title>play</title>
-        <path fill="#fff" d="M0.076 0.222l20.426 15.778-20.426 15.778z"></path>
+        <path fill="#000" d="M0.076 0.222l20.426 15.778-20.426 15.778z"></path>
       </symbol>
       <symbol id="icon-info" viewBox="0 0 32 32">
         <title>info</title>

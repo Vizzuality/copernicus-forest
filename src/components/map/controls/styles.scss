@@ -10,6 +10,8 @@ $layer-toggle-modal-height: #{$layer-toggle-modal-height-value}px;
   background-color: $color-white !important;
   height: $navigation-button-size !important;
   width: $navigation-button-size !important;
+  margin: 0;
+  padding: 0;
 
   &:hover {
     background-color: $color-white !important;

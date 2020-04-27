@@ -8,12 +8,13 @@
   width: 100%;
 
   & > div:first-child {
-    border-right: 1px solid $color-black;
+    border-right: 2px solid $color-border;
   }
 }
 
 .navigationBar {
   border: 1px solid $color-black;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -21,7 +22,10 @@
   top: calc(50% - 2 * #{$navigation-button-size});
 
   > *:not(:last-child) {
-    border-bottom: 1px solid $color-gray-1 !important;
+    border-bottom: none !important;
+  }
+  > *:last-child {
+    border-top: none;
   }
 }
 
@@ -36,7 +40,7 @@
 }
 
 .futureScenariosTimeline {
-  left: calc(50%);
+  left: calc(50% + 1px);
 }
 
 :global {

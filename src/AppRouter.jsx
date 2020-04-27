@@ -6,7 +6,7 @@ import './App.scss';
 
 const Header = lazy(() => import('components/header'));
 const Footer = lazy(() => import('components/footer'));
-const HomePage = lazy(() => import('pages/home'));
+// const HomePage = lazy(() => import('pages/home'));
 const SpeciesDistributionComponent = lazy(() => import('pages/species-distribution'));
 const BioclimaticPage = lazy(() => import('pages/bioclimatic'));
 const Placeholder = () => <div className="c-header" />;
