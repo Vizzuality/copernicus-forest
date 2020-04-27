@@ -33,7 +33,7 @@ const SubHeader = () => {
 
   const subMenu = [
     {
-      name: COUNTRIES.find(c => c.iso === iso).name,
+      name: iso ? COUNTRIES.find(c => c.iso === iso).name : 'Country',
       sections: COUNTRIES.map(c => {
         c.path = `/${c.iso}/${type}/${id}`;
         c.active = pathname.includes(`/${c.iso}`);
