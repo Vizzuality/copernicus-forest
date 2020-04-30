@@ -137,6 +137,7 @@ function Chart({ className, data, config, metadata }) {
           data={data}
           margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
           fontSize={14}
+          fontFamily="Open Sans"
           {...composedChart}
         >
           <CartesianGrid {...grid} />

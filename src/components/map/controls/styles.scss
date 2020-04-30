@@ -12,6 +12,7 @@ $layer-toggle-modal-height: #{$layer-toggle-modal-height-value}px;
   width: $navigation-button-size !important;
   margin: 0;
   padding: 0;
+  border: none;
 
   &:hover {
     background-color: $color-white !important;

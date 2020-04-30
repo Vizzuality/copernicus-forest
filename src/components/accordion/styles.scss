@@ -1,7 +1,7 @@
 @import '~styles/settings';
 
 .c-accordion {
-  height: 100%;
+  height: calc(100% - 70px);
 
   .accordion-list {
     overflow: auto;
@@ -9,9 +9,13 @@
   }
 
   .accordion-item {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #E6E6E6;
     font-family: $font-family-2;
     color: $color-gray-1;
+    
+    &:first-child {
+      border-bottom: 2px solid #E6E6E6;
+    }
 
     .accordion-title {
       position: relative;
@@ -22,6 +26,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      color: #222222;
+      border: none;
+      background-color: $color-white;
+      font-family: "Open Sans";
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 28px;
 
       &:hover {
         background-color: rgba($color-gray-1, 0.1);
@@ -52,7 +63,7 @@
 
       .accordion-chart {
         text {
-          font-family: $font-family;
+          font-family: $font-family-3;
           font-size: 14px;
         }
       }
@@ -60,10 +71,15 @@
 
     &.__open {
       .accordion-title {
-        font-size: 30px;
-        line-height: 40px;
+
         padding: 40px 50px 40px 36px;
         background-color: transparent;
+        color: #222222;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 27px;
       }
     }
   }

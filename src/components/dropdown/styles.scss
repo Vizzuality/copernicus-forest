@@ -2,6 +2,7 @@
 
 .c-dropdown {
   z-index: 2;
+  border: none;
 
   .dd-header {
     display: flex;
@@ -11,6 +12,15 @@
     min-width: 144px;
     font-weight: bold;
     padding: 0 24px;
+    background-color: $color-white;
+    color: #941333;
+    border: none;
+    margin: 0;
+    
+    span {
+      color: $color-black;
+      font-weight: normal;
+    }
 
     .dropdown-icon {
       width: 12px;
@@ -33,29 +43,33 @@
       cursor: pointer;
       background-color: $color-white;
 
+      color: #222222;
+      font-family: "Open Sans";
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 22px;
+
+      border: none;
+      border-bottom: 1px solid #E6E6E6;
+
       &.disabled {
         color: #ccc;
         cursor: not-allowed;
       }
 
       &:hover {
-        background-color: $color-background;
+        background-color: #E6E6E6;
       }
 
       &.noBorderLeft {
         border-left: none;
       }
     }
-
-
   }
 }
 
 .dd-list {
-  border: 1px solid $color-gray-1;
-  & > *:not(:last-child) {
-    border-bottom: 1px solid $color-gray-1;
-  }
+  border: 2px solid #941333;
 }
 
 .dropdown-white {

@@ -26,7 +26,7 @@
 
 .mapWrapper {
   position: relative;
-  border-left: 1px solid $color-black;
+  border-left: 2px solid $color-border;
 }
 
 .timeline {
@@ -34,17 +34,15 @@
 }
 
 .navigationBar {
-  border: 1px solid $color-black;
-  border-left: 0;
+  border: 2px solid $color-border;
+  border-left-width: 1px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
   display: flex;
   flex-direction: column;
   position: absolute;
   left: 0;
   top: calc(50% - 2 * #{$navigation-button-size});
-
-  > *:not(:last-child) {
-    border-bottom: 1px solid $color-gray-1 !important;
-  }
 }
 
 .zoomButton {

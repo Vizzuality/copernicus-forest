@@ -13,7 +13,8 @@
 }
 
 .navigationBar {
-  border: 1px solid $color-black;
+  border: 2px solid $color-border;
+  border-right-width: 3px;
   background-color: $color-white;
   display: flex;
   flex-direction: column;
@@ -31,7 +32,6 @@
 
 .zoomButton {
   @extend .mapNavigationButton;
-  border-bottom: 1px solid $color-gray-1 !important;
 }
 
 .layerToggle {

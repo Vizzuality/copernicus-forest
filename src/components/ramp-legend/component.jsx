@@ -27,6 +27,9 @@ const RampLegend = ({
     <div className={styles.legendContainer}>
       {legendOpen && (
         <div className={styles.legend}>
+          <button className={styles.buttonInfo}>
+            <Icon name="icon-info" />
+          </button>
           {activeSpecies && (
             <div className={styles.speciesName}>
               Species:
@@ -57,9 +60,6 @@ const RampLegend = ({
             </div>
           </div>
           <div className={styles.icons}>
-            <button className={styles.button}>
-              <Icon name="icon-info" />
-            </button>
             <button
               className={styles.button}
               data-for="opacityTooltip"

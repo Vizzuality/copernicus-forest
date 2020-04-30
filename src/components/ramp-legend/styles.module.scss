@@ -23,7 +23,7 @@ $value-side-offset: 4px;
   align-items: center;
   justify-content: space-between;
   background-color: $color-white;
-  border-top: 1px solid $color-black;
+  border-top: 2px solid $color-border;
   padding-left: $c-header-padding;
   height: 100%;
   width: 100%;
@@ -34,8 +34,9 @@ $value-side-offset: 4px;
   background-color: $color-white;
   height: 100%;
   padding: $c-header-padding;
-  border-left: 1px solid $color-black;
-  border-top: 1px solid $color-black;
+  border-left: 2px solid $color-border;
+  border-top: 2px solid $color-border;
+  border-bottom: none;
 
   svg {
     transform: rotate(-90deg);
@@ -51,9 +52,10 @@ $value-side-offset: 4px;
 
 .layerTitle {
   color: $color-gray-1;
-  font-size: $font-size-20;
   margin-right: $c-header-padding;
-  width: 78px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
 }
 
 .rampContainer {
@@ -98,17 +100,23 @@ $value-side-offset: 4px;
 
 .lowEndValue {
   @extend %rampLabel;
+  display: flex;
+  align-self: flex-end;
+  justify-self: start;
 }
 
 .lowEndName {
   @extend %font;
-  align-self: flex-end;
+  display: flex;
+  align-self: flex-start;
   justify-self: start;
 }
 
 .middleValue {
   @extend %rampLabel;
   justify-self: center;
+  display: flex;
+  align-self: flex-end;
 
   &::before {
     left: 50%;
@@ -117,13 +125,16 @@ $value-side-offset: 4px;
 
 .middleName {
   @extend %font;
-  align-self: flex-end;
   justify-self: center;
+  display: flex;
+  align-self: flex-start;
 }
 
 .highEndValue {
   @extend %rampLabel;
   justify-self: end;
+  display: flex;
+  align-self: flex-end;
 
   &::before {
     right: 0;
@@ -132,8 +143,9 @@ $value-side-offset: 4px;
 
 .highEndName {
   @extend %font;
-  align-self: flex-end;
   justify-self: end;
+  display: flex;
+  align-self: flex-start;
 }
 
 .icons {
@@ -143,7 +155,20 @@ $value-side-offset: 4px;
 
 .button {
   padding: 0 $c-header-padding;
-  border-left: 1px solid $color-black;
+  border: none;
+  margin: 0;
+  border-left: 2px solid $color-border;
+}
+
+.buttonInfo {
+  padding: 0 $c-header-padding 0 0;
+  background-color: $color-white;
+  border: none;
+  margin: 0;
+
+  &:hover, &:focus {
+    background-color: $color-white;
+  }
 }
 
 .legendClosed svg {
