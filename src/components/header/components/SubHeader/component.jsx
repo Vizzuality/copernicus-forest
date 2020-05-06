@@ -59,15 +59,15 @@ const SubHeader = () => {
           <img src="/logos/logo.svg" alt="logo" />
         </Link>
         <ul className={styles.subMenu}>
-          {subMenu.map(s => (
-            <li className={cx(styles.menuItem, { [styles.active]: s.active })}>
+          {subMenu.map((s, key) => (
+            <li key={key} className={cx(styles.menuItem, { [styles.active]: s.active })}>
               {s.path ? <Link to={s.path}>{s.name}</Link> : <>{s.name}</>}
               {s.sections && s.sections.length > 0 && (
                 <>
                   <Icon name="icon-triangle" />
                   <ul>
-                    {s.sections.map(sec => (
-                      <li className={sec.active ? styles.active : ''}>
+                    {s.sections.map((sec, sKey) => (
+                      <li key={sKey} className={sec.active ? styles.active : ''}>
                         <Link to={sec.path}>{sec.name}</Link>
                       </li>
                     ))}

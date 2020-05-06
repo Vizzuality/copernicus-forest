@@ -14,8 +14,8 @@ const Footer = () => {
             <div className="social-list">
               <div className="social-list__inner">
                 <h2 className="social-list__heading h2--alt">Follow us</h2>
-                {FOOTER_SOCIAL_LINKS.map(s => (
-                  <a className={`social-link ${s.class}`} href={s.link} title={s.class}>
+                {FOOTER_SOCIAL_LINKS.map((s, key) => (
+                  <a key={key} className={`social-link ${s.class}`} href={s.link} title={s.class}>
                     <svg className="social-link-icon-img">
                       <use href={s.icon} xlink="http://www.w3.org/1999/xlink" />
                     </svg>
@@ -44,7 +44,6 @@ const Footer = () => {
                     placeholder="email address"
                     required=""
                     type="email"
-                    value=""
                   />
                   <input
                     className="button-white"

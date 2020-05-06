@@ -74,7 +74,7 @@ const HeaderComponent = () => {
               <nav role="navigation">
                 <ul block="secondarynavigation" className="nav__sub">
                   {HEADER_MENU_FIRST.map(m => (
-                    <li className="menu-item">
+                    <li key={m.link} className="menu-item">
                       <Link to={m.link} title={m.title}>
                         {m.title}
                       </Link>

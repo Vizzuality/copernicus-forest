@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import './styles.scss';
 
@@ -16,7 +17,6 @@ const SearchBlock = ({ searchRef = {}, outerHeight = 0 }) => {
                     type="text"
                     id="edit-search-api-fulltext"
                     name="search_api_fulltext"
-                    value=""
                     size="30"
                     maxLength="128"
                     className="form-text"

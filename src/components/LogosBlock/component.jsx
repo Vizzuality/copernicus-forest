@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ImageLogoEC from 'assets/img/logo-ec.png';
 import ImageLogoCopernicus from 'assets/img/logo-copernicus.png';
 import ImageLogoEcmwf from 'assets/img/logo-ecmwf.png';
@@ -25,7 +26,12 @@ const logos = [
   }
 ];
 
-const LogosBlock = ({ position = 'header', onClose = () => {}, barRef = {}, outerHeight = 0 }) => {
+const LogosBlock = ({
+  position = 'header',
+  onClose = () => {},
+  barRef = null,
+  outerHeight = 0
+}) => {
   const onCloseBar = e => {
     e.preventDefault();
     onClose(e);
@@ -73,6 +79,13 @@ const LogosBlock = ({ position = 'header', onClose = () => {}, barRef = {}, oute
       </div>
     </div>
   );
+};
+
+LogosBlock.propTypes = {
+  position: PropTypes.string,
+  onClose: PropTypes.func,
+  barRef: PropTypes.any,
+  outerHeight: PropTypes.number || PropTypes.string
 };
 
 export default LogosBlock;
