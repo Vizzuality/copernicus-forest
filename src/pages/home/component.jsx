@@ -23,7 +23,7 @@ function HomePage() {
                     alt="background"
                   />
                 </div>
-                <div className="wrapper">
+                <div className={cx('wrapper', styles.wrapper)}>
                   <div className="row">
                     <div className="col-md-10 col-xs-12">
                       <h1 className="section-title">
@@ -43,7 +43,7 @@ function HomePage() {
                 </button>
               </div>
               <div className="section">
-                <div className={cx('wrapper', styles.countriesSection)}>
+                <div className={cx('wrapper', styles.wrapper, styles.countriesSection)}>
                   <div className={styles.row}>
                     {COUNTRIES.map(country => (
                       <div key={country.name} style={{ gridArea: country.name }}>
