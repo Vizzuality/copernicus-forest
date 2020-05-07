@@ -71,7 +71,12 @@ const Footer = () => {
                 <ul block="ce_footer" className="nav--footer">
                   {FOOTER_MENU.map(m => (
                     <li key={m.link} className="menu-item">
-                      <a href={m.link}>{m.title}</a>
+                      <a
+                        href={m.fullUrl ? m.fullUrl : m.link}
+                        target={m.fullUrl ? '_blank' : '_self'}
+                      >
+                        {m.title}
+                      </a>
                     </li>
                   ))}
                 </ul>

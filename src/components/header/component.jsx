@@ -1,7 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Link } from 'react-router-dom';
 import { HEADER_MENU_FIRST, HEADER_MENU_SECOND } from 'constants.js';
@@ -11,6 +14,9 @@ import LogosBlock from '../LogosBlock';
 import SearchBlock from './components/SearchBlock';
 import SubHeader from './components/SubHeader';
 import styles from './styles.module.scss';
+
+const MenuLink = ({ m, to, ...props }) =>
+  m && m.fullUrl ? <a href={to} {...props} /> : <Link {...props} />;
 
 const HeaderComponent = () => {
   const barRef = useRef({});
@@ -66,9 +72,14 @@ const HeaderComponent = () => {
                 <ul block="ce_main_menu" className={styles.nav__main}>
                   {HEADER_MENU_SECOND.map(m => (
                     <li key={m.link} className={styles['menu-item menu-item--collapsed']}>
-                      <Link to={m.link} title={m.title}>
+                      <MenuLink
+                        m={m}
+                        target={m.fullUrl ? '_blank' : '_self'}
+                        to={m.fullUrl ? m.fullUrl : m.link}
+                        title={m.title}
+                      >
                         {m.title}
-                      </Link>
+                      </MenuLink>
                     </li>
                   ))}
                 </ul>
@@ -79,9 +90,14 @@ const HeaderComponent = () => {
                 <ul block="secondarynavigation" className={styles.nav__sub}>
                   {HEADER_MENU_FIRST.map(m => (
                     <li key={m.link} className={styles['menu-item']}>
-                      <Link to={m.link} title={m.title}>
+                      <MenuLink
+                        m={m}
+                        target={m.fullUrl ? '_blank' : '_self'}
+                        to={m.fullUrl ? m.fullUrl : m.link}
+                        title={m.title}
+                      >
                         {m.title}
-                      </Link>
+                      </MenuLink>
                     </li>
                   ))}
                 </ul>
@@ -106,6 +122,11 @@ const HeaderComponent = () => {
       <SubHeader />
     </>
   );
+};
+
+MenuLink.propTypes = {
+  m: PropTypes.any,
+  to: PropTypes.string
 };
 
 export default HeaderComponent;

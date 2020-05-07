@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 const SubHeader = () => {
   const match = useRouteMatch('/:iso/:type/:id?');
-  const { iso, type, id } = (match && match.params) || {};
+  const { iso, type = 'distribution', id = null } = (match && match.params) || {};
   const { pathname } = useLocation();
 
   const urls = {
@@ -35,7 +35,7 @@ const SubHeader = () => {
     {
       name: iso ? COUNTRIES.find(c => c.iso === iso).name : 'Country',
       sections: COUNTRIES.map(c => {
-        c.path = `/${c.iso}/${type}/${id}`;
+        c.path = `/${c.iso}/${type}${id ? `/${id}` : ''}`;
         c.active = pathname.includes(`/${c.iso}`);
         return c;
       })

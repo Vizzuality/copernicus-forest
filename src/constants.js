@@ -61,24 +61,30 @@ export const DEFAULT_LAYER_OPACITY = 60;
 export const FOOTER_MENU = [
   {
     title: 'Contact us',
-    link: '/contact-us'
+    link: '/contact-us',
+    fullUrl: 'https://climate.copernicus.eu/contact-us'
   },
   {
     title: 'Cookies',
-    link: '/cookies'
+    link: '/cookies',
+    fullUrl: 'https://climate.copernicus.eu/cookies'
   },
   {
     title: 'Data Protection Officer',
-    link: '/data-protection-officer'
+    link: '/data-protection-officer',
+    fullUrl: 'https://climate.copernicus.eu/data-protection-officer'
   },
   {
     title: 'Data licence',
     link:
+      'https://climate.copernicus.eu/sites/default/files/2018-04/20170117_Copernicus_License_V1.0.pdf',
+    fullUrl:
       'https://climate.copernicus.eu/sites/default/files/2018-04/20170117_Copernicus_License_V1.0.pdf'
   },
   {
     title: 'Disclaimer &amp; Privacy',
-    link: '/disclaimer-and-privacy'
+    link: '/disclaimer-and-privacy',
+    fullUrl: 'https://climate.copernicus.eu/disclaimer-and-privacy'
   }
 ];
 
@@ -103,33 +109,39 @@ export const FOOTER_SOCIAL_LINKS = [
 export const HEADER_MENU_FIRST = [
   {
     title: 'News',
-    link: '/news'
+    link: '/news',
+    fullUrl: 'https://climate.copernicus.eu/news'
   },
   {
     title: 'Events',
-    link: '/events'
+    link: '/events',
+    fullUrl: 'https://climate.copernicus.eu/events'
   },
   {
     title: 'Press',
-    link: '/press-releases'
+    link: '/press-releases',
+    fullUrl: 'https://climate.copernicus.eu/press-releases'
   },
   {
     title: 'Trends',
-    link: '/complete-list-tenders-issued-c3s'
+    link: '/complete-list-tenders-issued-c3s',
+    fullUrl: 'https://climate.copernicus.eu/complete-list-tenders-issued-c3s'
   },
   {
     title: 'Help &amp; Support',
-    link: '/help-support'
+    link: '/help-support',
+    fullUrl: 'https://climate.copernicus.eu/help-support'
   }
 ];
 
 export const HEADER_MENU_SECOND = [
   {
     title: 'What we do',
-    link: '/what-we-do'
+    link: '/what-we-do',
+    fullUrl: 'https://climate.copernicus.eu/what-we-do'
   },
   {
     title: 'Data',
-    link: 'http://cds.climate.copernicus.eu/'
+    fullUrl: 'http://cds.climate.copernicus.eu/'
   }
 ];
