@@ -1,38 +1,34 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import './styles.scss';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
+import styles from './styles.module.scss';
 
-const SearchBlock = ({ searchRef = {}, outerHeight = 0 }) => {
+const SearchBlock = ({ searchRef = null, outerHeight = 0 }) => {
   return (
-    <div className="search-bar-box" ref={searchRef} style={{ height: outerHeight }}>
-      <div className="search-bar">
-        <div className="bar__inner">
-          <div className="site-header-search">
-            <form className="views-exposed-form" method="get">
-              <div className="form--inline">
+    <div className={styles['search-bar-box']} ref={searchRef} style={{ height: outerHeight }}>
+      <div className={styles['search-bar']}>
+        <div className={styles.bar__inner}>
+          <div className={styles['site-header-search']}>
+            <form className={styles['views-exposed-form']} method="get">
+              <div className={styles['form--inline']}>
                 <div>
                   <label htmlFor="edit-search-api-fulltext">Search this site</label>
                   <input
-                    data-drupal-selector="edit-search-api-fulltext"
                     type="text"
                     id="edit-search-api-fulltext"
                     name="search_api_fulltext"
                     size="30"
                     maxLength="128"
-                    className="form-text"
+                    className={styles['form-text']}
                   />
                 </div>
-                <div
-                  data-drupal-selector="edit-actions"
-                  className="form-actions js-form-wrapper form-wrapper"
-                  id="edit-actions--5"
-                >
+                <div className={styles['form-wrapper']} id="edit-actions--5">
                   <input
-                    data-drupal-selector="edit-submit-sitewide-search"
                     type="submit"
                     id="edit-submit-sitewide-search"
                     value="Search"
-                    className="button js-form-submit form-submit"
+                    className={cx('button', styles['form-submit'])}
                   />
                 </div>
               </div>
@@ -42,6 +38,11 @@ const SearchBlock = ({ searchRef = {}, outerHeight = 0 }) => {
       </div>
     </div>
   );
+};
+
+SearchBlock.propTypes = {
+  searchRef: PropTypes.any,
+  outerHeight: PropTypes.number || PropTypes.string
 };
 
 export default SearchBlock;
