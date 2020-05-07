@@ -9,6 +9,7 @@ header {
     background-color: white;
     overflow: hidden;
     position: relative;
+    z-index: 5;
 
     @media (min-width: 980px) {
       padding: 0 0 18px 0;

@@ -3,6 +3,8 @@
 .cSubheader {
   border-bottom: 2px solid $color-border;
   background-color: white;
+  position: relative;
+  z-index: 5;
 }
 
 .container {

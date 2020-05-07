@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import ImageLogoEC from 'assets/img/logo-ec.png';
 import ImageLogoCopernicus from 'assets/img/logo-copernicus.png';
 import ImageLogoEcmwf from 'assets/img/logo-ecmwf.png';
-import './styles.scss';
+import cx from 'classnames';
+import styles from './styles.module.scss';
 
 const logos = [
   {
@@ -38,9 +39,9 @@ const LogosBlock = ({
   };
 
   const isFooter = position === 'footer';
-  const mainClass = ['c-logos-block-section'];
+  const mainClass = [styles['c-logos-block-section']];
   if (isFooter) {
-    mainClass.push('isFooter');
+    mainClass.push(styles.isFooter);
   }
 
   return (
@@ -49,13 +50,13 @@ const LogosBlock = ({
       className={mainClass.join(' ')}
       style={{ height: isFooter ? 'auto' : outerHeight }}
     >
-      <div className="bar">
-        <div className="bar__inner ">
-          <div className="logos-block">
+      <div className={styles.bar}>
+        <div className={styles.bar__inner}>
+          <div className={styles['logos-block']}>
             {logos.map(logo => (
               <a key={logo.key} href={logo.href}>
                 <img
-                  className={`logo ${logo.key}`}
+                  className={cx(styles.logo, logo.key)}
                   src={logo.image}
                   title={logo.title}
                   alt={logo.title}
@@ -63,12 +64,8 @@ const LogosBlock = ({
               </a>
             ))}
             {!isFooter && (
-              <a
-                href="/"
-                onClick={e => onCloseBar(e)}
-                className="button toggle button--light close-toggle-permanently"
-              >
-                <svg className="social-link-icon-img">
+              <a href="/" onClick={e => onCloseBar(e)} className={styles.button}>
+                <svg>
                   <use xlinkHref="#icon-cross" />
                 </svg>
                 close
