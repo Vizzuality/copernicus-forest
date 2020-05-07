@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useRef } from 'react';
+import cx from 'classnames';
 import { Link } from 'react-router-dom';
 import { HEADER_MENU_FIRST, HEADER_MENU_SECOND } from 'constants.js';
 import BgHeader from 'assets/img/bg-header.png';
@@ -9,8 +10,7 @@ import LogoImage from 'assets/img/c3s-logo.svg';
 import LogosBlock from '../LogosBlock';
 import SearchBlock from './components/SearchBlock';
 import SubHeader from './components/SubHeader';
-
-import './styles.scss';
+import styles from './styles.module.scss';
 
 const HeaderComponent = () => {
   const barRef = useRef({});
@@ -37,31 +37,35 @@ const HeaderComponent = () => {
 
   return (
     <>
-      <header role="banner" className="banner" style={{ backgroundImage: `url(${BgHeader})` }}>
-        <div className="banner__inner">
+      <header
+        role="banner"
+        className={styles.banner}
+        style={{ backgroundImage: `url(${BgHeader})` }}
+      >
+        <div className={styles.banner__inner}>
           <input
             type="checkbox"
             name="mobile-menu-toggle"
             id="mobile-menu-toggle"
-            className="mobile-menu-box"
+            className={styles['mobile-menu-box']}
           />
-          <div className="banner__logo">
-            <p className="info-link">
+          <div className={styles.banner__logo}>
+            <p className={styles['info-link']}>
               Implemented by <a href="https://www.ecmwf.int">ECMWF</a> as part of{' '}
               <a href="/" onClick={e => clickToProgram(e)}>
                 The Copernicus Programme
               </a>
             </p>
             <Link to="/" title="Home" rel="home" id="logo">
-              <img className="logo" src={LogoImage} height="66" alt="Home" />
+              <img className={styles.logo} src={LogoImage} height="66" alt="Home" />
             </Link>
           </div>
-          <div className="menus">
-            <div className="nav__main-wrapper">
+          <div className={styles.menus}>
+            <div className={styles['nav__main-wrapper']}>
               <nav role="navigation">
-                <ul block="ce_main_menu" className="nav__main">
+                <ul block="ce_main_menu" className={styles.nav__main}>
                   {HEADER_MENU_SECOND.map(m => (
-                    <li key={m.link} className="menu-item menu-item--collapsed">
+                    <li key={m.link} className={styles['menu-item menu-item--collapsed']}>
                       <Link to={m.link} title={m.title}>
                         {m.title}
                       </Link>
@@ -70,11 +74,11 @@ const HeaderComponent = () => {
                 </ul>
               </nav>
             </div>
-            <div className="nav__sub-wrapper">
+            <div className={styles['nav__sub-wrapper']}>
               <nav role="navigation">
-                <ul block="secondarynavigation" className="nav__sub">
+                <ul block="secondarynavigation" className={styles.nav__sub}>
                   {HEADER_MENU_FIRST.map(m => (
-                    <li key={m.link} className="menu-item">
+                    <li key={m.link} className={styles['menu-item']}>
                       <Link to={m.link} title={m.title}>
                         {m.title}
                       </Link>
@@ -84,11 +88,14 @@ const HeaderComponent = () => {
               </nav>
             </div>
           </div>
-          <div className="mobile-menu-labels">
-            <label htmlFor="mobile-menu-toggle" className="mobile-menu-label hidden" />
+          <div className={styles['mobile-menu-labels']}>
+            <label
+              htmlFor="mobile-menu-toggle"
+              className={cx(styles['mobile-menu-label'], styles.hidden)}
+            />
             <label
               htmlFor="search-toggle"
-              className="search-toggle search-label"
+              className={cx(styles['search-toggle'], styles['search-label'])}
               onClick={e => clickToSearch(e)}
             />
           </div>
