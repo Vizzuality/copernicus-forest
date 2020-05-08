@@ -1,6 +1,8 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 import { Provider, createClient } from 'urql';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
+import Modal from 'components/modal';
 import Icons from 'components/icons';
 import './App.scss';
 
@@ -16,28 +18,39 @@ const client = createClient({
 });
 
 function AppRouter() {
+  const [isOpenModal, setOpenModal] = useState(true);
+
   return (
     <Router>
       <Provider value={client}>
-        <div className="c-app">
-          <Icons />
-          <Suspense fallback={<Placeholder />}>
-            <Header />
-            <Switch>
-              <Route path="/" exact component={HomePage} />
-              <Redirect
-                from="/:iso"
-                exact
-                to="/:iso/distribution/:id?"
-                component={SpeciesDistributionComponent}
-              />
-              <Route path="/:iso/species/:id?" component={SpeciesDistributionComponent} />
-              <Route path="/:iso/distribution/:id?" component={SpeciesDistributionComponent} />
-              <Route path="/:iso/bioclimatic/:id?" component={BioclimaticPage} />
-            </Switch>
-            <Footer />
-          </Suspense>
-        </div>
+        {isMobile && isOpenModal ? (
+          <Modal
+            isOpen={isOpenModal}
+            handleClose={() => setOpenModal(false)}
+            title="Sorry! no responsive"
+            text="This site does not support mobile version yet. Check the desktop version for the full experience."
+          />
+        ) : (
+          <div className="c-app">
+            <Icons />
+            <Suspense fallback={<Placeholder />}>
+              <Header />
+              <Switch>
+                <Route path="/" exact component={HomePage} />
+                <Redirect
+                  from="/:iso"
+                  exact
+                  to="/:iso/distribution/:id?"
+                  component={SpeciesDistributionComponent}
+                />
+                <Route path="/:iso/species/:id?" component={SpeciesDistributionComponent} />
+                <Route path="/:iso/distribution/:id?" component={SpeciesDistributionComponent} />
+                <Route path="/:iso/bioclimatic/:id?" component={BioclimaticPage} />
+              </Switch>
+              <Footer />
+            </Suspense>
+          </div>
+        )}
       </Provider>
     </Router>
   );

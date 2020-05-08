@@ -21,10 +21,10 @@ const SpeciesDistribution = () => {
   const species = data ? data.species : [];
 
   useEffect(() => {
-    if (species && species.length && !id) {
-      history.push(`${pathname}/${species[0].id}`);
+    if (iso && type && species && species.length && !id) {
+      history.push(`/${iso}/${type}/${species[0].id}`);
     }
-  }, [history, id, pathname, species]);
+  }, [history, id, iso, pathname, species, type]);
 
   const activeSpecies = species.length ? species.find(sp => sp.id === id) || species[0] : null;
   const activeCountry = data ? data.countries.find(c => c.iso === iso) : null;

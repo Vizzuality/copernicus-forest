@@ -4,12 +4,11 @@
   overflow: hidden;
   color: white;
   background-color: white;
-  // margin-top: 50px;
 
   &__top {
     background-color: #941333;    
     @media (min-width: 700px) {
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
     }
 
     &__inner {
@@ -40,7 +39,7 @@
       }
 
       .newsletter {
-
+        display: none;
         width: 100%;
         @media (min-width: 700px) {
           width: 50%;

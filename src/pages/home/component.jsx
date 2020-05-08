@@ -11,7 +11,6 @@ function HomePage() {
     <div className="c-home l-page">
       <ReactFullpage
         licenseKey={process.env.fullpage_license}
-        paddingTop="70px"
         render={({ fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
@@ -35,12 +34,15 @@ function HomePage() {
                         their suitable habitat. Which areas would be favourable for forests in the
                         future?
                       </p>
+                      <button
+                        className="button toggle"
+                        onClick={() => fullpageApi.moveSectionDown()}
+                      >
+                        Choose country
+                      </button>
                     </div>
                   </div>
                 </div>
-                <button className="button toggle" onClick={() => fullpageApi.moveSectionDown()}>
-                  Choose country
-                </button>
               </div>
               <div className="section">
                 <div className={cx('wrapper', styles.wrapper, styles.countriesSection)}>

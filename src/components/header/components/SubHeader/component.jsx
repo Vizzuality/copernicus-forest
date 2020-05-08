@@ -7,13 +7,14 @@ import styles from './styles.module.scss';
 
 const SubHeader = () => {
   const match = useRouteMatch('/:iso/:type/:id?');
-  const { iso, type = 'distribution', id = null } = (match && match.params) || {};
+  const { iso = COUNTRIES[0].iso, type = 'distribution', id = null } =
+    (match && match.params) || {};
   const { pathname } = useLocation();
 
   const urls = {
-    species: type === 'species' ? '#' : `/${iso}/species/${id}`,
-    distribution: type === 'distribution' ? '#' : `/${iso}/distribution/${id}`,
-    bioclimatic: type === 'bioclimatic' ? '#' : `/${iso}/bioclimatic/${id}`
+    species: `/${iso}/species/${id ? `${id}` : ''}`,
+    distribution: `/${iso}/distribution/${id ? `${id}` : ''}`,
+    bioclimatic: `/${iso}/bioclimatic/${id ? `${id}` : ''}`
   };
 
   const speciesTabsData = [

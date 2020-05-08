@@ -2,10 +2,14 @@
 
 .c-modal {
   padding: 70px 80px;
-  width: 620px;
+  max-width: 620px;
   background-color: $color-background;
   font-family: $font-family-2;
   color: $color-gray-1;
+
+  @media (max-width: 600px) {
+    padding: 30px 40px;
+  }
   
   .modal-title {
     font-size: 30px;
@@ -41,4 +45,5 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.75);
+  z-index: 10;
 }

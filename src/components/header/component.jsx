@@ -5,24 +5,22 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 import { Link } from 'react-router-dom';
 import { HEADER_MENU_FIRST, HEADER_MENU_SECOND } from 'constants.js';
 import BgHeader from 'assets/img/bg-header.png';
 import LogoImage from 'assets/img/c3s-logo.svg';
 import LogosBlock from '../LogosBlock';
-import SearchBlock from './components/SearchBlock';
 import SubHeader from './components/SubHeader';
 import styles from './styles.module.scss';
+/* This section disabled temporary */
+// import SearchBlock from './components/SearchBlock';
 
 const MenuLink = ({ m, to, ...props }) =>
   m && m.fullUrl ? <a href={to} {...props} /> : <Link {...props} />;
 
 const HeaderComponent = () => {
   const barRef = useRef({});
-  const searchRef = useRef({});
   const [logosOuterHeight, setLogosOuterHeight] = useState(0);
-  const [searchOuterHeight, setSearchOuterHeight] = useState(0);
   const [isOpen, setOpen] = useState(false);
 
   const clickToProgram = e => {
@@ -33,6 +31,10 @@ const HeaderComponent = () => {
     setLogosOuterHeight(height);
   };
 
+  /* This section disabled temporary */
+  /*
+  const searchRef = useRef({});
+  const [searchOuterHeight, setSearchOuterHeight] = useState(0);
   const clickToSearch = e => {
     e.preventDefault();
     setOpen(!isOpen);
@@ -40,6 +42,7 @@ const HeaderComponent = () => {
     const height = searchOuterHeight ? 0 : panel.scrollHeight;
     setSearchOuterHeight(height);
   };
+  */
 
   return (
     <>
@@ -70,8 +73,8 @@ const HeaderComponent = () => {
             <div className={styles['nav__main-wrapper']}>
               <nav role="navigation">
                 <ul block="ce_main_menu" className={styles.nav__main}>
-                  {HEADER_MENU_SECOND.map(m => (
-                    <li key={m.link} className={styles['menu-item menu-item--collapsed']}>
+                  {HEADER_MENU_SECOND.map((m, key) => (
+                    <li key={key} className={styles['menu-item menu-item--collapsed']}>
                       <MenuLink
                         m={m}
                         target={m.fullUrl ? '_blank' : '_self'}
@@ -88,8 +91,8 @@ const HeaderComponent = () => {
             <div className={styles['nav__sub-wrapper']}>
               <nav role="navigation">
                 <ul block="secondarynavigation" className={styles.nav__sub}>
-                  {HEADER_MENU_FIRST.map(m => (
-                    <li key={m.link} className={styles['menu-item']}>
+                  {HEADER_MENU_FIRST.map((m, key) => (
+                    <li key={key} className={styles['menu-item']}>
                       <MenuLink
                         m={m}
                         target={m.fullUrl ? '_blank' : '_self'}
@@ -104,7 +107,8 @@ const HeaderComponent = () => {
               </nav>
             </div>
           </div>
-          <div className={styles['mobile-menu-labels']}>
+          {/* This section disabled temporary */}
+          {/* <div className={styles['mobile-menu-labels']}>
             <label
               htmlFor="mobile-menu-toggle"
               className={cx(styles['mobile-menu-label'], styles.hidden)}
@@ -114,11 +118,12 @@ const HeaderComponent = () => {
               className={cx(styles['search-toggle'], styles['search-label'])}
               onClick={e => clickToSearch(e)}
             />
-          </div>
+          </div> */}
         </div>
       </header>
       <LogosBlock barRef={barRef} outerHeight={logosOuterHeight} onClose={clickToProgram} />
-      <SearchBlock position="header" searchRef={searchRef} outerHeight={searchOuterHeight} />
+      {/* This section disabled temporary */}
+      {/* <SearchBlock position="header" searchRef={searchRef} outerHeight={searchOuterHeight} /> */}
       <SubHeader />
     </>
   );
