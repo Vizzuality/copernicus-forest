@@ -6,7 +6,6 @@ import { useSpeciesPerCountry } from 'graphql/queries';
 import cx from 'classnames';
 import Icon from 'components/icon';
 import Chart from 'components/chart';
-import Modal from 'components/modal';
 import styles from './styles.module.scss';
 
 function SpeciesPage({ match }) {
@@ -79,10 +78,6 @@ function SpeciesPage({ match }) {
 
   const speciesIndex = species.length && species.findIndex(item => item.id === activeSpecies.id);
 
-  // Species modal:
-  const modalOpenedBefore = sessionStorage.getItem('species');
-  const [isModalOpen, setModalOpen] = useState(!modalOpenedBefore);
-
   return (
     <div className={cx(styles['c-species'], styles['l-page'])}>
       {fetching && <p>Loading...</p>}
@@ -136,14 +131,6 @@ function SpeciesPage({ match }) {
                 />
               </div>
             )}
-            <Modal
-              title="Species distribution data"
-              text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
-                the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
-              isOpen={isModalOpen}
-              afterOpen={() => sessionStorage.setItem('species', true)}
-              handleClose={() => setModalOpen(false)}
-            />
           </div>
         </div>
       )}
