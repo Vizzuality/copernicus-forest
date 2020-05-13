@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import sortBy from 'lodash/sortBy';
 import groupBy from 'lodash/groupBy';
-import LayerToggle from 'components/map/controls/layer-toggle';
+// import LayerToggle from 'components/map/controls/layer-toggle';
 import Zoom from 'components/map/controls/zoom';
 import Modal from 'components/modal';
 import Map from 'components/map';
@@ -79,10 +79,10 @@ function BioClimaticPage(props) {
       : null;
   return (
     <div className={cx(styles.bioclimatic, 'l-page')}>
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <Filters {...filters} />
       <div className={styles.content}>
         <div className={styles.bioclimaticChart}>
+          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+          <Filters {...filters} />
           <Accordion
             activeItemId={chosenBiovar}
             scrollKey={country}
@@ -126,7 +126,7 @@ function BioClimaticPage(props) {
           />
           <div className={styles.navigationBar}>
             <Zoom viewport={viewport} setViewport={setViewport} />
-            <LayerToggle theme={styles.layerToggle} />
+            {/* <LayerToggle theme={styles.layerToggle} /> */}
           </div>
           <Modal
             title="Bioclimatic variables data"
@@ -137,7 +137,7 @@ function BioClimaticPage(props) {
             handleClose={() => setModalOpen(false)}
           />
           <RampLegend
-            title={`BIO ${biovarNumber}`}
+            title={`${chosenBiovarItem ? chosenBiovarItem.name : ''}`}
             colorRamp={rampColors} // purple
             lowEndName="Low"
             highEndName="High"

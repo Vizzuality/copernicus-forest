@@ -2,7 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Map from 'components/map';
-import LayerToggle from 'components/map/controls/layer-toggle';
 import Zoom from 'components/map/controls/zoom';
 import RampLegend from 'components/ramp-legend';
 import Timeline from 'components/map/controls/timeline';
@@ -74,7 +73,6 @@ const DistributionPageComponent = ({
       />
       <div className={styles.navigationBar}>
         <Zoom viewport={viewport} setViewport={setViewport} />
-        <LayerToggle theme={styles.layerToggle} />
       </div>
       <RampLegend
         title="Committee average"

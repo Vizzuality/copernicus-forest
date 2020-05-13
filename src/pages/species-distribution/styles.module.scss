@@ -10,7 +10,7 @@ $species-list-width: 330px;
 }
 
 .content {
-  background-color: $color-background;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
   border-left: 1px solid $color-black;
@@ -27,6 +27,7 @@ $species-list-width: 330px;
 }
 
 .speciesSidebar {
+  position: relative;
   height: 100%;
   background-color: $color-gray-1;
   display: flex;
@@ -34,6 +35,7 @@ $species-list-width: 330px;
   width: $species-list-width;
   font-style: italic;
   font-family: $font-family-2;
+  border-right: 2px solid $color-dark-red;
 
   img {
     display: flex;
@@ -48,6 +50,13 @@ $species-list-width: 330px;
   }
 }
 
+.imageBox {
+  width: 100%;
+  height: 330px;
+  background-position: center;
+  background-size: cover;
+}
+
 .navBar {
   display: flex;
   //overflow-y: hidden;
@@ -58,17 +67,33 @@ $species-list-width: 330px;
 }
 
 .toggleBarButton {
-  background-color: $color-gray-1;
-  flex-shrink: 0;
-  width: 70px;
+  position: absolute;
+  top: 0;
+  left: -47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 47px;
+  width: 47px;
+  border: 2px solid #941333;
+  background-color: #941333;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 
   svg {
     fill: $color-white;
+    width: 9px;
+    height: 16px;
   }
 }
 
-.expandBarButton svg {
-  transform: rotate(180deg);
+.expandBarButton {
+  left: -1px;
+  top: 44px;
+  svg {
+    transform: rotate(180deg);
+  }
 }
 
 .downloadBtnContainer {

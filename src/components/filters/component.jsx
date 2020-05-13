@@ -4,6 +4,15 @@ import Dropdown from 'components/dropdown';
 import Icon from 'components/icon';
 import styles from './styles.module.scss';
 
+const TitleSenario = ({ scenario, parsedScenarios }) => {
+  return (
+    <>
+      <span>Future scenarios:</span> $
+      {scenario && parsedScenarios && parsedScenarios.find(s => s.value === scenario).shortName}
+    </>
+  );
+};
+
 const FiltersComponent = ({
   startYear,
   setStartYear,
@@ -42,9 +51,7 @@ const FiltersComponent = ({
         {scenario && (
           <Dropdown
             className={styles.dropdownLarge}
-            title={`Future scenarios: ${scenario &&
-              parsedScenarios &&
-              parsedScenarios.find(s => s.value === scenario).shortName}`}
+            title={<TitleSenario scenario={scenario} parsedScenarios={parsedScenarios} />}
             options={parsedScenarios}
             handleClick={option => setScenario(option.value)}
           />
@@ -59,6 +66,11 @@ const FiltersComponent = ({
       )}
     </div>
   );
+};
+
+TitleSenario.propTypes = {
+  scenario: PropTypes.string,
+  parsedScenarios: PropTypes.array
 };
 
 FiltersComponent.propTypes = {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import SpeciesList from 'components/species-list';
-import TabsBar from 'components/tabs';
+// import TabsBar from 'components/tabs';
 import cx from 'classnames';
 import Icon from 'components/icon';
 import Modal from 'components/modal';
@@ -12,11 +12,9 @@ const SpeciesDistributionComponent = props => {
   const {
     match,
     wikiInfo,
-    downloadUrl,
     activeSpecies,
     species,
     activeCountry,
-    speciesTabsData,
     ContentComponent,
     speciesListVisible,
     toggleSpeciesList,
@@ -30,13 +28,11 @@ const SpeciesDistributionComponent = props => {
   return (
     <div className={styles.container}>
       <div className={styles.speciesSidebar}>
-        <img
-          src={wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source}
-          alt={
-            activeSpecies &&
-            `Image not available:
-            ${activeSpecies.name}`
-          }
+        <div
+          className={styles.imageBox}
+          style={{
+            backgroundImage: `url(${wikiInfo && wikiInfo.thumbnail && wikiInfo.thumbnail.source})`
+          }}
         />
         {activeSpecies && (
           <SpeciesList
@@ -47,6 +43,7 @@ const SpeciesDistributionComponent = props => {
           />
         )}
       </div>
+
       <div className={cx(styles.content, { [styles.contentStretched]: !speciesListVisible })}>
         <div className={styles.navBar}>
           <button
@@ -57,14 +54,6 @@ const SpeciesDistributionComponent = props => {
           >
             <Icon name="icon-arrow-left" />
           </button>
-          <TabsBar data={speciesTabsData} />
-          {downloadUrl && (
-            <div className={styles.downloadBtnContainer}>
-              <button onClick={() => {}} className={styles.downloadBtn}>
-                <Icon name="icon-download" />
-              </button>
-            </div>
-          )}
         </div>
         <ContentComponent
           match={match}
@@ -90,11 +79,11 @@ SpeciesDistributionComponent.propTypes = {
   activeSpecies: PropTypes.object,
   species: PropTypes.array,
   activeCountry: PropTypes.object,
-  speciesTabsData: PropTypes.array,
+  // speciesTabsData: PropTypes.array,
   ContentComponent: PropTypes.func,
   speciesListVisible: PropTypes.bool,
   toggleSpeciesList: PropTypes.func,
-  downloadUrl: PropTypes.string,
+  // downloadUrl: PropTypes.string,
   activePage: PropTypes.string
 };
 

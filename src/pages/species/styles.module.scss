@@ -1,0 +1,197 @@
+@import '~styles/settings';
+
+$button-size: 45px;
+$sidebar-size: 330px;
+
+.c-species {
+  position: relative;
+  background-color: $color-white;
+  overflow-y: hidden;
+
+  .content {
+    height: 100%;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: $color-white;
+
+    .species-detail {
+      padding: 45px 106px;
+      overflow-y: auto;
+      width: 100%;
+
+      .species-dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: $button-size;
+      }
+
+      // .species-source,
+      .species-chart-title {
+          color: $color-black;
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 26px;
+          font-family: $font-family-3;
+          margin: 45px 0 20px 0;
+          min-height: 26px;
+
+          a {
+            text-decoration: underline;
+          }
+      }
+
+      > h1 {
+        font-family: $font-family-3;
+        font-weight: 500;
+        line-height: 84px;
+        font-size: 60px;
+        font-style: italic;
+        letter-spacing: 0;
+        line-height: 82px;
+        color: #222222;
+        margin-top: 20px;
+      }
+
+      > h3 {
+        font-size: $font-size-big;
+        min-height: 22px;
+        color: #222222;
+        font-family: "Open Sans";
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 22px;
+        font-weight: normal;
+        margin-top: 45px;
+
+        span {
+          color: #222222;
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 22px;
+          text-align: center;
+          background-color: #E6E6E6;
+          padding: 2px 20px;
+          margin-left: 12px;
+        }
+      }
+
+      .description {
+        font-family: $font-family-3;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: #222222;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+      }
+    }
+
+    .species-navbar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      top: 0;
+      right: 0;
+
+      @media (max-width: 1300px) {
+        flex-wrap: wrap;
+      }
+
+      > h1 {
+        height: 27px;
+        color: $color-black;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 27px;
+        width: 60%;
+        font-style: normal;
+        text-transform: uppercase;
+
+        @media (max-width: 1300px) {
+          width: 100%;
+        }
+      }
+
+      .navLinks {
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          width: 100%;
+          height: 28px; 
+          opacity: 0.5;
+          color: #222222;
+          font-family: "Open Sans";
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 28px;
+          font-weight: 400;
+          background-color: transparent;
+          transition: all 0.3s ease-in-out;
+          padding: 0;
+
+          &:hover {
+            color: $color-black;
+            opacity: 1;
+          }
+        }
+
+        .leftLink {
+          width: 50%;
+          text-align: right;
+          svg {
+            margin-right: 10px;
+          }
+        }
+
+        .rightLink {
+          width: 50%;
+          text-align: left;
+
+          svg {
+            margin-left: 10px;
+            transform: rotate(180deg);
+          }
+        }
+
+        @media (max-width: 1300px) {
+          margin-left: -20px;
+          order: -1;
+          padding-bottom: 15px;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $button-size;
+      }
+
+      .nav-button {
+        font-weight: bold;
+        font-size: 24px;
+        width: $button-size;
+        color: $color-white;
+        background-color: $color-orange;
+        padding-bottom: 4px;
+
+        &.disabled {
+          color: rgba($color-white, 0.5);
+        }
+      }
+
+      .nav-link {
+        padding: 0 18px;
+        background: $color-orange;
+      }
+    }
+  }
+}

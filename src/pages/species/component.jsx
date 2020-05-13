@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import groupBy from 'lodash/groupBy';
 import { useSpeciesPerCountry } from 'graphql/queries';
 import cx from 'classnames';
+import Icon from 'components/icon';
 import Chart from 'components/chart';
-import Modal from 'components/modal';
-import styles from './styles.scss';
+import styles from './styles.module.scss';
 
 function SpeciesPage({ match }) {
   const { iso, id } = (match && match.params) || {};
@@ -78,40 +78,49 @@ function SpeciesPage({ match }) {
 
   const speciesIndex = species.length && species.findIndex(item => item.id === activeSpecies.id);
 
-  // Species modal:
-  const modalOpenedBefore = sessionStorage.getItem('species');
-  const [isModalOpen, setModalOpen] = useState(!modalOpenedBefore);
-
   return (
-    <div className="c-species l-page">
+    <div className={cx(styles['c-species'], styles['l-page'])}>
       {fetching && <p>Loading...</p>}
       {error && <p>Error retrieving the data</p>}
       {!fetching && !error && (
-        <div className="content">
-          {species && (
-            <div className="species-navbar">
-              {/* provisional arrows. TODO: change this ! */}
-              <Link
-                to={getPrevSpecie(speciesIndex)}
-                className={cx('nav-button', { disabled: speciesIndex === 0 })}
-              >
-                &lt;
-              </Link>
-              <Link
-                to={getNextSpecie(speciesIndex)}
-                className={cx('nav-button', { disabled: speciesIndex === species.length - 1 })}
-              >
-                &gt;
-              </Link>
-            </div>
-          )}
-          <div className="species-detail">
-            <h3>{activeSpecies && activeSpecies.scientificName}</h3>
+        <div className={styles.content}>
+          <div className={styles['species-detail']}>
+            {species && (
+              <div className={styles['species-navbar']}>
+                <h1>Species summary</h1>
+                <div className={styles.navLinks}>
+                  <div className={styles.leftLink}>
+                    <Link
+                      to={getPrevSpecie(speciesIndex)}
+                      className={cx(styles['nav-button'], { disabled: speciesIndex === 0 })}
+                    >
+                      <Icon name="icon-arrow-left" />
+                      Previous species
+                    </Link>
+                  </div>
+                  <div className={styles.rightLink}>
+                    <Link
+                      to={getNextSpecie(speciesIndex)}
+                      className={cx('nav-button', {
+                        disabled: speciesIndex === species.length - 1
+                      })}
+                    >
+                      Next species
+                      <Icon name="icon-arrow-left" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+            <h3>
+              {activeSpecies && activeSpecies.scientificName}
+              <span className={styles.status}>introduced</span>
+            </h3>
             <h1>{activeSpecies && activeSpecies.name}</h1>
-            <p className="description">{wikiInfo && wikiInfo.extract}</p>
+            <p className={styles.description}>{wikiInfo && wikiInfo.extract}</p>
             {wikiInfo && (
-              <div className="species-chart">
-                <p className="species-chart-title">
+              <div className={styles['species-chart']}>
+                <p className={styles['species-chart-title']}>
                   See in the table below a summary of the proportion of suitable area for this
                   species in the selected country.
                 </p>
@@ -122,14 +131,6 @@ function SpeciesPage({ match }) {
                 />
               </div>
             )}
-            <Modal
-              title="Species distribution data"
-              text={`Species distribution models combine information on species occurrence with environmental characteristics to estimate
-                the suitable distributional area under current and future conditions using bioclimatic variables derived from Copernicus data.`}
-              isOpen={isModalOpen}
-              afterOpen={() => sessionStorage.setItem('species', true)}
-              handleClose={() => setModalOpen(false)}
-            />
           </div>
         </div>
       )}

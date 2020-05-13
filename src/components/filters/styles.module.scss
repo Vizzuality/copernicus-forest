@@ -2,10 +2,10 @@
 
 .container {
   height: $c-header-height;
-  border-bottom: 1px solid $color-gray-1;
+  border-bottom: 2px solid #E6E6E6;
   padding-right: $c-header-padding;
   position: relative;
-  background-color: $color-desert-storm;
+  background-color: $color-white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,6 @@
 
 .dropdown {
   height: 100%;
-  border-right: 1px solid;
 }
 
 .dropdownLarge {
