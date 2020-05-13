@@ -82,7 +82,7 @@ export const FOOTER_MENU = [
       'https://climate.copernicus.eu/sites/default/files/2018-04/20170117_Copernicus_License_V1.0.pdf'
   },
   {
-    title: 'Disclaimer &amp; Privacy',
+    title: 'Disclaimer & Privacy',
     link: '/disclaimer-and-privacy',
     fullUrl: 'https://climate.copernicus.eu/disclaimer-and-privacy'
   }
@@ -128,7 +128,7 @@ export const HEADER_MENU_FIRST = [
     fullUrl: 'https://climate.copernicus.eu/complete-list-tenders-issued-c3s'
   },
   {
-    title: 'Help &amp; Support',
+    title: 'Help & Support',
     link: '/help-support',
     fullUrl: 'https://climate.copernicus.eu/help-support'
   }

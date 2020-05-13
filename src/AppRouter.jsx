@@ -18,8 +18,8 @@ const client = createClient({
 });
 
 function AppRouter() {
-  const [isOpenModal, setOpenModal] = useState(true);
-
+  const modalOpenedBefore = sessionStorage.getItem('noResponsive');
+  const [isOpenModal, setOpenModal] = useState(!modalOpenedBefore);
   return (
     <Router>
       <Provider value={client}>
@@ -27,6 +27,7 @@ function AppRouter() {
           <Modal
             isOpen={isOpenModal}
             handleClose={() => setOpenModal(false)}
+            afterOpen={() => sessionStorage.setItem('noResponsive', true)}
             title="Sorry! no responsive"
             text="This site does not support mobile version yet. Check the desktop version for the full experience."
           />

@@ -7,6 +7,13 @@ $timeline-size: 45px;
   flex-direction: column;
   position: absolute;
   width: 460px;
+
+  @media screen and (max-width: 1260px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+  }
 }
 
 .header {
@@ -17,6 +24,11 @@ $timeline-size: 45px;
   align-items: center;
   height: $timeline-size;
   width: 100%;
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 10px;
+  }
 }
 
 .title {
@@ -164,4 +176,14 @@ $timeline-size: 45px;
   height: 100%;
   left: calc(#{$timeline-size});
   position: absolute;
+}
+
+.switchBlock {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    padding: 10px;
+  }
 }

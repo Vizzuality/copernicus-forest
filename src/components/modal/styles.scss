@@ -4,7 +4,7 @@
   padding: 70px 80px;
   max-width: 620px;
   background-color: $color-background;
-  font-family: $font-family-2;
+  font-family: $font-family-3;
   color: $color-gray-1;
 
   @media (max-width: 600px) {
@@ -27,7 +27,7 @@
     text-align: center;
 
     .modal-button {
-      font-family: "Anonymous Pro";
+      font-family: $font-family-3;
       font-size: $font-size-big;
       font-weight: 700;
       color: $color-white;
