@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Switch from 'react-switch';
 import cx from 'classnames';
@@ -37,9 +37,8 @@ const TimelineComponent = ({
             {dataKeys.length > 1 &&
               dataKeys.map((key, n) => {
                 return (
-                  <>
+                  <Fragment key={key}>
                     <button
-                      key={key}
                       id={key}
                       className={cx(styles.tab, { [styles.activeTab]: key === activeTab })}
                       onClick={() => setActiveTab(key)}
@@ -49,7 +48,7 @@ const TimelineComponent = ({
                     {n === 0 && (
                       <Switch
                         onChange={() => setActiveTab(activeTab === key ? dataKeys[n + 1] : key)}
-                        checked={key === activeTab}
+                        checked={key !== activeTab}
                         uncheckedIcon={false}
                         checkedIcon={false}
                         offColor="#941333"
@@ -61,7 +60,7 @@ const TimelineComponent = ({
                         handleDiameter={12}
                       />
                     )}
-                  </>
+                  </Fragment>
                 );
               })}
           </div>
