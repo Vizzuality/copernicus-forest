@@ -31,7 +31,11 @@ const DistributionPage = props => {
 
   const scenarios = data && data.scenarios;
   const futureScenarios =
-    scenarios && sortBy(scenarios.filter(({ key }) => key !== 'current'), 'key');
+    scenarios &&
+    sortBy(
+      scenarios.filter(({ key }) => key !== 'current'),
+      'key'
+    );
 
   const activeFutureScenario =
     futureScenarios && futureScenarios.length ? futureScenario || futureScenarios[0].key : '';
@@ -117,24 +121,31 @@ const DistributionPage = props => {
   const speciesName = useMemo(() => activeSpecies && activeSpecies.scientificName, [activeSpecies]);
 
   const futureDistLayers = useMemo(() => {
-    const futureDistLayer = speciesDistributionLayer(
+    const futureDistLayer = speciesDistributionLayer({
       iso,
-      speciesName,
-      activeFutureScenario,
-      selectedYear,
-      layerOpacity
-    );
-    return [futureDistLayer].map(l => ({ ...l, active: true }));
+      species: speciesName,
+      scenario: activeFutureScenario,
+      year: selectedYear,
+      opacity: layerOpacity
+    });
+    return [futureDistLayer];
   }, [iso, speciesName, activeFutureScenario, selectedYear, layerOpacity]);
 
   const currentDistLayers = useMemo(() => {
-    let selectedLayer;
-    if (activeCurrentScenario === 'observed') {
-      selectedLayer = speciesOccurenceLayer(iso, speciesName, 1);
-    } else {
-      selectedLayer = currentDistributionLayer(iso, speciesName, layerOpacity);
-    }
-    return [selectedLayer].map(l => ({ ...l, active: true }));
+    const sharedParams = {
+      iso,
+      species: speciesName
+    };
+    const _speciesOccurenceLayer = speciesOccurenceLayer({
+      ...sharedParams,
+      isVisible: activeCurrentScenario === 'observed'
+    });
+    const _currentDistLayer = currentDistributionLayer({
+      ...sharedParams,
+      opacity: layerOpacity,
+      isVisible: activeCurrentScenario === 'modeled'
+    });
+    return [_speciesOccurenceLayer, _currentDistLayer];
   }, [iso, speciesName, layerOpacity, activeCurrentScenario]);
 
   return (

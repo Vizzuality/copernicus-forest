@@ -54,16 +54,16 @@ function BioClimaticPage(props) {
   const buckets = fetching ? [] : getBuckets(biovarsData[chosenBiovar]);
   const bioclimaticLayers = useMemo(() => {
     if (fetching) return [];
-    const layer = bioclimaticLayer(
-      country,
+    const layer = bioclimaticLayer({
+      iso: country,
       scenario,
-      chosenBiovar,
-      years[yearIndex],
+      biovar: chosenBiovar,
+      year: years[yearIndex],
       opacity,
       buckets,
       rampColors
-    );
-    return [layer].map(l => ({ ...l, active: true }));
+    });
+    return [layer];
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching, opacity]);
 

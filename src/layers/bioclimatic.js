@@ -1,18 +1,21 @@
 // vector carto layer for bioclimatic variables data
-export default (iso, scenario, biovar, year, opacity = 1, buckets, rampColors) => {
+export default ({ iso, scenario, biovar, year, opacity = 1, buckets, rampColors }) => {
   return {
-    id: `${iso}${scenario}${biovar}`,
-    type: 'vector',
+    id: `layer-bioclimatic`,
     name: 'Bioclimatic layer',
+    type: 'vector',
+    active: true,
+
     sqlParams: {
       where: {
         iso3: iso
       },
       where2: {
-        scenario,
-        biovar
+        biovar,
+        scenario
       }
     },
+
     source: {
       type: 'vector',
       provider: {
@@ -28,6 +31,7 @@ export default (iso, scenario, biovar, year, opacity = 1, buckets, rampColors) =
         ]
       }
     },
+
     render: {
       maxzoom: 3,
       minzoom: 2,
@@ -52,31 +56,6 @@ export default (iso, scenario, biovar, year, opacity = 1, buckets, rampColors) =
           type: 'fill'
         }
       ]
-    },
-    params_config: [],
-    sql_config: [
-      {
-        key: 'where',
-        key_params: [
-          {
-            key: 'iso3',
-            required: true
-          }
-        ]
-      },
-      {
-        key: 'where2',
-        key_params: [
-          {
-            key: 'scenario',
-            required: true
-          },
-          {
-            key: 'biovar',
-            required: true
-          }
-        ]
-      }
-    ]
+    }
   };
 };
