@@ -79,7 +79,7 @@ const RampLegend = ({
               place="top"
               afterShow={() => setOpacityModalOpen(true)}
               afterHide={() => setOpacityModalOpen(false)}
-              offset={{ right: 68, top: 60 }}
+              offset={{ right: -66, top: -10 }}
             >
               <OpacityModal>jajco</OpacityModal>
             </ReactTooltip>
