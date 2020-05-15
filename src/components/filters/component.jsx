@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 const TitleSenario = ({ scenario, parsedScenarios }) => {
   return (
     <>
-      <span>Future scenarios:</span> $
+      <span>Future scenarios:</span>
       {scenario && parsedScenarios && parsedScenarios.find(s => s.value === scenario).shortName}
     </>
   );

@@ -4,17 +4,15 @@ $button-width: 430px;
 $button-height: 70px;
 
 .c-home {
+  padding-top: 150px;
+  padding-bottom: 150px;
   .wrapper {
     font-family: $font-family-2;
     color: $color-gray-1;
     display: flex;
     align-items: center;
     padding-bottom: 100px;
-    margin: 64px 0;
-    
-    @media only screen and (min-width: $sm) {
-      margin: initial;
-    }
+    margin: 64px auto;
 
     .section-title {
       font-size: 64px;
