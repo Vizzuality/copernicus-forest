@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import {
   ComposedChart,
@@ -182,15 +182,16 @@ function Chart({ className, data, config, metadata }) {
               />
             ))}
           {lines &&
-            lines.map(line => (
-              <Line
-                type="monotone"
-                key={line.key}
-                dataKey={line.key}
-                stroke={line.color}
-                strokeWidth={3}
-                dot={CustomDot}
-              />
+            lines.map((line, n) => (
+              <Fragment key={n}>
+                <Line
+                  type="monotone"
+                  dataKey={line.key}
+                  stroke={line.color}
+                  strokeWidth={3}
+                  dot={CustomDot}
+                />
+              </Fragment>
             ))}
         </ComposedChart>
       </ResponsiveContainer>

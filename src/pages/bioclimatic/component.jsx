@@ -103,7 +103,7 @@ function BioClimaticPage(props) {
           />
         </div>
         <div className={styles.mapWrapper}>
-          <Map viewport={viewport} setViewport={setViewport}>
+          <Map scrollZoom={false} viewport={viewport} setViewport={setViewport}>
             {map => (
               <LayerManager map={map} plugin={PluginMapboxGl}>
                 {bioclimaticLayers

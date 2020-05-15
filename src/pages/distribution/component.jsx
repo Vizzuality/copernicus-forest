@@ -29,7 +29,7 @@ const DistributionPageComponent = ({
 }) => {
   return (
     <div className={styles.distribution}>
-      <Map viewport={viewport} setViewport={setViewport}>
+      <Map scrollZoom={false} viewport={viewport} setViewport={setViewport}>
         {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
             {currentScenariosLayers
@@ -42,7 +42,12 @@ const DistributionPageComponent = ({
           </LayerManager>
         )}
       </Map>
-      <Map viewport={viewport} setViewport={setViewport} customClass="mapCustomClass">
+      <Map
+        scrollZoom={false}
+        viewport={viewport}
+        setViewport={setViewport}
+        customClass="mapCustomClass"
+      >
         {map => (
           <LayerManager map={map} plugin={PluginMapboxGl}>
             {futureScenariosLayers

@@ -1,3 +1,7 @@
+/* Disable mapbox logos */
+.mapboxgl-ctrl-logo, .mapboxgl-ctrl-bottom-right{
+  display: none !important;
+}
 html,
 body {
   &.-no-scroll,
