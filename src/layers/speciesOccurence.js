@@ -1,4 +1,4 @@
-import { SPECIES_RAMP_COLORS } from 'constants.js';
+import { SPECIES_RAMP_COLORS, DISTRIBUTIONS } from 'constants.js';
 
 // vector carto layer for species occurence data
 export default ({ iso, species, opacity = 1, isVisible = true }) => {
@@ -6,7 +6,7 @@ export default ({ iso, species, opacity = 1, isVisible = true }) => {
 
   return {
     id: `layer-species-occurence`,
-    name: 'observed',
+    name: DISTRIBUTIONS.OBSERVED,
     type: 'vector',
     active: true,
 

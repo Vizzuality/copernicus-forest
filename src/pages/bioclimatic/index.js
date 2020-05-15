@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect, useState } from 'react';
 import { useRouteMatch, useLocation, useHistory } from 'react-router-dom';
 import { useQueryParams, setQueryParams } from 'url.js';
-import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY } from 'constants.js';
+import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY, DISTRIBUTIONS } from 'constants.js';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { Query } from 'urql';
 import { Label } from 'recharts';
@@ -40,7 +40,8 @@ const Container = () => {
   useEffect(() => setViewport(COUNTRIES_DEFAULT_VIEWPORTS[country]), [country]);
 
   // parsing
-  const scenarios = data && data.scenarios && data.scenarios.filter(s => s.key !== 'current');
+  const scenarios =
+    data && data.scenarios && data.scenarios.filter(s => s.key !== DISTRIBUTIONS.CURRENT);
   const parsedScenarios =
     scenarios &&
     sortBy(

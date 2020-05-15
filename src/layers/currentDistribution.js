@@ -1,11 +1,11 @@
-import { SPECIES_RAMP_COLORS } from 'constants.js';
+import { SPECIES_RAMP_COLORS, DISTRIBUTIONS } from 'constants.js';
 
 // vector carto layer for species distribution data, scenario "current"
 export default ({ iso, species, opacity, isVisible = true }) => {
   const visibility = isVisible ? 'visible' : 'none';
   return {
     id: `layer-current-distribution`,
-    name: 'modeled',
+    name: DISTRIBUTIONS.MODELED,
     type: 'vector',
     active: true,
 
@@ -14,7 +14,7 @@ export default ({ iso, species, opacity, isVisible = true }) => {
         iso3: iso
       },
       where2: {
-        scenario: 'current',
+        scenario: DISTRIBUTIONS.CURRENT,
         timeinterval: 1995
       }
     },

@@ -4,7 +4,7 @@ import { useLocation, useHistory } from 'react-router-dom';
 import { uniqBy, sortBy } from 'lodash';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
-import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY } from 'constants.js';
+import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY, DISTRIBUTIONS } from 'constants.js';
 import speciesDistributionLayer from 'layers/speciesDistribution';
 import currentDistributionLayer from 'layers/currentDistribution';
 import speciesOccurenceLayer from 'layers/speciesOccurence';
@@ -33,7 +33,7 @@ const DistributionPage = props => {
   const futureScenarios =
     scenarios &&
     sortBy(
-      scenarios.filter(({ key }) => key !== 'current'),
+      scenarios.filter(({ key }) => key !== DISTRIBUTIONS.CURRENT),
       'key'
     );
 
@@ -43,7 +43,7 @@ const DistributionPage = props => {
     setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);
   };
 
-  const activeCurrentScenario = currentScenario || 'modeled';
+  const activeCurrentScenario = currentScenario || DISTRIBUTIONS.MODELED;
   const setCurrentScenario = sc => {
     setQueryParams({ ...currentQueryParams, currentScenario: sc }, location, history);
   };
@@ -74,13 +74,13 @@ const DistributionPage = props => {
 
   const currentScenariosData = {
     observed: {
-      name: 'observed',
+      name: DISTRIBUTIONS.OBSERVED,
       start: 0,
       end: 0,
       step: 1
     },
     modeled: {
-      name: 'modeled',
+      name: DISTRIBUTIONS.MODELED,
       start: 0,
       end: 0,
       step: 1
@@ -138,12 +138,12 @@ const DistributionPage = props => {
     };
     const _speciesOccurenceLayer = speciesOccurenceLayer({
       ...sharedParams,
-      isVisible: activeCurrentScenario === 'observed'
+      isVisible: activeCurrentScenario === DISTRIBUTIONS.OBSERVED
     });
     const _currentDistLayer = currentDistributionLayer({
       ...sharedParams,
       opacity: layerOpacity,
-      isVisible: activeCurrentScenario === 'modeled'
+      isVisible: activeCurrentScenario === DISTRIBUTIONS.MODELED
     });
     return [_speciesOccurenceLayer, _currentDistLayer];
   }, [iso, speciesName, layerOpacity, activeCurrentScenario]);
