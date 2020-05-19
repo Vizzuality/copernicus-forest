@@ -21,7 +21,8 @@ const TimelineComponent = ({
   hideHeader,
   hideTimeline,
   currentYear,
-  years
+  years,
+  clickOnInfo
 }) => {
   const dataKeys = data ? Object.keys(data) : [];
 
@@ -29,7 +30,7 @@ const TimelineComponent = ({
     <div className={cx(styles.container, className)}>
       {!hideHeader && data && (
         <div className={styles.header}>
-          <button className={styles.infoButton}>
+          <button className={styles.infoButton} onClick={clickOnInfo}>
             <Icon name="icon-info" />
           </button>
           <span className={styles.title}>{title}</span>
@@ -101,7 +102,8 @@ TimelineComponent.propTypes = {
   toggleTimelineSpeed: PropTypes.func,
   currentYear: PropTypes.number,
   setYearIndex: PropTypes.func,
-  years: PropTypes.array
+  years: PropTypes.array,
+  clickOnInfo: PropTypes.func
 };
 
 export default TimelineComponent;

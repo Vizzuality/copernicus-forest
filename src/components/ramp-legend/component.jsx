@@ -17,8 +17,8 @@ const RampLegend = ({
   highEndName,
   transparentRamp,
   colorRamp = [],
-  activeSpecies
-  // handleOpacity
+  activeSpecies,
+  clickOnInfo
 }) => {
   const [legendOpen, toggleLegend] = useState(true);
   const [opacityModalOpen, setOpacityModalOpen] = useState(false);
@@ -27,7 +27,7 @@ const RampLegend = ({
     <div className={styles.legendContainer}>
       {legendOpen && (
         <div className={styles.legend}>
-          <button className={styles.buttonInfo}>
+          <button className={styles.buttonInfo} onClick={clickOnInfo}>
             <Icon name="icon-info" />
           </button>
           {activeSpecies && (
@@ -113,7 +113,8 @@ RampLegend.propTypes = {
       return new Error('Please provide a ramp of colours array in HEX!');
     }
   },
-  activeSpecies: PropTypes.oneOfType(PropTypes.object, PropTypes.string)
+  activeSpecies: PropTypes.oneOfType(PropTypes.object, PropTypes.string),
+  clickOnInfo: PropTypes.func
 };
 
 export default RampLegend;
