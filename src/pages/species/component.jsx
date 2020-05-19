@@ -11,8 +11,9 @@ import styles from './styles.module.scss';
 function SpeciesPage({ match }) {
   const { iso, id } = (match && match.params) || {};
   const wikiURL = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
+  const cartoURL = 'https://simbiotica.carto.com:443/api/v2/sql';
   const [wikiInfo, setInfo] = useState(null);
-
+  const [statusInfo, setStatusInfo] = useState(null);
   const { fetching, data, error } = useSpeciesPerCountry(iso);
   const getScenarioName = key =>
     data && data.scenarios && data.scenarios.find(sc => sc.key === key).shortName;
@@ -41,6 +42,11 @@ function SpeciesPage({ match }) {
         .then(r => {
           setInfo(r);
         });
+
+      fetch(`
+        ${cartoURL}?q= select * from public.species_status_in_country where spp='${activeSpecies.scientificName}' and country='${iso}'`)
+        .then(r => r.json())
+        .then(r => (r.rows[0] ? setStatusInfo(r.rows[0]) : setStatusInfo(null)));
     }
     setInfo(null);
   }, [activeSpecies, setInfo]);
@@ -114,7 +120,9 @@ function SpeciesPage({ match }) {
             )}
             <h3>
               {activeSpecies && activeSpecies.scientificName}
-              <span className={styles.status}>introduced</span>
+              {statusInfo && statusInfo.status && (
+                <span className={styles.status}>{statusInfo.status}</span>
+              )}
             </h3>
             <h1>{activeSpecies && activeSpecies.name}</h1>
             <p className={styles.description}>{wikiInfo && wikiInfo.extract}</p>
