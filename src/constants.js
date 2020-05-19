@@ -125,7 +125,7 @@ export const HEADER_MENU_SECOND = [
 export const DISTRIBUTIONS = {
   CURRENT: 'current',
   OBSERVED: 'observed',
-  MODELED: 'modeled'
+  MODELLED: 'modelled'
 };
 
 export const MODAL_INFO_DATA = {

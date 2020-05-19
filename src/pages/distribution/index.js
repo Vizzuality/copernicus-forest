@@ -43,7 +43,7 @@ const DistributionPage = props => {
     setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);
   };
 
-  const activeCurrentScenario = currentScenario || DISTRIBUTIONS.MODELED;
+  const activeCurrentScenario = currentScenario || DISTRIBUTIONS.MODELLED;
   const setCurrentScenario = sc => {
     setQueryParams({ ...currentQueryParams, currentScenario: sc }, location, history);
   };
@@ -79,8 +79,8 @@ const DistributionPage = props => {
       end: 0,
       step: 1
     },
-    modeled: {
-      name: DISTRIBUTIONS.MODELED,
+    modelled: {
+      name: DISTRIBUTIONS.MODELLED,
       start: 0,
       end: 0,
       step: 1
@@ -143,7 +143,7 @@ const DistributionPage = props => {
     const _currentDistLayer = currentDistributionLayer({
       ...sharedParams,
       opacity: layerOpacity,
-      isVisible: activeCurrentScenario === DISTRIBUTIONS.MODELED
+      isVisible: activeCurrentScenario === DISTRIBUTIONS.MODELLED
     });
     return [_speciesOccurenceLayer, _currentDistLayer];
   }, [iso, speciesName, layerOpacity, activeCurrentScenario]);

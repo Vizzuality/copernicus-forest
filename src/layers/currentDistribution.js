@@ -5,7 +5,7 @@ export default ({ iso, species, opacity, isVisible = true }) => {
   const visibility = isVisible ? 'visible' : 'none';
   return {
     id: `layer-current-distribution`,
-    name: DISTRIBUTIONS.MODELED,
+    name: DISTRIBUTIONS.MODELLED,
     type: 'vector',
     active: true,
 
