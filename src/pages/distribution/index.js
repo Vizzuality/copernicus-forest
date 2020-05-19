@@ -4,7 +4,7 @@ import { useLocation, useHistory } from 'react-router-dom';
 import { uniqBy, sortBy } from 'lodash';
 import { useScenariosPerCountry } from 'graphql/queries';
 import { useQueryParams, setQueryParams } from 'url.js';
-import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY } from 'constants.js';
+import { COUNTRIES_DEFAULT_VIEWPORTS, DEFAULT_LAYER_OPACITY, DISTRIBUTIONS } from 'constants.js';
 import speciesDistributionLayer from 'layers/speciesDistribution';
 import currentDistributionLayer from 'layers/currentDistribution';
 import speciesOccurenceLayer from 'layers/speciesOccurence';
@@ -31,7 +31,11 @@ const DistributionPage = props => {
 
   const scenarios = data && data.scenarios;
   const futureScenarios =
-    scenarios && sortBy(scenarios.filter(({ key }) => key !== 'current'), 'key');
+    scenarios &&
+    sortBy(
+      scenarios.filter(({ key }) => key !== DISTRIBUTIONS.CURRENT),
+      'key'
+    );
 
   const activeFutureScenario =
     futureScenarios && futureScenarios.length ? futureScenario || futureScenarios[0].key : '';
@@ -39,7 +43,7 @@ const DistributionPage = props => {
     setQueryParams({ ...currentQueryParams, futureScenario: sc }, location, history);
   };
 
-  const activeCurrentScenario = currentScenario || 'modeled';
+  const activeCurrentScenario = currentScenario || DISTRIBUTIONS.MODELED;
   const setCurrentScenario = sc => {
     setQueryParams({ ...currentQueryParams, currentScenario: sc }, location, history);
   };
@@ -70,13 +74,13 @@ const DistributionPage = props => {
 
   const currentScenariosData = {
     observed: {
-      name: 'observed',
+      name: DISTRIBUTIONS.OBSERVED,
       start: 0,
       end: 0,
       step: 1
     },
     modeled: {
-      name: 'modeled',
+      name: DISTRIBUTIONS.MODELED,
       start: 0,
       end: 0,
       step: 1
@@ -117,24 +121,31 @@ const DistributionPage = props => {
   const speciesName = useMemo(() => activeSpecies && activeSpecies.scientificName, [activeSpecies]);
 
   const futureDistLayers = useMemo(() => {
-    const futureDistLayer = speciesDistributionLayer(
+    const futureDistLayer = speciesDistributionLayer({
       iso,
-      speciesName,
-      activeFutureScenario,
-      selectedYear,
-      layerOpacity
-    );
-    return [futureDistLayer].map(l => ({ ...l, active: true }));
+      species: speciesName,
+      scenario: activeFutureScenario,
+      year: selectedYear,
+      opacity: layerOpacity
+    });
+    return [futureDistLayer];
   }, [iso, speciesName, activeFutureScenario, selectedYear, layerOpacity]);
 
   const currentDistLayers = useMemo(() => {
-    let selectedLayer;
-    if (activeCurrentScenario === 'observed') {
-      selectedLayer = speciesOccurenceLayer(iso, speciesName, 1);
-    } else {
-      selectedLayer = currentDistributionLayer(iso, speciesName, layerOpacity);
-    }
-    return [selectedLayer].map(l => ({ ...l, active: true }));
+    const sharedParams = {
+      iso,
+      species: speciesName
+    };
+    const _speciesOccurenceLayer = speciesOccurenceLayer({
+      ...sharedParams,
+      isVisible: activeCurrentScenario === DISTRIBUTIONS.OBSERVED
+    });
+    const _currentDistLayer = currentDistributionLayer({
+      ...sharedParams,
+      opacity: layerOpacity,
+      isVisible: activeCurrentScenario === DISTRIBUTIONS.MODELED
+    });
+    return [_speciesOccurenceLayer, _currentDistLayer];
   }, [iso, speciesName, layerOpacity, activeCurrentScenario]);
 
   return (

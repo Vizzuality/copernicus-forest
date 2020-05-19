@@ -121,3 +121,9 @@ export const HEADER_MENU_SECOND = [
     fullUrl: 'http://cds.climate.copernicus.eu/'
   }
 ];
+
+export const DISTRIBUTIONS = {
+  CURRENT: 'current',
+  OBSERVED: 'observed',
+  MODELED: 'modeled'
+};

@@ -13,7 +13,7 @@ import RampLegend from 'components/ramp-legend';
 import bioclimaticLayer from 'layers/bioclimatic';
 import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
-import { TEMPERATURE_RAMP_COLORS, PERCIPITATION_RAMP_COLORS } from 'constants.js';
+import { TEMPERATURE_RAMP_COLORS, PERCIPITATION_RAMP_COLORS, DISTRIBUTIONS } from 'constants.js';
 import cx from 'classnames';
 
 import { getBuckets } from './utils';
@@ -54,16 +54,16 @@ function BioClimaticPage(props) {
   const buckets = fetching ? [] : getBuckets(biovarsData[chosenBiovar]);
   const bioclimaticLayers = useMemo(() => {
     if (fetching) return [];
-    const layer = bioclimaticLayer(
-      country,
+    const layer = bioclimaticLayer({
+      iso: country,
       scenario,
-      chosenBiovar,
-      years[yearIndex],
+      biovar: chosenBiovar,
+      year: years[yearIndex],
       opacity,
       buckets,
       rampColors
-    );
-    return [layer].map(l => ({ ...l, active: true }));
+    });
+    return [layer];
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [biovarsData, chosenBiovar, country, scenario, years, yearIndex, fetching, opacity]);
 
@@ -91,7 +91,7 @@ function BioClimaticPage(props) {
               title: `BIO ${i + 1} = ${bv.name}`,
               id: bv.key,
               data: sortBy(biovarsData[bv.key], 'name').map(d =>
-                d.name === 1995 ? { ...d, name: 'current' } : d
+                d.name === 1995 ? { ...d, name: DISTRIBUTIONS.CURRENT } : d
               ),
               config: getConfig(bv.unit),
               metadata: {

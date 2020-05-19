@@ -1,20 +1,26 @@
 // vector carto layer for bioclimatic variables data
-export default (iso, scenario, biovar, year, opacity = 1, buckets, rampColors) => {
+export default ({ iso, scenario, biovar, year, opacity = 1, buckets, rampColors }) => {
   return {
-    id: `${iso}${scenario}${biovar}`,
+    id: `layer-bioclimatic`,
     name: 'Bioclimatic layer',
+    type: 'vector',
+    active: true,
+
     sqlParams: {
       where: {
         iso3: iso
       },
       where2: {
-        scenario,
-        biovar
+        biovar,
+        scenario
       }
     },
-    layerConfig: {
-      account: 'simbiotica',
-      body: {
+
+    source: {
+      type: 'vector',
+      provider: {
+        type: 'carto',
+        account: 'simbiotica',
         layers: [
           {
             options: {
@@ -22,57 +28,34 @@ export default (iso, scenario, biovar, year, opacity = 1, buckets, rampColors) =
             },
             type: 'cartodb'
           }
-        ],
-        maxzoom: 3,
-        minzoom: 2,
-        vectorLayers: [
-          {
-            filter: ['==', 'year', year],
-            paint: {
-              'fill-color': [
-                'interpolate',
-                ['linear'],
-                ['get', 'wieghtedmean'],
-                buckets[0],
-                rampColors[0],
-                buckets[1],
-                rampColors[1],
-                buckets[2],
-                rampColors[2]
-              ],
-              'fill-opacity': opacity
-            },
-            'source-layer': 'layer0',
-            type: 'fill'
-          }
         ]
-      },
-      params_config: [],
-      sql_config: [
+      }
+    },
+
+    render: {
+      maxzoom: 3,
+      minzoom: 2,
+      layers: [
         {
-          key: 'where',
-          key_params: [
-            {
-              key: 'iso3',
-              required: true
-            }
-          ]
-        },
-        {
-          key: 'where2',
-          key_params: [
-            {
-              key: 'scenario',
-              required: true
-            },
-            {
-              key: 'biovar',
-              required: true
-            }
-          ]
+          filter: ['==', 'year', year],
+          paint: {
+            'fill-color': [
+              'interpolate',
+              ['linear'],
+              ['get', 'wieghtedmean'],
+              buckets[0],
+              rampColors[0],
+              buckets[1],
+              rampColors[1],
+              buckets[2],
+              rampColors[2]
+            ],
+            'fill-opacity': opacity
+          },
+          'source-layer': 'layer0',
+          type: 'fill'
         }
       ]
-    },
-    provider: 'cartodb'
+    }
   };
 };
