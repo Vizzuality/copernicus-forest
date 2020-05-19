@@ -182,8 +182,8 @@ function Chart({ className, data, config, metadata }) {
               />
             ))}
           {lines &&
-            lines.map((line, n) => (
-              <Fragment key={n}>
+            lines.map(line => (
+              <Fragment key={line.key}>
                 <Line
                   type="monotone"
                   dataKey={line.key}

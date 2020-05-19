@@ -49,7 +49,7 @@ function SpeciesPage({ match }) {
         .then(r => (r.rows[0] ? setStatusInfo(r.rows[0]) : setStatusInfo(null)));
     }
     setInfo(null);
-  }, [activeSpecies, setInfo]);
+  }, [activeSpecies, setInfo, iso]);
 
   const getPrevSpecie = index => {
     if (index === 0) return '#';

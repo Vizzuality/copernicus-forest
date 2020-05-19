@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 import './styles.scss';
 
 function HomePage() {
-  const histoty = useHistory();
+  const history = useHistory();
 
   return (
     <div className="c-home l-page">
@@ -27,7 +27,7 @@ function HomePage() {
                 Current species observations are combined with climate variables to describe their
                 suitable habitat. Which areas would be favourable for forests in the future?
               </p>
-              <button className="button toggle" onClick={() => histoty.push('/SWE')}>
+              <button className="button toggle" onClick={() => history.push('/SWE')}>
                 See map
               </button>
             </div>
