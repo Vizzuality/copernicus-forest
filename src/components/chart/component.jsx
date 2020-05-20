@@ -184,8 +184,8 @@ function Chart({ className, data, config, metadata }) {
           {lines &&
             lines.map(line => (
               <Line
-                type="monotone"
                 key={line.key}
+                type="monotone"
                 dataKey={line.key}
                 stroke={line.color}
                 strokeWidth={3}

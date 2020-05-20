@@ -14,7 +14,8 @@ const Timeline = ({
   title,
   handleOnChange,
   hideHeader,
-  hideTimeline
+  hideTimeline,
+  clickOnInfo
 }) => {
   const activeScenario = data && activeTab && data[activeTab];
   const { start, end, step, years } = activeScenario || {};
@@ -87,6 +88,7 @@ const Timeline = ({
       timelineParams={timelineParams}
       currentYear={currentYear}
       years={years}
+      clickOnInfo={clickOnInfo}
     />
   );
 };
@@ -99,13 +101,16 @@ Timeline.propTypes = {
   hideHeader: PropTypes.bool,
   hideTimeline: PropTypes.bool,
   title: PropTypes.string,
-  data: PropTypes.object
+  data: PropTypes.object,
+  clickOnInfo: PropTypes.func,
+  yearIndex: PropTypes.number
 };
 
 Timeline.defaultProps = {
   handleOnChange: () => {},
   hideHeader: false,
-  hideTimeline: false
+  hideTimeline: false,
+  clickOnInfo: () => {}
 };
 
 export default Timeline;

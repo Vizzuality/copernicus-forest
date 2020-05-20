@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Switch from 'react-switch';
 import cx from 'classnames';
@@ -21,7 +21,8 @@ const TimelineComponent = ({
   hideHeader,
   hideTimeline,
   currentYear,
-  years
+  years,
+  clickOnInfo
 }) => {
   const dataKeys = data ? Object.keys(data) : [];
 
@@ -29,7 +30,7 @@ const TimelineComponent = ({
     <div className={cx(styles.container, className)}>
       {!hideHeader && data && (
         <div className={styles.header}>
-          <button className={styles.infoButton}>
+          <button className={styles.infoButton} onClick={clickOnInfo}>
             <Icon name="icon-info" />
           </button>
           <span className={styles.title}>{title}</span>
@@ -37,9 +38,8 @@ const TimelineComponent = ({
             {dataKeys.length > 1 &&
               dataKeys.map((key, n) => {
                 return (
-                  <>
+                  <Fragment key={key}>
                     <button
-                      key={key}
                       id={key}
                       className={cx(styles.tab, { [styles.activeTab]: key === activeTab })}
                       onClick={() => setActiveTab(key)}
@@ -49,7 +49,7 @@ const TimelineComponent = ({
                     {n === 0 && (
                       <Switch
                         onChange={() => setActiveTab(activeTab === key ? dataKeys[n + 1] : key)}
-                        checked={key === activeTab}
+                        checked={key !== activeTab}
                         uncheckedIcon={false}
                         checkedIcon={false}
                         offColor="#941333"
@@ -61,7 +61,7 @@ const TimelineComponent = ({
                         handleDiameter={12}
                       />
                     )}
-                  </>
+                  </Fragment>
                 );
               })}
           </div>
@@ -102,7 +102,8 @@ TimelineComponent.propTypes = {
   toggleTimelineSpeed: PropTypes.func,
   currentYear: PropTypes.number,
   setYearIndex: PropTypes.func,
-  years: PropTypes.array
+  years: PropTypes.array,
+  clickOnInfo: PropTypes.func
 };
 
 export default TimelineComponent;
