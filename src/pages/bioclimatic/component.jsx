@@ -15,7 +15,7 @@ import { LayerManager, Layer } from 'layer-manager/dist/components';
 import { PluginMapboxGl } from 'layer-manager';
 import {
   TEMPERATURE_RAMP_COLORS,
-  PERCIPITATION_RAMP_COLORS,
+  PRECIPITATION_RAMP_COLORS,
   DISTRIBUTIONS,
   MODAL_INFO_DATA
 } from 'constants.js';
@@ -54,7 +54,7 @@ function BioClimaticPage(props) {
   const years = scenario && timelineData && timelineData[scenario] && timelineData[scenario].years;
 
   const biovarNumber = chosenBiovar && Number(chosenBiovar.replace('biovar', ''));
-  const rampColors = biovarNumber >= 12 ? PERCIPITATION_RAMP_COLORS : TEMPERATURE_RAMP_COLORS; // change colors ramp, depending on the selected biovar
+  const rampColors = biovarNumber >= 12 ? PRECIPITATION_RAMP_COLORS : TEMPERATURE_RAMP_COLORS; // change colors ramp, depending on the selected biovar
 
   const buckets = fetching ? [] : getBuckets(biovarsData[chosenBiovar]);
   const bioclimaticLayers = useMemo(() => {

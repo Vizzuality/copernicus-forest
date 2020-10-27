@@ -14,7 +14,7 @@ const BioclimaticPage = lazy(() => import('pages/bioclimatic'));
 const Placeholder = () => <div className="c-header" />;
 
 const client = createClient({
-  url: 'https://api-euwest.graphcms.com/v1/ck0ns5hjv22o301cb1q61f3ng/master'
+  url: 'https://api-eu-central-1.graphcms.com/v2/ck0ns5hjv22o301cb1q61f3ng/master'
 });
 
 function AppRouter() {

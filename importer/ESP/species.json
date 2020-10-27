@@ -1,0 +1,32 @@
+[
+  {
+    "scientificName": "Eucalyptus globulus",
+    "wikipediaSlug": "Eucalyptus_globulus",
+    "gbifId": 3176787,
+    "country": "ESP"
+  },
+  {
+    "scientificName": "Quercus robur",
+    "wikipediaSlug": "Quercus_robur",
+    "gbifId": 2878688,
+    "country": "ESP"
+  },
+  {
+    "scientificName": "Quercus suber",
+    "wikipediaSlug": "Quercus_suber",
+    "gbifId": 2879411,
+    "country": "ESP"
+  },
+  {
+    "scientificName": "Olea europaea",
+    "wikipediaSlug": "Olive",
+    "gbifId": 5415040,
+    "country": "ESP"
+  },
+  {
+    "scientificName": "Arbutus unedo",
+    "wikipediaSlug": "Arbutus_unedo",
+    "gbifId": 2882803,
+    "country": "ESP"
+  }
+]

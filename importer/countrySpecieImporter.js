@@ -1,16 +1,17 @@
+/* eslint-disable no-console */
 const fetch = require('isomorphic-fetch');
 // List of species for a country
-// const speciesData = require('./TZA/species.json');
+// const speciesData = require('./ESP/species.json');
 const speciesData = [];
 // const countrySpeciesData = require(`./${process.argv[2] || 'SWE'}/speciesRel.json`);
-const countrySpeciesData = require('./SWE/speciesRel.json');
+const countrySpeciesData = require('./ESP/speciesRel.json');
 
 const speciesWhitelist = [
-  'Dalbergia',
-  'Eucalyptus',
-  'Alnus acuminata',
-  'Guazuma ulmifolia',
-  'Simarouba amara'
+  'Eucalyptus globulus',
+  'Quercus robur',
+  'Quercus suber',
+  'Olea europaea',
+  'Arbutus unedo'
 ];
 
 // graphCMS settings > Endpoints

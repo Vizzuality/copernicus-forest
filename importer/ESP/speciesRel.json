@@ -1,0 +1,1026 @@
+[
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.2991
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2513
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.4199
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.3033
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.438
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3788
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5499
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 1995,
+    "scenario": "current",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.4725
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.302
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2455
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.3344
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.26
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3946
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3789
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5474
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.389
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.2955
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2416
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.3394
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2616
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.4013
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3697
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5283
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2020,
+    "scenario": "rcp85",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.4039
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.2947
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.276
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.351
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2652
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3687
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.4095
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5202
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.413
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3092
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.265
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.3283
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2593
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.376
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.4005
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5373
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2030,
+    "scenario": "rcp85",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.4051
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3128
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2737
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.3298
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2537
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3578
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3982
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5252
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.407
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3039
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2502
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.3071
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2456
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3533
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3757
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5353
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2040,
+    "scenario": "rcp85",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3559
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3217
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2374
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2984
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2411
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3633
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3591
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5177
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3406
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3296
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2392
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2815
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2281
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3478
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3694
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.4982
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2050,
+    "scenario": "rcp85",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3405
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3101
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2464
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2889
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2312
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.348
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.369
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.5157
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3422
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3537
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2251
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2465
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.1907
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3254
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3189
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.4121
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2060,
+    "scenario": "rcp85",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3092
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3123
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.236
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2723
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2205
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3478
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3551
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.4782
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3277
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.346
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2151
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2016
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.1612
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.2987
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.2748
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.3968
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2070,
+    "scenario": "rcp85",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.2756
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3239
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2306
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2662
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.2228
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3512
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3495
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.4816
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3237
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3549
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.1939
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.1714
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.1458
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.2536
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.2532
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.349
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2080,
+    "scenario": "rcp85",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.2618
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Prunus dulcis",
+    "gbifId": 3022502,
+    "propTotalArea": 0.3446
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Eucalyptus globulus",
+    "gbifId": 3176787,
+    "propTotalArea": 0.2556
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Abies",
+    "gbifId": 2684876,
+    "propTotalArea": 0.2758
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Quercus robur",
+    "gbifId": 2878688,
+    "propTotalArea": 0.229
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Juniperus thurifera",
+    "gbifId": 2684528,
+    "propTotalArea": 0.3304
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Quercus suber",
+    "gbifId": 2879411,
+    "propTotalArea": 0.3819
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Olea europaea",
+    "gbifId": 5415040,
+    "propTotalArea": 0.486
+  },
+  {
+    "iso": "ESP",
+    "timeInterval": 2090,
+    "scenario": "rcp45",
+    "species": "Arbutus unedo",
+    "gbifId": 2882803,
+    "propTotalArea": 0.3527
+  }
+]
