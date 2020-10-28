@@ -17,7 +17,7 @@
     "isomorphic-fetch": "^2.2.1",
     "layer-manager": "^3.0.8",
     "lint-staged": "^9.2.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "luma.gl": "^7.2.0",
     "mapbox-gl": "^1.4.1",
     "node-sass": "^4.12.0",
