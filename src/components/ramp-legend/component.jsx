@@ -109,7 +109,7 @@ RampLegend.propTypes = {
   }), // if passed, ramp background would be set to have a transparent background-image (see alpha.png image in assets)
   // eslint-disable-next-line consistent-return
   colorRamp: props => {
-    if (!props.transparentRamp) {
+    if (!Array.isArray(props.colorRamp) && !props.transparentRamp) {
       return new Error('Please provide a ramp of colours array in HEX!');
     }
   },

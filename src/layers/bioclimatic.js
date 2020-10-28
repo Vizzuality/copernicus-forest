@@ -1,5 +1,8 @@
+import flatten from 'lodash/flatten';
+import chroma from 'chroma-js';
 // vector carto layer for bioclimatic variables data
 export default ({ iso, scenario, biovar, year, opacity = 1, buckets, rampColors }) => {
+  const colors = chroma.scale(rampColors).colors(buckets.length);
   return {
     id: `layer-bioclimatic`,
     name: 'Bioclimatic layer',
@@ -43,12 +46,7 @@ export default ({ iso, scenario, biovar, year, opacity = 1, buckets, rampColors 
               'interpolate',
               ['linear'],
               ['get', 'wieghtedmean'],
-              buckets[0],
-              rampColors[0],
-              buckets[1],
-              rampColors[1],
-              buckets[2],
-              rampColors[2]
+              ...flatten(buckets.map((b, i) => [b, colors[i]]))
             ],
             'fill-opacity': opacity
           },
