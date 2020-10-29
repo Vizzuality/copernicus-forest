@@ -1,3 +1,4 @@
+import React from 'react';
 import indonesia from 'assets/shapes/indonesia.svg';
 import indonesiaActive from 'assets/shapes/indonesiaActive.svg';
 import sweden from 'assets/shapes/sweden.svg';
@@ -136,8 +137,21 @@ export const DISTRIBUTIONS = {
 export const MODAL_INFO_DATA = {
   currentDistribution: {
     title: 'Current Distribution',
-    text:
-      'The current observed distribution shows the points from GBIF where the species has been observed in the last 20 years. The modelled distribution is the committe average of the 180 calibrated models.'
+    text: (
+      <>
+        <p>
+          The current observed distribution shows the points from GBIF where the species has been
+          observed in the last 20 years. The modelled distribution is the committee average of the
+          180 calibrated models.
+        </p>
+        <p>
+          Access the data files at{' '}
+          <a href="https://doi.org/10.5281/zenodo.4055178">
+            <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4055178.svg" alt="DOI" />
+          </a>
+        </p>
+      </>
+    )
   },
   futureDistribution: {
     title: 'Future Distribution',
