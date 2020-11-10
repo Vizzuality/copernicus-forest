@@ -6,9 +6,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       Created using data from the{' '}
-      <a href="https://climate.copernicus.eu/thermal-assessment-tool">
-        Copernicus Climate Change Service
-      </a>
+      <a href="https://www.copernicus.eu">Copernicus Climate Change Service</a>
     </footer>
   );
 };
