@@ -20,6 +20,7 @@ const client = createClient({
 function AppRouter() {
   const modalOpenedBefore = sessionStorage.getItem('noResponsive');
   const [isOpenModal, setOpenModal] = useState(!modalOpenedBefore);
+
   return (
     <Router>
       <Provider value={client}>

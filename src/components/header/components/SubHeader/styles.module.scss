@@ -1,10 +1,13 @@
 @import '~styles/settings';
 
 .cSubheader {
-  border-bottom: 2px solid $color-black;
-  background-color: white;
   position: relative;
   z-index: 5;
+}
+
+.border {
+  border-bottom: 2px solid $color-black;
+  background-color: white;
 }
 
 .container {

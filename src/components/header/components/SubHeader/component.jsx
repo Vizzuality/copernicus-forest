@@ -54,7 +54,7 @@ const SubHeader = () => {
   ];
 
   return (
-    <div className={styles.cSubheader}>
+    <div className={`${styles.cSubheader}${pathname === '/' ? '' : ` ${styles.border}`}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
           <img src="/logos/logo.svg" alt="logo" />
