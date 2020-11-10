@@ -1,11 +1,10 @@
 @import '~styles/settings';
 
-
 header {
   display: block;
 
   &.banner {
-    border-bottom: 2px solid #941333;
+    border-bottom: 2px solid #df5127;
     background-color: white;
     overflow: hidden;
     position: relative;
@@ -14,7 +13,6 @@ header {
     @media (min-width: 980px) {
       padding: 0 0 18px 0;
     }
-
   }
 
   .banner__inner {
@@ -28,13 +26,13 @@ header {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: column;
-          flex-flow: column;
+      flex-flow: column;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+      justify-content: space-between;
       -ms-flex-flow: row;
-          flex-flow: row;
+      flex-flow: row;
       -ms-flex-align: end;
-          align-items: flex-end;
+      align-items: flex-end;
     }
   }
 
@@ -44,9 +42,7 @@ header {
     }
   }
 
-
   .banner__logo {
-
     padding-left: 18px;
 
     a {
@@ -61,7 +57,7 @@ header {
         right: 0;
         width: 0;
         height: 5px;
-        background: #941333;
+        background: #df5127;
         transition: all 0.3s ease 0s;
       }
 
@@ -73,13 +69,12 @@ header {
     }
 
     .info-link {
-
-      font-family: "Lato", sans-serif;
+      font-family: 'Lato', sans-serif;
       font-size: 12px;
       position: relative;
       display: none;
       z-index: 1;
-      
+
       @media (min-width: 980px) {
         display: block;
         left: 82px;
@@ -100,7 +95,7 @@ header {
           right: 0;
           width: 0;
           height: 1px;
-          background: #941333;
+          background: #df5127;
           transition: all 0.3s ease 0s;
         }
 
@@ -120,7 +115,6 @@ header {
             right: auto;
           }
         }
-        
       }
     }
   }
@@ -131,51 +125,49 @@ header {
     position: relative;
   }
 
-
   .menus {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: column;
-          flex-flow: column;
-      background-color: #292929;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    background-color: #292929;
 
+    @media (min-width: 700px) {
+      background-color: transparent;
+    }
+
+    @media (min-width: 980px) {
+      padding: 0 18px;
+      width: 70%;
+    }
+
+    .nav__main-wrapper {
       @media (min-width: 700px) {
+        position: absolute;
+        right: 20px;
+        top: 18px;
+      }
+      @media (min-width: 980px) {
+        -ms-flex-order: 2;
+        order: 2;
+        padding-top: 30px;
+        background-color: transparent;
+        position: relative;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .nav__sub-wrapper {
+      background-color: #292929;
+      @media (min-width: 980px) {
+        -ms-flex-order: 1;
+        order: 1;
         background-color: transparent;
       }
-
-      @media (min-width: 980px) {
-        padding: 0 18px;
-        width: 70%;
-      }
-
-      .nav__main-wrapper {
-        @media (min-width: 700px) {
-          position: absolute;
-          right: 20px;
-          top: 18px;
-        }
-        @media (min-width: 980px) {
-          -ms-flex-order: 2;
-              order: 2;
-          padding-top: 30px;
-          background-color: transparent;
-          position: relative;
-          right: 0;
-          top: 0;
-        }
-      }
-
-      .nav__sub-wrapper {
-        background-color: #292929;
-        @media (min-width: 980px) {
-          -ms-flex-order: 1;
-          order: 1;
-          background-color: transparent;
-        }
-      }
+    }
   }
 }
-
 
 .nav__main {
   list-style: none;
@@ -192,9 +184,9 @@ header {
 }
 
 .nav__main li {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   border-bottom: 1px solid white;
   height: 10vh;
@@ -220,7 +212,7 @@ header {
 }
 
 .nav__main li.menu-item--active-trail a {
-  color: #941333;
+  color: #df5127;
   font-weight: 700;
 }
 
@@ -245,7 +237,7 @@ header {
   right: 0;
   width: 0;
   height: 1px;
-  background: #941333;
+  background: #df5127;
   transition: all 0.3s ease 0s;
 }
 
@@ -262,7 +254,7 @@ header {
   right: 0;
   width: 0;
   height: 1px;
-  background: #941333;
+  background: #df5127;
   transition: all 0.3s ease 0s;
 }
 
@@ -291,7 +283,6 @@ header {
   }
 }
 
-
 @media (min-width: 980px) {
   .nav__sub-wrapper {
     right: 0;
@@ -314,7 +305,7 @@ header {
   .nav__sub {
     text-align: right;
     float: right;
-    color: #941333;
+    color: #df5127;
     column-count: unset;
     padding: 0;
     display: inline-table;
@@ -322,9 +313,9 @@ header {
 }
 
 .nav__sub li {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 @media (min-width: 980px) {
@@ -335,7 +326,7 @@ header {
 }
 
 .nav__sub li.menu-item--active-trail a {
-  color: #941333;
+  color: #df5127;
   font-weight: 700;
 }
 
@@ -353,7 +344,7 @@ header {
   right: 0;
   width: 0;
   height: 1px;
-  background: #941333;
+  background: #df5127;
   transition: all 0.3s ease 0s;
 }
 
@@ -370,7 +361,7 @@ header {
   right: 0;
   width: 0;
   height: 1px;
-  background: #941333;
+  background: #df5127;
   transition: all 0.3s ease 0s;
 }
 
@@ -390,8 +381,6 @@ header {
   }
 }
 
-
-
 .mobile-menu-labels {
   label {
     cursor: pointer;
@@ -402,7 +391,8 @@ header {
   .mobile-menu-label:before {
     content: 'Menu';
     padding-left: 35px;
-    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 32 32">\a     <path fill="#ffffff" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>\a     </svg>') no-repeat left center;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 32 32">\a     <path fill="#ffffff" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>\a     </svg>')
+      no-repeat left center;
   }
   .mobile-menu-box:checked ~ .menus .nav__sub-wrapper {
     height: auto;
@@ -410,7 +400,8 @@ header {
   .mobile-menu-box:checked ~ .mobile-menu-labels .mobile-menu-label:before {
     content: 'Close';
     padding-left: 25px;
-    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">\a     <path fill="#aaa" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>\a     </svg>') no-repeat left center;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">\a     <path fill="#aaa" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>\a     </svg>')
+      no-repeat left center;
   }
   .nav__sub-wrapper {
     margin-top: 5px;
@@ -437,8 +428,6 @@ header {
   display: none;
 }
 
-
-
 .mobile-menu-box,
 .mobile-menu-label {
   display: none;
@@ -447,7 +436,8 @@ header {
 .search-label:before {
   content: 'Search';
   padding-left: 25px;
-  background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 50 18">\a     <path fill="#ffffff" d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>\a     </svg>') no-repeat left bottom;
+  background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 50 18">\a     <path fill="#ffffff" d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>\a     </svg>')
+    no-repeat left bottom;
 }
 
 .search-label,
@@ -457,7 +447,7 @@ header {
   padding: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
   letter-spacing: 1px;
   width: 50%;
@@ -468,7 +458,8 @@ header {
   .mobile-menu-label:before {
     content: 'Menu';
     padding-left: 35px;
-    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 32 32">\a     <path fill="#ffffff" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>\a     </svg>') no-repeat left center;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 32 32">\a     <path fill="#ffffff" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>\a     </svg>')
+      no-repeat left center;
   }
   .mobile-menu-box:checked ~ .menus {
     height: auto;
@@ -476,7 +467,8 @@ header {
   .mobile-menu-box:checked ~ .mobile-menu-labels .mobile-menu-label:before {
     content: 'Close';
     padding-left: 25px;
-    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">\a     <path fill="#aaa" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>\a     </svg>') no-repeat left center;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">\a     <path fill="#aaa" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>\a     </svg>')
+      no-repeat left center;
   }
   .menus {
     margin-top: 5px;
@@ -502,7 +494,8 @@ header {
   .mobile-menu-label:before {
     content: 'Menu';
     padding-left: 35px;
-    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 32 32">\a     <path fill="#ffffff" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>\a     </svg>') no-repeat left center;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 32 32">\a     <path fill="#ffffff" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>\a     </svg>')
+      no-repeat left center;
   }
   .mobile-menu-box:checked ~ .menus .nav__sub-wrapper {
     height: auto;
@@ -510,7 +503,8 @@ header {
   .mobile-menu-box:checked ~ .mobile-menu-labels .mobile-menu-label:before {
     content: 'Close';
     padding-left: 25px;
-    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">\a     <path fill="#aaa" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>\a     </svg>') no-repeat left center;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">\a     <path fill="#aaa" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>\a     </svg>')
+      no-repeat left center;
   }
   .nav__sub-wrapper {
     margin-top: 5px;
@@ -545,18 +539,14 @@ header {
     background-size: contain;
   }
   .search-label.open:after {
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 20px 20px 20px;
-    border-color: transparent transparent #941333 transparent;
+    border-color: transparent transparent #df5127 transparent;
     position: absolute;
     left: 40%;
     top: 51px;
   }
 }
-
-
-
-

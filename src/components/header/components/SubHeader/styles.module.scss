@@ -1,7 +1,7 @@
 @import '~styles/settings';
 
 .cSubheader {
-  border-bottom: 2px solid $color-border;
+  border-bottom: 2px solid $color-black;
   background-color: white;
   position: relative;
   z-index: 5;
@@ -16,7 +16,7 @@
 
   @media (min-width: 1200px) {
     max-width: 85vw;
-  }    
+  }
 }
 
 .logo {
@@ -44,7 +44,7 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     position: relative;
-  
+
     text-transform: uppercase;
     font-weight: normal;
     color: $color-black;
@@ -55,13 +55,11 @@
     > a {
       color: $color-black;
     }
-  
+
     &.active {
-      color: $color-dark-red;
       font-weight: bold;
 
       > a {
-        color: $color-dark-red;
         font-weight: bold;
       }
     }
@@ -76,7 +74,7 @@
       transition: all 0.3s ease-in-out;
     }
 
-     ul {
+    ul {
       display: none;
       position: absolute;
       z-index: 10;
@@ -96,8 +94,9 @@
         align-items: center;
         justify-content: center;
         text-transform: capitalize;
-        
-        &:hover, &.active {
+
+        &:hover,
+        &.active {
           background-color: $color-gray-5;
           font-weight: normal;
         }

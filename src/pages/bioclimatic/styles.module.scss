@@ -4,10 +4,11 @@
 .bioclimatic {
   display: flex;
   flex-direction: column;
+  height: calc(100vh - #{$c-header-height} - 2px - #{$c-footer-height});
 }
 
 .content {
-  height: calc(100vh - 140px);
+  height: 100%;
   display: flex;
 
   & > * {

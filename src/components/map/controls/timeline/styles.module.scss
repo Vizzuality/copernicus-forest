@@ -55,16 +55,17 @@ $timeline-size: 45px;
   background-color: transparent;
   margin: 0;
   border: none;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: transparent;
-    color: #941333;
+    color: #df5127;
     font-weight: 600;
   }
 }
 
 .activeTab {
   background-color: transparent;
-  color: #941333;
+  color: #df5127;
   font-weight: 600;
 }
 
@@ -92,12 +93,12 @@ $timeline-size: 45px;
   letter-spacing: 0;
   line-height: 19px;
   text-transform: uppercase;
-  &:hover, &:focus {
-    color: #941333;
+  &:hover,
+  &:focus {
+    color: #df5127;
     background-color: transparent;
   }
 }
-
 
 .legendItemTimeStep {
   display: flex;
@@ -123,7 +124,8 @@ $timeline-size: 45px;
     height: 100%;
     padding: 0;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: transparent;
     }
   }
@@ -136,12 +138,12 @@ $timeline-size: 45px;
       margin-right: 18px;
 
       .rc-slider-rail {
-        background-color: #E6E6E6 !important;
+        background-color: #e6e6e6 !important;
         height: 6px !important;
       }
-      
+
       .rc-slider-track {
-        background-color: #941333 !important;
+        background-color: #df5127 !important;
         height: 6px !important;
       }
       .rc-slider-handle {
@@ -163,7 +165,8 @@ $timeline-size: 45px;
     fill: $color-black;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: transparent;
   }
 }

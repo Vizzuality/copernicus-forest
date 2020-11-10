@@ -52,8 +52,8 @@ const TimelineComponent = ({
                         checked={key !== activeTab}
                         uncheckedIcon={false}
                         checkedIcon={false}
-                        offColor="#941333"
-                        onColor="#941333"
+                        offColor="#DF5127"
+                        onColor="#DF5127"
                         offHandleColor="#FFFFFF"
                         onHandleColor="#FFFFFF"
                         height={16}

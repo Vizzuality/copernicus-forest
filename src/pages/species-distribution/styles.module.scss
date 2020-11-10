@@ -35,7 +35,7 @@ $species-list-width: 330px;
   width: $species-list-width;
   font-style: italic;
   font-family: $font-family-2;
-  border-right: 2px solid $color-dark-red;
+  border-right: 2px solid $color-black;
 
   img {
     display: flex;
@@ -75,11 +75,15 @@ $species-list-width: 330px;
   justify-content: center;
   height: 47px;
   width: 47px;
-  border: 2px solid #941333;
-  background-color: #941333;
+  border: 2px solid $color-black;
+  background-color: $color-black;
   padding: 0;
   margin: 0;
   z-index: 1;
+
+  &:hover {
+    background-color: $color-black;
+  }
 
   svg {
     fill: $color-white;
