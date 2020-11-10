@@ -171,9 +171,9 @@ export const MODAL_INFO_DATA = {
         <p>
           The Committee Average depicts the result of all the calibrated models voting for an
           absence or a presence and then averaged. Values close to 0 represent an agreement of the
-          models on an absence. Values close to 1000 represent an agreement of the models on a
-          presence. Values around 500 inform on a disagreement on the prediction of the models.
-          Access the data at{' '}
+          models on an absence. Values close to 0 represent an agreement of the models on an
+          absence. Values close to 1 represent an agreement of the models on a presence. Values
+          around 0.5 inform on a disagreement on the prediction of the models. Access the data at{' '}
           <a href="https://doi.org/10.5281/zenodo.4055178">
             <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4055178.svg" alt="DOI" />
           </a>
