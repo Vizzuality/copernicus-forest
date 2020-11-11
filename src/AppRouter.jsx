@@ -6,7 +6,7 @@ import Modal from 'components/modal';
 import Icons from 'components/icons';
 import './App.scss';
 
-const Header = lazy(() => import('components/header'));
+const Header = lazy(() => import('components/header/components/SubHeader'));
 const Footer = lazy(() => import('components/footer'));
 const HomePage = lazy(() => import('pages/home'));
 const SpeciesDistributionComponent = lazy(() => import('pages/species-distribution'));
@@ -20,6 +20,7 @@ const client = createClient({
 function AppRouter() {
   const modalOpenedBefore = sessionStorage.getItem('noResponsive');
   const [isOpenModal, setOpenModal] = useState(!modalOpenedBefore);
+
   return (
     <Router>
       <Provider value={client}>

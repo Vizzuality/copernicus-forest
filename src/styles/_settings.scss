@@ -1,35 +1,34 @@
 // Colors
-$color-1: #FFCC00;
+$color-1: #ffcc00;
 
-$color-sucess: #1EBE28;
-$color-error: #FC4349;
+$color-sucess: #1ebe28;
+$color-error: #fc4349;
 
-$color-background: #EDECEA; // beige
+$color-background: #edecea; // beige
 
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 $color-black: #000000;
 $color-gray-1: #222222; // dark grey
 $color-gray-2: #313131;
-$color-gray-3: #5C5C5C; //grey
+$color-gray-3: #5c5c5c; //grey
 $color-gray-4: #999999; // light grey
-$color-gray-5: #E6E6E6; // light grey
+$color-gray-5: #e6e6e6; // light grey
 
-$color-social-twitter: #55ACEE;
-$color-social-facebook: #3B5998;
-$color-social-linkedin: #0077B5;
-$color-social-pinterest: #BD081C;
+$color-social-twitter: #55acee;
+$color-social-facebook: #3b5998;
+$color-social-linkedin: #0077b5;
+$color-social-pinterest: #bd081c;
 
-$color-orange: #DF5127;
-$color-dark-orange: #D13C10; // onHover
-$color-green: #033B31;
-$color-mustard: #FFA018;
-$color-violet: #7044FF;
-$color-green-light: #50BF7C;
-$color-pink: #E15383;
-$color-desert-storm: #F4F4F3;
-$color-dark-red: #941333; // onHover
-
-$color-border: #941333;
+$color-orange: #df5127;
+$color-dark-orange: #d13c10; // onHover
+$color-green: #033b31;
+$color-mustard: #ffa018;
+$color-violet: #7044ff;
+$color-green-light: #50bf7c;
+$color-pink: #e15383;
+$color-desert-storm: #f4f4f3;
+$color-dark-red: #df5127;
+$color-border: #df5127;
 
 // used in charts
 :export {
@@ -79,6 +78,7 @@ $box-padding: 40px 30px;
 $c-sidebar-width: 80px;
 $c-header-height: 70px;
 $c-header-padding: 24px;
+$c-footer-height: 40px;
 
 // Z-index
 $z-index-1: 0;
@@ -88,18 +88,18 @@ $z-index-4: 10;
 $z-index-5: 12;
 
 // Times
-$animation-time: .16s;
-$animation-time-2: .24s;
-$animation-time-3: .5s;
-$animation-time-4: .75s;
+$animation-time: 0.16s;
+$animation-time-2: 0.24s;
+$animation-time-3: 0.5s;
+$animation-time-4: 0.75s;
 
 // Eases
-$ease-in-cubic: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-$ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-$ease-in-sine: cubic-bezier(0.470, 0.000, 0.745, 0.715);
-$ease-out-sine: cubic-bezier(0.390, 0.575, 0.565, 1.000);
-$ease-in-out-sine: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 // Flexbox grid
 $sm: 24rem;
@@ -117,4 +117,3 @@ $flexboxgrid-breakpoints: (
   lg: $lg,
   xlg: $xlg
 );
-

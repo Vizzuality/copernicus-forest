@@ -13,10 +13,10 @@
     font-weight: bold;
     padding: 0 24px;
     background-color: $color-white;
-    color: #941333;
+    color: $color-black;
     border: none;
     margin: 0;
-    
+
     span {
       color: $color-black;
       font-weight: normal;
@@ -44,13 +44,13 @@
       background-color: $color-white;
 
       color: #222222;
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-size: 16px;
       letter-spacing: 0;
       line-height: 22px;
 
       border: none;
-      border-bottom: 1px solid #E6E6E6;
+      border-bottom: 1px solid #e6e6e6;
 
       &.disabled {
         color: #ccc;
@@ -58,7 +58,7 @@
       }
 
       &:hover {
-        background-color: #E6E6E6;
+        background-color: #e6e6e6;
         opacity: 1;
       }
 
@@ -70,7 +70,7 @@
 }
 
 .dd-list {
-  border: 2px solid #941333;
+  border: 2px solid #df5127;
 }
 
 .dropdown-white {
