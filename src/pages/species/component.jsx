@@ -67,7 +67,7 @@ function SpeciesPage({ match }) {
     lines:
       data && styles && data.scenarios.map((sc, i) => ({ key: sc.shortName, color: colors[i] })),
     yAxis: {
-      domain: [0, 100],
+      domain: [0, 'dataMax'],
       unit: '%',
       ticks: [0, 50, 100]
     },
@@ -79,7 +79,7 @@ function SpeciesPage({ match }) {
       strokeDasharray: '3 3'
     },
     showLegend: true,
-    height: 200
+    height: 300
   };
 
   const speciesIndex = species.length && species.findIndex(item => item.id === activeSpecies.id);

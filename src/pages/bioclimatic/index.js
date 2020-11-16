@@ -200,8 +200,8 @@ const Container = () => {
         year_lte: ${chosenEndYear},
         year_gte: ${chosenStartYear},
         country: { iso: "${country}" },
-        scenario: { key: "${chosenScenario}" }
-      }) {
+        scenario: { key: "${chosenScenario}" },
+      }, first: 180) {
         value: summary,
         name: year,
         biovar { key }
