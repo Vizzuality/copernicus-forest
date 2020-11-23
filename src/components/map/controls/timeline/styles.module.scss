@@ -18,8 +18,8 @@ $timeline-size: 45px;
 
 .header {
   background-color: $color-white;
-  border-bottom: 2px solid $color-border;
-  border-right: 2px solid $color-border;
+  border-bottom: 2px solid $color-gray-1;
+  border-right: 2px solid $color-gray-1;
   display: flex;
   align-items: center;
   height: $timeline-size;
@@ -65,14 +65,14 @@ $timeline-size: 45px;
 
 .activeTab {
   background-color: transparent;
-  color: #df5127;
+  color: $color-gray-1;
   font-weight: 600;
 }
 
 .timeline {
   background-color: $color-white;
-  border-bottom: 2px solid $color-border;
-  border-right: 2px solid $color-border;
+  border-bottom: 2px solid $color-gray-1;
+  border-right: 2px solid $color-gray-1;
   display: flex;
   height: $timeline-size;
   position: relative;
@@ -80,7 +80,7 @@ $timeline-size: 45px;
 }
 
 .speedButton {
-  // border-left: 1px solid $color-border;
+  // border-left: 1px solid $color-gray-1;
   border: none;
   color: $color-black;
   font-size: $font-size-small;

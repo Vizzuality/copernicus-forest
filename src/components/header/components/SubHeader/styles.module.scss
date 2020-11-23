@@ -85,7 +85,7 @@
       top: 70px;
       left: 0;
       box-sizing: border-box;
-      border: 2px solid $color-dark-red;
+      border: 2px solid $color-gray-1;
       background-color: $color-white;
 
       li {
@@ -120,7 +120,7 @@
     }
 
     &:hover {
-      color: $color-dark-red;
+      color: $color-gray-1;
 
       > svg {
         opacity: 1;

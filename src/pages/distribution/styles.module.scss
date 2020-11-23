@@ -8,12 +8,12 @@
   width: 100%;
 
   & > div:first-child {
-    border-right: 2px solid $color-border;
+    border-right: 2px solid $color-gray-1;
   }
 }
 
 .navigationBar {
-  border: 2px solid $color-border;
+  border: 2px solid $color-gray-1;
   border-right-width: 3px;
   background-color: $color-white;
   display: flex;
@@ -48,6 +48,5 @@
     .overlays {
       overflow: unset !important;
     }
-
   }
 }
